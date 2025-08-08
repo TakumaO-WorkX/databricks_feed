@@ -4,12 +4,21 @@ from datetime import datetime
 import os
 from dotenv import load_dotenv
 
-# .envファイルから環境変数を読み込む（ローカルテスト用）
 load_dotenv()
 genai.configure(
     api_key=os.getenv("GEMINI_API_KEY"),
     transport="rest"
 )
+
+def get_available_model():
+    """
+    翻訳に使用できる利用可能なモデルを検索します。
+    """
+    for model in genai.list_models():
+        if 'generateContent' in model.supported_generation_methods:
+            print(f"Using model: {model.name}")
+            return model.name
+    return None
 
 def translate_text_with_gemini(text, target_lang="Japanese"):
     """
@@ -19,7 +28,11 @@ def translate_text_with_gemini(text, target_lang="Japanese"):
         return ""
     
     try:
-        model = genai.GenerativeModel('gemini-pro')
+        model_name = get_available_model()
+        if not model_name:
+            return "[翻訳エラー: 利用可能なモデルが見つかりません]"
+            
+        model = genai.GenerativeModel(model_name)
         response = model.generate_content(f"Translate the following English text to {target_lang}. Please only provide the translated text.\n\nText: {text}")
         return response.text.strip()
     except Exception as e:
