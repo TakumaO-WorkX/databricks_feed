@@ -1,0 +1,133 @@
+
+    <!DOCTYPE html>
+    <html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Databricks Docs Updates</title>
+        <style>
+            body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; padding: 20px; color: #37352f; }
+            .article { margin-bottom: 30px; padding: 20px; border-left: 4px solid #0070f3; background-color: #f7f7f5; border-radius: 4px; }
+            .article-title { font-size: 1.5em; font-weight: 600; margin-bottom: 5px; }
+            .translated-label { font-size: 0.8em; color: #999; font-style: italic; margin-top: 10px; }
+            .date { font-size: 0.9em; color: #666; margin-bottom: 15px; }
+            .content { margin-top: 10px; }
+            .original-text, .translated-text { margin-bottom: 10px; }
+            .original-text { font-style: normal; }
+            .translated-text { font-weight: 400; color: #0070f3; }
+            a { text-decoration: none; color: #0070f3; }
+            a:hover { text-decoration: underline; }
+        </style>
+    </head>
+    <body>
+        <h1>Databricks Docs Updates</h1>
+    
+        <div class="article">
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/august#use-openai-gpt-oss-models-for-batch-inference-and-structured-outputs" target="_blank">
+                <div class="article-title">Use OpenAI GPT OSS models for batch inference and structured outputs</div>
+            </a>
+            <div class="translated-label">&gt; [翻訳エラー: 
+  No API_KEY or ADC found. Please either:
+    - Set the `GOOGLE_API_KEY` environment variable.
+    - Manually pass the key with `genai.configure(api_key=my_api_key)`.
+    - Or set up Application Default Credentials, see https://ai.google.dev/gemini-api/docs/oauth for more information.]</div>
+            <div class="date">August 07, 2025</div>
+            <div class="content">
+                <div class="original-text"><p>The Databricks-hosted foundation models, OpenAI GPT OSS 120B and GPT OSS 20B are now optimized for AI Functions, which means you can <a href="https://docs.databricks.com/aws/en/large-language-models/ai-functions#gen-function">perform batch inference</a> using these models and AI Functions like <code>ai_query()</code>. Inference workloads that use these models also now support <a href="https://docs.databricks.com/aws/en/sql/language-manual/functions/ai_query#structured-output">specifying structured outputs</a>.</p></div>
+                <div class="translated-label">&gt; [翻訳エラー: 
+  No API_KEY or ADC found. Please either:
+    - Set the `GOOGLE_API_KEY` environment variable.
+    - Manually pass the key with `genai.configure(api_key=my_api_key)`.
+    - Or set up Application Default Credentials, see https://ai.google.dev/gemini-api/docs/oauth for more information.]</div>
+            </div>
+        </div>
+        
+        <div class="article">
+            <a href="https://docs.databricks.com/aws/en/sql/release-notes/2025#fixed-timeout-handling-for-materialized-views-and-streaming-tables" target="_blank">
+                <div class="article-title">Fixed timeout handling for materialized views and streaming tables</div>
+            </a>
+            <div class="translated-label">&gt; [翻訳エラー: 
+  No API_KEY or ADC found. Please either:
+    - Set the `GOOGLE_API_KEY` environment variable.
+    - Manually pass the key with `genai.configure(api_key=my_api_key)`.
+    - Or set up Application Default Credentials, see https://ai.google.dev/gemini-api/docs/oauth for more information.]</div>
+            <div class="date">August 07, 2025</div>
+            <div class="content">
+                <div class="original-text"><p>New timeout behavior for materialized views and streaming tables created in Databricks SQL:</p>
+<ul>
+<li>Materialized views and streaming tables created after August 7, 2025 will have the warehouse timeout automatically applied.</li>
+<li>For materialized views and streaming tables created before August 7, 2025, run <code>CREATE OR REFRESH</code> to synchronize the timeout setting with the timeout configuration of the warehouse.</li>
+<li>All materialized views and streaming tables now have a default timeout of two days.</li>
+</ul></div>
+                <div class="translated-label">&gt; [翻訳エラー: 
+  No API_KEY or ADC found. Please either:
+    - Set the `GOOGLE_API_KEY` environment variable.
+    - Manually pass the key with `genai.configure(api_key=my_api_key)`.
+    - Or set up Application Default Credentials, see https://ai.google.dev/gemini-api/docs/oauth for more information.]</div>
+            </div>
+        </div>
+        
+        <div class="article">
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/august#serverless-compute-is-now-available-in-ap-southeast-3" target="_blank">
+                <div class="article-title">Serverless compute is now available in ap-southeast-3</div>
+            </a>
+            <div class="translated-label">&gt; [翻訳エラー: 
+  No API_KEY or ADC found. Please either:
+    - Set the `GOOGLE_API_KEY` environment variable.
+    - Manually pass the key with `genai.configure(api_key=my_api_key)`.
+    - Or set up Application Default Credentials, see https://ai.google.dev/gemini-api/docs/oauth for more information.]</div>
+            <div class="date">August 06, 2025</div>
+            <div class="content">
+                <div class="original-text"><p>Serverless compute for notebooks, workflows, and Lakeflow Declarative Pipelines is now available in the Asia Pacific (Jakarta) region (<code>ap-southeast-3</code>). See <a href="https://docs.databricks.com/aws/en/resources/feature-region-support">Features with limited regional availability</a>.</p></div>
+                <div class="translated-label">&gt; [翻訳エラー: 
+  No API_KEY or ADC found. Please either:
+    - Set the `GOOGLE_API_KEY` environment variable.
+    - Manually pass the key with `genai.configure(api_key=my_api_key)`.
+    - Or set up Application Default Credentials, see https://ai.google.dev/gemini-api/docs/oauth for more information.]</div>
+            </div>
+        </div>
+        
+        <div class="article">
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/august#power-bi-databricks-connector-supports-m2m-oauth" target="_blank">
+                <div class="article-title">Power BI Databricks connector supports M2M OAuth</div>
+            </a>
+            <div class="translated-label">&gt; [翻訳エラー: 
+  No API_KEY or ADC found. Please either:
+    - Set the `GOOGLE_API_KEY` environment variable.
+    - Manually pass the key with `genai.configure(api_key=my_api_key)`.
+    - Or set up Application Default Credentials, see https://ai.google.dev/gemini-api/docs/oauth for more information.]</div>
+            <div class="date">August 05, 2025</div>
+            <div class="content">
+                <div class="original-text"><p>You can now authenticate into Power BI Desktop using Machine-to-Machine (M2M) OAuth credentials. If you are currently using personal access tokens on behalf of service principals, Databricks recommends switching to the new <strong>Client credentials</strong> authentication option.</p>
+<p>See <a href="https://docs.databricks.com/aws/en/partners/bi/power-bi#setup-sp">Optional: Set up a service principal for M2M OAuth</a> and <a href="https://docs.databricks.com/aws/en/partners/bi/power-bi#m2m">Configure credentials in Power BI for M2M OAuth</a>.</p></div>
+                <div class="translated-label">&gt; [翻訳エラー: 
+  No API_KEY or ADC found. Please either:
+    - Set the `GOOGLE_API_KEY` environment variable.
+    - Manually pass the key with `genai.configure(api_key=my_api_key)`.
+    - Or set up Application Default Credentials, see https://ai.google.dev/gemini-api/docs/oauth for more information.]</div>
+            </div>
+        </div>
+        
+        <div class="article">
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/august#openai-gpt-oss-models-now-available-on-mosaic-ai-model-serving" target="_blank">
+                <div class="article-title">OpenAI GPT OSS models now available on Mosaic AI Model Serving</div>
+            </a>
+            <div class="translated-label">&gt; [翻訳エラー: 
+  No API_KEY or ADC found. Please either:
+    - Set the `GOOGLE_API_KEY` environment variable.
+    - Manually pass the key with `genai.configure(api_key=my_api_key)`.
+    - Or set up Application Default Credentials, see https://ai.google.dev/gemini-api/docs/oauth for more information.]</div>
+            <div class="date">August 05, 2025</div>
+            <div class="content">
+                <div class="original-text"><p>Mosaic AI Model Serving now supports OpenAI's <a href="https://docs.databricks.com/aws/en/machine-learning/foundation-model-apis/supported-models#openai-gpt-120b">GPT OSS 120B</a> and <a href="https://docs.databricks.com/aws/en/machine-learning/foundation-model-apis/supported-models#openai-gpt-20b">GPT OSS 20B</a> as Databricks-hosted foundation models. You can access these models using <a href="https://docs.databricks.com/aws/en/machine-learning/foundation-model-apis#token-foundation-apis">Foundation Model APIs pay-per-token</a>.</p></div>
+                <div class="translated-label">&gt; [翻訳エラー: 
+  No API_KEY or ADC found. Please either:
+    - Set the `GOOGLE_API_KEY` environment variable.
+    - Manually pass the key with `genai.configure(api_key=my_api_key)`.
+    - Or set up Application Default Credentials, see https://ai.google.dev/gemini-api/docs/oauth for more information.]</div>
+            </div>
+        </div>
+        
+    </body>
+    </html>
+    
