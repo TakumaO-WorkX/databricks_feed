@@ -2,6 +2,7 @@ name: Update RSS Feed HTML with Translation
 
 on:
   schedule:
+    # 毎日午前9時（UTC）に実行
     - cron: '0 9 * * *'
   workflow_dispatch:
 
@@ -27,13 +28,13 @@ jobs:
 
       - name: Run Python script
         run: python generate_html.py
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
 
       - name: Commit and push changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          # 💡 ここに git pull を追加します
-          git pull --rebase
           git add feed.html
           git commit -m "Update RSS feed HTML with Gemini translations" || echo "No changes to commit"
           git push
