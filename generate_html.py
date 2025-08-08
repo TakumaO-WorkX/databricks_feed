@@ -5,7 +5,8 @@ import os
 from dotenv import load_dotenv
 
 load_dotenv()
-genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
+# 環境変数からAPIキーを読み込み
+genai.configure(api_key=os.getenv("GEMINI_API_KEY"), transport="rest")
 
 def translate_text_with_gemini(text, target_lang="Japanese"):
     """
