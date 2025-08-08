@@ -7,8 +7,7 @@ from dotenv import load_dotenv
 load_dotenv()
 # 環境変数からAPIキーを読み込み
 genai.configure(
-    api_key=os.getenv("GEMINI_API_KEY"),
-    api_endpoint="europe-west3-aiplatform.googleapis.com" # または別のリージョン
+    api_key=os.getenv("GEMINI_API_KEY")
 )
 
 def translate_text_with_gemini(text, target_lang="Japanese"):
