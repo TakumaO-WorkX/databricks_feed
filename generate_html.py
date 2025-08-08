@@ -1,40 +1,31 @@
 import feedparser
-import google.generativeai as genai
+from anthropic import Anthropic
 from datetime import datetime
 import os
 from dotenv import load_dotenv
 
+# .envファイルから環境変数を読み込む（ローカルテスト用）
 load_dotenv()
-genai.configure(
-    api_key=os.getenv("GEMINI_API_KEY"),
-    transport="rest"
+anthropic_client = Anthropic(
+    api_key=os.getenv("ANTHROPIC_API_KEY")
 )
 
-def get_available_model():
+def translate_text_with_claude(text, target_lang="Japanese"):
     """
-    翻訳に使用できる利用可能なモデルを検索します。
-    """
-    for model in genai.list_models():
-        if 'generateContent' in model.supported_generation_methods:
-            print(f"Using model: {model.name}")
-            return model.name
-    return None
-
-def translate_text_with_gemini(text, target_lang="Japanese"):
-    """
-    Gemini APIを使用してテキストを翻訳します。
+    Claude APIを使用してテキストを翻訳します。
     """
     if not text:
         return ""
     
     try:
-        model_name = get_available_model()
-        if not model_name:
-            return "[翻訳エラー: 利用可能なモデルが見つかりません]"
-            
-        model = genai.GenerativeModel(model_name)
-        response = model.generate_content(f"Translate the following English text to {target_lang}. Please only provide the translated text.\n\nText: {text}")
-        return response.text.strip()
+        response = anthropic_client.messages.create(
+            model="claude-3-haiku-20240307",  # または別の適切なClaudeモデル
+            max_tokens=1000,
+            messages=[
+                {"role": "user", "content": f"Translate the following English text to {target_lang}. Please only provide the translated text.\n\nText: {text}"}
+            ]
+        )
+        return response.content[0].text.strip()
     except Exception as e:
         print(f"翻訳中にエラーが発生しました: {e}")
         return f"[翻訳エラー: {e}]"
@@ -75,8 +66,8 @@ def generate_html_from_rss(feed_url):
         summary = entry.get("summary", "") # 要約を取得。なければ空文字列
         link = entry.link
         
-        translated_title = translate_text_with_gemini(title, target_lang="Japanese")
-        translated_summary = translate_text_with_gemini(summary, target_lang="Japanese")
+        translated_title = translate_text_with_claude(title, target_lang="Japanese")
+        translated_summary = translate_text_with_claude(summary, target_lang="Japanese")
 
         if hasattr(entry, 'published_parsed'):
             date = datetime(*entry.published_parsed[:6]).strftime("%B %d, %Y")
