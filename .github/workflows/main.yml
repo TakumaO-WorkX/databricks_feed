@@ -30,7 +30,9 @@ jobs:
           pip install --upgrade feedparser google-generativeai python-dotenv  
 
       - name: Run Python script
-        run: python generate_html.py
+        run: |
+          pip install --upgrade feedparser google-generativeai python-dotenv
+          python generate_html.py
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
 
