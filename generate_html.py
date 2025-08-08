@@ -42,7 +42,7 @@ def generate_html_from_rss(feed_url):
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Databricks Docs Updates</title>
+        <title>Databricks Updates</title>
         <style>
             body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; padding: 20px; color: #37352f; }
             .article { margin-bottom: 30px; padding: 20px; border-left: 4px solid #0070f3; background-color: #f7f7f5; border-radius: 4px; }
