@@ -4,10 +4,11 @@ from datetime import datetime
 import os
 from dotenv import load_dotenv
 
+# .envファイルから環境変数を読み込む（ローカルテスト用）
 load_dotenv()
-# 環境変数からAPIキーを読み込み
 genai.configure(
-    api_key=os.getenv("GEMINI_API_KEY")
+    api_key=os.getenv("GEMINI_API_KEY"),
+    transport="rest"
 )
 
 def translate_text_with_gemini(text, target_lang="Japanese"):
@@ -56,9 +57,9 @@ def generate_html_from_rss(feed_url):
         <h1>Databricks Docs Updates</h1>
     """
     
-    for entry in feed.entries[:5]:
+    for entry in feed.entries[:5]: # 最新5件の記事を処理
         title = entry.title
-        summary = entry.get("summary", "")
+        summary = entry.get("summary", "") # 要約を取得。なければ空文字列
         link = entry.link
         
         translated_title = translate_text_with_gemini(title, target_lang="Japanese")
