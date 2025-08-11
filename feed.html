@@ -23,14 +23,28 @@
         <h1>Databricks Docs Updates</h1>
     
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/august#use-openai-gpt-oss-models-for-batch-inference-and-structured-outputs" target="_blank">
-                <div class="article-title">Use OpenAI GPT OSS models for batch inference and structured outputs</div>
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/august#create-external-delta-tables-from-third-party-clients-public-preview" target="_blank">
+                <div class="article-title">Create external Delta tables from third-party clients (Public Preview)</div>
             </a>
-            <div class="translated-label">&gt; OpenAIのGPT OSSモデルを使って、バッチ推論と構造化された出力を行う</div>
-            <div class="date">August 07, 2025</div>
+            <div class="translated-label">&gt; Delta湖からサードパーティクライアントに外部Deltaテーブルを作成する(パブリックプレビュー)</div>
+            <div class="date">August 08, 2025</div>
             <div class="content">
-                <div class="original-text"><p>The Databricks-hosted foundation models, OpenAI GPT OSS 120B and GPT OSS 20B are now optimized for AI Functions, which means you can <a href="https://docs.databricks.com/aws/en/large-language-models/ai-functions#gen-function">perform batch inference</a> using these models and AI Functions like <code>ai_query()</code>. Inference workloads that use these models also now support <a href="https://docs.databricks.com/aws/en/sql/language-manual/functions/ai_query#structured-output">specifying structured outputs</a>.</p></div>
-                <div class="translated-label">&gt; <p>Databricksがホストするファウンデーションモデル、OpenAI GPT OSS 120Bおよび GPT OSS 20Bは、AI関数のために最適化されました。これにより、これらのモデルとAI関数(ai_query()など)を使って<a href="https://docs.databricks.com/aws/en/large-language-models/ai-functions#gen-function">バッチ推論を実行</a>できます。これらのモデルを使う推論ワークロードでは、<a href="https://docs.databricks.com/aws/en/sql/language-manual/functions/ai_query#structured-output">構造化出力の指定</a>もサポートされるようになりました。</p></div>
+                <div class="original-text"><p>You can now create Unity Catalog external tables backed by Delta Lake from external clients and systems, such as Apache Spark.</p>
+<p>See <a href="https://docs.databricks.com/aws/en/external-access/create-external-tables">Create external Delta tables from external clients</a>.</p></div>
+                <div class="translated-label">&gt; <p>Unity Catalog外部テーブルをDelta Lakeで作成し、Apache Sparkなどの外部クライアントやシステムから使用できるようになりました。</p>
+<p>詳細は<a href="https://docs.databricks.com/aws/en/external-access/create-external-tables">外部クライアントからDelta外部テーブルを作成する</a>をご覧ください。</p></div>
+            </div>
+        </div>
+        
+        <div class="article">
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/august#path-credential-vending-public-preview" target="_blank">
+                <div class="article-title">Path credential vending (Public Preview)</div>
+            </a>
+            <div class="translated-label">&gt; パスクレデンシャル販売（パブリックプレビュー）</div>
+            <div class="date">August 08, 2025</div>
+            <div class="content">
+                <div class="original-text"><p>You can now use path credential vending to grant short-lived credentials to external locations in your Unity Catalog metastore. See <a href="https://docs.databricks.com/aws/en/external-access/credential-vending">Unity Catalog credential vending for external system access</a>.</p></div>
+                <div class="translated-label">&gt; パスのクレデンシャル提供を使用して、Unity Catalogメタストアの外部の場所に短期のクレデンシャルを付与できるようになりました。<a href="https://docs.databricks.com/aws/en/external-access/credential-vending">外部システムアクセスのためのUnity Catalogクレデンシャル提供</a>を参照してください。</div>
             </div>
         </div>
         
@@ -38,7 +52,7 @@
             <a href="https://docs.databricks.com/aws/en/sql/release-notes/2025#fixed-timeout-handling-for-materialized-views-and-streaming-tables" target="_blank">
                 <div class="article-title">Fixed timeout handling for materialized views and streaming tables</div>
             </a>
-            <div class="translated-label">&gt; 固定タイムアウトハンドリングのマテリアライズドビューとストリーミングテーブル</div>
+            <div class="translated-label">&gt; 固定タイムアウトハンドリングのためのマテリアライズドビューとストリーミングテーブル</div>
             <div class="date">August 07, 2025</div>
             <div class="content">
                 <div class="original-text"><p>New timeout behavior for materialized views and streaming tables created in Databricks SQL:</p>
@@ -47,12 +61,24 @@
 <li>For materialized views and streaming tables created before August 7, 2025, run <code>CREATE OR REFRESH</code> to synchronize the timeout setting with the timeout configuration of the warehouse.</li>
 <li>All materialized views and streaming tables now have a default timeout of two days.</li>
 </ul></div>
-                <div class="translated-label">&gt; <p>Databricks SQLで作成されたマテリアライズドビューとストリーミングテーブルの新しいタイムアウト動作:</p>
+                <div class="translated-label">&gt; <p>Databricks SQLで作成された具現化ビューとストリーミングテーブルの新しいタイムアウト動作:</p>
 <ul>
-<li>2025年8月7日以降に作成されたマテリアライズドビューとストリーミングテーブルには、自動的にウェアハウスのタイムアウトが適用されます。</li>
-<li>2025年8月7日より前に作成されたマテリアライズドビューとストリーミングテーブルの場合は、<code>CREATE OR REFRESH</code>を実行してタイムアウト設定をウェアハウスの設定と同期させてください。</li>
-<li>すべてのマテリアライズドビューとストリーミングテーブルのデフォルトのタイムアウトは2日間です。</li>
+<li>2025年8月7日以降に作成された具現化ビューとストリーミングテーブルには、自動的にウェアハウスのタイムアウトが適用されます。</li>
+<li>2025年8月7日より前に作成された具現化ビューとストリーミングテーブルの場合は、<code>CREATE OR REFRESH</code>を実行してタイムアウト設定をウェアハウスの設定と同期させてください。</li>
+<li>すべての具現化ビューとストリーミングテーブルのデフォルトのタイムアウトは2日間です。</li>
 </ul></div>
+            </div>
+        </div>
+        
+        <div class="article">
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/august#use-openai-gpt-oss-models-for-batch-inference-and-structured-outputs" target="_blank">
+                <div class="article-title">Use OpenAI GPT OSS models for batch inference and structured outputs</div>
+            </a>
+            <div class="translated-label">&gt; OpenAIのGPT OSSモデルを使ってバッチ推論と構造化出力を行う</div>
+            <div class="date">August 07, 2025</div>
+            <div class="content">
+                <div class="original-text"><p>The Databricks-hosted foundation models, OpenAI GPT OSS 120B and GPT OSS 20B are now optimized for AI Functions, which means you can <a href="https://docs.databricks.com/aws/en/large-language-models/ai-functions#gen-function">perform batch inference</a> using these models and AI Functions like <code>ai_query()</code>. Inference workloads that use these models also now support <a href="https://docs.databricks.com/aws/en/sql/language-manual/functions/ai_query#structured-output">specifying structured outputs</a>.</p></div>
+                <div class="translated-label">&gt; オープン AIの GPT OSS 120Bと GPT OSS 20Bは、Databricksホストのファウンデーションモデルであり、AI関数に最適化されています。つまり、これらのモデルを使って「ai_query()」などのAI関数を使ってバッチ推論を行うことができます。また、これらのモデルを使った推論ワークロードでは、構造化出力を指定することもできるようになりました。</div>
             </div>
         </div>
         
@@ -60,38 +86,11 @@
             <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/august#serverless-compute-is-now-available-in-ap-southeast-3" target="_blank">
                 <div class="article-title">Serverless compute is now available in ap-southeast-3</div>
             </a>
-            <div class="translated-label">&gt; サーバーレスコンピューティングは現在 ap-southeast-3 で利用可能です。</div>
+            <div class="translated-label">&gt; サーバーレスコンピューティングが現在 ap-southeast-3 で利用可能です。</div>
             <div class="date">August 06, 2025</div>
             <div class="content">
                 <div class="original-text"><p>Serverless compute for notebooks, workflows, and Lakeflow Declarative Pipelines is now available in the Asia Pacific (Jakarta) region (<code>ap-southeast-3</code>). See <a href="https://docs.databricks.com/aws/en/resources/feature-region-support">Features with limited regional availability</a>.</p></div>
-                <div class="translated-label">&gt; サーバーレスコンピューティングはノートブック、ワークフロー、およびLakeflowの宣言型パイプラインで利用可能になりました。アジア太平洋地域(ジャカルタ)(<code>ap-southeast-3</code>)で利用できます。制限付きの地域対応機能については、<a href="https://docs.databricks.com/aws/en/resources/feature-region-support">こちらをご覧ください</a>。</div>
-            </div>
-        </div>
-        
-        <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/august#power-bi-databricks-connector-supports-m2m-oauth" target="_blank">
-                <div class="article-title">Power BI Databricks connector supports M2M OAuth</div>
-            </a>
-            <div class="translated-label">&gt; Power BI Databricks コネクタは、M2M OAuth をサポートしています。</div>
-            <div class="date">August 05, 2025</div>
-            <div class="content">
-                <div class="original-text"><p>You can now authenticate into Power BI Desktop using Machine-to-Machine (M2M) OAuth credentials. If you are currently using personal access tokens on behalf of service principals, Databricks recommends switching to the new <strong>Client credentials</strong> authentication option.</p>
-<p>See <a href="https://docs.databricks.com/aws/en/partners/bi/power-bi#setup-sp">Optional: Set up a service principal for M2M OAuth</a> and <a href="https://docs.databricks.com/aws/en/partners/bi/power-bi#m2m">Configure credentials in Power BI for M2M OAuth</a>.</p></div>
-                <div class="translated-label">&gt; Power BI デスクトップでは、Machine-to-Machine (M2M) OAuth 資格情報を使用して認証できるようになりました。サービス プリンシパルに代わって個人用アクセス トークンを使用している場合は、新しい<strong>クライアント資格情報</strong>認証オプションに切り替えることをお勧めします。
-
-<a href="https://docs.databricks.com/aws/en/partners/bi/power-bi#setup-sp">オプション: M2M OAuth 用のサービス プリンシパルをセットアップする</a>と<a href="https://docs.databricks.com/aws/en/partners/bi/power-bi#m2m">M2M OAuth の資格情報を Power BI で構成する</a>をご覧ください。</div>
-            </div>
-        </div>
-        
-        <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/august#openai-gpt-oss-models-now-available-on-mosaic-ai-model-serving" target="_blank">
-                <div class="article-title">OpenAI GPT OSS models now available on Mosaic AI Model Serving</div>
-            </a>
-            <div class="translated-label">&gt; OpenAIのGPT OSSモデルがMosaic AIのモデルサービスで利用可能になりました。</div>
-            <div class="date">August 05, 2025</div>
-            <div class="content">
-                <div class="original-text"><p>Mosaic AI Model Serving now supports OpenAI's <a href="https://docs.databricks.com/aws/en/machine-learning/foundation-model-apis/supported-models#openai-gpt-120b">GPT OSS 120B</a> and <a href="https://docs.databricks.com/aws/en/machine-learning/foundation-model-apis/supported-models#openai-gpt-20b">GPT OSS 20B</a> as Databricks-hosted foundation models. You can access these models using <a href="https://docs.databricks.com/aws/en/machine-learning/foundation-model-apis#token-foundation-apis">Foundation Model APIs pay-per-token</a>.</p></div>
-                <div class="translated-label">&gt; <p>モザイクAIモデルサービングは、現在OpenAIの<a href="https://docs.databricks.com/aws/en/machine-learning/foundation-model-apis/supported-models#openai-gpt-120b">GPT OSS 120B</a>と<a href="https://docs.databricks.com/aws/en/machine-learning/foundation-model-apis/supported-models#openai-gpt-20b">GPT OSS 20B</a>をDatabricksでホストされているファウンデーションモデルとしてサポートしています。これらのモデルにアクセスするには、<a href="https://docs.databricks.com/aws/en/machine-learning/foundation-model-apis#token-foundation-apis">ファウンデーションモデルAPI pay-per-token</a>を使用できます。</p></div>
+                <div class="translated-label">&gt; <p>ノートブック、ワークフロー、Lakeflow 宣言的パイプラインのサーバーレスコンピューティングが、アジア太平洋(ジャカルタ)リージョン(<code>ap-southeast-3</code>)で利用可能になりました。<a href="https://docs.databricks.com/aws/en/resources/feature-region-support">リージョンの限定的な機能</a>を参照してください。</p></div>
             </div>
         </div>
         
