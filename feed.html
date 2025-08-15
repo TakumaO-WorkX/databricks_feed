@@ -23,83 +23,126 @@
         <h1>Databricks Docs Updates</h1>
     
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/august#databricks-assistant-user-and-workspace-instructions-now-available" target="_blank">
-                <div class="article-title">Databricks Assistant: User and workspace instructions now available</div>
+            <a href="https://docs.databricks.com/aws/en/sql/release-notes/2025#databricks-sql-version-202525-is-now-available-in-preview" target="_blank">
+                <div class="article-title">Databricks SQL version 2025.25 is now available in Preview</div>
             </a>
-            <div class="translated-label">&gt; データブリックス・アシスタント:ユーザーおよびワークスペースの手順が今すぐ利用可能です。</div>
-            <div class="date">August 12, 2025</div>
+            <div class="translated-label">&gt; データブリックス SQL バージョン 2025.25がプレビューで利用可能になりました。</div>
+            <div class="date">August 14, 2025</div>
             <div class="content">
-                <div class="original-text"><p>You can now tailor how Databricks Assistant responds by adding custom user instructions. Guide the Assistant with preferences, coding conventions, and response guidelines.</p>
-<p>Admins can also add workspace-wide instructions, which take priority over user instructions.</p>
-<p>Instructions apply across Assistant experiences like Inline Assistant, General Chat, Suggest Fix, and Edit mode. See <a href="https://docs.databricks.com/aws/en/notebooks/assistant-tips">Customize and improve Databricks Assistant responses</a>.</p></div>
-                <div class="translated-label">&gt; <p>Databricksアシスタントの応答をカスタマイズするには、ユーザー独自の指示を追加できるようになりました。好みやコーディング規約、レスポンスガイドラインに応じてアシスタントを指導することができます。</p>
-<p>管理者はワークスペース全体の指示を追加することもでき、これはユーザーの指示よりも優先されます。</p>
-<p>指示はInline Assistant、General Chat、Suggest Fix、Editモードなどのアシスタント機能に適用されます。<a href="https://docs.databricks.com/aws/en/notebooks/assistant-tips">Databricksアシスタントのレスポンスをカスタマイズし、改善する</a>を参照してください。</p></div>
+                <div class="original-text"><p>Databricks SQL version 2025.25 is now available in the <strong>Preview</strong> channel. Review the following section to learn about new features and behavioral changes.</p>
+<h4>Expanded spatial SQL expressions and GEOMETRY and GEOGRAPHY data types</h4>
+<p>You can now store geospatial data in built-in <code>GEOMETRY</code> and <code>GEOGRAPHY</code> columns for improved performance of spatial queries. This release adds more than 80 new spatial SQL expressions, including functions for importing, exporting, measuring, constructing, editing, validating, transforming, and determining topological relationships with spatial joins. See <a href="https://docs.databricks.com/aws/en/sql/language-manual/sql-ref-st-geospatial-functions">ST geospatial functions</a>, <a href="https://docs.databricks.com/aws/en/sql/language-manual/data-types/geography-type"><code>GEOGRAPHY</code> type</a>, and <a href="https://docs.databricks.com/aws/en/sql/language-manual/data-types/geometry-type"><code>GEOMETRY</code> type</a>.</p>
+<h4>Support for schema and catalog level default collation</h4>
+<p>You can now set a default collation for schemas and catalogs. This allows you to define a collation that applies to all objects created within the schema or catalog, ensuring consistent collation behavior across your data.</p>
+<h4>Better handling of JSON options with <code>VARIANT</code></h4>
+<p>The <code>from_json</code> and <code>to_json</code> functions now correctly apply JSON options when working with top-level <code>VARIANT</code> schemas. This ensures consistent behavior with other supported data types.</p>
+<h4>Support for TIMESTAMP WITHOUT TIME ZONE syntax</h4>
+<p>You can now specify <code>TIMESTAMP WITHOUT TIME ZONE</code> instead of <code>TIMESTAMP_NTZ</code>. This change improves compatibility with the SQL Standard.</p>
+<h4>Resolved subquery correlation issue</h4>
+<p>Databricks no longer incorrectly correlates semantically equal aggregate expressions between a subquery and its outer query. Previously, this could lead to incorrect query results.</p>
+<h4>Error thrown for invalid <code>CHECK</code> constraints</h4>
+<p>Databricks now throws an <code>AnalysisException</code> if a <code>CHECK</code> constraint expression cannot be resolved during constraint validation.</p>
+<h4>Stricter rules for stream-stream joins in append mode</h4>
+<p>Databricks now disallows streaming queries in append mode that use a stream-stream join followed by window aggregation, unless watermarks are defined on both sides. Queries without proper watermarks can produce non-final results, violating append mode guarantees.</p></div>
+                <div class="translated-label">&gt; <p>Databricks SQLバージョン2025.25が<strong>プレビュー</strong>チャンネルで利用可能となりました。新機能とベヘイビアの変更点を以下に確認してください。</p>
+<h4>拡張された空間SQL式とGEOMETRYおよびGEOGRAPHYデータ型</h4>
+<p>地理空間データを組み込みの<code>GEOMETRY</code>および<code>GEOGRAPHY</code>列に保存し、空間クエリのパフォーマンスを向上させることができます。このリリースでは、データのインポート、エクスポート、測定、構築、編集、検証、変換、空間結合での位相関係の判断など、80を超える新しい空間SQL式が追加されています。<a href="https://docs.databricks.com/aws/en/sql/language-manual/sql-ref-st-geospatial-functions">ST地理空間関数</a>、<a href="https://docs.databricks.com/aws/en/sql/language-manual/data-types/geography-type"><code>GEOGRAPHY</code>型</a>、<a href="https://docs.databricks.com/aws/en/sql/language-manual/data-types/geometry-type"><code>GEOMETRY</code>型</a>をご確認ください。</p>
+<h4>スキーマおよびカタログレベルの既定のコレーション設定</h4>
+<p>スキーマやカタログの既定のコレーションを設定できるようになりました。これによりスキーマやカタログ内で作成されるすべてのオブジェクトに一貫したコレーション動作を定義できます。</p>
+<h4><code>VARIANT</code>でのJSONオプションの改善</h4>
+<p><code>from_json</code>および<code>to_json</code>関数が、トップレベルの<code>VARIANT</code>スキーマでJSONオプションを正しく適用するようになりました。これにより、他のサポートされているデータ型との振る舞いの一貫性が確保されます。</p>
+<h4>TIMESTAMP WITHOUT TIME ZONE構文のサポート</h4>
+<p><code>TIMESTAMP_NTZ</code>の代わりに<code>TIMESTAMP WITHOUT TIME ZONE</code>を指定できるようになりました。この変更によりSQL Standardとの互換性が向上しました。</p>
+<h4>サブクエリの相関の問題を解決</h4>
+<p>Databricksは、サブクエリと外部クエリの間で意味的に等しい集計式を誤って相関させなくなりました。これにより、誤ったクエリ結果が生成されることがなくなりました。</p>
+<h4><code>CHECK</code>制約の無効化に対するエラー</h4>
+<p>Databricksは、<code>CHECK</code>制約式が制約検証中に解決できない場合に<code>AnalysisException</code>をスローするようになりました。</p>
+<h4>アペンドモードでのストリーム-ストリーム結合の厳格なルール</h4>
+<p>Databricksは、ウォーターマークが両側に定義されていない限り、ストリームクエリにアペンドモードでストリーム-ストリーム結合と後続のウィンドウ集計を使用することを禁止するようになりました。適切なウォーターマーク</div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/august#single-node-compute-on-standard-access-mode-is-now-ga" target="_blank">
-                <div class="article-title">Single-node compute on standard access mode is now GA</div>
+            <a href="https://docs.databricks.com/aws/en/sql/release-notes/2025#new-sql-editor-is-generally-available" target="_blank">
+                <div class="article-title">New SQL editor is generally available</div>
             </a>
-            <div class="translated-label">&gt; 標準アクセスモードのシングルノード compute が GA になりました。</div>
-            <div class="date">August 12, 2025</div>
+            <div class="translated-label">&gt; 新しい SQL エディターが一般に利用可能になりました。</div>
+            <div class="date">August 14, 2025</div>
             <div class="content">
-                <div class="original-text"><p>Single node compute resources with standard access mode is now generally available. This configuration allows multiple users to share a single-node compute resource with full user isolation. Single-node compute is useful for small jobs or non-distributed workloads.</p>
-<p>See <a href="https://docs.databricks.com/aws/en/compute/configure">Compute configuration reference</a>.</p></div>
-                <div class="translated-label">&gt; 標準アクセスモードを持つシングルノードコンピューティングリソースが一般に利用可能になりました。この構成により、複数のユーザーが完全なユーザー分離を持つシングルノードコンピューティングリソースを共有することができます。シングルノードコンピューティングは、小規模なジョブや分散されていないワークロードに役立ちます。
-
-「コンピュート構成の参照」をご覧ください。</div>
+                <div class="original-text"><p>The new SQL editor is now generally available. The new SQL editor provides a unified authoring environment with support for multiple statement results, inline execution history, real-time collaboration, enhanced Databricks Assistant integration, and additional productivity features. See <a href="https://docs.databricks.com/aws/en/sql/user/sql-editor">Write queries and explore data in the new SQL editor</a>.</p></div>
+                <div class="translated-label">&gt; <p>新しいSQL編集者が一般的に利用可能になりました。新しいSQL編集者は、複数のステートメント結果、インラインの実行履歴、リアルタイムのコラボレーション、強化されたDatabricks Assistantとの統合、および追加の生産性機能をサポートする統一されたオーサリング環境を提供します。<a href="https://docs.databricks.com/aws/en/sql/user/sql-editor">新しいSQL編集者でクエリを記述してデータを探索してください</a>。</p></div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/august#column-masks-now-retained-when-replacing-a-table" target="_blank">
-                <div class="article-title">Column masks now retained when replacing a table</div>
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/august#token-based-rate-limits-now-available-on-ai-gateway" target="_blank">
+                <div class="article-title">Token-based rate limits now available on AI Gateway</div>
             </a>
-            <div class="translated-label">&gt; カラムマスクは、テーブルを置き換える際に保持されます。</div>
-            <div class="date">August 12, 2025</div>
+            <div class="translated-label">&gt; トークンベースのレートリミットがAIゲートウェイで利用可能になりました。</div>
+            <div class="date">August 14, 2025</div>
             <div class="content">
-                <div class="original-text"><p>If a column in the new table matches a column name from the original table, its existing column mask is now retained, even if no mask is specified. This change prevents accidental removal of column-level security policies during table replacement. Previously, replacing a table dropped all existing column masks, and only newly defined masks were applied.</p>
-<p>This change affects SQL commands (<code>[CREATE OR] REPLACE TABLE</code>), DataFrame APIs (<code>saveAsTable</code>, <code>replace</code>, <code>createOrReplace</code>), and other similar update table operations.</p>
-<p>See <a href="https://docs.databricks.com/aws/en/data-governance/unity-catalog/filters-and-masks/manually-apply">Manually apply row filters and column masks</a>.</p></div>
-                <div class="translated-label">&gt; 新しいテーブルの列が元のテーブルの列名と一致する場合、マスクが指定されていなくても既存のマスクが保持されます。この変更により、テーブル置換中にカラムレベルのセキュリティポリシーが誤って削除されるのを防ぐことができます。以前は、テーブルを置換すると既存のすべてのマスクが削除され、新しく定義されたマスクのみが適用されていました。
-
-この変更は、SQL コマンド ([CREATE OR] REPLACE TABLE)、DataFrame API (saveAsTable、replace、createOrReplace)、およびその他の類似のテーブル更新操作に影響します。
-
-詳細については、「Manually apply row filters and column masks」を参照してください。</div>
+                <div class="original-text"><p>You can now configure token-based rate limits on your model serving endpoints.</p>
+<p>See <a href="https://docs.databricks.com/aws/en/ai-gateway/configure-ai-gateway-endpoints">Configure AI Gateway on model serving endpoints</a> for how to configure token-based rate limits.</p></div>
+                <div class="translated-label">&gt; モデルサーバエンドポイントでトークンベースのレート制限を設定できるようになりました。
+モデルサーバエンドポイントでトークンベースのレート制限を設定する方法については、「Configure AI Gateway on model serving endpoints」を参照してください。</div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/august#access-requests-in-unity-catalog-public-preview" target="_blank">
-                <div class="article-title">Access requests in Unity Catalog (Public Preview)</div>
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/august#databricks-hosted-models-for-assistant-are-now-ga" target="_blank">
+                <div class="article-title">Databricks-hosted models for Assistant are now GA</div>
             </a>
-            <div class="translated-label">&gt; Unitycatalog (パブリックプレビュー)のアクセス要求</div>
-            <div class="date">August 11, 2025</div>
+            <div class="translated-label">&gt; データブリックスがホストするアシスタントのモデルが一般提供開始されました。</div>
+            <div class="date">August 14, 2025</div>
             <div class="content">
-                <div class="original-text"><p>You can now enable self-service access requests in Unity Catalog by configuring access request destinations on securable objects.</p>
-<p>Users can request access to Unity Catalog objects that they discover. These requests are sent to configured destinations, such as emails, Slack or Microsoft Teams channels, or they can be redirected to an internal access management system.</p>
-<p>You can also enable default email destinations so requests automatically go to the catalog or object owner’s email if no other destination is set. This ensures that access requests are delivered even when no destination is manually configured for an object.</p>
-<p>See <a href="https://docs.databricks.com/aws/en/data-governance/unity-catalog/manage-privileges/access-request-destinations">Manage access request destinations</a>.</p></div>
-                <div class="translated-label">&gt; <p>ユニティ・カタログのセキュアオブジェクトで、アクセスリクエストの宛先を設定することで、セルフサービスでアクセスリクエストを有効化できます。</p>
-<p>ユーザーは、発見したユニティ・カタログのオブジェクトに対してアクセスを要求できます。これらのリクエストは、メール、Slack、Microsoft Teamsのチャンネルなどの設定された宛先に送信されるか、内部のアクセス管理システムにリダイレクトされます。</p>
-<p>デフォルトのメール宛先を有効にすることで、オブジェクトに手動で宛先が設定されていない場合でも、アクセスリクエストがカタログまたはオブジェクトの所有者のメールに自動的に送信されるようになります。</p>
-<p><a href="https://docs.databricks.com/aws/en/data-governance/unity-catalog/manage-privileges/access-request-destinations">アクセスリクエストの宛先を管理する</a>を参照してください。</p></div>
+                <div class="original-text"><p>Databricks Assistant with Databricks-hosted models is now generally available on all cloud platforms. This version of the Assistant is fully powered by models hosted and served directly on Databricks infrastructure — at no additional cost to customers.</p>
+<p>See <a href="https://docs.databricks.com/aws/en/notebooks/use-databricks-assistant#db-hosted">Use Databricks-hosted models for AI-powered features</a>.</p></div>
+                <div class="translated-label">&gt; <p>クラウドプラットフォームで一般公開されているDatabricksアシスタントには、Databricksがホストするモデルが含まれています。このアシスタントのバージョンは、Databricksインフラストラクチャーでホストされ、提供されるモデルによって完全に駆動されており、顧客への追加コストはかかりません。</p>
+<p><a href="https://docs.databricks.com/aws/en/notebooks/use-databricks-assistant#db-hosted">AI機能付きのDatabricksホストモデルを使用する</a>をご覧ください。</p></div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/august#disable-legacy-features-for-new-workspaces-public-preview" target="_blank">
-                <div class="article-title">Disable legacy features for new workspaces (Public Preview)</div>
+            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2025#dashboard-table-visualization-and-chart-improvements" target="_blank">
+                <div class="article-title">Dashboard table visualization and chart improvements</div>
             </a>
-            <div class="translated-label">&gt; 無効化legacy機能for新しいワークスペース (パブリックプレビュー)</div>
-            <div class="date">August 11, 2025</div>
+            <div class="translated-label">&gt; ダッシュボードのテーブル表示とチャートの改善</div>
+            <div class="date">August 14, 2025</div>
             <div class="content">
-                <div class="original-text"><p>A new account console setting allows account admins to disable certain legacy features on new workspaces created in their account. If set, new workspaces will not include DBFS root and mounts, the Hive metastore, no-isolation shared compute, or Databricks Runtime versions prior to 13.3 LTS. If needed, workspace admins can still enable these legacy features from their workspace settings.</p>
-<p>See <a href="https://docs.databricks.com/aws/en/admin/account-settings/legacy-features">Disable access to legacy features in new workspaces</a>.</p></div>
-                <div class="translated-label">&gt; <p>新しいアカウントコンソールの設定により、アカウント管理者は、アカウントに作成された新しいワークスペースで特定の旧式の機能を無効にできるようになりました。設定された場合、新しいワークスペースにはDBFS ルートとマウント、Hive メタストア、分離されていない共有コンピューティング、または13.3 LTS より前のDatabricks Runtimeバージョンは含まれません。必要に応じて、ワークスペース管理者はワークスペースの設定から、これらの旧式の機能を有効にすることができます。</p>
-<p><a href="https://docs.databricks.com/aws/en/admin/account-settings/legacy-features">新しいワークスペースでの旧式の機能へのアクセスを無効にする</a>を参照してください。</p></div>
+                <div class="original-text"><ul>
+<li>
+<p><strong>Indicator for calculated measures in table editor:</strong> Added an indicator in the table visualization editor to show when calculated measures are not displayed in the table.</p>
+</li>
+<li>
+<p><strong>Fixed transparent headers in light mode:</strong> Resolved a bug where table visualization headers appeared transparent in light mode.</p>
+</li>
+<li>
+<p><strong>Fixed pivot table encoding width retention:</strong> Resolved an issue where custom encoding widths in pivot table visualizations were not retained after subsequent edits.</p>
+</li>
+<li>
+<p><strong>Measure fields appear before dimension fields:</strong> In the visualization field picker, measure fields now appear before dimension fields.</p>
+</li>
+<li>
+<p><strong>Funnel chart support in AI/BI dashboards:</strong> Funnel charts are now supported in AI/BI dashboards. See <a href="https://docs.databricks.com/aws/en/dashboards/visualizations/types#funnel">Funnel chart</a>.</p>
+</li>
+</ul></div>
+                <div class="translated-label">&gt; <ul>
+<li>
+<p><strong>テーブルエディターの計算メトリックの表示:</strong> テーブルビジュアライゼーションエディターに、計算メトリックがテーブルに表示されていない場合を示すインジケーターを追加しました。</p>
+</li>
+<li>
+<p><strong>ライトモードでのテーブルヘッダーの修正:</strong> ライトモードでテーブルビジュアライゼーションのヘッダーが透明になる不具合を修正しました。</p>
+</li>
+<li>
+<p><strong>ピボットテーブルのエンコーディング幅の保持:</strong> ピボットテーブルビジュアライゼーションで、カスタムのエンコーディング幅が後続の編集後も保持されるよう修正しました。</p>
+</li>
+<li>
+<p><strong>メトリックフィールドが前に表示されるようになりました:</strong> ビジュアライゼーションフィールドピッカーで、メトリックフィールドがディメンションフィールドの前に表示されるようになりました。</p>
+</li>
+<li>
+<p><strong>AI/BIダッシュボードでのファネルチャートのサポート:</strong> ファネルチャートがAI/BIダッシュボードでサポートされるようになりました。詳細は<a href="https://docs.databricks.com/aws/en/dashboards/visualizations/types#funnel">ファネルチャート</a>をご覧ください。</p>
+</li>
+</ul></div>
             </div>
         </div>
         
