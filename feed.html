@@ -23,10 +23,50 @@
         <h1>Databricks Docs Updates</h1>
     
         <div class="article">
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/august#partition-metadata-is-generally-available" target="_blank">
+                <div class="article-title">Partition metadata is generally available</div>
+            </a>
+            <div class="translated-label">&gt; パーティション メタデータは一般的に利用可能です。</div>
+            <div class="date">August 15, 2025</div>
+            <div class="content">
+                <div class="original-text"><p>You can now enable partition metadata logging, a partition discovery strategy for external tables registered to Unity Catalog. See <a href="https://docs.databricks.com/aws/en/tables/external-partition-discovery#metadata-logging">Use partition metadata logging</a>.</p></div>
+                <div class="translated-label">&gt; <p>ユニティ・カタログに登録された外部テーブルのパーティション検出戦略として、パーティション メタデータ ロギングを有効にできるようになりました。<a href="https://docs.databricks.com/aws/en/tables/external-partition-discovery#metadata-logging">パーティション メタデータ ロギングの使用</a>を参照してください。</p></div>
+            </div>
+        </div>
+        
+        <div class="article">
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/august#token-based-rate-limits-now-available-on-ai-gateway" target="_blank">
+                <div class="article-title">Token-based rate limits now available on AI Gateway</div>
+            </a>
+            <div class="translated-label">&gt; トークンベースのレート制限がAIゲートウェイで利用可能になりました。</div>
+            <div class="date">August 14, 2025</div>
+            <div class="content">
+                <div class="original-text"><p>You can now configure token-based rate limits on your model serving endpoints.</p>
+<p>See <a href="https://docs.databricks.com/aws/en/ai-gateway/configure-ai-gateway-endpoints">Configure AI Gateway on model serving endpoints</a> for how to configure token-based rate limits.</p></div>
+                <div class="translated-label">&gt; あなたは今、モデルサービングエンドポイントのトークンベースのレート制限を設定することができます。
+モデルサービングエンドポイントのトークンベースのレート制限の設定方法については、「Configure AI Gateway on model serving endpoints」をご覧ください。</div>
+            </div>
+        </div>
+        
+        <div class="article">
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/august#databricks-hosted-models-for-assistant-are-now-ga" target="_blank">
+                <div class="article-title">Databricks-hosted models for Assistant are now GA</div>
+            </a>
+            <div class="translated-label">&gt; データブリックスがホストするAssistantのモデルがGAに移行しました。</div>
+            <div class="date">August 14, 2025</div>
+            <div class="content">
+                <div class="original-text"><p>Databricks Assistant with Databricks-hosted models is now generally available on all cloud platforms. This version of the Assistant is fully powered by models hosted and served directly on Databricks infrastructure — at no additional cost to customers.</p>
+<p>See <a href="https://docs.databricks.com/aws/en/notebooks/use-databricks-assistant#db-hosted">Use Databricks-hosted models for AI-powered features</a>.</p></div>
+                <div class="translated-label">&gt; <p>データブリックスのホストモデルを使用したデータブリックスアシスタントが、すべてのクラウドプラットフォームで一般公開されました。このアシスタントのバージョンは、データブリックスのインフラストラクチャーでホストおよび提供されるモデルによって完全に動作しており、お客様に追加料金はかかりません。</p>
+<p><a href="https://docs.databricks.com/aws/en/notebooks/use-databricks-assistant#db-hosted">AIパワードな機能のためにデータブリックスホストモデルを使用する</a>をご覧ください。</p></div>
+            </div>
+        </div>
+        
+        <div class="article">
             <a href="https://docs.databricks.com/aws/en/sql/release-notes/2025#databricks-sql-version-202525-is-now-available-in-preview" target="_blank">
                 <div class="article-title">Databricks SQL version 2025.25 is now available in Preview</div>
             </a>
-            <div class="translated-label">&gt; データブリックス SQL バージョン 2025.25がプレビューで利用可能になりました。</div>
+            <div class="translated-label">&gt; プレビュー版の Databricks SQL バージョン 2025.25 がご利用可能になりました。</div>
             <div class="date">August 14, 2025</div>
             <div class="content">
                 <div class="original-text"><p>Databricks SQL version 2025.25 is now available in the <strong>Preview</strong> channel. Review the following section to learn about new features and behavioral changes.</p>
@@ -44,21 +84,21 @@
 <p>Databricks now throws an <code>AnalysisException</code> if a <code>CHECK</code> constraint expression cannot be resolved during constraint validation.</p>
 <h4>Stricter rules for stream-stream joins in append mode</h4>
 <p>Databricks now disallows streaming queries in append mode that use a stream-stream join followed by window aggregation, unless watermarks are defined on both sides. Queries without proper watermarks can produce non-final results, violating append mode guarantees.</p></div>
-                <div class="translated-label">&gt; <p>Databricks SQLバージョン2025.25が<strong>プレビュー</strong>チャンネルで利用可能となりました。新機能とベヘイビアの変更点を以下に確認してください。</p>
+                <div class="translated-label">&gt; <p>Databricks SQL バージョン 2025.25が<strong>プレビュー</strong>チャンネルで利用可能になりました。新機能と動作の変更について以下をご確認ください。</p>
 <h4>拡張された空間SQL式とGEOMETRYおよびGEOGRAPHYデータ型</h4>
-<p>地理空間データを組み込みの<code>GEOMETRY</code>および<code>GEOGRAPHY</code>列に保存し、空間クエリのパフォーマンスを向上させることができます。このリリースでは、データのインポート、エクスポート、測定、構築、編集、検証、変換、空間結合での位相関係の判断など、80を超える新しい空間SQL式が追加されています。<a href="https://docs.databricks.com/aws/en/sql/language-manual/sql-ref-st-geospatial-functions">ST地理空間関数</a>、<a href="https://docs.databricks.com/aws/en/sql/language-manual/data-types/geography-type"><code>GEOGRAPHY</code>型</a>、<a href="https://docs.databricks.com/aws/en/sql/language-manual/data-types/geometry-type"><code>GEOMETRY</code>型</a>をご確認ください。</p>
-<h4>スキーマおよびカタログレベルの既定のコレーション設定</h4>
-<p>スキーマやカタログの既定のコレーションを設定できるようになりました。これによりスキーマやカタログ内で作成されるすべてのオブジェクトに一貫したコレーション動作を定義できます。</p>
-<h4><code>VARIANT</code>でのJSONオプションの改善</h4>
-<p><code>from_json</code>および<code>to_json</code>関数が、トップレベルの<code>VARIANT</code>スキーマでJSONオプションを正しく適用するようになりました。これにより、他のサポートされているデータ型との振る舞いの一貫性が確保されます。</p>
-<h4>TIMESTAMP WITHOUT TIME ZONE構文のサポート</h4>
-<p><code>TIMESTAMP_NTZ</code>の代わりに<code>TIMESTAMP WITHOUT TIME ZONE</code>を指定できるようになりました。この変更によりSQL Standardとの互換性が向上しました。</p>
-<h4>サブクエリの相関の問題を解決</h4>
-<p>Databricksは、サブクエリと外部クエリの間で意味的に等しい集計式を誤って相関させなくなりました。これにより、誤ったクエリ結果が生成されることがなくなりました。</p>
-<h4><code>CHECK</code>制約の無効化に対するエラー</h4>
-<p>Databricksは、<code>CHECK</code>制約式が制約検証中に解決できない場合に<code>AnalysisException</code>をスローするようになりました。</p>
-<h4>アペンドモードでのストリーム-ストリーム結合の厳格なルール</h4>
-<p>Databricksは、ウォーターマークが両側に定義されていない限り、ストリームクエリにアペンドモードでストリーム-ストリーム結合と後続のウィンドウ集計を使用することを禁止するようになりました。適切なウォーターマーク</div>
+<p>空間クエリの性能向上のため、組み込みの<code>GEOMETRY</code>および<code>GEOGRAPHY</code>列に地理空間データを保存できるようになりました。このリリースでは80以上の新しい空間SQL式が追加され、インポート、エクスポート、測定、構築、編集、検証、変換、空間結合による位相関係の判定などの機能が利用できます。<a href="https://docs.databricks.com/aws/en/sql/language-manual/sql-ref-st-geospatial-functions">ST地理空間関数</a>、<a href="https://docs.databricks.com/aws/en/sql/language-manual/data-types/geography-type"><code>GEOGRAPHY</code>型</a>、<a href="https://docs.databricks.com/aws/en/sql/language-manual/data-types/geometry-type"><code>GEOMETRY</code>型</a>をご確認ください。</p>
+<h4>スキーマおよびカタログレベルのデフォルトコレーションのサポート</h4>
+<p>スキーマおよびカタログのデフォルトコレーションを設定できるようになりました。これにより、スキーマまたはカタログ内で作成されるすべてのオブジェクトに一貫したコレーション動作を適用できます。</p>
+<h4><code>VARIANT</code>を使用したJSONオプションの適切な処理</h4>
+<p><code>from_json</code>および<code>to_json</code>関数は、トップレベルの<code>VARIANT</code>スキーマでJSONオプションを正しく適用するようになりました。これにより、他のサポートされているデータ型との動作の一貫性が確保されます。</p>
+<h4><code>TIMESTAMP WITHOUT TIME ZONE</code>構文のサポート</h4>
+<p><code>TIMESTAMP_NTZ</code>の代わりに<code>TIMESTAMP WITHOUT TIME ZONE</code>を指定できるようになりました。この変更により、SQL標準との互換性が向上しました。</p>
+<h4>相関サブクエリの問題の解決</h4>
+<p>Databricksは、サブクエリと外部クエリの間で意味的に等しい集計式の相関を誤って行うことがなくなりました。以前は、これが原因で誤った問い合わせ結果が生成される可能性がありました。</p>
+<h4>無効な<code>CHECK</code>制約エラーの出力</h4>
+<p>Databricksは、制約検証中に<code>CHECK</code>制約式が解決できない場合に<code>AnalysisException</code>を出力するようになりました。</p>
+<h4>追加モードでのストリーム-ストリーム結合の厳格なルール</h4>
+<p>Databricksは、両側にウォーターマークが定義されていない限り、追加モードのストリーミングクエリでストリーム-ストリーム結合に続いて窓関数集計を使用することを</div>
             </div>
         </div>
         
@@ -66,83 +106,11 @@
             <a href="https://docs.databricks.com/aws/en/sql/release-notes/2025#new-sql-editor-is-generally-available" target="_blank">
                 <div class="article-title">New SQL editor is generally available</div>
             </a>
-            <div class="translated-label">&gt; 新しい SQL エディターが一般に利用可能になりました。</div>
+            <div class="translated-label">&gt; 新しいSQL エディターが一般に利用可能になりました。</div>
             <div class="date">August 14, 2025</div>
             <div class="content">
                 <div class="original-text"><p>The new SQL editor is now generally available. The new SQL editor provides a unified authoring environment with support for multiple statement results, inline execution history, real-time collaboration, enhanced Databricks Assistant integration, and additional productivity features. See <a href="https://docs.databricks.com/aws/en/sql/user/sql-editor">Write queries and explore data in the new SQL editor</a>.</p></div>
-                <div class="translated-label">&gt; <p>新しいSQL編集者が一般的に利用可能になりました。新しいSQL編集者は、複数のステートメント結果、インラインの実行履歴、リアルタイムのコラボレーション、強化されたDatabricks Assistantとの統合、および追加の生産性機能をサポートする統一されたオーサリング環境を提供します。<a href="https://docs.databricks.com/aws/en/sql/user/sql-editor">新しいSQL編集者でクエリを記述してデータを探索してください</a>。</p></div>
-            </div>
-        </div>
-        
-        <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/august#token-based-rate-limits-now-available-on-ai-gateway" target="_blank">
-                <div class="article-title">Token-based rate limits now available on AI Gateway</div>
-            </a>
-            <div class="translated-label">&gt; トークンベースのレートリミットがAIゲートウェイで利用可能になりました。</div>
-            <div class="date">August 14, 2025</div>
-            <div class="content">
-                <div class="original-text"><p>You can now configure token-based rate limits on your model serving endpoints.</p>
-<p>See <a href="https://docs.databricks.com/aws/en/ai-gateway/configure-ai-gateway-endpoints">Configure AI Gateway on model serving endpoints</a> for how to configure token-based rate limits.</p></div>
-                <div class="translated-label">&gt; モデルサーバエンドポイントでトークンベースのレート制限を設定できるようになりました。
-モデルサーバエンドポイントでトークンベースのレート制限を設定する方法については、「Configure AI Gateway on model serving endpoints」を参照してください。</div>
-            </div>
-        </div>
-        
-        <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/august#databricks-hosted-models-for-assistant-are-now-ga" target="_blank">
-                <div class="article-title">Databricks-hosted models for Assistant are now GA</div>
-            </a>
-            <div class="translated-label">&gt; データブリックスがホストするアシスタントのモデルが一般提供開始されました。</div>
-            <div class="date">August 14, 2025</div>
-            <div class="content">
-                <div class="original-text"><p>Databricks Assistant with Databricks-hosted models is now generally available on all cloud platforms. This version of the Assistant is fully powered by models hosted and served directly on Databricks infrastructure — at no additional cost to customers.</p>
-<p>See <a href="https://docs.databricks.com/aws/en/notebooks/use-databricks-assistant#db-hosted">Use Databricks-hosted models for AI-powered features</a>.</p></div>
-                <div class="translated-label">&gt; <p>クラウドプラットフォームで一般公開されているDatabricksアシスタントには、Databricksがホストするモデルが含まれています。このアシスタントのバージョンは、Databricksインフラストラクチャーでホストされ、提供されるモデルによって完全に駆動されており、顧客への追加コストはかかりません。</p>
-<p><a href="https://docs.databricks.com/aws/en/notebooks/use-databricks-assistant#db-hosted">AI機能付きのDatabricksホストモデルを使用する</a>をご覧ください。</p></div>
-            </div>
-        </div>
-        
-        <div class="article">
-            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2025#dashboard-table-visualization-and-chart-improvements" target="_blank">
-                <div class="article-title">Dashboard table visualization and chart improvements</div>
-            </a>
-            <div class="translated-label">&gt; ダッシュボードのテーブル表示とチャートの改善</div>
-            <div class="date">August 14, 2025</div>
-            <div class="content">
-                <div class="original-text"><ul>
-<li>
-<p><strong>Indicator for calculated measures in table editor:</strong> Added an indicator in the table visualization editor to show when calculated measures are not displayed in the table.</p>
-</li>
-<li>
-<p><strong>Fixed transparent headers in light mode:</strong> Resolved a bug where table visualization headers appeared transparent in light mode.</p>
-</li>
-<li>
-<p><strong>Fixed pivot table encoding width retention:</strong> Resolved an issue where custom encoding widths in pivot table visualizations were not retained after subsequent edits.</p>
-</li>
-<li>
-<p><strong>Measure fields appear before dimension fields:</strong> In the visualization field picker, measure fields now appear before dimension fields.</p>
-</li>
-<li>
-<p><strong>Funnel chart support in AI/BI dashboards:</strong> Funnel charts are now supported in AI/BI dashboards. See <a href="https://docs.databricks.com/aws/en/dashboards/visualizations/types#funnel">Funnel chart</a>.</p>
-</li>
-</ul></div>
-                <div class="translated-label">&gt; <ul>
-<li>
-<p><strong>テーブルエディターの計算メトリックの表示:</strong> テーブルビジュアライゼーションエディターに、計算メトリックがテーブルに表示されていない場合を示すインジケーターを追加しました。</p>
-</li>
-<li>
-<p><strong>ライトモードでのテーブルヘッダーの修正:</strong> ライトモードでテーブルビジュアライゼーションのヘッダーが透明になる不具合を修正しました。</p>
-</li>
-<li>
-<p><strong>ピボットテーブルのエンコーディング幅の保持:</strong> ピボットテーブルビジュアライゼーションで、カスタムのエンコーディング幅が後続の編集後も保持されるよう修正しました。</p>
-</li>
-<li>
-<p><strong>メトリックフィールドが前に表示されるようになりました:</strong> ビジュアライゼーションフィールドピッカーで、メトリックフィールドがディメンションフィールドの前に表示されるようになりました。</p>
-</li>
-<li>
-<p><strong>AI/BIダッシュボードでのファネルチャートのサポート:</strong> ファネルチャートがAI/BIダッシュボードでサポートされるようになりました。詳細は<a href="https://docs.databricks.com/aws/en/dashboards/visualizations/types#funnel">ファネルチャート</a>をご覧ください。</p>
-</li>
-</ul></div>
+                <div class="translated-label">&gt; 新しいSQLエディターが一般に利用可能になりました。新しいSQLエディターは、複数のステートメント結果、インラインの実行履歴、リアルタイムのコラボレーション、強化されたDatabricksアシスタントの統合、および追加の生産性機能をサポートする統一された作成環境を提供します。<a href="https://docs.databricks.com/aws/en/sql/user/sql-editor">新しいSQLエディターでクエリを記述してデータを探索してください</a>。</div>
             </div>
         </div>
         
