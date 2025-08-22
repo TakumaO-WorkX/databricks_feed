@@ -23,93 +23,107 @@
         <h1>Databricks Docs Updates</h1>
     
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/august#serverless-compute-runtime-updated-to-171" target="_blank">
-                <div class="article-title">Serverless compute runtime updated to 17.1</div>
+            <a href="https://docs.databricks.com/aws/en/sql/release-notes/2025#databricks-sql-version-202525-is-rolling-out-in-current" target="_blank">
+                <div class="article-title">Databricks SQL version 2025.25 is rolling out in Current</div>
             </a>
-            <div class="translated-label">&gt; サーバーレスコンピューティングランタイムが17.1に更新されました。</div>
-            <div class="date">August 19, 2025</div>
+            <div class="translated-label">&gt; データブリックス SQLバージョン 2025.25が現行環境にロールアウトされています。</div>
+            <div class="date">August 21, 2025</div>
             <div class="content">
-                <div class="original-text"><p>Serverless compute for notebooks, jobs, and Lakeflow Declarative Pipelines now uses an upgraded runtime, which roughly corresponds to Databricks Runtime 17.1. See <a href="https://docs.databricks.com/aws/en/release-notes/serverless">Serverless compute release notes</a>.</p></div>
-                <div class="translated-label">&gt; <p>ノートブック、ジョブ、およびLakeflow宣言型パイプラインの無サーバーコンピューティングは、おおよそDatabricks Runtime 17.1に相当するアップグレードされたランタイムを使用するようになりました。<a href="https://docs.databricks.com/aws/en/release-notes/serverless">無サーバーコンピューティングのリリースノート</a>をご覧ください。</p></div>
+                <div class="original-text"><p>Databricks SQL version 2025.25 is rolling out to the <strong>Current</strong> channel from August 20th, 2025 to August 28th, 2025. See features in <a href="https://docs.databricks.com/aws/en/sql/release-notes/2025#2025-25-features">2025.25</a>.</p></div>
+                <div class="translated-label">&gt; データブリッククスSQL バージョン2025.25が2025年8月20日から2025年8月28日の間に<strong>現在</strong>のチャンネルにリリースされます。<a href="https://docs.databricks.com/aws/en/sql/release-notes/2025#2025-25-features">2025.25</a>の機能をご確認ください。</div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/august#set-the-run-as-user-for-lakeflow-declarative-pipelines" target="_blank">
-                <div class="article-title">Set the run-as user for Lakeflow Declarative Pipelines</div>
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/august#databricks-assistant-integrated-with-compute" target="_blank">
+                <div class="article-title">Databricks Assistant integrated with compute</div>
             </a>
-            <div class="translated-label">&gt; Lakeflow宣言的パイプラインのランアズユーザーを設定する</div>
-            <div class="date">August 18, 2025</div>
+            <div class="translated-label">&gt; データブリックス・アシスタント、コンピューティングと連携</div>
+            <div class="date">August 21, 2025</div>
             <div class="content">
-                <div class="original-text"><p>You can now change the identity that a pipeline uses to run updates and the owner of tables published by the pipeline. This feature allows you to set a service principal as the run-as identity, which is safer and more reliable than using user accounts for automated workloads. Common use cases include recovering pipelines when the original owner was deactivated and deploying pipelines with service principals as a best practice.</p>
-<p>For information about setting the run-as user, see <a href="https://docs.databricks.com/aws/en/dlt/configure-pipeline#set-the-run-as-user">Set the run-as user</a>.</p></div>
-                <div class="translated-label">&gt; パイプラインがアップデートを実行し、パイプラインによって公開されるテーブルの所有者を変更できるようになりました。この機能により、自動化されたワークロードのユーザーアカウントを使用するよりも安全で信頼性の高いサービスプリンシパルをrun-asアイデンティティとして設定できます。一般的な使用例には、元の所有者が無効になった場合のパイプラインの復旧や、ベストプラクティスとしてサービスプリンシパルでパイプラインを展開することが含まれます。
+                <div class="original-text"><p>Users can now chat with Databricks Assistant on some compute pages. Use the Assistant chat panel to help you create a new compute resource, pool, and policy. Or, ask the Assistant questions about the compute resource, like “Is this compute resource Unity Catalog-enabled?” or “What’s the current compute policy?”</p>
+<p>To learn more about chatting with the Assitant, see <a href="https://docs.databricks.com/aws/en/notebooks/use-databricks-assistant#chat">Tour of the Assistant pane</a>. To learn more about compute resources, see <a href="https://docs.databricks.com/aws/en/compute">Compute</a>.</p></div>
+                <div class="translated-label">&gt; ユーザーは一部のコンピューティング ページで Databricks アシスタントとチャットできるようになりました。アシスタントのチャット パネルを使用して、新しいコンピューティング リソース、プール、およびポリシーの作成を支援してもらえます。また、「このコンピューティング リソースは Unity Catalog 対応ですか?」や「現在のコンピューティング ポリシーは何ですか?」などのコンピューティング リソースに関する質問をアシスタントに尋ねることができます。
 
-run-asユーザーの設定について詳しくは、「Set the run-as user」を参照してください。</div>
+アシスタントとのチャットについて詳しく学びたい場合は、「アシスタント ペインの概要」をご覧ください。コンピューティング リソースについて詳しく学びたい場合は、「コンピューティング」をご覧ください。</div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/august#mosaic-ai-vector-search-reranker-public-preview" target="_blank">
-                <div class="article-title">Mosaic AI Vector Search reranker Public Preview</div>
+            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2025#dashboard-sorting-and-formatting-improvements" target="_blank">
+                <div class="article-title">Dashboard sorting and formatting improvements</div>
             </a>
-            <div class="translated-label">&gt; モザイク AI ベクトル検索順位付けパブリックプレビュー</div>
-            <div class="date">August 15, 2025</div>
+            <div class="translated-label">&gt; ダッシュボードの並べ替えと書式設定の改善</div>
+            <div class="date">August 21, 2025</div>
             <div class="content">
-                <div class="original-text"><p>Mosaic AI Vector Search now offers reranking to help improve retrieval quality. For details, see <a href="https://docs.databricks.com/aws/en/generative-ai/create-query-vector-search#rerank">Use the reranker in a query</a>.</p></div>
-                <div class="translated-label">&gt; モザイクAIベクトル検索では、検索品質の向上をサポートするためのランキング処理を提供しています。詳細については、<a href="https://docs.databricks.com/aws/en/generative-ai/create-query-vector-search#rerank">クエリでのランキング処理の利用</a>をご覧ください。</div>
+                <div class="original-text"><ul>
+<li>
+<p><strong>Fixed sorting on temporal categorical axes:</strong> Resolved an issue where sorting did not work correctly on temporal categorical axes.</p>
+</li>
+<li>
+<p><strong>Numeric formatting as Bytes:</strong> Users can now format numeric values as Bytes.</p>
+</li>
+<li>
+<p><strong>Totals in histogram tooltips:</strong> Histograms now display totals in tooltips.</p>
+</li>
+<li>
+<p><strong>Axis gridlines respect custom background colors:</strong> Gridlines now automatically update based on custom color palette selections for background color.</p>
+</li>
+</ul></div>
+                <div class="translated-label">&gt; <ul>
+<li>
+<p><strong>時間的カテゴリ軸の固定ソート:</strong> カテゴリ軸の時間的ソートが正しく機能しない問題を解決しました。</p>
+</li>
+<li>
+<p><strong>数値をバイトとしてフォーマット:</strong> ユーザーは数値をバイトでフォーマットできるようになりました。</p>
+</li>
+<li>
+<p><strong>ヒストグラムのツールチップにトータルを表示:</strong> ヒストグラムにツールチップでトータルを表示するようになりました。</p>
+</li>
+<li>
+<p><strong>カスタムの背景色に合わせた軸グリッド線:</strong> グリッド線はカスタムのカラーパレットの選択に基づいて自動的に更新されます。</p>
+</li>
+</ul></div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/august#partition-metadata-is-generally-available" target="_blank">
-                <div class="article-title">Partition metadata is generally available</div>
+            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2025#genie-sql-validation-and-space-management" target="_blank">
+                <div class="article-title">Genie SQL validation and space management</div>
             </a>
-            <div class="translated-label">&gt; パーティション メタデータは一般的に利用可能です。</div>
-            <div class="date">August 15, 2025</div>
+            <div class="translated-label">&gt; SQL 検証と空間管理</div>
+            <div class="date">August 21, 2025</div>
             <div class="content">
-                <div class="original-text"><p>You can now enable partition metadata logging, a partition discovery strategy for external tables registered to Unity Catalog. See <a href="https://docs.databricks.com/aws/en/tables/external-partition-discovery#metadata-logging">Use partition metadata logging</a>.</p></div>
-                <div class="translated-label">&gt; <p>パーティションメタデータログの有効化、Unity Catalogに登録された外部テーブルのためのパーティション検出戦略を今すぐ利用できます。 <a href="https://docs.databricks.com/aws/en/tables/external-partition-discovery#metadata-logging">パーティションメタデータログの使用</a>を参照してください。</p></div>
+                <div class="original-text"><ul>
+<li>
+<p><strong>SQL expression validation for join relationships:</strong> Added validation logic to help authors write correct SQL join relationships. If a join statement contains errors, the validation logic flags them.</p>
+</li>
+<li>
+<p><strong>Fixed cloning issue for spaces:</strong> Resolved a bug where cloned spaces did not correctly copy over the associated tables.</p>
+</li>
+</ul></div>
+                <div class="translated-label">&gt; <ul>
+<li>
+<p><strong>SQLの式の結合関係の検証:</strong> 正しいSQLの結合関係を作成できるように検証ロジックを追加しました。結合文に誤りがある場合、検証ロジックがそれらを示します。</p>
+</li>
+<li>
+<p><strong>スペースのクローニングの問題を修正:</strong> クローンしたスペースに関連するテーブルが正しくコピーされない不具合を修正しました。</p>
+</li>
+</ul></div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/sql/release-notes/2025#databricks-sql-version-202525-is-now-available-in-preview" target="_blank">
-                <div class="article-title">Databricks SQL version 2025.25 is now available in Preview</div>
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/august#serverless-private-git-public-preview" target="_blank">
+                <div class="article-title">Serverless private git (Public Preview)</div>
             </a>
-            <div class="translated-label">&gt; データブリックス SQL バージョン 2025.25がプレビューで利用可能になりました。</div>
-            <div class="date">August 14, 2025</div>
+            <div class="translated-label">&gt; サーバーレスプライベートGit（パブリックプレビュー）</div>
+            <div class="date">August 20, 2025</div>
             <div class="content">
-                <div class="original-text"><p>Databricks SQL version 2025.25 is now available in the <strong>Preview</strong> channel. Review the following section to learn about new features and behavioral changes.</p>
-<h4>Expanded spatial SQL expressions and GEOMETRY and GEOGRAPHY data types</h4>
-<p>You can now store geospatial data in built-in <code>GEOMETRY</code> and <code>GEOGRAPHY</code> columns for improved performance of spatial queries. This release adds more than 80 new spatial SQL expressions, including functions for importing, exporting, measuring, constructing, editing, validating, transforming, and determining topological relationships with spatial joins. See <a href="https://docs.databricks.com/aws/en/sql/language-manual/sql-ref-st-geospatial-functions">ST geospatial functions</a>, <a href="https://docs.databricks.com/aws/en/sql/language-manual/data-types/geography-type"><code>GEOGRAPHY</code> type</a>, and <a href="https://docs.databricks.com/aws/en/sql/language-manual/data-types/geometry-type"><code>GEOMETRY</code> type</a>.</p>
-<h4>Support for schema and catalog level default collation</h4>
-<p>You can now set a default collation for schemas and catalogs. This allows you to define a collation that applies to all objects created within the schema or catalog, ensuring consistent collation behavior across your data.</p>
-<h4>Better handling of JSON options with <code>VARIANT</code></h4>
-<p>The <code>from_json</code> and <code>to_json</code> functions now correctly apply JSON options when working with top-level <code>VARIANT</code> schemas. This ensures consistent behavior with other supported data types.</p>
-<h4>Support for TIMESTAMP WITHOUT TIME ZONE syntax</h4>
-<p>You can now specify <code>TIMESTAMP WITHOUT TIME ZONE</code> instead of <code>TIMESTAMP_NTZ</code>. This change improves compatibility with the SQL Standard.</p>
-<h4>Resolved subquery correlation issue</h4>
-<p>Databricks no longer incorrectly correlates semantically equal aggregate expressions between a subquery and its outer query. Previously, this could lead to incorrect query results.</p>
-<h4>Error thrown for invalid <code>CHECK</code> constraints</h4>
-<p>Databricks now throws an <code>AnalysisException</code> if a <code>CHECK</code> constraint expression cannot be resolved during constraint validation.</p>
-<h4>Stricter rules for stream-stream joins in append mode</h4>
-<p>Databricks now disallows streaming queries in append mode that use a stream-stream join followed by window aggregation, unless watermarks are defined on both sides. Queries without proper watermarks can produce non-final results, violating append mode guarantees.</p></div>
-                <div class="translated-label">&gt; <p>「Databricks SQL バージョン 2025.25が<strong>プレビュー</strong>チャンネルで利用可能になりました。新機能と動作の変更点について以下をご確認ください。</p>
-<h4>拡張された空間SQL式、GEOMETRYおよびGEOGRAPHYデータ型</h4>
-<p>地理空間データを組み込みの<code>GEOMETRY</code>および<code>GEOGRAPHY</code>列に保存し、空間クエリのパフォーマンスを向上させることができるようになりました。このリリースでは、空間結合での関数を含む80以上の新しい空間SQL式が追加されました。<a href="https://docs.databricks.com/aws/en/sql/language-manual/sql-ref-st-geospatial-functions">ST地理空間関数</a>、<a href="https://docs.databricks.com/aws/en/sql/language-manual/data-types/geography-type"><code>GEOGRAPHY</code>型</a>、<a href="https://docs.databricks.com/aws/en/sql/language-manual/data-types/geometry-type"><code>GEOMETRY</code>型</a>をご確認ください。</p>
-<h4>スキーマおよびカタログレベルのデフォルトコレーションのサポート</h4>
-<p>スキーマおよびカタログのデフォルトコレーションを設定できるようになりました。これにより、スキーマまたはカタログ内で作成されるすべてのオブジェクトに一貫したコレーション動作を適用できます。</p>
-<h4><code>VARIANT</code>でのJSONオプションの改善</h4>
-<p><code>from_json</code>および<code>to_json</code>関数が、トップレベルの<code>VARIANT</code>スキーマでJSONオプションを正しく適用するようになりました。これにより、他のサポートされているデータ型との動作の一貫性が確保されます。</p>
-<h4><code>TIMESTAMP WITHOUT TIME ZONE</code>構文のサポート</h4>
-<p><code>TIMESTAMP_NTZ</code>の代わりに<code>TIMESTAMP WITHOUT TIME ZONE</code>を指定できるようになりました。この変更により、SQL標準との互換性が向上しました。</p>
-<h4>サブクエリの相関関係の修正</h4>
-<p>Databricksは、サブクエリと外部クエリの間で意味的に等しい集計式を誤って相関させることがなくなりました。以前は、これにより不正な結果が生じることがありました。</p>
-<h4><code>CHECK</code>制約の無効なエラーの発生</h4>
-<p>Databricksは、<code>CHECK</code>制約式が制約検証中に解決できない場合に<code>AnalysisException</code>を発生させるようになりました。</p>
-<h4>アペンドモードのストリーム-ストリーム結合の厳格なルール</h4>
-<p>Databricksは、ウォーターマークが両側に定義されていない限り、ストリーム-ストリーム結合と続くウィンドウ集計を使用するアペンドモードのストリーミングクエリを許可しなくなりました。適切なウォーターマークがないクエリは、アペンドモードの保証に反する最終</div>
+                <div class="original-text"><p>You can now connect a Databricks workspace to a private Git server using serverless compute and AWS PrivateLink.</p>
+<p>See <a href="https://docs.databricks.com/aws/en/repos/serverless-private-git">Getting Started with Databricks Serverless Private Git</a></p></div>
+                <div class="translated-label">&gt; <p>データブリックスのワークスペースをAWSのPrivateLink経由でサーバーレスコンピューティングを使用して、プライベートなGitサーバーに接続できます。</p>
+<p><a href="https://docs.databricks.com/aws/en/repos/serverless-private-git">データブリックスのサーバーレスプライベートGitの使い始め</a>をご覧ください。</p></div>
             </div>
         </div>
         
