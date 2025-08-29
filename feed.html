@@ -23,72 +23,76 @@
         <h1>Databricks Docs Updates</h1>
     
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/august#oauth-token-federation-is-now-ga" target="_blank">
-                <div class="article-title">OAuth token federation is now GA</div>
+            <a href="https://docs.databricks.com/aws/en/sql/release-notes/2025#default-warehouse-setting-is-now-available-in-beta" target="_blank">
+                <div class="article-title">Default warehouse setting is now available in Beta</div>
             </a>
-            <div class="translated-label">&gt; OAuth トークン連携が一般公開されました</div>
-            <div class="date">August 26, 2025</div>
+            <div class="translated-label">&gt; デフォルトのウェアハウス設定がベータ版で利用可能になりました。</div>
+            <div class="date">August 28, 2025</div>
             <div class="content">
-                <div class="original-text"><p>OAuth token federation is now generally available. Token federation enables you to securely access Databricks APIs using tokens from your identity provider (IdP). You can configure token federation policies directly in the Databricks UI, or using the Databricks CLI or REST API.</p>
-<p>See <a href="https://docs.databricks.com/aws/en/dev-tools/auth/oauth-federation-policy">Configure a federation policy</a>.</p></div>
-                <div class="translated-label">&gt; OAuth トークンフェデレーションは現在一般利用可能になっています。トークンフェデレーションにより、ID プロバイダー (IdP) からのトークンを使用して、Databricks API にセキュアにアクセスできるようになります。Databricks UI、Databricks CLI、または REST API を使用して、トークンフェデレーションポリシーを直接設定できます。
+                <div class="original-text"><p>Set a default warehouse that will be automatically selected in the compute selector across the SQL editor, AI/BI dashboards, AI/BI Genie, Alerts, and Catalog Explorer. Individual users can override this setting by selecting a different warehouse before running a query. They can also define their own user-level default warehouse to apply across their sessions. See <a href="https://docs.databricks.com/aws/en/admin/sql#default-warehouse">Set a default SQL warehouse for the workspace</a> and <a href="https://docs.databricks.com/aws/en/compute/sql-warehouse/create#user-default">Set a user-level default warehouse</a>.</p></div>
+                <div class="translated-label">&gt; SQLエディター、AI/BIダッシュボード、AI/BIジーニー、アラート、およびカタログエクスプローラーにわたって自動的に選択される既定のウェアハウスを設定してください。個々のユーザーは、クエリを実行する前に別のウェアハウスを選択することで、この設定を上書きすることができます。また、自分のセッションにわたって適用される独自のユーザーレベルの既定のウェアハウスを定義することもできます。詳細については、「ワークスペースの既定のSQLウェアハウスの設定」と「ユーザーレベルの既定のウェアハウスの設定」を参照してください。</div>
+            </div>
+        </div>
+        
+        <div class="article">
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/august#admins-can-now-manage-a-workspaces-serverless-base-environments-public-preview" target="_blank">
+                <div class="article-title">Admins can now manage a workspace's serverless base environments (Public Preview)</div>
+            </a>
+            <div class="translated-label">&gt; サーバーレスベース環境(パブリックプレビュー)のワークスペースを管理できるようになりました。</div>
+            <div class="date">August 28, 2025</div>
+            <div class="content">
+                <div class="original-text"><p>Base environments are custom environment specifications for serverless notebooks that define a serverless environment version and a set of dependencies.</p>
+<p>Workspace admins can now create and manage the base environments available in their workspace. They can also set a default base environment for all new serverless notebooks. This allows workspace users to quickly start working in a consistent, cached environment.</p>
+<p>See <a href="https://docs.databricks.com/aws/en/admin/workspace-settings/base-environment">Manage serverless base environments</a>.</p></div>
+                <div class="translated-label">&gt; ベースの環境は、サーバーレスのノートブックのためのカスタムの環境仕様で、サーバーレスの環境のバージョンと依存関係のセットを定義するものです。
 
-詳細については、<a href="https://docs.databricks.com/aws/en/dev-tools/auth/oauth-federation-policy">フェデレーションポリシーの設定</a>を参照してください。</div>
-            </div>
-        </div>
-        
-        <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/august#new-table-property-to-control-delta-table-compression" target="_blank">
-                <div class="article-title">New table property to control Delta table compression</div>
-            </a>
-            <div class="translated-label">&gt; 新しいテーブルプロパティーによるデルタテーブルの圧縮の制御</div>
-            <div class="date">August 26, 2025</div>
-            <div class="content">
-                <div class="original-text"><p>You can now explicitly set the compression codec for a Delta table using the <code>delta.parquet.compression.codec</code> table property. This property ensures that all future writes to the table use the chosen codec. See <a href="https://docs.databricks.com/aws/en/delta/table-properties">Delta table properties reference</a>.</p></div>
-                <div class="translated-label">&gt; <p>デルタ テーブルの圧縮コーデックを明示的に設定できるようになりました。<code>delta.parquet.compression.codec</code> テーブル プロパティを使用してください。このプロパティにより、テーブルへの今後すべての書き込みで選択されたコーデックが使用されます。<a href="https://docs.databricks.com/aws/en/delta/table-properties">デルタ テーブルのプロパティのリファレンス</a>をご覧ください。</p></div>
-            </div>
-        </div>
-        
-        <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/august#data-type-mapping-update-for-synced-tables" target="_blank">
-                <div class="article-title">Data type mapping update for synced tables</div>
-            </a>
-            <div class="translated-label">&gt; データ型マッピング更新同期されたテーブルのため</div>
-            <div class="date">August 25, 2025</div>
-            <div class="content">
-                <div class="original-text"><p>For newly created synced tables, <code>TIMESTAMP</code> types in source tables are now mapped to <code>TIMESTAMP WITH TIMEZONE</code> in synced tables. In existing synced tables, <code>TIMESTAMP</code> types continue to map to <code>TIMESTAMP WITHOUT TIMEZONE</code>.</p>
-<p>See <a href="https://docs.databricks.com/aws/en/oltp/sync-data/sync-table#data-type-mapping">Data type mapping</a>.</p></div>
-                <div class="translated-label">&gt; <p>新しく作成された同期されたテーブルでは、ソーステーブルの<code>TIMESTAMP</code>型が同期されたテーブルでは<code>TIMESTAMP WITH TIMEZONE</code>にマップされます。既存の同期されたテーブルでは、<code>TIMESTAMP</code>型は<code>TIMESTAMP WITHOUT TIMEZONE</code>にマップし続けます。</p>
-<p><a href="https://docs.databricks.com/aws/en/oltp/sync-data/sync-table#data-type-mapping">データ型のマッピング</a>を参照してください。</p></div>
-            </div>
-        </div>
-        
-        <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/august#automatic-liquid-clustering-is-now-available-for-lakeflow-declarative-pipelines" target="_blank">
-                <div class="article-title">Automatic liquid clustering is now available for Lakeflow Declarative Pipelines</div>
-            </a>
-            <div class="translated-label">&gt; 自動リキッドクラスタリングがLakeflowディクレアラティブパイプラインで利用可能になりました。</div>
-            <div class="date">August 25, 2025</div>
-            <div class="content">
-                <div class="original-text"><p>You can now use automatic liquid clustering with Lakeflow Declarative Pipelines. Use automatic liquid clustering with <code>CLUSTER BY AUTO</code>, and Databricks intelligently chooses clustering keys to optimize query performance.</p>
-<p>See <a href="https://docs.databricks.com/aws/en/delta/clustering#auto-liquid">Automatic liquid clustering</a>, <a href="https://docs.databricks.com/aws/en/dlt-ref/dlt-python-ref-streaming-table">create_streaming_table</a>, <a href="https://docs.databricks.com/aws/en/dlt-ref/dlt-python-ref-table">table</a>, <a href="https://docs.databricks.com/aws/en/dlt-ref/dlt-sql-ref-create-materialized-view">CREATE MATERIALIZED VIEW (Lakeflow Declarative Pipelines)</a>, and <a href="https://docs.databricks.com/aws/en/dlt-ref/dlt-sql-ref-create-streaming-table">CREATE STREAMING TABLE (Lakeflow Declarative Pipelines)</a>.</p></div>
-                <div class="translated-label">&gt; <p>Lakeflow Declarative Pipelinesを使用して、自動リキッドクラスタリングを使用できるようになりました。<code>CLUSTER BY AUTO</code>を使用して自動リキッドクラスタリングを使用し、Databricksが照会パフォーマンスを最適化するクラスタリングキーを賢明に選択します。</p>
-<p><a href="https://docs.databricks.com/aws/en/delta/clustering#auto-liquid">自動リキッドクラスタリング</a>、<a href="https://docs.databricks.com/aws/en/dlt-ref/dlt-python-ref-streaming-table">create_streaming_table</a>、<a href="https://docs.databricks.com/aws/en/dlt-ref/dlt-python-ref-table">table</a>、<a href="https://docs.databricks.com/aws/en/dlt-ref/dlt-sql-ref-create-materialized-view">CREATE MATERIALIZED VIEW (Lakeflow Declarative Pipelines)</a>、および<a href="https://docs.databricks.com/aws/en/dlt-ref/dlt-sql-ref-create-streaming-table">CREATE STREAMING TABLE (Lakeflow Declarative Pipelines)</a>を参照してください。</p></div>
-            </div>
-        </div>
-        
-        <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/august#budget-policy-support-for-database-instances-and-synced-tables-public-preview" target="_blank">
-                <div class="article-title">Budget policy support for database instances and synced tables (Public Preview)</div>
-            </a>
-            <div class="translated-label">&gt; データベースインスタンスとSync済みテーブルに対する予算ポリシーサポート（パブリックプレビュー）</div>
-            <div class="date">August 25, 2025</div>
-            <div class="content">
-                <div class="original-text"><p>You can now tag a database instance and a synced table with a budget policy to attribute billing usage to specific policies. Additionally, custom tags can be added to a database instance for more granular attribution of compute usage to teams, projects, or cost centers.</p>
-<p>See <a href="https://docs.databricks.com/aws/en/oltp/create#update-policy">Update a serverless budget policy of a database instance</a>, <a href="https://docs.databricks.com/aws/en/oltp/sync-data/sync-table#create">Create a synced table</a>, and <a href="https://docs.databricks.com/aws/en/admin/account-settings/usage-detail-tags#custom-tags">Custom tags</a>.</p></div>
-                <div class="translated-label">&gt; データベースインスタンスとデータベーステーブルにバジェットポリシーを設定して、特定のポリシーへの課金使用量を特定することができます。さらに、データベースインスタンスにカスタムタグを追加して、チーム、プロジェクト、コストセンターに対してよりきめ細かい計算使用量の帰属を行うことができます。
+ワークスペースの管理者は、ワークスペース内で利用可能なベースの環境を作成し、管理することができます。また、新規のサーバーレスのノートブックのためのデフォルトのベース環境を設定することもできます。これにより、ワークスペースのユーザーは、一貫性のある、キャッシュされた環境で素早く作業を開始することができます。
 
-「データベースインスタンスのサーバーレスバジェットポリシーの更新」、「同期テーブルの作成」、「カスタムタグ」の詳細については、関連のドキュメントを参照してください。</div>
+「サーバーレスのベース環境の管理」をご覧ください。</div>
+            </div>
+        </div>
+        
+        <div class="article">
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/august#lakebase-synced-tables-supports-syncing-iceberg-and-foreign-tables-in-snapshot-mode" target="_blank">
+                <div class="article-title">Lakebase synced tables supports syncing Iceberg and foreign tables in Snapshot mode</div>
+            </a>
+            <div class="translated-label">&gt; レイクベースシンクドテーブルはスナップショットモードでアイスバーグおよび外部テーブルのシンクをサポートします。</div>
+            <div class="date">August 28, 2025</div>
+            <div class="content">
+                <div class="original-text"><p>You can now create synced tables in Snapshot sync mode from Iceberg tables or foreign tables.</p>
+<p>See <a href="https://docs.databricks.com/aws/en/oltp/sync-data/sync-table#supported-source-tables">Supported source tables</a>.</p></div>
+                <div class="translated-label">&gt; <p>Icebergテーブルまたは外部テーブルから、スナップショット同期モードの同期テーブルを作成できるようになりました。</p>
+<p><a href="https://docs.databricks.com/aws/en/oltp/sync-data/sync-table#supported-source-tables">サポートされているソーステーブル</a>をご覧ください。</p></div>
+            </div>
+        </div>
+        
+        <div class="article">
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/august#external-mcp-servers-are-in-beta" target="_blank">
+                <div class="article-title">External MCP servers are in Beta</div>
+            </a>
+            <div class="translated-label">&gt; 外部MCP サーバーはベータ版です。</div>
+            <div class="date">August 28, 2025</div>
+            <div class="content">
+                <div class="original-text"><p>Users can now connect Databricks to external Model Context Protocol (MCP) servers. This allows agents to access tools outside of Databricks.</p>
+<p>See <a href="https://docs.databricks.com/aws/en/generative-ai/mcp">Model Context Protocol (MCP) on Databricks</a>.</p></div>
+                <div class="translated-label">&gt; ユーザーは今Databricksを外部のModel Context Protocol (MCP)サーバーに接続できるようになりました。これにより、エージェントはDatabricks以外のツールにアクセスできるようになります。
+
+<a href="https://docs.databricks.com/aws/en/generative-ai/mcp">DatabricksのModel Context Protocol (MCP)</a>をご覧ください。</div>
+            </div>
+        </div>
+        
+        <div class="article">
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/august#migrate-lakeflow-declarative-pipelines-from-legacy-publishing-mode-is-now-ga" target="_blank">
+                <div class="article-title">Migrate Lakeflow Declarative Pipelines from legacy publishing mode is now GA</div>
+            </a>
+            <div class="translated-label">&gt; レガシーパブリッシングモードからMigrate Lakeflow Declarative Pipelinesが一般利用可能になりました。</div>
+            <div class="date">August 28, 2025</div>
+            <div class="content">
+                <div class="original-text"><p>Lakeflow Declarative Pipelines has a legacy publishing mode that only allowed publishing to a single catalog and schema. The default publishing mode enables publishing to multiple catalogs and schemas. Migration from the legacy publishing mode to the default publishing mode is now generally available.</p>
+<p>See <a href="https://docs.databricks.com/aws/en/dlt/migrate-to-dpm">Enable the default publishing mode in a pipeline</a></p></div>
+                <div class="translated-label">&gt; レガシーの出版モードでは、単一のカタログとスキーマにのみ出版が可能でした。デフォルトの出版モードでは、複数のカタログとスキーマに出版できます。レガシーの出版モードからデフォルトの出版モードへの移行が一般に利用可能になりました。
+
+<a href="https://docs.databricks.com/aws/en/dlt/migrate-to-dpm">パイプラインでデフォルトの出版モードを有効にする</a></div>
             </div>
         </div>
         
