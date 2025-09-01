@@ -26,11 +26,26 @@
             <a href="https://docs.databricks.com/aws/en/sql/release-notes/2025#default-warehouse-setting-is-now-available-in-beta" target="_blank">
                 <div class="article-title">Default warehouse setting is now available in Beta</div>
             </a>
-            <div class="translated-label">&gt; デフォルトのウェアハウス設定がベータ版で利用可能になりました。</div>
+            <div class="translated-label">&gt; デフォルトの倉庫設定がベータ版で利用可能になりました。</div>
             <div class="date">August 28, 2025</div>
             <div class="content">
                 <div class="original-text"><p>Set a default warehouse that will be automatically selected in the compute selector across the SQL editor, AI/BI dashboards, AI/BI Genie, Alerts, and Catalog Explorer. Individual users can override this setting by selecting a different warehouse before running a query. They can also define their own user-level default warehouse to apply across their sessions. See <a href="https://docs.databricks.com/aws/en/admin/sql#default-warehouse">Set a default SQL warehouse for the workspace</a> and <a href="https://docs.databricks.com/aws/en/compute/sql-warehouse/create#user-default">Set a user-level default warehouse</a>.</p></div>
-                <div class="translated-label">&gt; SQLエディター、AI/BIダッシュボード、AI/BIジーニー、アラート、およびカタログエクスプローラーにわたって自動的に選択される既定のウェアハウスを設定してください。個々のユーザーは、クエリを実行する前に別のウェアハウスを選択することで、この設定を上書きすることができます。また、自分のセッションにわたって適用される独自のユーザーレベルの既定のウェアハウスを定義することもできます。詳細については、「ワークスペースの既定のSQLウェアハウスの設定」と「ユーザーレベルの既定のウェアハウスの設定」を参照してください。</div>
+                <div class="translated-label">&gt; SQLエディター、AI/BI ダッシュボード、AI/BI ジーニー、アラート、およびCatalog Explorerにわたる計算セレクター内で自動的に選択されるデフォルトのウェアハウスを設定します。個々のユーザーは、クエリの実行前に異なるウェアハウスを選択することで、この設定を上書きできます。また、自分のセッションに適用するユーザーレベルのデフォルトウェアハウスを定義することもできます。「<a href="https://docs.databricks.com/aws/en/admin/sql#default-warehouse">ワークスペースのデフォルトのSQL ウェアハウスを設定する</a>」と「<a href="https://docs.databricks.com/aws/en/compute/sql-warehouse/create#user-default">ユーザーレベルのデフォルトのウェアハウスを設定する</a>」を参照してください。</div>
+            </div>
+        </div>
+        
+        <div class="article">
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/august#track-and-navigate-notebook-runs-with-the-new-cell-execution-minimap" target="_blank">
+                <div class="article-title">Track and navigate notebook runs with the new cell execution minimap</div>
+            </a>
+            <div class="translated-label">&gt; セル実行ミニマップを搭載した新しいノートブック走行を追跡し、ナビゲートしてください。</div>
+            <div class="date">August 28, 2025</div>
+            <div class="content">
+                <div class="original-text"><p>Use the cell execution minimap to track your notebook’s progress at a glance. The minimap appears in the right margin and shows each cell’s execution state (skipped, queued, running, success, or error). Hover to see cell details, or click to jump directly to a cell.</p>
+<p>For information about using the cell execution minimap, see <a href="https://docs.databricks.com/aws/en/notebooks/notebook-editor">Navigate the Databricks notebook and file editor</a>.</p></div>
+                <div class="translated-label">&gt; ノートブックの進捗状況を一目で確認できるセル実行ミニマップを使用してください。ミニマップは右端に表示され、各セルの実行状態(スキップ、待機、実行中、成功、エラー)を示します。セルの詳細を表示するにはマウスを重ねてください。クリックすると直接そのセルに移動できます。
+
+セル実行ミニマップの使用方法については、「Databricksノートブックとファイルエディターの操作」を参照してください。</div>
             </div>
         </div>
         
@@ -38,31 +53,31 @@
             <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/august#admins-can-now-manage-a-workspaces-serverless-base-environments-public-preview" target="_blank">
                 <div class="article-title">Admins can now manage a workspace's serverless base environments (Public Preview)</div>
             </a>
-            <div class="translated-label">&gt; サーバーレスベース環境(パブリックプレビュー)のワークスペースを管理できるようになりました。</div>
+            <div class="translated-label">&gt; 管理者は、ワークスペースのサーバーレスベース環境を管理できるようになりました(パブリックプレビュー)</div>
             <div class="date">August 28, 2025</div>
             <div class="content">
                 <div class="original-text"><p>Base environments are custom environment specifications for serverless notebooks that define a serverless environment version and a set of dependencies.</p>
 <p>Workspace admins can now create and manage the base environments available in their workspace. They can also set a default base environment for all new serverless notebooks. This allows workspace users to quickly start working in a consistent, cached environment.</p>
 <p>See <a href="https://docs.databricks.com/aws/en/admin/workspace-settings/base-environment">Manage serverless base environments</a>.</p></div>
-                <div class="translated-label">&gt; ベースの環境は、サーバーレスのノートブックのためのカスタムの環境仕様で、サーバーレスの環境のバージョンと依存関係のセットを定義するものです。
+                <div class="translated-label">&gt; サーバーレスノートブックのカスタム環境仕様であるベースの環境は、サーバーレス環境のバージョンと依存関係のセットを定義します。
 
-ワークスペースの管理者は、ワークスペース内で利用可能なベースの環境を作成し、管理することができます。また、新規のサーバーレスのノートブックのためのデフォルトのベース環境を設定することもできます。これにより、ワークスペースのユーザーは、一貫性のある、キャッシュされた環境で素早く作業を開始することができます。
+ワークスペースの管理者は、ワークスペースで使用可能なベース環境の作成と管理ができます。また、すべての新しいサーバーレスノートブックのデフォルトのベース環境を設定することもできます。これにより、ワークスペースのユーザーは、一貫して、キャッシュされた環境で素早く作業を開始できます。
 
-「サーバーレスのベース環境の管理」をご覧ください。</div>
+「サーバーレスベース環境の管理」をご覧ください。</div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/august#lakebase-synced-tables-supports-syncing-iceberg-and-foreign-tables-in-snapshot-mode" target="_blank">
-                <div class="article-title">Lakebase synced tables supports syncing Iceberg and foreign tables in Snapshot mode</div>
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/august#lakebase-synced-tables-supports-syncing-apache-iceberg-and-foreign-tables-in-snapshot-mode" target="_blank">
+                <div class="article-title">Lakebase synced tables supports syncing Apache Iceberg and foreign tables in Snapshot mode</div>
             </a>
-            <div class="translated-label">&gt; レイクベースシンクドテーブルはスナップショットモードでアイスバーグおよび外部テーブルのシンクをサポートします。</div>
+            <div class="translated-label">&gt; レイクベース同期テーブルは、Apache Iceberg およびスナップショットモードの外部テーブルの同期をサポートしています。</div>
             <div class="date">August 28, 2025</div>
             <div class="content">
                 <div class="original-text"><p>You can now create synced tables in Snapshot sync mode from Iceberg tables or foreign tables.</p>
 <p>See <a href="https://docs.databricks.com/aws/en/oltp/sync-data/sync-table#supported-source-tables">Supported source tables</a>.</p></div>
-                <div class="translated-label">&gt; <p>Icebergテーブルまたは外部テーブルから、スナップショット同期モードの同期テーブルを作成できるようになりました。</p>
-<p><a href="https://docs.databricks.com/aws/en/oltp/sync-data/sync-table#supported-source-tables">サポートされているソーステーブル</a>をご覧ください。</p></div>
+                <div class="translated-label">&gt; Icebergテーブルやフォーリンテーブルから、スナップショット同期モードでデータベースを同期させることができるようになりました。
+サポートされているソーステーブルについては、<a href="https://docs.databricks.com/aws/en/oltp/sync-data/sync-table#supported-source-tables">こちらのドキュメント</a>をご確認ください。</div>
             </div>
         </div>
         
@@ -70,7 +85,7 @@
             <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/august#external-mcp-servers-are-in-beta" target="_blank">
                 <div class="article-title">External MCP servers are in Beta</div>
             </a>
-            <div class="translated-label">&gt; 外部MCP サーバーはベータ版です。</div>
+            <div class="translated-label">&gt; 外部 MCP サーバーはベータ版です。</div>
             <div class="date">August 28, 2025</div>
             <div class="content">
                 <div class="original-text"><p>Users can now connect Databricks to external Model Context Protocol (MCP) servers. This allows agents to access tools outside of Databricks.</p>
@@ -78,21 +93,6 @@
                 <div class="translated-label">&gt; ユーザーは今Databricksを外部のModel Context Protocol (MCP)サーバーに接続できるようになりました。これにより、エージェントはDatabricks以外のツールにアクセスできるようになります。
 
 <a href="https://docs.databricks.com/aws/en/generative-ai/mcp">DatabricksのModel Context Protocol (MCP)</a>をご覧ください。</div>
-            </div>
-        </div>
-        
-        <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/august#migrate-lakeflow-declarative-pipelines-from-legacy-publishing-mode-is-now-ga" target="_blank">
-                <div class="article-title">Migrate Lakeflow Declarative Pipelines from legacy publishing mode is now GA</div>
-            </a>
-            <div class="translated-label">&gt; レガシーパブリッシングモードからMigrate Lakeflow Declarative Pipelinesが一般利用可能になりました。</div>
-            <div class="date">August 28, 2025</div>
-            <div class="content">
-                <div class="original-text"><p>Lakeflow Declarative Pipelines has a legacy publishing mode that only allowed publishing to a single catalog and schema. The default publishing mode enables publishing to multiple catalogs and schemas. Migration from the legacy publishing mode to the default publishing mode is now generally available.</p>
-<p>See <a href="https://docs.databricks.com/aws/en/dlt/migrate-to-dpm">Enable the default publishing mode in a pipeline</a></p></div>
-                <div class="translated-label">&gt; レガシーの出版モードでは、単一のカタログとスキーマにのみ出版が可能でした。デフォルトの出版モードでは、複数のカタログとスキーマに出版できます。レガシーの出版モードからデフォルトの出版モードへの移行が一般に利用可能になりました。
-
-<a href="https://docs.databricks.com/aws/en/dlt/migrate-to-dpm">パイプラインでデフォルトの出版モードを有効にする</a></div>
             </div>
         </div>
         
