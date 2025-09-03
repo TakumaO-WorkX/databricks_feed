@@ -23,14 +23,46 @@
         <h1>Databricks Docs Updates</h1>
     
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/sql/release-notes/2025#default-warehouse-setting-is-now-available-in-beta" target="_blank">
-                <div class="article-title">Default warehouse setting is now available in Beta</div>
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/september#ai-agents-authorize-on-behalf-of-user-public-preview" target="_blank">
+                <div class="article-title">AI agents: Authorize on-behalf-of-user Public Preview</div>
             </a>
-            <div class="translated-label">&gt; デフォルトの倉庫設定がベータ版で利用可能になりました。</div>
-            <div class="date">August 28, 2025</div>
+            <div class="translated-label">&gt; AI エージェント: ユーザーの代理授権パブリックプレビュー</div>
+            <div class="date">September 02, 2025</div>
             <div class="content">
-                <div class="original-text"><p>Set a default warehouse that will be automatically selected in the compute selector across the SQL editor, AI/BI dashboards, AI/BI Genie, Alerts, and Catalog Explorer. Individual users can override this setting by selecting a different warehouse before running a query. They can also define their own user-level default warehouse to apply across their sessions. See <a href="https://docs.databricks.com/aws/en/admin/sql#default-warehouse">Set a default SQL warehouse for the workspace</a> and <a href="https://docs.databricks.com/aws/en/compute/sql-warehouse/create#user-default">Set a user-level default warehouse</a>.</p></div>
-                <div class="translated-label">&gt; SQLエディター、AI/BI ダッシュボード、AI/BI ジーニー、アラート、およびCatalog Explorerにわたる計算セレクター内で自動的に選択されるデフォルトのウェアハウスを設定します。個々のユーザーは、クエリの実行前に異なるウェアハウスを選択することで、この設定を上書きできます。また、自分のセッションに適用するユーザーレベルのデフォルトウェアハウスを定義することもできます。「<a href="https://docs.databricks.com/aws/en/admin/sql#default-warehouse">ワークスペースのデフォルトのSQL ウェアハウスを設定する</a>」と「<a href="https://docs.databricks.com/aws/en/compute/sql-warehouse/create#user-default">ユーザーレベルのデフォルトのウェアハウスを設定する</a>」を参照してください。</div>
+                <div class="original-text"><p>AI agents deployed to Model Serving endpoints can use on-behalf-of-user authorization. This lets an agent act as the Databricks user who runs the query for added security and fine-grained access to sensitive data.</p></div>
+                <div class="translated-label">&gt; モデル提供エンドポイントに導入されたAIエージェントは、代理ユーザー認証を使用できます。これにより、エージェントが機密データへのきめ細かなアクセスと追加のセキュリティを備えた状態で、クエリを実行するDatabricsユーザーとして機能できます。</div>
+            </div>
+        </div>
+        
+        <div class="article">
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/august#account-scim-20-updates" target="_blank">
+                <div class="article-title">Account SCIM 2.0 updates</div>
+            </a>
+            <div class="translated-label">&gt; アカウントSCIM 2.0の更新</div>
+            <div class="date">August 29, 2025</div>
+            <div class="content">
+                <div class="original-text"><p>To enhance stability and support future growth, Databricks has updated the Account SCIM API for identity management as follows:</p>
+<ul>
+<li>
+<p>Calling <code>GET with filter params filter=displayName eq value_without_quotes</code> results in a syntax error. To prevent this error, use quotation marks to wrap the value (for example, <code>filter=displayName eq "value_with_quotes"</code>).</p>
+</li>
+<li>
+<p>Calling <code>GET /api/2.0/accounts/{account_id}/scim/v2/Groups</code> no longer returns members. Instead, iterate through <code>get group details</code> to get membership information. See <a href="https://docs.databricks.com/api/account/accountgroups/get">get group details</a>.</p>
+</li>
+<li>
+<p>Calling <code>PATCH /api/2.0/accounts/{account_id}/scim/v2/Groups/{id}</code> returns a 204 response instead of a 200 response.</p>
+</li>
+</ul>
+<p>These changes apply to new accounts and will be grandfathered into existing accounts. Current integrations will continue to work without disruption.</p></div>
+                <div class="translated-label">&gt; データブリックスは、アイデンティティ管理のためのAccount SCIM APIを次のように更新しました:
+
+- `GET with filter params filter=displayName eq value_without_quotes`を呼び出すとシンタックスエラーが発生します。このエラーを防ぐには、値を引用符で囲む必要があります(例: `filter=displayName eq "value_with_quotes"`)。
+
+- `GET /api/2.0/accounts/{account_id}/scim/v2/Groups`を呼び出しても、メンバーは返されません。代わりに、`get group details`を繰り返し呼び出して、メンバーシップ情報を取得してください。詳細については、[get group details](https://docs.databricks.com/api/account/accountgroups/get)を参照してください。
+
+- `PATCH /api/2.0/accounts/{account_id}/scim/v2/Groups/{id}`を呼び出すと、200レスポンスではなく204レスポンスが返されます。
+
+これらの変更は新しいアカウントに適用され、既存のアカウントにも反映されます。現在のインテグレーションは中断することなく継続して動作します。</div>
             </div>
         </div>
         
@@ -38,14 +70,14 @@
             <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/august#track-and-navigate-notebook-runs-with-the-new-cell-execution-minimap" target="_blank">
                 <div class="article-title">Track and navigate notebook runs with the new cell execution minimap</div>
             </a>
-            <div class="translated-label">&gt; セル実行ミニマップを搭載した新しいノートブック走行を追跡し、ナビゲートしてください。</div>
+            <div class="translated-label">&gt; セル実行ミニマップを使用した新しいノートブックの追跡とナビゲーション</div>
             <div class="date">August 28, 2025</div>
             <div class="content">
                 <div class="original-text"><p>Use the cell execution minimap to track your notebook’s progress at a glance. The minimap appears in the right margin and shows each cell’s execution state (skipped, queued, running, success, or error). Hover to see cell details, or click to jump directly to a cell.</p>
 <p>For information about using the cell execution minimap, see <a href="https://docs.databricks.com/aws/en/notebooks/notebook-editor">Navigate the Databricks notebook and file editor</a>.</p></div>
-                <div class="translated-label">&gt; ノートブックの進捗状況を一目で確認できるセル実行ミニマップを使用してください。ミニマップは右端に表示され、各セルの実行状態(スキップ、待機、実行中、成功、エラー)を示します。セルの詳細を表示するにはマウスを重ねてください。クリックすると直接そのセルに移動できます。
+                <div class="translated-label">&gt; ノートブックの進行状況をすばやく把握するために、セル実行ミニマップを使用してください。ミニマップは右のマージンに表示され、各セルの実行状態(スキップ、待機中、実行中、成功、またはエラー)を示します。セルの詳細を確認するにはカーソルを合わせ、直接セルに移動するにはクリックします。
 
-セル実行ミニマップの使用方法については、「Databricksノートブックとファイルエディターの操作」を参照してください。</div>
+セル実行ミニマップの使用方法については、「Databricksノートブックとファイルエディタの操作」をご覧ください。</div>
             </div>
         </div>
         
@@ -53,17 +85,17 @@
             <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/august#admins-can-now-manage-a-workspaces-serverless-base-environments-public-preview" target="_blank">
                 <div class="article-title">Admins can now manage a workspace's serverless base environments (Public Preview)</div>
             </a>
-            <div class="translated-label">&gt; 管理者は、ワークスペースのサーバーレスベース環境を管理できるようになりました(パブリックプレビュー)</div>
+            <div class="translated-label">&gt; サーバーレスベース環境(パブリックプレビュー)のワークスペースを管理できるようになりました。</div>
             <div class="date">August 28, 2025</div>
             <div class="content">
                 <div class="original-text"><p>Base environments are custom environment specifications for serverless notebooks that define a serverless environment version and a set of dependencies.</p>
 <p>Workspace admins can now create and manage the base environments available in their workspace. They can also set a default base environment for all new serverless notebooks. This allows workspace users to quickly start working in a consistent, cached environment.</p>
 <p>See <a href="https://docs.databricks.com/aws/en/admin/workspace-settings/base-environment">Manage serverless base environments</a>.</p></div>
-                <div class="translated-label">&gt; サーバーレスノートブックのカスタム環境仕様であるベースの環境は、サーバーレス環境のバージョンと依存関係のセットを定義します。
+                <div class="translated-label">&gt; ベースの環境は、サーバーレスノートブックのためのカスタム環境の仕様で、サーバーレス環境のバージョンと一連の依存関係を定義します。
 
-ワークスペースの管理者は、ワークスペースで使用可能なベース環境の作成と管理ができます。また、すべての新しいサーバーレスノートブックのデフォルトのベース環境を設定することもできます。これにより、ワークスペースのユーザーは、一貫して、キャッシュされた環境で素早く作業を開始できます。
+ワークスペースの管理者は、ワークスペースで利用可能なベースの環境を作成および管理できるようになりました。また、新しいサーバーレスノートブックのデフォルトのベース環境を設定することもできます。これにより、ワークスペースのユーザーは、一貫性のある、キャッシュされた環境で素早く作業を開始できるようになります。
 
-「サーバーレスベース環境の管理」をご覧ください。</div>
+サーバーレスのベース環境の管理の詳細については、こちらをご覧ください。</div>
             </div>
         </div>
         
@@ -71,28 +103,14 @@
             <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/august#lakebase-synced-tables-supports-syncing-apache-iceberg-and-foreign-tables-in-snapshot-mode" target="_blank">
                 <div class="article-title">Lakebase synced tables supports syncing Apache Iceberg and foreign tables in Snapshot mode</div>
             </a>
-            <div class="translated-label">&gt; レイクベース同期テーブルは、Apache Iceberg およびスナップショットモードの外部テーブルの同期をサポートしています。</div>
+            <div class="translated-label">&gt; レイクベースの同期テーブルは、Apache Icebergと外部テーブルをスナップショットモードで同期をサポートしています。</div>
             <div class="date">August 28, 2025</div>
             <div class="content">
                 <div class="original-text"><p>You can now create synced tables in Snapshot sync mode from Iceberg tables or foreign tables.</p>
 <p>See <a href="https://docs.databricks.com/aws/en/oltp/sync-data/sync-table#supported-source-tables">Supported source tables</a>.</p></div>
-                <div class="translated-label">&gt; Icebergテーブルやフォーリンテーブルから、スナップショット同期モードでデータベースを同期させることができるようになりました。
-サポートされているソーステーブルについては、<a href="https://docs.databricks.com/aws/en/oltp/sync-data/sync-table#supported-source-tables">こちらのドキュメント</a>をご確認ください。</div>
-            </div>
-        </div>
-        
-        <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/august#external-mcp-servers-are-in-beta" target="_blank">
-                <div class="article-title">External MCP servers are in Beta</div>
-            </a>
-            <div class="translated-label">&gt; 外部 MCP サーバーはベータ版です。</div>
-            <div class="date">August 28, 2025</div>
-            <div class="content">
-                <div class="original-text"><p>Users can now connect Databricks to external Model Context Protocol (MCP) servers. This allows agents to access tools outside of Databricks.</p>
-<p>See <a href="https://docs.databricks.com/aws/en/generative-ai/mcp">Model Context Protocol (MCP) on Databricks</a>.</p></div>
-                <div class="translated-label">&gt; ユーザーは今Databricksを外部のModel Context Protocol (MCP)サーバーに接続できるようになりました。これにより、エージェントはDatabricks以外のツールにアクセスできるようになります。
+                <div class="translated-label">&gt; 今、Icebergテーブルまたは外部テーブルからSnapshot sync modeでの同期テーブルの作成が可能です。
 
-<a href="https://docs.databricks.com/aws/en/generative-ai/mcp">DatabricksのModel Context Protocol (MCP)</a>をご覧ください。</div>
+サポートされているソーステーブルについては、<a href="https://docs.databricks.com/aws/en/oltp/sync-data/sync-table#supported-source-tables">こちらのドキュメント</a>をご確認ください。</div>
             </div>
         </div>
         
