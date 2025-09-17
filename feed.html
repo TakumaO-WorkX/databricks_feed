@@ -23,86 +23,68 @@
         <h1>Databricks Docs Updates</h1>
     
         <div class="article">
+            <a href="https://docs.databricks.com/aws/en/release-notes/whats-coming#lakehouse-federation-sharing-and-default-storage" target="_blank">
+                <div class="article-title">Lakehouse Federation sharing and default storage</div>
+            </a>
+            <div class="translated-label">&gt; レイクハウス連盟の共有とデフォルトのストレージ</div>
+            <div class="date">September 16, 2025</div>
+            <div class="content">
+                <div class="original-text"><p>Delta Sharing on Lakehouse Federation is in Beta, allowing Delta Sharing data providers to share foriegn catalogs and tables. By default, data must be temporarily materialized and stored on default storage. Currently, users must manually enable the <strong>Delta Sharing for Default Storage – Expanded Access</strong> feature in the account console to use Lakehouse Federation sharing.</p>
+<p>After <strong>Delta Sharing for Default Storage – Expanded Access</strong> is enabled by default for all Databricks users, Delta Sharing on Lakehouse Federation will automatically be available in regions where default storage is supported.</p>
+<p>See <a href="https://docs.databricks.com/aws/en/storage/default-storage">Default storage in serverless workspaces</a> and <a href="https://docs.databricks.com/aws/en/delta-sharing/create-share#foreign-asset">Add foreign schemas or tables to a share</a>.</p></div>
+                <div class="translated-label">&gt; レイクハウスフェデレーションでのデルタシェアリングはベータ版で、デルタシェアリングのデータプロバイダーが外国のカタログとテーブルを共有できるようになっています。デフォルトでは、データを一時的に具体化して、デフォルトのストレージに保存する必要があります。現在、ユーザーは「アカウントコンソールでデフォルトストレージのデルタシェアリング - 拡張アクセス」機能を手動で有効にする必要があります。
+
+デフォルトストレージのデルタシェアリング - 拡張アクセスが全てのDatabricksユーザーにデフォルトで有効になると、デフォルトのストレージがサポートされているリージョンでレイクハウスフェデレーションのデルタシェアリングが自動的に利用可能になります。
+
+「サーバーレスワークスペースのデフォルトストレージ」と「共有に外国のスキーマやテーブルを追加する」をご覧ください。</div>
+            </div>
+        </div>
+        
+        <div class="article">
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/september#databricks-runtime-172-is-now-is-now-ga" target="_blank">
+                <div class="article-title">Databricks Runtime 17.2 is now is now GA</div>
+            </a>
+            <div class="translated-label">&gt; Databricks Runtime 17.2はリリースされました。</div>
+            <div class="date">September 16, 2025</div>
+            <div class="content">
+                <div class="original-text"><p>Databricks Runtime 17.2 is now generally available. See <a href="https://docs.databricks.com/aws/en/release-notes/runtime/17.2">Databricks Runtime 17.2</a>.</p></div>
+                <div class="translated-label">&gt; Databricks Runtime 17.2が一般に利用可能になりました。<a href="https://docs.databricks.com/aws/en/release-notes/runtime/17.2">Databricks Runtime 17.2</a>をご覧ください。</div>
+            </div>
+        </div>
+        
+        <div class="article">
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/september#delta-sharing-on-lakehouse-federation-is-in-beta" target="_blank">
+                <div class="article-title">Delta Sharing on Lakehouse Federation is in Beta</div>
+            </a>
+            <div class="translated-label">&gt; デルタ共有はレイクハウス連合ベータ版にあります。</div>
+            <div class="date">September 16, 2025</div>
+            <div class="content">
+                <div class="original-text"><p>You can now use Delta Sharing to share foreign schemas and tables created with query federation in Databricks-to-Databricks sharing and open sharing. See <a href="https://docs.databricks.com/aws/en/delta-sharing/create-share#foreign-asset">Add foreign schemas or tables to a share</a> and <a href="https://docs.databricks.com/aws/en/delta-sharing/read-data-databricks#foreign-tables">Read data in a shared foreign table or foreign schema</a>.</p></div>
+                <div class="translated-label">&gt; データブリックス間の共有とオープン共有においてクエリフェデレーションを使用して作成された外部スキーマとテーブルを共有するために、Delta Sharing を使用できるようになりました。詳細については、「Add foreign schemas or tables to a share」と「Read data in a shared foreign table or foreign schema」をご覧ください。</div>
+            </div>
+        </div>
+        
+        <div class="article">
+            <a href="https://docs.databricks.com/aws/en/release-notes/whats-coming#reload-notification-in-workspaces" target="_blank">
+                <div class="article-title">Reload notification in workspaces</div>
+            </a>
+            <div class="translated-label">&gt; ワークスペースでのリロード通知</div>
+            <div class="date">September 13, 2025</div>
+            <div class="content">
+                <div class="original-text"><p>In an upcoming release, a message to reload your workspace tab will display if your workspace tab has been open for a long time without refreshing. This will help ensure you are always using the latest version of Databricks with the newest features and fixes.</p></div>
+                <div class="translated-label">&gt; <p>今後のリリースでは、ワークスペースのタブを長時間更新せずに開いていた場合、ワークスペースのタブを再読み込みするメッセージが表示されるようになります。これにより、最新の機能やバグ修正を含むDatabricksの最新バージョンを常に使用することができます。</p></div>
+            </div>
+        </div>
+        
+        <div class="article">
             <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/september#mount-delta-shares-to-an-existing-shared-catalog" target="_blank">
                 <div class="article-title">Mount Delta shares to an existing shared catalog</div>
             </a>
-            <div class="translated-label">&gt; デルタマウントは既存の共有カタログに割り当てられています。</div>
+            <div class="translated-label">&gt; デルタ山の株式は既存の共有カタログに共有されます。</div>
             <div class="date">September 12, 2025</div>
             <div class="content">
                 <div class="original-text"><p>Delta Sharing recipients can now mount shares received from their Delta Sharing provider to an existing shared catalog. Previously, recipients needed to create a new catalog for each new share. See <a href="https://docs.databricks.com/aws/en/delta-sharing/read-data-databricks#create-catalog">Create a catalog from a share</a>.</p></div>
-                <div class="translated-label">&gt; デルタ共有の受信者は、デルタ共有プロバイダーから受信したシェアを既存の共有カタログにマウントできるようになりました。以前は、受信者が新しい共有ごとに新しいカタログを作成する必要がありました。<a href="https://docs.databricks.com/aws/en/delta-sharing/read-data-databricks#create-catalog">共有からカタログを作成する</a>をご覧ください。</div>
-            </div>
-        </div>
-        
-        <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/september#serverless-jobs-and-pipelines-configured-in-the-ui-are-now-performance-optimized-by-default" target="_blank">
-                <div class="article-title">Serverless jobs and pipelines configured in the UI are now performance optimized by default</div>
-            </a>
-            <div class="translated-label">&gt; サーバーレスジョブとパイプラインは、UIで構成されており、デフォルトで性能が最適化されています。</div>
-            <div class="date">September 11, 2025</div>
-            <div class="content">
-                <div class="original-text"><p>Serverless jobs and pipelines configured in the UI are now set to <strong>Performance optimized</strong> by default. This aligns the UI with existing defaults across APIs, Terraform, and SDKs. For more information, see <a href="https://docs.databricks.com/aws/en/jobs/run-serverless-jobs#performance">Performance mode in serverless jobs</a> and <a href="https://docs.databricks.com/aws/en/dlt/serverless-dlt#performance">Performance mode in serverless pipelines</a>.</p></div>
-                <div class="translated-label">&gt; <p>サーバーレスジョブとUIで構成されたパイプラインは、デフォルトで<strong>パフォーマンス最適化</strong>に設定されています。これにより、API、Terraform、SDKにわたる既存のデフォルトがUIに合わせられます。詳細については、<a href="https://docs.databricks.com/aws/en/jobs/run-serverless-jobs#performance">サーバーレスジョブのパフォーマンスモード</a>と<a href="https://docs.databricks.com/aws/en/dlt/serverless-dlt#performance">サーバーレスパイプラインのパフォーマンスモード</a>をご覧ください。</p></div>
-            </div>
-        </div>
-        
-        <div class="article">
-            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2025#aibi-dashboard-text-widget-and-performance-improvements" target="_blank">
-                <div class="article-title">AI/BI dashboard text widget and performance improvements</div>
-            </a>
-            <div class="translated-label">&gt; AIバイBIダッシュボードのテキストウィジェットと性能の改善</div>
-            <div class="date">September 11, 2025</div>
-            <div class="content">
-                <div class="original-text"><ul>
-<li><strong>Improved text widget editor:</strong> The dashboard text widget now has an enhanced UI for formatting text, adding links, and inserting images.</li>
-<li><strong>Fixed performance regressions:</strong> Resolved issues that caused performance slowdowns, including pages failing to load and URL parameters applying incorrectly.</li>
-</ul></div>
-                <div class="translated-label">&gt; <ul>
-<li><strong>テキストウィジェットエディターの改善:</strong> ダッシュボードのテキストウィジェットに、テキストの書式設定、リンクの追加、画像の挿入を行うための拡張UIが追加されました。</li>
-<li><strong>パフォーマンスの改善:</strong> ページの読み込み失敗や、URLパラメーターの適用ミスなど、パフォーマンスの低下を引き起こす問題を解決しました。</li>
-</ul></div>
-            </div>
-        </div>
-        
-        <div class="article">
-            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2025#genie-chart-fixes-and-feature-enhancements" target="_blank">
-                <div class="article-title">Genie chart fixes and feature enhancements</div>
-            </a>
-            <div class="translated-label">&gt; ジーニーチャートの修正と機能強化</div>
-            <div class="date">September 11, 2025</div>
-            <div class="content">
-                <div class="original-text"><ul>
-<li><strong>Fixed thin bars on binned date charts:</strong> Resolved an issue where very thin bars appeared in bar charts with binned dates.</li>
-<li><strong>Fixed single-point maps:</strong> Point maps now render correctly even when only a single point is present.</li>
-<li><strong>Increased value dictionary limit:</strong> Spaces can now include up to 120 value dictionaries. Newly created spaces automatically select 120 columns. For existing spaces, authors can configure settings to add more value dictionaries. See <a href="https://docs.databricks.com/aws/en/genie/knowledge-store#add-value-dict">Configure value dictionaries</a>.</li>
-<li><strong>Improved accuracy for percentage questions:</strong> Genie now returns more accurate results for percentage-type queries, such as conversion rates, with correct rounding to two digits.</li>
-<li><strong>Fixed unsaved instruction warning:</strong> The warning dialog for unsaved instruction changes now dismisses correctly.</li>
-<li><strong>Fixed cloning issue for spaces with 100 instructions:</strong> Spaces containing 100 instructions can now be cloned successfully.</li>
-<li><strong>Space ID field in settings:</strong> A new field in the settings page lets users directly copy the Genie space ID for use in building Genie space agents.</li>
-<li><strong>Upload files in Public Preview:</strong> Workspace admins can now manage the <strong>Genie - Upload File</strong> feature from the previews page. See <a href="https://docs.databricks.com/aws/en/genie/file-upload">Upload a file</a>.</li>
-</ul></div>
-                <div class="translated-label">&gt; <ul>
-<li><strong>バインド日付チャートの固定細いバー:</strong> バインド日付のバーチャートで非常に細いバーが表示される問題を解決しました。</li>
-<li><strong>単一ポイントマップの修正:</strong> ポイントマップに単一のポイントしか存在しない場合でも、正しく描画されるようになりました。</li>
-<li><strong>値辞書の上限の増加:</strong> スペースには最大120の値辞書を含めることができるようになりました。新しく作成されたスペースでは自動的に120列が選択されます。既存のスペースでは、設定を構成して、より多くの値辞書を追加することができます。詳細は<a href="https://docs.databricks.com/aws/en/genie/knowledge-store#add-value-dict">値辞書の設定</a>を参照してください。</li>
-<li><strong>パーセンテージ質問の精度の向上:</strong> Genieは、変換率などのパーセンテージ型のクエリーに対して、2桁の正しい四捨五入で、より正確な結果を返すようになりました。</li>
-<li><strong>保存されていない命令の警告の修正:</strong> 保存されていない命令の変更に対する警告ダイアログが正しく閉じられるようになりました。</li>
-<li><strong>100の命令を含むスペースのクローンの問題を修正:</strong> 100の命令を含むスペースをクローンすることができるようになりました。</li>
-<li><strong>設定ページのスペースIDフィールド:</strong> 設定ページに新しいフィールドが追加され、Genieスペースエージェントの構築に使用できるスペースIDを直接コピーできるようになりました。</li>
-<li><strong>パブリックプレビューでのファイルのアップロード:</strong> ワークスペース管理者は、プレビューページから<strong>Genie - ファイルのアップロード</strong>機能を管理できるようになりました。詳細は<a href="https://docs.databricks.com/aws/en/genie/file-upload">ファイルのアップロード</a>を参照してください。</li>
-</ul></div>
-            </div>
-        </div>
-        
-        <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/september#google-analytics-raw-data-connector-ga" target="_blank">
-                <div class="article-title">Google Analytics Raw Data connector GA</div>
-            </a>
-            <div class="translated-label">&gt; Googleアナリティクスのロードデータコネクタ GA</div>
-            <div class="date">September 10, 2025</div>
-            <div class="content">
-                <div class="original-text"><p>The Google Analytics Raw Data connector in Lakeflow Connect is now generally available. See <a href="https://docs.databricks.com/aws/en/ingestion/lakeflow-connect/google-analytics-source-setup">Set up Google Analytics 4 and Google BigQuery for Databricks ingestion</a>.</p></div>
-                <div class="translated-label">&gt; Lakeflow ConnectのGoogle Analytics Raw Dataコネクタが一般提供されるようになりました。<a href="https://docs.databricks.com/aws/en/ingestion/lakeflow-connect/google-analytics-source-setup">Databricksへの取り込みのためのGoogle Analytics 4とGoogle BigQueryのセットアップ</a>をご覧ください。</div>
+                <div class="translated-label">&gt; デルタ共有の受信者は、デルタ共有プロバイダーから受け取った共有を既存の共有カタログにマウントできるようになりました。以前は、受信者が新しい共有ごとに新しいカタログを作成する必要がありました。<a href="https://docs.databricks.com/aws/en/delta-sharing/read-data-databricks#create-catalog">共有からカタログを作成する</a>をご覧ください。</div>
             </div>
         </div>
         
