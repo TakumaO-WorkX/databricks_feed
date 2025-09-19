@@ -23,68 +23,100 @@
         <h1>Databricks Docs Updates</h1>
     
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/whats-coming#lakehouse-federation-sharing-and-default-storage" target="_blank">
-                <div class="article-title">Lakehouse Federation sharing and default storage</div>
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/september#compliance-support-for-mosaic-ai-vector-search-standard-endpoints" target="_blank">
+                <div class="article-title">Compliance support for Mosaic AI Vector Search standard endpoints</div>
             </a>
-            <div class="translated-label">&gt; レイクハウス連盟の共有とデフォルトのストレージ</div>
-            <div class="date">September 16, 2025</div>
+            <div class="translated-label">&gt; コンプライアンスサポート for Mosaic AI ベクトル検索標準エンドポイント</div>
+            <div class="date">September 18, 2025</div>
             <div class="content">
-                <div class="original-text"><p>Delta Sharing on Lakehouse Federation is in Beta, allowing Delta Sharing data providers to share foriegn catalogs and tables. By default, data must be temporarily materialized and stored on default storage. Currently, users must manually enable the <strong>Delta Sharing for Default Storage – Expanded Access</strong> feature in the account console to use Lakehouse Federation sharing.</p>
-<p>After <strong>Delta Sharing for Default Storage – Expanded Access</strong> is enabled by default for all Databricks users, Delta Sharing on Lakehouse Federation will automatically be available in regions where default storage is supported.</p>
-<p>See <a href="https://docs.databricks.com/aws/en/storage/default-storage">Default storage in serverless workspaces</a> and <a href="https://docs.databricks.com/aws/en/delta-sharing/create-share#foreign-asset">Add foreign schemas or tables to a share</a>.</p></div>
-                <div class="translated-label">&gt; レイクハウスフェデレーションでのデルタシェアリングはベータ版で、デルタシェアリングのデータプロバイダーが外国のカタログとテーブルを共有できるようになっています。デフォルトでは、データを一時的に具体化して、デフォルトのストレージに保存する必要があります。現在、ユーザーは「アカウントコンソールでデフォルトストレージのデルタシェアリング - 拡張アクセス」機能を手動で有効にする必要があります。
+                <div class="original-text"><p>Mosaic AI Vector Search standard endpoints are now available in FedRAMP Moderate and IRAP workspaces. See <a href="https://docs.databricks.com/aws/en/generative-ai/vector-search">Mosaic AI Vector Search</a>.</p></div>
+                <div class="translated-label">&gt; <p>Mosaic AIベクターサーチの標準エンドポイントがFedRAMP ModerateおよびIRAP ワークスペースで利用可能になりました。<a href="https://docs.databricks.com/aws/en/generative-ai/vector-search">Mosaic AIベクターサーチ</a>をご覧ください。</p></div>
+            </div>
+        </div>
+        
+        <div class="article">
+            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2025#aibi-dashboard-genie-integration-and-publish-dialog-improvements" target="_blank">
+                <div class="article-title">AI/BI dashboard Genie integration and publish dialog improvements</div>
+            </a>
+            <div class="translated-label">&gt; AIおよびBIダッシュボードのGenie統合、および公開ダイアログの改善</div>
+            <div class="date">September 18, 2025</div>
+            <div class="content">
+                <div class="original-text"><ul>
+<li><strong>Genie credential handling for embedded dashboards:</strong> Genie integrated with dashboards published with embedded credentials now executes generated queries using the publisher's data credentials. Dashboards published without embedded credentials continue executing using the viewer's data credentials.</li>
+<li><strong>Simplified publish dialog:</strong> The dashboard publish dialog has been redesigned and simplified. The toggle for Genie integration has been moved to dashboard settings.</li>
+</ul></div>
+                <div class="translated-label">&gt; <ul>
+<li><strong>組み込みダッシュボードのGenieクレデンシャルハンドリング:</strong> 組み込みクレデンシャルで公開されたダッシュボードのGenieは、パブリッシャーのデータクレデンシャルを使って生成されたクエリを実行します。埋め込みクレデンシャルなしで公開されたダッシュボードは、ビューアーのデータクレデンシャルを使って引き続き実行されます。</li>
+<li><strong>簡略化された公開ダイアログ:</strong> ダッシュボードの公開ダイアログが再設計され、簡略化されました。Genieの統合のトグルがダッシュボードの設定に移動されました。</li>
+</ul></div>
+            </div>
+        </div>
+        
+        <div class="article">
+            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2025#genie-sql-improvements-api-enhancements-and-bug-fixes" target="_blank">
+                <div class="article-title">Genie SQL improvements, API enhancements, and bug fixes</div>
+            </a>
+            <div class="translated-label">&gt; Genie SQLの改善、APIの拡張、およびバグの修正</div>
+            <div class="date">September 18, 2025</div>
+            <div class="content">
+                <div class="original-text"><ul>
+<li><strong>Upgraded LLM models:</strong> The LLM models used by Genie to author SQL have been upgraded for improved accuracy and performance.</li>
+<li><strong>SQL autocomplete:</strong> Autocomplete is now available when editing Genie SQL to help users write queries more efficiently.</li>
+<li><strong>Feedback API endpoints:</strong> Thumbs up and thumbs down feedback API endpoints are now available for collecting user feedback on Genie responses.</li>
+<li><strong>Suggested follow-up questions API:</strong> Suggested follow-up questions through the API are now available.</li>
+<li><strong>Consumer entitlement API access:</strong> Users with the workspace consumer entitlement can now use the API suite.</li>
+<li><strong>Warehouse ID in API responses:</strong> GET API requests for Genie spaces now include the <code>warehouse_id</code> attached to the space.</li>
+</ul></div>
+                <div class="translated-label">&gt; <ul>
+<li><strong>アップグレードされたLLMモデル:</strong> Genieが使用するSQLを作成するLLMモデルは、精度とパフォーマンスが向上するためにアップグレードされました。</li>
+<li><strong>SQLオートコンプリート:</strong> Genie SQLを編集する際に、ユーザーがクエリをより効率的に書くことができるようにオートコンプリートが利用可能になりました。</li>
+<li><strong>フィードバックAPIエンドポイント:</strong> Genieの回答に対するユーザーフィードバックを収集するために、サムズアップとサムズダウンのフィードバックAPIエンドポイントが利用可能になりました。</li>
+<li><strong>提案されるフォローアップ質問API:</strong> APIを通じて提案されるフォローアップ質問が利用可能になりました。</li>
+<li><strong>利用者エンタイトルメントAPIアクセス:</strong> ワークスペースの利用者エンタイトルメントを持つユーザーは、APIスイートを使用することができます。</li>
+<li><strong>APIレスポンスの倉庫ID:</strong> Genieスペースに対するGETAPIリクエストには、そのスペースに関連付けられた<code>warehouse_id</code>が含まれるようになりました。</li>
+</ul></div>
+            </div>
+        </div>
+        
+        <div class="article">
+            <a href="https://docs.databricks.com/aws/en/release-notes/whats-coming#the-data-science-agent-will-also-use-models-served-through-amazon-bedrock" target="_blank">
+                <div class="article-title">The Data Science Agent will also use models served through Amazon Bedrock</div>
+            </a>
+            <div class="translated-label">&gt; データサイエンスエージェントはAmazon Bedrockを通じてサービス提供されるモデルも使用します。</div>
+            <div class="date">September 17, 2025</div>
+            <div class="content">
+                <div class="original-text"><p>The Databricks Assistant will soon use models served through Amazon Bedrock as part of the <a href="https://docs.databricks.com/aws/en/notebooks/ds-agent">Data Science Agent</a> when <a href="https://docs.databricks.com/aws/en/databricks-ai/databricks-ai-trust">partner-powered AI features</a> are enabled.</p></div>
+                <div class="translated-label">&gt; Databricksアシスタントは、<a href="https://docs.databricks.com/aws/en/databricks-ai/databricks-ai-trust">パートナー提供のAI機能</a>が有効になると、<a href="https://docs.databricks.com/aws/en/notebooks/ds-agent">データサイエンスエージェント</a>の一部としてAmazon Bedrockを介してサービスされるモデルを使用するようになります。</div>
+            </div>
+        </div>
+        
+        <div class="article">
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/september#databricks-one-public-preview" target="_blank">
+                <div class="article-title">Databricks One Public Preview</div>
+            </a>
+            <div class="translated-label">&gt; データブリックス ワンパブリックプレビュー</div>
+            <div class="date">September 17, 2025</div>
+            <div class="content">
+                <div class="original-text"><p>Databricks One, a simplified user interface designed for business users, is now in Public Preview. Databricks One provides a single, intuitive entry point to interact with data and AI in Databricks, without requiring technical knowledge of compute resources, queries, models, or notebooks.</p>
+<p>With Databricks One, business users can:</p>
+<ul>
+<li>View and interact with AI/BI dashboards to track KPIs and analyze metrics.</li>
+<li>Ask data questions in natural language using AI/BI Genie.</li>
+<li>Use custom-built Databricks Apps that combine analytics, AI, and workflows.</li>
+</ul>
+<p>Workspace admins can enable Databricks One from the Previews page in the admin console.</p>
+<p>See <a href="https://docs.databricks.com/aws/en/workspace/databricks-one">What is Databricks One?</a>.</p></div>
+                <div class="translated-label">&gt; データブリックスワン:ビジネスユーザー向けの簡略化されたユーザーインターフェイスが、パブリックプレビューに登場しました。データブリックスワンは、コンピューティングリソース、クエリ、モデル、ノートブックの技術的知識なしに、データとAIをデータブリックスで操作できる単一の直感的なエントリーポイントを提供します。
 
-デフォルトストレージのデルタシェアリング - 拡張アクセスが全てのDatabricksユーザーにデフォルトで有効になると、デフォルトのストレージがサポートされているリージョンでレイクハウスフェデレーションのデルタシェアリングが自動的に利用可能になります。
+データブリックスワンにより、ビジネスユーザーは以下のことができます:
 
-「サーバーレスワークスペースのデフォルトストレージ」と「共有に外国のスキーマやテーブルを追加する」をご覧ください。</div>
-            </div>
-        </div>
-        
-        <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/september#databricks-runtime-172-is-now-is-now-ga" target="_blank">
-                <div class="article-title">Databricks Runtime 17.2 is now is now GA</div>
-            </a>
-            <div class="translated-label">&gt; Databricks Runtime 17.2はリリースされました。</div>
-            <div class="date">September 16, 2025</div>
-            <div class="content">
-                <div class="original-text"><p>Databricks Runtime 17.2 is now generally available. See <a href="https://docs.databricks.com/aws/en/release-notes/runtime/17.2">Databricks Runtime 17.2</a>.</p></div>
-                <div class="translated-label">&gt; Databricks Runtime 17.2が一般に利用可能になりました。<a href="https://docs.databricks.com/aws/en/release-notes/runtime/17.2">Databricks Runtime 17.2</a>をご覧ください。</div>
-            </div>
-        </div>
-        
-        <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/september#delta-sharing-on-lakehouse-federation-is-in-beta" target="_blank">
-                <div class="article-title">Delta Sharing on Lakehouse Federation is in Beta</div>
-            </a>
-            <div class="translated-label">&gt; デルタ共有はレイクハウス連合ベータ版にあります。</div>
-            <div class="date">September 16, 2025</div>
-            <div class="content">
-                <div class="original-text"><p>You can now use Delta Sharing to share foreign schemas and tables created with query federation in Databricks-to-Databricks sharing and open sharing. See <a href="https://docs.databricks.com/aws/en/delta-sharing/create-share#foreign-asset">Add foreign schemas or tables to a share</a> and <a href="https://docs.databricks.com/aws/en/delta-sharing/read-data-databricks#foreign-tables">Read data in a shared foreign table or foreign schema</a>.</p></div>
-                <div class="translated-label">&gt; データブリックス間の共有とオープン共有においてクエリフェデレーションを使用して作成された外部スキーマとテーブルを共有するために、Delta Sharing を使用できるようになりました。詳細については、「Add foreign schemas or tables to a share」と「Read data in a shared foreign table or foreign schema」をご覧ください。</div>
-            </div>
-        </div>
-        
-        <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/whats-coming#reload-notification-in-workspaces" target="_blank">
-                <div class="article-title">Reload notification in workspaces</div>
-            </a>
-            <div class="translated-label">&gt; ワークスペースでのリロード通知</div>
-            <div class="date">September 13, 2025</div>
-            <div class="content">
-                <div class="original-text"><p>In an upcoming release, a message to reload your workspace tab will display if your workspace tab has been open for a long time without refreshing. This will help ensure you are always using the latest version of Databricks with the newest features and fixes.</p></div>
-                <div class="translated-label">&gt; <p>今後のリリースでは、ワークスペースのタブを長時間更新せずに開いていた場合、ワークスペースのタブを再読み込みするメッセージが表示されるようになります。これにより、最新の機能やバグ修正を含むDatabricksの最新バージョンを常に使用することができます。</p></div>
-            </div>
-        </div>
-        
-        <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/september#mount-delta-shares-to-an-existing-shared-catalog" target="_blank">
-                <div class="article-title">Mount Delta shares to an existing shared catalog</div>
-            </a>
-            <div class="translated-label">&gt; デルタ山の株式は既存の共有カタログに共有されます。</div>
-            <div class="date">September 12, 2025</div>
-            <div class="content">
-                <div class="original-text"><p>Delta Sharing recipients can now mount shares received from their Delta Sharing provider to an existing shared catalog. Previously, recipients needed to create a new catalog for each new share. See <a href="https://docs.databricks.com/aws/en/delta-sharing/read-data-databricks#create-catalog">Create a catalog from a share</a>.</p></div>
-                <div class="translated-label">&gt; デルタ共有の受信者は、デルタ共有プロバイダーから受け取った共有を既存の共有カタログにマウントできるようになりました。以前は、受信者が新しい共有ごとに新しいカタログを作成する必要がありました。<a href="https://docs.databricks.com/aws/en/delta-sharing/read-data-databricks#create-catalog">共有からカタログを作成する</a>をご覧ください。</div>
+- KPIを追跡し、メトリクスを分析するためのAI/BIダッシュボードを表示および操作する
+- AI/BI ジーニーを使って自然言語でデータに質問する
+- 分析、AI、ワークフローを組み合わせたカスタムビルドのデータブリックスアプリを使う
+
+ワークスペースの管理者は、管理コンソールのプレビューページからデータブリックスワンを有効にすることができます。
+
+詳細は「What is Databricks One?」をご覧ください。</div>
             </div>
         </div>
         
