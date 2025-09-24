@@ -23,6 +23,130 @@
         <h1>Databricks Docs Updates</h1>
     
         <div class="article">
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/september#databricks-runtime-maintenance-updates" target="_blank">
+                <div class="article-title">Databricks Runtime maintenance updates</div>
+            </a>
+            <div class="translated-label">&gt; Databricksランタイムのメンテナンスアップデート</div>
+            <div class="date">September 24, 2025</div>
+            <div class="content">
+                <div class="original-text"><p>New maintenance updates are available for supported Databricks Runtime versions. These updates include bug fixes, security patches, and performance improvements. For details, see <a href="https://docs.databricks.com/aws/en/release-notes/runtime/maintenance-updates">Databricks Runtime maintenance updates</a>.</p></div>
+                <div class="translated-label">&gt; サポートされているDatabricks Runtimeバージョンに対して、新しいメンテナンスアップデートが利用可能になりました。これらのアップデートには、バグ修正、セキュリティパッチ、パフォーマンス改善が含まれています。詳細については、<a href="https://docs.databricks.com/aws/en/release-notes/runtime/maintenance-updates">Databricks Runtimeメンテナンスアップデート</a>をご覧ください。</div>
+            </div>
+        </div>
+        
+        <div class="article">
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/september#route-optimized-endpoints-now-require-route-optimized-url-path-for-querying" target="_blank">
+                <div class="article-title">Route-optimized endpoints now require route-optimized URL path for querying</div>
+            </a>
+            <div class="translated-label">&gt; ルートの最適化されたエンドポイントは、クエリのためにルートの最適化されたURLパスを必要とするようになりました。</div>
+            <div class="date">September 22, 2025</div>
+            <div class="content">
+                <div class="original-text"><p>All newly created route-optimized endpoints must be queried using the route-optimized URL. Queries using the standard workspace URL path are not supported for route-optimized endpoints created after September 22, 2025.</p>
+<p>See <a href="https://docs.databricks.com/aws/en/machine-learning/model-serving/query-route-optimization">Query route-optimized serving endpoints</a>.</p></div>
+                <div class="translated-label">&gt; <p>2025年9月22日以降に作成されたルート最適化エンドポイントは、ルート最適化URLを使用してクエリする必要があります。標準のワークスペースURLパスを使用してのクエリはサポートされていません。</p>
+<p><a href="https://docs.databricks.com/aws/en/machine-learning/model-serving/query-route-optimization">ルート最適化サービングエンドポイントのクエリ</a>を参照してください。</p></div>
+            </div>
+        </div>
+        
+        <div class="article">
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/september#explore-table-data-using-an-llm-public-preview" target="_blank">
+                <div class="article-title">Explore table data using an LLM (Public Preview)</div>
+            </a>
+            <div class="translated-label">&gt; テーブルデータをLLMを使って探索する(パブリックプレビュー)</div>
+            <div class="date">September 22, 2025</div>
+            <div class="content">
+                <div class="original-text"><p>You can now ask natural language questions about sample data using Catalog Explorer. The Assistant uses metadata context and table usage patterns to generate a SQL query. You can then validate the query and run it against the underlying table. See <a href="https://docs.databricks.com/aws/en/discover/database-objects#natural-language">Explore table data using an LLM</a>.</p></div>
+                <div class="translated-label">&gt; サンプルデータについて自然言語で質問できるようになりました。アシスタントはメタデータのコンテキストとテーブルの使用パターンを使ってSQLクエリを生成します。クエリを検証して基になるテーブルで実行することができます。<a href="https://docs.databricks.com/aws/en/discover/database-objects#natural-language">LLMを使ってテーブルデータを探索する</a>をご覧ください。</div>
+            </div>
+        </div>
+        
+        <div class="article">
+            <a href="https://docs.databricks.com/aws/en/release-notes/whats-coming#alerts-beta-updates" target="_blank">
+                <div class="article-title">Alerts (Beta) updates</div>
+            </a>
+            <div class="translated-label">&gt; アラート(ベータ版)の更新</div>
+            <div class="date">September 19, 2025</div>
+            <div class="content">
+                <div class="original-text"><p>Databricks is releasing changes to improve alerts that include breaking API changes. These changes do not affect <a href="https://docs.databricks.com/aws/en/sql/user/alerts/legacy">legacy alerts</a>.</p>
+<p>For more information on alerts, see <a href="https://docs.databricks.com/aws/en/sql/user/alerts">Databricks SQL alerts</a>.</p>
+<h3>API breaking changes</h3>
+<p>The following Alerts V2 API fields and values are being renamed or removed:</p>
+<ul>
+<li>In the Create, Get, Update, and List APIs, the <code>run_as_user_name</code> field will be removed.
+<ul>
+<li>Use <code>run_as</code> (request) and <code>effective_run_as</code> (response) instead.</li>
+</ul>
+</li>
+<li>In the List API, the <code>results</code> field will be renamed to <code>alerts</code>.</li>
+<li>In the Create, Get, Update, and List APIs, the <code>TRASHED</code> value in the <code>lifecycle_state</code> field will be renamed to <code>DELETED</code>.</li>
+<li>In the Create and Update APIs, <code>UNKNOWN</code> will no longer be supported for <code>empty_result_state</code>.</li>
+</ul>
+<div><p>Update any integrations using these APIs before October 6, 2025. If you use the SDKs or Terraform, upgrade to the latest version.</p></div>
+<p>For the API reference, see <a href="https://docs.databricks.com/api/workspace/alertsv2">Alerts V2 API</a>.</p>
+<h3><div></div> Deprecating <code>UNKNOWN</code> status for alerts</h3>
+<p>Currently, alerts can show as <code>UNKNOWN</code> either when they have never run or when <code>UNKNOWN</code> is selected for handling empty SQL results. To remove this ambiguity, the following updates will be made:</p>
+<ul>
+<li>
+<p><strong>Starting September 29, 2025</strong></p>
+<ul>
+<li>Never-run alerts will be shown as <strong>Not Run</strong> in the UI and <code>null</code> in the API.</li>
+<li>For new alerts,<code>UNKNOWN</code> will not be able to be selected for empty results. The defaults will remain <code>Error</code> with the option to use <code>OK</code> or <code>Triggered</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Starting October 6, 2025</strong></p>
+<ul>
+<li>The Create and Update APIs will no longer accept <code>UNKNOWN</code> as <code>empty_result_state</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Starting October 20, 2025</strong></p>
+<ul>
+<li>All existing alerts set to <code>UNKNOWN</code> will be updated to default to <code>Error</code>.</li>
+</ul>
+</li>
+</ul>
+<div><p>If you use <code>UNKNOWN</code> in your alerts, update them to use <code>OK</code>, <code>Triggered</code>, or <code>Error</code>.</p></div>
+<h3>New editing experience</h3>
+<p>Starting September 29, 2025, if you create or edit alerts, they will open in the new multi-tab editor experience. See <a href="https://docs.databricks.com/aws/en/sql/user/sql-editor">Write queries and explore data in the new SQL editor</a>. This change improves consistency across Databricks but does not alter functionality.</p></div>
+                <div class="translated-label">&gt; Databricksは、APIの変更を含むアラートの改善を公開しています。これらの変更は、レガシーアラートには影響しません。
+
+アラートの詳細については、Databricks SQLアラートをご覧ください。
+
+APIの破壊的な変更
+
+以下のAlerts V2 APIのフィールドと値が変更または削除されます:
+
+- Create、Get、Update、List APIの「run_as_user_name」フィールドが削除されます。代わりに「run_as」(リクエスト)と「effective_run_as」(レスポンス)を使用してください。
+- List APIの「results」フィールドが「alerts」に変更されます。
+- Create、Get、Update、List APIの「lifecycle_state」フィールドの「TRASHED」値が「DELETED」に変更されます。
+- Create、Update APIの「empty_result_state」で「UNKNOWN」がサポートされなくなります。
+
+2025年10月6日までにこれらのAPIを使用する統合を更新してください。SDKやTerraformを使用している場合は、最新バージョンにアップグレードしてください。
+
+APIリファレンスはAlerts V2 APIをご覧ください。
+
+アラートの「UNKNOWN」ステータスの非推奨化
+
+現在、アラートは実行されたことがない場合や空のSQL結果の処理が「UNKNOWN」に設定されている場合に「UNKNOWN」と表示されています。この曖昧さを解消するため、以下の更新が行われます:
+
+- 2025年9月29日より:
+  - 実行されていないアラートはUIで「Not Run」、APIで「null」と表示されます。
+  - 新規作成のアラートでは「UNKNOWN」を空の結果の処理に設定できなくなります。デフォルトは「Error」で、「OK」または「Triggered」を選択できます。
+- 2025年10月6日より:
+  - Create、Update APIで「UNKNOWN」の「empty_result_state」は受け付けられなくなります。
+- 2025年10月20日より:
+  - 「UNKNOWN」に設定されているすべての既存のアラートが「Error」にデフォルト設定されます。
+
+「UNKNOWN」を使用しているアラートは、「OK」、「Triggered」、または「Error」に更新してください。
+
+新しい編集エクスペリエンス
+
+2025年9月29日より、アラートの作成や編集を行う際に、新しいマルチタブエディターエクスペリエンスが使用されるようになります。この変更によりDatabricksの一貫性が向上しますが、機能に変更はありません。</div>
+            </div>
+        </div>
+        
+        <div class="article">
             <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/september#compliance-support-for-mosaic-ai-vector-search-standard-endpoints" target="_blank">
                 <div class="article-title">Compliance support for Mosaic AI Vector Search standard endpoints</div>
             </a>
@@ -30,93 +154,7 @@
             <div class="date">September 18, 2025</div>
             <div class="content">
                 <div class="original-text"><p>Mosaic AI Vector Search standard endpoints are now available in FedRAMP Moderate and IRAP workspaces. See <a href="https://docs.databricks.com/aws/en/generative-ai/vector-search">Mosaic AI Vector Search</a>.</p></div>
-                <div class="translated-label">&gt; <p>Mosaic AI ベクトル検索の標準エンドポイントが、FedRAMP Moderate およびIRAP ワークスペースで利用可能になりました。<a href="https://docs.databricks.com/aws/en/generative-ai/vector-search">Mosaic AI ベクトル検索</a>をご覧ください。</p></div>
-            </div>
-        </div>
-        
-        <div class="article">
-            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2025#aibi-dashboard-genie-integration-and-publish-dialog-improvements" target="_blank">
-                <div class="article-title">AI/BI dashboard Genie integration and publish dialog improvements</div>
-            </a>
-            <div class="translated-label">&gt; AIとBIダッシュボードのGenie統合、および公開ダイアログの改善</div>
-            <div class="date">September 18, 2025</div>
-            <div class="content">
-                <div class="original-text"><ul>
-<li><strong>Genie credential handling for embedded dashboards:</strong> Genie integrated with dashboards published with embedded credentials now executes generated queries using the publisher's data credentials. Dashboards published without embedded credentials continue executing using the viewer's data credentials.</li>
-<li><strong>Simplified publish dialog:</strong> The dashboard publish dialog has been redesigned and simplified. The toggle for Genie integration has been moved to dashboard settings.</li>
-</ul></div>
-                <div class="translated-label">&gt; <ul>
-<li><strong>組み込みダッシュボードのGenie資格情報の処理:</strong> Genieは、組み込み資格情報で公開されたダッシュボードと統合され、発行者のデータ資格情報を使用して生成されたクエリを実行します。組み込み資格情報なしで公開されたダッシュボードは、ビューアーのデータ資格情報を使用して実行を続けます。</li>
-<li><strong>簡略化された公開ダイアログ:</strong> ダッシュボードの公開ダイアログが再設計され、簡略化されました。Genieとの統合のトグルがダッシュボードの設定に移動されました。</li>
-</ul></div>
-            </div>
-        </div>
-        
-        <div class="article">
-            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2025#genie-sql-improvements-api-enhancements-and-bug-fixes" target="_blank">
-                <div class="article-title">Genie SQL improvements, API enhancements, and bug fixes</div>
-            </a>
-            <div class="translated-label">&gt; ジーニーSQL改善、APIの強化、およびバグ修正</div>
-            <div class="date">September 18, 2025</div>
-            <div class="content">
-                <div class="original-text"><ul>
-<li><strong>Upgraded LLM models:</strong> The LLM models used by Genie to author SQL have been upgraded for improved accuracy and performance.</li>
-<li><strong>SQL autocomplete:</strong> Autocomplete is now available when editing Genie SQL to help users write queries more efficiently.</li>
-<li><strong>Feedback API endpoints:</strong> Thumbs up and thumbs down feedback API endpoints are now available for collecting user feedback on Genie responses.</li>
-<li><strong>Suggested follow-up questions API:</strong> Suggested follow-up questions through the API are now available.</li>
-<li><strong>Consumer entitlement API access:</strong> Users with the workspace consumer entitlement can now use the API suite.</li>
-<li><strong>Warehouse ID in API responses:</strong> GET API requests for Genie spaces now include the <code>warehouse_id</code> attached to the space.</li>
-</ul></div>
-                <div class="translated-label">&gt; <ul>
-<li><strong>アップグレードされたLLMモデル:</strong> GénieがSQL作成に使用するLLMモデルが、精度と性能の向上のためにアップグレードされました。</li>
-<li><strong>SQLオートコンプリート:</strong> GénieのSQL編集時に、ユーザーがクエリをより効率的に記述できるようオートコンプリートが利用可能になりました。</li>
-<li><strong>フィードバックAPIエンドポイント:</strong> Génieの回答に対するユーザーからのフィードバックを収集するため、「いいね」と「あまり良くない」のフィードバックAPIエンドポイントが利用可能になりました。</li>
-<li><strong>提案されるフォローアップ質問API:</strong> APIを介して提案されるフォローアップ質問が利用可能になりました。</li>
-<li><strong>ユーザーの権限APIアクセス:</strong> ワークスペースのユーザー権限を持つユーザーがAPIを使用できるようになりました。</li>
-<li><strong>APIレスポンスのウェアハウスID:</strong> GénieのスペースのGET APIリクエストに、そのスペースに関連付けられた<code>warehouse_id</code>が含まれるようになりました。</li>
-</ul></div>
-            </div>
-        </div>
-        
-        <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/september#databricks-one-public-preview" target="_blank">
-                <div class="article-title">Databricks One Public Preview</div>
-            </a>
-            <div class="translated-label">&gt; データブリックス ワン パブリック プレビュー</div>
-            <div class="date">September 17, 2025</div>
-            <div class="content">
-                <div class="original-text"><p>Databricks One, a simplified user interface designed for business users, is now in Public Preview. Databricks One provides a single, intuitive entry point to interact with data and AI in Databricks, without requiring technical knowledge of compute resources, queries, models, or notebooks.</p>
-<p>With Databricks One, business users can:</p>
-<ul>
-<li>View and interact with AI/BI dashboards to track KPIs and analyze metrics.</li>
-<li>Ask data questions in natural language using AI/BI Genie.</li>
-<li>Use custom-built Databricks Apps that combine analytics, AI, and workflows.</li>
-</ul>
-<p>Workspace admins can enable Databricks One from the Previews page in the admin console.</p>
-<p>See <a href="https://docs.databricks.com/aws/en/workspace/databricks-one">What is Databricks One?</a>.</p></div>
-                <div class="translated-label">&gt; データブリックスワン（Databricks One）は、ビジネスユーザー向けに設計された簡略化されたユーザーインターフェイスで、現在パブリックプレビューに入っています。データブリックスワンは、コンピューティングリソース、クエリ、モデル、ノートブックに関する技術的な知識なしに、データとAIをデータブリックスで直接操作できる、単一の直感的な入り口を提供します。
-
-データブリックスワンを使うことで、ビジネスユーザーは次のことができます:
-
-- KPIをトラッキングし、メトリクスを分析するためのAI/BIダッシュボードを閲覧し、操作する。
-- AI/BI Genieを使って自然言語でデータに関する質問をする。
-- アナリティクス、AI、ワークフローを組み合わせたカスタムビルトのデータブリックスアプリを使う。
-
-ワークスペースの管理者は、管理コンソールのプレビューページからデータブリックスワンを有効化できます。
-
-詳しくは、<a href="https://docs.databricks.com/aws/en/workspace/databricks-one">What is Databricks One?</a>をご覧ください。</div>
-            </div>
-        </div>
-        
-        <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/whats-coming#the-data-science-agent-will-also-use-models-served-through-amazon-bedrock" target="_blank">
-                <div class="article-title">The Data Science Agent will also use models served through Amazon Bedrock</div>
-            </a>
-            <div class="translated-label">&gt; データサイエンスエージェントは、Amazon Bedrock を通じて提供されるモデルも使用します。</div>
-            <div class="date">September 17, 2025</div>
-            <div class="content">
-                <div class="original-text"><p>The Databricks Assistant will soon use models served through Amazon Bedrock as part of the <a href="https://docs.databricks.com/aws/en/notebooks/ds-agent">Data Science Agent</a> when <a href="https://docs.databricks.com/aws/en/databricks-ai/databricks-ai-trust">partner-powered AI features</a> are enabled.</p></div>
-                <div class="translated-label">&gt; データブリックス・アシスタントは、データサイエンス・エージェントを通じて、パートナー提供のAI機能が有効になると、Amazon Bedrockのモデルを利用するようになる予定です。</div>
+                <div class="translated-label">&gt; <p>モザイクAIベクトル検索の標準エンドポイントが、FedRAMP ModerateおよびIRAP ワークスペースで利用可能になりました。<a href="https://docs.databricks.com/aws/en/generative-ai/vector-search">モザイクAIベクトル検索</a>をご覧ください。</p></div>
             </div>
         </div>
         
