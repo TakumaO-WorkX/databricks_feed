@@ -23,138 +23,111 @@
         <h1>Databricks Docs Updates</h1>
     
         <div class="article">
+            <a href="https://docs.databricks.com/aws/en/sql/release-notes/2025#databricks-sql-version-202530-is-now-available-in-preview" target="_blank">
+                <div class="article-title">Databricks SQL version 2025.30 is now available in Preview</div>
+            </a>
+            <div class="translated-label">&gt; データブリックス SQL バージョン 2025.30がプレビューで利用可能になりました。</div>
+            <div class="date">September 25, 2025</div>
+            <div class="content">
+                <div class="original-text"><p>Databricks SQL version 2025.30 is now available in the <strong>Preview</strong> channel. Review the following section to learn about new features, behavioral changes, and bug fixes.</p>
+<h4>SQL Scripting is now Generally Available</h4>
+<p>SQL scripting capabilities based on ANSI SQL/PSM to write procedural logic with SQL, including conditional statements, loops, local variables, and exception handling are now Generally Available. See <a href="https://docs.databricks.com/aws/en/sql/language-manual/sql-ref-scripting">SQL scripting</a>.</p>
+<h4>UTF8 based collations now support LIKE operator</h4>
+<p>You can now use LIKE with columns that have one of the following collations enabled: <code>UTF8_Binary</code>, <code>UTF8_Binary_RTRIM</code>, <code>UTF8_LCASE</code>, <code>UTF8_LCASE_RTRIM</code>. See <a href="https://docs.databricks.com/aws/en/sql/language-manual/sql-ref-collation">Collation</a>.</p>
+<h4><code>ST_ExteriorRing</code> function is now supported</h4>
+<p>You can now use the <code>ST_ExteriorRing</code> function to extract the outer boundary of a polygon and return it as a linestring. See <a href="https://docs.databricks.com/aws/en/sql/language-manual/functions/st_exteriorring"><code>st_exteriorring</code> function</a>.</p>
+<h4>Declare multiple session or local variables in a single <code>DECLARE</code> statement</h4>
+<p>You can now declare multiple session or local variables of the same type and default value in a single <code>DECLARE</code> statement. See <a href="https://docs.databricks.com/aws/en/sql/language-manual/sql-ref-syntax-ddl-declare-variable">DECLARE VARIABLE</a> and <a href="https://docs.databricks.com/aws/en/sql/language-manual/control-flow/compound-stmt">BEGIN END compound statement</a>.</p>
+<h4>Support <code>TEMPORARY</code> keyword for metric view creation</h4>
+<p>You can now use the <code>TEMPORARY</code> keyword when creating a metric view. Temporary metric views are visible only in the session that created them and are dropped when the session ends. See <a href="https://docs.databricks.com/aws/en/sql/language-manual/sql-ref-syntax-ddl-create-view">CREATE VIEW</a>.</p>
+<h4><code>DESCRIBE CONNECTION</code> shows environment settings for JDBC connections</h4>
+<p>Databricks now includes user-defined environment settings in the <a href="https://docs.databricks.com/aws/en/sql/language-manual/sql-ref-syntax-aux-describe-connection"><code>DESCRIBE CONNECTION</code></a> output for JDBC connections that support custom drivers and run in isolation. Other connection types remain unchanged.</p>
+<h4>SQL syntax for Delta read options in streaming queries</h4>
+<p>You can now specify Delta read options for SQL-based streaming queries using the <code>WITH</code> clause. For example:</p>
+<pre><code class="language-sql">SELECT * FROM STREAM tbl WITH (SKIPCHANGECOMMITS=true, STARTINGVERSION=X);
+</code></pre>
+<h4>Correct results for <code>split</code> with empty regex and positive limit</h4>
+<p>Databricks now returns correct results when using <a href="https://docs.databricks.com/aws/en/sql/language-manual/functions/split"><code>split function</code></a> with an empty regex and a positive limit. Previously, the function incorrectly truncated the remaining string instead of including it in the last element.</p>
+<h4>Fix <code>url_decode</code> and <code>try_url_decode</code> error handling in Photon</h4>
+<p>In Photon, <a href="https://docs.databricks.com/aws/en/sql/language-manual/functions/try_url_decode"><code>try_url_decode()</code></a> and <a href="https://docs.databricks.com/aws/en/sql/language-manual/functions/url_decode"><code>url_decode()</code></a> with <code>failOnError = false</code> now return <code>NULL</code> for invalid URL-encoded strings instead of failing the query.</p></div>
+                <div class="translated-label">&gt; <p>2025.30 バージョンの Databricks SQL は<strong>プレビュー</strong>チャンネルで利用可能になりました。新機能、動作の変更、バグ修正について以下をご確認ください。</p>
+<h4>SQL スクリプティングが一般提供開始</h4>
+<p>ANSI SQL/PSM に基づくSQL スクリプティング機能が一般提供開始となりました。条件文、ループ、ローカル変数、例外処理などの手続き型ロジックをSQL で記述できます。詳細は<a href="https://docs.databricks.com/aws/en/sql/language-manual/sql-ref-scripting">SQL スクリプティング</a>をご覧ください。</p>
+<h4>UTF8 ベースのコレーションで LIKE 演算子がサポートされました</h4>
+<p><code>UTF8_Binary</code>、<code>UTF8_Binary_RTRIM</code>、<code>UTF8_LCASE</code>、<code>UTF8_LCASE_RTRIM</code>のいずれかのコレーションが設定されたカラムでLIKE 演算子が使えるようになりました。<a href="https://docs.databricks.com/aws/en/sql/language-manual/sql-ref-collation">コレーション</a>をご確認ください。</p>
+<h4><code>ST_ExteriorRing</code> 関数がサポートされました</h4>
+<p><code>ST_ExteriorRing</code> 関数を使って、ポリゴンの外側の境界線を抽出し、ラインストリングとして返すことができます。<a href="https://docs.databricks.com/aws/en/sql/language-manual/functions/st_exteriorring"><code>st_exteriorring</code> 関数</a>をご確認ください。</p>
+<h4>単一の<code>DECLARE</code>文で複数のセッションまたはローカル変数を宣言できるようになりました</h4>
+<p>同じデータ型と初期値の変数を1つの<code>DECLARE</code>文で宣言できるようになりました。<a href="https://docs.databricks.com/aws/en/sql/language-manual/sql-ref-syntax-ddl-declare-variable">DECLARE VARIABLE</a>と<a href="https://docs.databricks.com/aws/en/sql/language-manual/control-flow/compound-stmt">BEGIN END compound statement</a>をご確認ください。</p>
+<h4>メトリックビューの作成に<code>TEMPORARY</code>キーワードがサポートされました</h4>
+<p>メトリックビューの作成時に<code>TEMPORARY</code>キーワードを使用できるようになりました。一時メトリックビューはそのセッションでのみ表示され、セッション終了時に削除されます。<a href="https://docs.databricks.com/aws/en/sql/language-manual/sql-ref-syntax-ddl-create-view">CREATE VIEW</a>をご確認ください。</p>
+<h4><code>DESCRIBE CONNECTION</code>でJDBCコネクションの環境設定が表示されるようになりました</h4>
+<p>カスタムドライバーを使用し、分離されて実行されるJDBCコネクションについて、<a href="https://docs.databricks.com/aws/en/sql/language-manual/sql-ref-syntax-aux-describe-connection"><code>DESCRIBE CONNECTION</code></a>出力に、ユ</div>
+            </div>
+        </div>
+        
+        <div class="article">
+            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2025#aibi-dashboard-global-filters-panel-improvements" target="_blank">
+                <div class="article-title">AI/BI dashboard global filters panel improvements</div>
+            </a>
+            <div class="translated-label">&gt; AIおよびBIダッシュボードのグローバルフィルターパネルの改善</div>
+            <div class="date">September 25, 2025</div>
+            <div class="content">
+                <div class="original-text"><ul>
+<li><strong>Global filters panel expanded by default:</strong> The global filters panel now opens by default when users first visit a dashboard to improve discoverability. On subsequent visits, the panel preserves the user's last setting.</li>
+</ul></div>
+                <div class="translated-label">&gt; <ul>
+<li><strong>グローバルフィルターパネルがデフォルトで展開されます:</strong> ユーザーがダッシュボードを最初に訪れるときに、グローバルフィルターパネルがデフォルトで開くようになりました。次回訪問時には、ユーザーの最後の設定が維持されます。</li>
+</ul></div>
+            </div>
+        </div>
+        
+        <div class="article">
+            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2025#genie-benchmarks-and-join-relationship-enhancements" target="_blank">
+                <div class="article-title">Genie benchmarks and JOIN relationship enhancements</div>
+            </a>
+            <div class="translated-label">&gt; ジーニーのベンチマークとJOIN関係の強化</div>
+            <div class="date">September 25, 2025</div>
+            <div class="content">
+                <div class="original-text"><ul>
+<li><strong>Benchmarks run in the background:</strong> Benchmarks now run as background tasks. Users can start a run without blocking their workflow.</li>
+<li><strong>Checkmark for accepted JOIN relationships:</strong> Accepting extracted JOIN relationships now displays a checkmark to confirm acceptance.</li>
+<li><strong>Improved benchmarks accessibility:</strong> Benchmarks are now available from the top-line toolbar for easier access.</li>
+<li><strong>Notifications for benchmarks:</strong> A notification now encourages users to run benchmarks after making changes to instructions.</li>
+</ul></div>
+                <div class="translated-label">&gt; <ul>
+<li><strong>背景で実行されるベンチマーク:</strong> ベンチマークは現在バックグラウンドタスクとして実行されます。ユーザーはワークフローをブロックすることなくランを開始できます。</li>
+<li><strong>受け入れられたJOIN関係のチェックマーク:</strong> 抽出されたJOIN関係を受け入れると、受け入れが確認されたことを示すチェックマークが表示されます。</li>
+<li><strong>ベンチマークのアクセシビリティの向上:</strong> ベンチマークはトップラインツールバーから簡単にアクセスできるようになりました。</li>
+<li><strong>ベンチマークの通知:</strong> 指示を変更した後、ユーザーにベンチマークを実行するよう促す通知が表示されます。</li>
+</ul></div>
+            </div>
+        </div>
+        
+        <div class="article">
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/september#migrate-lakeflow-declarative-pipelines-pipelines-from-legacy-publishing-mode-is-generally-available" target="_blank">
+                <div class="article-title">Migrate Lakeflow Declarative Pipelines pipelines from legacy publishing mode is generally available</div>
+            </a>
+            <div class="translated-label">&gt; レガシーの公開モードからLakeflow Declarative Pipelines パイプラインを移行することが一般に利用可能になりました。</div>
+            <div class="date">September 24, 2025</div>
+            <div class="content">
+                <div class="original-text"><p>Lakeflow Declarative Pipelines has a legacy publishing mode that only allowed publishing to a single catalog and schema. The default publishing mode enables publishing to multiple catalogs and schemas. Migration from the legacy publishing mode to the default publishing mode is now generally available (issues encountered in the previous release of this feature have been fixed).</p>
+<p>See <a href="https://docs.databricks.com/aws/en/dlt/migrate-to-dpm">Enable the default publishing mode in a pipeline</a>.</p></div>
+                <div class="translated-label">&gt; レガシーパブリッシングモードは単一のカタログとスキーマへのパブリッシングしか許可していませんでしたが、デフォルトのパブリッシングモードではマルチカタログとマルチスキーマへのパブリッシングが可能になっています。レガシーパブリッシングモードからデフォルトのパブリッシングモードへの移行が一般に利用可能になりました(前回のリリースで発生していた問題は修正されています)。
+
+パイプラインでデフォルトのパブリッシングモードを有効にするには、「https://docs.databricks.com/aws/en/dlt/migrate-to-dpm」を参照してください。</div>
+            </div>
+        </div>
+        
+        <div class="article">
             <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/september#databricks-runtime-maintenance-updates" target="_blank">
                 <div class="article-title">Databricks Runtime maintenance updates</div>
             </a>
-            <div class="translated-label">&gt; Databricksランタイムのメンテナンスアップデート</div>
+            <div class="translated-label">&gt; データブリックスのランタイムメンテナンスアップデート</div>
             <div class="date">September 24, 2025</div>
             <div class="content">
                 <div class="original-text"><p>New maintenance updates are available for supported Databricks Runtime versions. These updates include bug fixes, security patches, and performance improvements. For details, see <a href="https://docs.databricks.com/aws/en/release-notes/runtime/maintenance-updates">Databricks Runtime maintenance updates</a>.</p></div>
-                <div class="translated-label">&gt; サポートされているDatabricks Runtimeバージョンに対して、新しいメンテナンスアップデートが利用可能になりました。これらのアップデートには、バグ修正、セキュリティパッチ、パフォーマンス改善が含まれています。詳細については、<a href="https://docs.databricks.com/aws/en/release-notes/runtime/maintenance-updates">Databricks Runtimeメンテナンスアップデート</a>をご覧ください。</div>
-            </div>
-        </div>
-        
-        <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/september#route-optimized-endpoints-now-require-route-optimized-url-path-for-querying" target="_blank">
-                <div class="article-title">Route-optimized endpoints now require route-optimized URL path for querying</div>
-            </a>
-            <div class="translated-label">&gt; ルートの最適化されたエンドポイントは、クエリのためにルートの最適化されたURLパスを必要とするようになりました。</div>
-            <div class="date">September 22, 2025</div>
-            <div class="content">
-                <div class="original-text"><p>All newly created route-optimized endpoints must be queried using the route-optimized URL. Queries using the standard workspace URL path are not supported for route-optimized endpoints created after September 22, 2025.</p>
-<p>See <a href="https://docs.databricks.com/aws/en/machine-learning/model-serving/query-route-optimization">Query route-optimized serving endpoints</a>.</p></div>
-                <div class="translated-label">&gt; <p>2025年9月22日以降に作成されたルート最適化エンドポイントは、ルート最適化URLを使用してクエリする必要があります。標準のワークスペースURLパスを使用してのクエリはサポートされていません。</p>
-<p><a href="https://docs.databricks.com/aws/en/machine-learning/model-serving/query-route-optimization">ルート最適化サービングエンドポイントのクエリ</a>を参照してください。</p></div>
-            </div>
-        </div>
-        
-        <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/september#explore-table-data-using-an-llm-public-preview" target="_blank">
-                <div class="article-title">Explore table data using an LLM (Public Preview)</div>
-            </a>
-            <div class="translated-label">&gt; テーブルデータをLLMを使って探索する(パブリックプレビュー)</div>
-            <div class="date">September 22, 2025</div>
-            <div class="content">
-                <div class="original-text"><p>You can now ask natural language questions about sample data using Catalog Explorer. The Assistant uses metadata context and table usage patterns to generate a SQL query. You can then validate the query and run it against the underlying table. See <a href="https://docs.databricks.com/aws/en/discover/database-objects#natural-language">Explore table data using an LLM</a>.</p></div>
-                <div class="translated-label">&gt; サンプルデータについて自然言語で質問できるようになりました。アシスタントはメタデータのコンテキストとテーブルの使用パターンを使ってSQLクエリを生成します。クエリを検証して基になるテーブルで実行することができます。<a href="https://docs.databricks.com/aws/en/discover/database-objects#natural-language">LLMを使ってテーブルデータを探索する</a>をご覧ください。</div>
-            </div>
-        </div>
-        
-        <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/whats-coming#alerts-beta-updates" target="_blank">
-                <div class="article-title">Alerts (Beta) updates</div>
-            </a>
-            <div class="translated-label">&gt; アラート(ベータ版)の更新</div>
-            <div class="date">September 19, 2025</div>
-            <div class="content">
-                <div class="original-text"><p>Databricks is releasing changes to improve alerts that include breaking API changes. These changes do not affect <a href="https://docs.databricks.com/aws/en/sql/user/alerts/legacy">legacy alerts</a>.</p>
-<p>For more information on alerts, see <a href="https://docs.databricks.com/aws/en/sql/user/alerts">Databricks SQL alerts</a>.</p>
-<h3>API breaking changes</h3>
-<p>The following Alerts V2 API fields and values are being renamed or removed:</p>
-<ul>
-<li>In the Create, Get, Update, and List APIs, the <code>run_as_user_name</code> field will be removed.
-<ul>
-<li>Use <code>run_as</code> (request) and <code>effective_run_as</code> (response) instead.</li>
-</ul>
-</li>
-<li>In the List API, the <code>results</code> field will be renamed to <code>alerts</code>.</li>
-<li>In the Create, Get, Update, and List APIs, the <code>TRASHED</code> value in the <code>lifecycle_state</code> field will be renamed to <code>DELETED</code>.</li>
-<li>In the Create and Update APIs, <code>UNKNOWN</code> will no longer be supported for <code>empty_result_state</code>.</li>
-</ul>
-<div><p>Update any integrations using these APIs before October 6, 2025. If you use the SDKs or Terraform, upgrade to the latest version.</p></div>
-<p>For the API reference, see <a href="https://docs.databricks.com/api/workspace/alertsv2">Alerts V2 API</a>.</p>
-<h3><div></div> Deprecating <code>UNKNOWN</code> status for alerts</h3>
-<p>Currently, alerts can show as <code>UNKNOWN</code> either when they have never run or when <code>UNKNOWN</code> is selected for handling empty SQL results. To remove this ambiguity, the following updates will be made:</p>
-<ul>
-<li>
-<p><strong>Starting September 29, 2025</strong></p>
-<ul>
-<li>Never-run alerts will be shown as <strong>Not Run</strong> in the UI and <code>null</code> in the API.</li>
-<li>For new alerts,<code>UNKNOWN</code> will not be able to be selected for empty results. The defaults will remain <code>Error</code> with the option to use <code>OK</code> or <code>Triggered</code>.</li>
-</ul>
-</li>
-<li>
-<p><strong>Starting October 6, 2025</strong></p>
-<ul>
-<li>The Create and Update APIs will no longer accept <code>UNKNOWN</code> as <code>empty_result_state</code>.</li>
-</ul>
-</li>
-<li>
-<p><strong>Starting October 20, 2025</strong></p>
-<ul>
-<li>All existing alerts set to <code>UNKNOWN</code> will be updated to default to <code>Error</code>.</li>
-</ul>
-</li>
-</ul>
-<div><p>If you use <code>UNKNOWN</code> in your alerts, update them to use <code>OK</code>, <code>Triggered</code>, or <code>Error</code>.</p></div>
-<h3>New editing experience</h3>
-<p>Starting September 29, 2025, if you create or edit alerts, they will open in the new multi-tab editor experience. See <a href="https://docs.databricks.com/aws/en/sql/user/sql-editor">Write queries and explore data in the new SQL editor</a>. This change improves consistency across Databricks but does not alter functionality.</p></div>
-                <div class="translated-label">&gt; Databricksは、APIの変更を含むアラートの改善を公開しています。これらの変更は、レガシーアラートには影響しません。
-
-アラートの詳細については、Databricks SQLアラートをご覧ください。
-
-APIの破壊的な変更
-
-以下のAlerts V2 APIのフィールドと値が変更または削除されます:
-
-- Create、Get、Update、List APIの「run_as_user_name」フィールドが削除されます。代わりに「run_as」(リクエスト)と「effective_run_as」(レスポンス)を使用してください。
-- List APIの「results」フィールドが「alerts」に変更されます。
-- Create、Get、Update、List APIの「lifecycle_state」フィールドの「TRASHED」値が「DELETED」に変更されます。
-- Create、Update APIの「empty_result_state」で「UNKNOWN」がサポートされなくなります。
-
-2025年10月6日までにこれらのAPIを使用する統合を更新してください。SDKやTerraformを使用している場合は、最新バージョンにアップグレードしてください。
-
-APIリファレンスはAlerts V2 APIをご覧ください。
-
-アラートの「UNKNOWN」ステータスの非推奨化
-
-現在、アラートは実行されたことがない場合や空のSQL結果の処理が「UNKNOWN」に設定されている場合に「UNKNOWN」と表示されています。この曖昧さを解消するため、以下の更新が行われます:
-
-- 2025年9月29日より:
-  - 実行されていないアラートはUIで「Not Run」、APIで「null」と表示されます。
-  - 新規作成のアラートでは「UNKNOWN」を空の結果の処理に設定できなくなります。デフォルトは「Error」で、「OK」または「Triggered」を選択できます。
-- 2025年10月6日より:
-  - Create、Update APIで「UNKNOWN」の「empty_result_state」は受け付けられなくなります。
-- 2025年10月20日より:
-  - 「UNKNOWN」に設定されているすべての既存のアラートが「Error」にデフォルト設定されます。
-
-「UNKNOWN」を使用しているアラートは、「OK」、「Triggered」、または「Error」に更新してください。
-
-新しい編集エクスペリエンス
-
-2025年9月29日より、アラートの作成や編集を行う際に、新しいマルチタブエディターエクスペリエンスが使用されるようになります。この変更によりDatabricksの一貫性が向上しますが、機能に変更はありません。</div>
-            </div>
-        </div>
-        
-        <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/september#compliance-support-for-mosaic-ai-vector-search-standard-endpoints" target="_blank">
-                <div class="article-title">Compliance support for Mosaic AI Vector Search standard endpoints</div>
-            </a>
-            <div class="translated-label">&gt; モザイクAIベクトル検索標準エンドポイントのコンプライアンスサポート</div>
-            <div class="date">September 18, 2025</div>
-            <div class="content">
-                <div class="original-text"><p>Mosaic AI Vector Search standard endpoints are now available in FedRAMP Moderate and IRAP workspaces. See <a href="https://docs.databricks.com/aws/en/generative-ai/vector-search">Mosaic AI Vector Search</a>.</p></div>
-                <div class="translated-label">&gt; <p>モザイクAIベクトル検索の標準エンドポイントが、FedRAMP ModerateおよびIRAP ワークスペースで利用可能になりました。<a href="https://docs.databricks.com/aws/en/generative-ai/vector-search">モザイクAIベクトル検索</a>をご覧ください。</p></div>
+                <div class="translated-label">&gt; サポートされているDatabricks Runtimeバージョンの新しいメンテナンスアップデートが利用可能です。これらのアップデートには、バグ修正、セキュリティパッチ、パフォーマンス改善が含まれています。詳細については、<a href="https://docs.databricks.com/aws/en/release-notes/runtime/maintenance-updates">Databricks Runtimeメンテナンスアップデート</a>をご覧ください。</div>
             </div>
         </div>
         
