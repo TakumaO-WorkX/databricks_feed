@@ -23,109 +23,72 @@
         <h1>Databricks Docs Updates</h1>
     
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/sql/release-notes/2025#databricks-sql-version-202530-is-now-available-in-preview" target="_blank">
-                <div class="article-title">Databricks SQL version 2025.30 is now available in Preview</div>
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/september#pipeline-update-timeline-table-is-now-available-public-preview" target="_blank">
+                <div class="article-title">Pipeline update timeline table is now available (Public Preview)</div>
             </a>
-            <div class="translated-label">&gt; データブリックスSQL バージョン2025.30がプレビューで利用可能になりました。</div>
-            <div class="date">September 25, 2025</div>
+            <div class="translated-label">&gt; パイプラインのアップデート時系列テーブルが利用可能になりました(パブリックプレビュー)</div>
+            <div class="date">September 30, 2025</div>
             <div class="content">
-                <div class="original-text"><p>Databricks SQL version 2025.30 is now available in the <strong>Preview</strong> channel. Review the following section to learn about new features, behavioral changes, and bug fixes.</p>
-<h4>UTF8 based collations now support LIKE operator</h4>
-<p>You can now use LIKE with columns that have one of the following collations enabled: <code>UTF8_Binary</code>, <code>UTF8_Binary_RTRIM</code>, <code>UTF8_LCASE</code>, <code>UTF8_LCASE_RTRIM</code>. See <a href="https://docs.databricks.com/aws/en/sql/language-manual/sql-ref-collation">Collation</a>.</p>
-<h4><code>ST_ExteriorRing</code> function is now supported</h4>
-<p>You can now use the <code>ST_ExteriorRing</code> function to extract the outer boundary of a polygon and return it as a linestring. See <a href="https://docs.databricks.com/aws/en/sql/language-manual/functions/st_exteriorring"><code>st_exteriorring</code> function</a>.</p>
-<h4>Declare multiple session or local variables in a single <code>DECLARE</code> statement</h4>
-<p>You can now declare multiple session or local variables of the same type and default value in a single <code>DECLARE</code> statement. See <a href="https://docs.databricks.com/aws/en/sql/language-manual/sql-ref-syntax-ddl-declare-variable">DECLARE VARIABLE</a> and <a href="https://docs.databricks.com/aws/en/sql/language-manual/control-flow/compound-stmt">BEGIN END compound statement</a>.</p>
-<h4>Support <code>TEMPORARY</code> keyword for metric view creation</h4>
-<p>You can now use the <code>TEMPORARY</code> keyword when creating a metric view. Temporary metric views are visible only in the session that created them and are dropped when the session ends. See <a href="https://docs.databricks.com/aws/en/sql/language-manual/sql-ref-syntax-ddl-create-view">CREATE VIEW</a>.</p>
-<h4><code>DESCRIBE CONNECTION</code> shows environment settings for JDBC connections</h4>
-<p>Databricks now includes user-defined environment settings in the <a href="https://docs.databricks.com/aws/en/sql/language-manual/sql-ref-syntax-aux-describe-connection"><code>DESCRIBE CONNECTION</code></a> output for JDBC connections that support custom drivers and run in isolation. Other connection types remain unchanged.</p>
-<h4>SQL syntax for Delta read options in streaming queries</h4>
-<p>You can now specify Delta read options for SQL-based streaming queries using the <code>WITH</code> clause. For example:</p>
-<pre><code class="language-sql">SELECT * FROM STREAM tbl WITH (SKIPCHANGECOMMITS=true, STARTINGVERSION=X);
-</code></pre>
-<h4>Correct results for <code>split</code> with empty regex and positive limit</h4>
-<p>Databricks now returns correct results when using <a href="https://docs.databricks.com/aws/en/sql/language-manual/functions/split"><code>split function</code></a> with an empty regex and a positive limit. Previously, the function incorrectly truncated the remaining string instead of including it in the last element.</p>
-<h4>Fix <code>url_decode</code> and <code>try_url_decode</code> error handling in Photon</h4>
-<p>In Photon, <a href="https://docs.databricks.com/aws/en/sql/language-manual/functions/try_url_decode"><code>try_url_decode()</code></a> and <a href="https://docs.databricks.com/aws/en/sql/language-manual/functions/url_decode"><code>url_decode()</code></a> with <code>failOnError = false</code> now return <code>NULL</code> for invalid URL-encoded strings instead of failing the query.</p></div>
-                <div class="translated-label">&gt; <p>Databricks SQL バージョン 2025.30が<strong>プレビュー</strong>チャンネルで利用可能になりました。新機能、動作変更、バグ修正について以下をご確認ください。</p>
-<h4>UTF8ベースのコレーションでLIKE演算子がサポートされるようになりました</h4>
-<p>次のコレーション: <code>UTF8_Binary</code>、<code>UTF8_Binary_RTRIM</code>、<code>UTF8_LCASE</code>、<code>UTF8_LCASE_RTRIM</code>のいずれかが有効なカラムでLIKEを使用できるようになりました。<a href="https://docs.databricks.com/aws/en/sql/language-manual/sql-ref-collation">コレーション</a>を参照してください。</p>
-<h4><code>ST_ExteriorRing</code>関数がサポートされるようになりました</h4>
-<p><code>ST_ExteriorRing</code>関数を使用して、ポリゴンの外側の境界を抽出し、ラインストリングとして返すことができます。<a href="https://docs.databricks.com/aws/en/sql/language-manual/functions/st_exteriorring"><code>st_exteriorring</code>関数</a>を参照してください。</p>
-<h4>単一の<code>DECLARE</code>ステートメントで複数のセッションまたはローカル変数を宣言できるようになりました</h4>
-<p>同じ型とデフォルト値の複数のセッションまたはローカル変数を、単一の<code>DECLARE</code>ステートメントで宣言できるようになりました。<a href="https://docs.databricks.com/aws/en/sql/language-manual/sql-ref-syntax-ddl-declare-variable">DECLARE VARIABLE</a>および<a href="https://docs.databricks.com/aws/en/sql/language-manual/control-flow/compound-stmt">BEGIN END複合ステートメント</a>を参照してください。</p>
-<h4>メトリックビューの作成でも<code>TEMPORARY</code>キーワードがサポートされるようになりました</h4>
-<p>メトリックビューの作成時に<code>TEMPORARY</code>キーワードを使用できるようになりました。一時的なメトリックビューは、作成したセッションでのみ表示され、セッション終了時に削除されます。<a href="https://docs.databricks.com/aws/en/sql/language-manual/sql-ref-syntax-ddl-create-view">CREATE VIEW</a>を参照してください。</p>
-<h4><code>DESCRIBE CONNECTION</code>でJDBC接続の環境設定が表示されるようになりました</h4>
-<p>Databricksは、カスタムドライバーを使用し、隔離された環境で実行されるJDBC接続の、ユーザー定義の環境設定を<a href="https://docs.databricks.com/aws/en/sql/language-manual/sql-ref-syntax-aux-describe-connection"><code>DESCRIBE CONNECTION</code></a>出力に含めるようになりました。その他の接続タイプは変更されていません。</p>
-<h4>ストリーミングクエリのDelta読み取りオプションのSQL構文</h4>
-<p>SQL ベースのストリーミングクエリで、<code>WITH</code>句を使用してDelta読み取りオプションを指定</div>
+                <div class="original-text"><p>The <code>system.lakeflow.pipeline_update_timeline</code> table provides complete historical tracking of pipeline updates and supports fine-grained analysis of update activity, triggers, results, and compute usage.</p>
+<p>See <a href="https://docs.databricks.com/aws/en/admin/system-tables/jobs#pipeline-update-timeline">Pipeline update timeline table schema</a>.</p></div>
+                <div class="translated-label">&gt; <p>「system.lakeflow.pipeline_update_timeline」テーブルは、パイプラインのアップデートの完全な履歴を提供し、アップデートの活動、トリガー、結果、およびコンピューティング使用量の詳細な分析をサポートします。</p>
+<p><a href="https://docs.databricks.com/aws/en/admin/system-tables/jobs#pipeline-update-timeline">パイプラインのアップデートタイムラインテーブルのスキーマ</a>を参照してください。</p></div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2025#aibi-dashboard-global-filters-panel-improvements" target="_blank">
-                <div class="article-title">AI/BI dashboard global filters panel improvements</div>
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/september#data-classification-system-table-beta" target="_blank">
+                <div class="article-title">Data classification system table Beta</div>
             </a>
-            <div class="translated-label">&gt; AIおよびBI ダッシュボードのグローバルフィルターパネルの改善</div>
-            <div class="date">September 25, 2025</div>
+            <div class="translated-label">&gt; データ分類システムテーブルベータ</div>
+            <div class="date">September 30, 2025</div>
             <div class="content">
-                <div class="original-text"><ul>
-<li><strong>Global filters panel expanded by default:</strong> The global filters panel now opens by default when users first visit a dashboard to improve discoverability. On subsequent visits, the panel preserves the user's last setting.</li>
-</ul></div>
-                <div class="translated-label">&gt; <ul>
-<li><strong>グローバルフィルターパネルがデフォルトで展開されます:</strong> ユーザーがダッシュボードを最初に訪れた際、グローバルフィルターパネルが自動的に開きます。これにより、フィルター機能の存在がわかりやすくなります。次回以降の訪問時は、ユーザーの最後の設定が維持されます。</li>
-</ul></div>
+                <div class="original-text"><p>A new system table, <code>system.data_classification.results</code>, is now available in Beta. This table captures detections of sensitive data at the column level across all enabled catalogs in your metastore.</p></div>
+                <div class="translated-label">&gt; <p>新しいシステムテーブル、<code>system.data_classification.results</code>が、ベータ版で利用可能になりました。このテーブルには、メタストアで有効になっているすべてのカタログの列レベルでの機密データの検出が記録されます。</p></div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2025#genie-benchmarks-and-join-relationship-enhancements" target="_blank">
-                <div class="article-title">Genie benchmarks and JOIN relationship enhancements</div>
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/september#anthropic-claude-opus-41-now-available-as-a-databricks-hosted-foundation-model" target="_blank">
+                <div class="article-title">Anthropic Claude Opus 4.1 now available as a Databricks-hosted foundation model</div>
             </a>
-            <div class="translated-label">&gt; ジーニー ベンチマークと JOIN 関係の強化</div>
-            <div class="date">September 25, 2025</div>
+            <div class="translated-label">&gt; アンソロピック・クロード・オーパス4.1がDatabricksホスト型のファウンデーションモデルとして利用可能になりました。</div>
+            <div class="date">September 29, 2025</div>
             <div class="content">
-                <div class="original-text"><ul>
-<li><strong>Benchmarks run in the background:</strong> Benchmarks now run as background tasks. Users can start a run without blocking their workflow.</li>
-<li><strong>Checkmark for accepted JOIN relationships:</strong> Accepting extracted JOIN relationships now displays a checkmark to confirm acceptance.</li>
-<li><strong>Improved benchmarks accessibility:</strong> Benchmarks are now available from the top-line toolbar for easier access.</li>
-<li><strong>Notifications for benchmarks:</strong> A notification now encourages users to run benchmarks after making changes to instructions.</li>
-</ul></div>
-                <div class="translated-label">&gt; <ul>
-<li><strong>バックグラウンドで実行されるベンチマーク:</strong> ベンチマークがバックグラウンドタスクとして実行されるようになりました。ユーザーはワークフローをブロックすることなく実行を開始できます。</li>
-<li><strong>受け入れられた JOIN 関係のチェックマーク:</strong> 抽出された JOIN 関係を受け入れると、受け入れを確認するチェックマークが表示されます。</li>
-<li><strong>ベンチマークのアクセシビリティの向上:</strong> ベンチマークがトップラインツールバーから簡単にアクセスできるようになりました。</li>
-<li><strong>ベンチマークの通知:</strong> 指示を変更した後にベンチマークを実行するよう、ユーザーに通知が表示されるようになりました。</li>
-</ul></div>
+                <div class="original-text"><p>Mosaic AI Model Serving now supports Anthropic's <a href="https://docs.databricks.com/aws/en/machine-learning/foundation-model-apis/supported-models#claude-opus-4-1">Claude Opus 4.1</a> a Databricks-hosted foundation model. You can access this model using <a href="https://docs.databricks.com/aws/en/machine-learning/foundation-model-apis#token-foundation-apis">Foundation Model APIs pay-per-token</a>.</p></div>
+                <div class="translated-label">&gt; <p>モザイクAIモデルサービングが現在、Anthropicの<a href="https://docs.databricks.com/aws/en/machine-learning/foundation-model-apis/supported-models#claude-opus-4-1">Claude Opus 4.1</a>というDatabricksホスティングのファウンデーションモデルをサポートしています。<a href="https://docs.databricks.com/aws/en/machine-learning/foundation-model-apis#token-foundation-apis">ファウンデーションモデルAPIのペイ・パー・トークン</a>を使ってこのモデルにアクセスできます。</p></div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/september#migrate-lakeflow-declarative-pipelines-pipelines-from-legacy-publishing-mode-is-generally-available" target="_blank">
-                <div class="article-title">Migrate Lakeflow Declarative Pipelines pipelines from legacy publishing mode is generally available</div>
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/september#lakeflow-pipelines-editor-is-now-in-public-preview" target="_blank">
+                <div class="article-title">Lakeflow Pipelines Editor is now in public preview</div>
             </a>
-            <div class="translated-label">&gt; レガシーパブリッシングモードからMigrate Lakeflow Declarative Pipelines パイプラインへの移行が一般に利用可能になりました。</div>
-            <div class="date">September 24, 2025</div>
+            <div class="translated-label">&gt; レイクフロー パイプラインズ エディターが現在パブリック プレビューになっています。</div>
+            <div class="date">September 29, 2025</div>
             <div class="content">
-                <div class="original-text"><p>Lakeflow Declarative Pipelines has a legacy publishing mode that only allowed publishing to a single catalog and schema. The default publishing mode enables publishing to multiple catalogs and schemas. Migration from the legacy publishing mode to the default publishing mode is now generally available (issues encountered in the previous release of this feature have been fixed).</p>
-<p>See <a href="https://docs.databricks.com/aws/en/dlt/migrate-to-dpm">Enable the default publishing mode in a pipeline</a>.</p></div>
-                <div class="translated-label">&gt; レガシーのパブリッシングモードでは、単一のカタログとスキーマにのみパブリッシングできましたが、デフォルトのパブリッシングモードでは、複数のカタログとスキーマにパブリッシングできます。レガシーのパブリッシングモードからデフォルトのパブリッシングモードへの移行が一般に利用可能になりました(前回のリリースでこの機能に遭遇した問題は修正されています)。
+                <div class="original-text"><p>The Lakeflow Pipelines Editor (previously called the <em>multi-file editor</em>) is now in public preview. The Lakeflow Pipelines Editor shows a pipeline as a set of files in the pipeline assets browser. You can edit the files and control the configuration of the pipeline and which files to include in one location. This also changes the default source code format for pipelines from notebooks to Python and SQL code files.</p>
+<p>See <a href="https://docs.databricks.com/aws/en/dlt/dlt-multi-file-editor">Develop and debug ETL pipelines with the Lakeflow Pipelines Editor</a>.</p></div>
+                <div class="translated-label">&gt; <p>Lakeflow Pipelines Editorは(以前は<em>マルチファイルエディター</em>と呼ばれていた)現在パブリックプレビュー中です。Lakeflow Pipelines Editorはパイプラインアセットブラウザ内のファイルセットとしてパイプラインを表示します。ファイルの編集、パイプラインの設定、含めるファイルの制御を一つの場所で行うことができます。これによりパイプラインのデフォルトのソースコード形式がノートブックからPythonおよびSQLコードファイルに変更されます。</p>
+<p><a href="https://docs.databricks.com/aws/en/dlt/dlt-multi-file-editor">Lakeflow Pipelines Editorを使ってETLパイプラインを開発およびデバッグする</a>を参照してください。</p></div>
+            </div>
+        </div>
+        
+        <div class="article">
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/september#new-requirement-to-create-connections-for-salesforce-ingestion" target="_blank">
+                <div class="article-title">New requirement to create connections for Salesforce ingestion</div>
+            </a>
+            <div class="translated-label">&gt; 新しい要件は、Salesforceへの取り込みのための接続を作成することです。</div>
+            <div class="date">September 29, 2025</div>
+            <div class="content">
+                <div class="original-text"><p>In early September 2025, Salesforce began restricting the use of uninstalled connected apps. This restriction does not break existing Unity Catalog connections to Salesforce, but it prevents you from creating a connection to a new Salesforce instance without the Databricks connected app installed.</p>
+<p>For background, see <a href="https://help.salesforce.com/s/articleView?id=005132365&#x26;type=1">Prepare for Connected App Usage Restrictions Change</a> in the Salesforce documentation.</p>
+<p>For steps to connect to Salesforce, see <a href="https://docs.databricks.com/aws/en/connect/managed-ingestion#sfdc"> Salesforce</a>.</p></div>
+                <div class="translated-label">&gt; 2025年9月初め、Salesforceは未インストールの接続アプリの使用を制限し始めました。この制限はSalesforceへのUnity Catalogの既存の接続を壊しませんが、Databricksの接続アプリがインストールされていない限り、新しいSalesforceインスタンスへの接続を作成することを防ぎます。
 
-「パイプラインでデフォルトのパブリッシングモードを有効にする」をご覧ください。</div>
-            </div>
-        </div>
-        
-        <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/september#databricks-runtime-maintenance-updates" target="_blank">
-                <div class="article-title">Databricks Runtime maintenance updates</div>
-            </a>
-            <div class="translated-label">&gt; データブリックスランタイムメンテナンスアップデート</div>
-            <div class="date">September 24, 2025</div>
-            <div class="content">
-                <div class="original-text"><p>New maintenance updates are available for supported Databricks Runtime versions. These updates include bug fixes, security patches, and performance improvements. For details, see <a href="https://docs.databricks.com/aws/en/release-notes/runtime/maintenance-updates">Databricks Runtime maintenance updates</a>.</p></div>
-                <div class="translated-label">&gt; <p>サポートされているDatabricks Runtimeバージョンの新しいメンテナンスアップデートが利用可能です。これらのアップデートには、バグ修正、セキュリティパッチ、およびパフォーマンスの改善が含まれます。詳細については、<a href="https://docs.databricks.com/aws/en/release-notes/runtime/maintenance-updates">Databricks Runtimeメンテナンスアップデート</a>をご覧ください。</p></div>
+詳細については、Salesforceのドキュメントの「Prepare for Connected App Usage Restrictions Change」を参照してください。
+
+Salesforceに接続する手順については、「Salesforce」のDatabricksのドキュメントを参照してください。</div>
             </div>
         </div>
         
