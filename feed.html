@@ -23,72 +23,96 @@
         <h1>Databricks Docs Updates</h1>
     
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/september#pipeline-update-timeline-table-is-now-available-public-preview" target="_blank">
-                <div class="article-title">Pipeline update timeline table is now available (Public Preview)</div>
+            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2025#aibi-dashboard-enhancements-and-global-filters-improvements" target="_blank">
+                <div class="article-title">AI/BI dashboard enhancements and global filters improvements</div>
             </a>
-            <div class="translated-label">&gt; パイプラインのアップデート時系列テーブルが利用可能になりました(パブリックプレビュー)</div>
-            <div class="date">September 30, 2025</div>
+            <div class="translated-label">&gt; AIおよびBI管理ダッシュボードの機能強化と、グローバルフィルターの改善</div>
+            <div class="date">October 02, 2025</div>
             <div class="content">
-                <div class="original-text"><p>The <code>system.lakeflow.pipeline_update_timeline</code> table provides complete historical tracking of pipeline updates and supports fine-grained analysis of update activity, triggers, results, and compute usage.</p>
-<p>See <a href="https://docs.databricks.com/aws/en/admin/system-tables/jobs#pipeline-update-timeline">Pipeline update timeline table schema</a>.</p></div>
-                <div class="translated-label">&gt; <p>「system.lakeflow.pipeline_update_timeline」テーブルは、パイプラインのアップデートの完全な履歴を提供し、アップデートの活動、トリガー、結果、およびコンピューティング使用量の詳細な分析をサポートします。</p>
-<p><a href="https://docs.databricks.com/aws/en/admin/system-tables/jobs#pipeline-update-timeline">パイプラインのアップデートタイムラインテーブルのスキーマ</a>を参照してください。</p></div>
+                <div class="original-text"><ul>
+<li><strong>Fixed global filters panel overflow:</strong> Resolved an issue where the global filters panel extended beyond its intended width.</li>
+<li><strong>Access for account-level users:</strong> Users without a workspace can now access dashboards shared with them that were published without embedded credentials. See <a href="https://docs.databricks.com/aws/en/dashboards/share#embed-creds"> What are embedded credentials?</a>.</li>
+<li><strong>Preview fields and measures for metric views:</strong> Authors can now preview available fields and measures for metric views in the <strong>Add data</strong> dialog.</li>
+<li><strong>Query insights in dashboard dataset editor:</strong> Query insights are now available in the dashboard dataset editor to help analyze query performance.</li>
+<li><strong>Copy and paste widgets and pages:</strong> Dashboard widgets and pages can now be copied and pasted between dashboards.</li>
+<li><strong>Top or bottom N categories in bar charts:</strong> Bar charts can now display the top or bottom <em>N</em> categories. To edit, open the kebab menu for the categorical axis dimension and set the number under <strong>Default number of categories</strong>.</li>
+</ul></div>
+                <div class="translated-label">&gt; <ul>
+<li><strong>固定グローバルフィルターパネルのオーバーフロー:</strong> グローバルフィルターパネルが意図した幅を超えて拡張されていた問題を解決しました。</li>
+<li><strong>アカウントレベルのユーザーのアクセス:</strong> ワークスペースを持たないユーザーが、埋め込み資格情報なしで公開されたダッシュボードを共有して閲覧できるようになりました。<a href="https://docs.databricks.com/aws/en/dashboards/share#embed-creds">埋め込み資格情報とは何ですか?</a>をご覧ください。</li>
+<li><strong>メトリックビューのフィールドとメジャーのプレビュー:</strong> 作成者は<strong>データの追加</strong>ダイアログでメトリックビューの利用可能なフィールドとメジャーをプレビューできるようになりました。</li>
+<li><strong>ダッシュボードデータセットエディターでのクエリインサイト:</strong> クエリパフォーマンスの分析に役立つクエリインサイトがダッシュボードデータセットエディターで利用できるようになりました。</li>
+<li><strong>ウィジェットとページのコピーアンドペースト:</strong> ダッシュボードのウィジェットとページをダッシュボード間でコピーアンドペーストできるようになりました。</li>
+<li><strong>棒グラフでのトップまたはボトムN個のカテゴリ:</strong> 棒グラフでは、トップまたはボトムの<em>N</em>個のカテゴリを表示できるようになりました。編集するには、カテゴリ軸の次元のケバブメニューを開き、<strong>デフォルトのカテゴリ数</strong>の下の数値を設定してください。</li>
+</ul></div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/september#data-classification-system-table-beta" target="_blank">
-                <div class="article-title">Data classification system table Beta</div>
+            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2025#genie-space-enhancements-and-thinking-trace-features" target="_blank">
+                <div class="article-title">Genie space enhancements and thinking trace features</div>
             </a>
-            <div class="translated-label">&gt; データ分類システムテーブルベータ</div>
-            <div class="date">September 30, 2025</div>
+            <div class="translated-label">&gt; ジーニー空間の拡張と思考トレース機能</div>
+            <div class="date">October 02, 2025</div>
             <div class="content">
-                <div class="original-text"><p>A new system table, <code>system.data_classification.results</code>, is now available in Beta. This table captures detections of sensitive data at the column level across all enabled catalogs in your metastore.</p></div>
-                <div class="translated-label">&gt; <p>新しいシステムテーブル、<code>system.data_classification.results</code>が、ベータ版で利用可能になりました。このテーブルには、メタストアで有効になっているすべてのカタログの列レベルでの機密データの検出が記録されます。</p></div>
+                <div class="original-text"><ul>
+<li><strong>Add tables and metric views to spaces:</strong> Users can now add tables and metric views to a space and analyze them together.</li>
+<li><strong>Benchmarks scoring improvement:</strong> Benchmarks now treat extra rows or columns in Genie's output as incorrect. See <a href="https://docs.databricks.com/aws/en/genie/benchmarks#ratings">Interpret ratings</a>.</li>
+<li><strong>Thinking trace for responses:</strong> Each Genie response now includes a thinking trace that shows how the prompt was interpreted, along with the tables and example SQL statements that were used. See <a href="https://docs.databricks.com/aws/en/genie/talk-to-genie#review-response">Review a response</a>.</li>
+</ul></div>
+                <div class="translated-label">&gt; <ul>
+<li><strong>スペースにテーブルとメトリックビューを追加:</strong> ユーザーはこれでスペースにテーブルとメトリックビューを追加し、それらを一緒に分析できるようになりました。</li>
+<li><strong>ベンチマークのスコアリングの改善:</strong> ベンチマークでは、Genieの出力に余分な行や列がある場合、それが正しくないと扱います。<a href="https://docs.databricks.com/aws/en/genie/benchmarks#ratings">レーティングの解釈</a>をご覧ください。</li>
+<li><strong>レスポンスの思考過程:</strong> Genieの各レスポンスには、プロンプトがどのように解釈されたか、そして使用されたテーブルとサンプルのSQL文がどのようなものだったかを示す思考過程が含まれるようになりました。<a href="https://docs.databricks.com/aws/en/genie/talk-to-genie#review-response">レスポンスを確認する</a>を参照してください。</li>
+</ul></div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/september#anthropic-claude-opus-41-now-available-as-a-databricks-hosted-foundation-model" target="_blank">
-                <div class="article-title">Anthropic Claude Opus 4.1 now available as a Databricks-hosted foundation model</div>
+            <a href="https://docs.databricks.com/aws/en/sql/release-notes/2025#semantic-metadata-in-metric-views" target="_blank">
+                <div class="article-title">Semantic metadata in metric views</div>
             </a>
-            <div class="translated-label">&gt; アンソロピック・クロード・オーパス4.1がDatabricksホスト型のファウンデーションモデルとして利用可能になりました。</div>
-            <div class="date">September 29, 2025</div>
+            <div class="translated-label">&gt; セマンティックメタデータにメトリックビューを使用する</div>
+            <div class="date">October 02, 2025</div>
             <div class="content">
-                <div class="original-text"><p>Mosaic AI Model Serving now supports Anthropic's <a href="https://docs.databricks.com/aws/en/machine-learning/foundation-model-apis/supported-models#claude-opus-4-1">Claude Opus 4.1</a> a Databricks-hosted foundation model. You can access this model using <a href="https://docs.databricks.com/aws/en/machine-learning/foundation-model-apis#token-foundation-apis">Foundation Model APIs pay-per-token</a>.</p></div>
-                <div class="translated-label">&gt; <p>モザイクAIモデルサービングが現在、Anthropicの<a href="https://docs.databricks.com/aws/en/machine-learning/foundation-model-apis/supported-models#claude-opus-4-1">Claude Opus 4.1</a>というDatabricksホスティングのファウンデーションモデルをサポートしています。<a href="https://docs.databricks.com/aws/en/machine-learning/foundation-model-apis#token-foundation-apis">ファウンデーションモデルAPIのペイ・パー・トークン</a>を使ってこのモデルにアクセスできます。</p></div>
-            </div>
-        </div>
-        
-        <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/september#lakeflow-pipelines-editor-is-now-in-public-preview" target="_blank">
-                <div class="article-title">Lakeflow Pipelines Editor is now in public preview</div>
-            </a>
-            <div class="translated-label">&gt; レイクフロー パイプラインズ エディターが現在パブリック プレビューになっています。</div>
-            <div class="date">September 29, 2025</div>
-            <div class="content">
-                <div class="original-text"><p>The Lakeflow Pipelines Editor (previously called the <em>multi-file editor</em>) is now in public preview. The Lakeflow Pipelines Editor shows a pipeline as a set of files in the pipeline assets browser. You can edit the files and control the configuration of the pipeline and which files to include in one location. This also changes the default source code format for pipelines from notebooks to Python and SQL code files.</p>
-<p>See <a href="https://docs.databricks.com/aws/en/dlt/dlt-multi-file-editor">Develop and debug ETL pipelines with the Lakeflow Pipelines Editor</a>.</p></div>
-                <div class="translated-label">&gt; <p>Lakeflow Pipelines Editorは(以前は<em>マルチファイルエディター</em>と呼ばれていた)現在パブリックプレビュー中です。Lakeflow Pipelines Editorはパイプラインアセットブラウザ内のファイルセットとしてパイプラインを表示します。ファイルの編集、パイプラインの設定、含めるファイルの制御を一つの場所で行うことができます。これによりパイプラインのデフォルトのソースコード形式がノートブックからPythonおよびSQLコードファイルに変更されます。</p>
-<p><a href="https://docs.databricks.com/aws/en/dlt/dlt-multi-file-editor">Lakeflow Pipelines Editorを使ってETLパイプラインを開発およびデバッグする</a>を参照してください。</p></div>
-            </div>
-        </div>
-        
-        <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/september#new-requirement-to-create-connections-for-salesforce-ingestion" target="_blank">
-                <div class="article-title">New requirement to create connections for Salesforce ingestion</div>
-            </a>
-            <div class="translated-label">&gt; 新しい要件は、Salesforceへの取り込みのための接続を作成することです。</div>
-            <div class="date">September 29, 2025</div>
-            <div class="content">
-                <div class="original-text"><p>In early September 2025, Salesforce began restricting the use of uninstalled connected apps. This restriction does not break existing Unity Catalog connections to Salesforce, but it prevents you from creating a connection to a new Salesforce instance without the Databricks connected app installed.</p>
-<p>For background, see <a href="https://help.salesforce.com/s/articleView?id=005132365&#x26;type=1">Prepare for Connected App Usage Restrictions Change</a> in the Salesforce documentation.</p>
-<p>For steps to connect to Salesforce, see <a href="https://docs.databricks.com/aws/en/connect/managed-ingestion#sfdc"> Salesforce</a>.</p></div>
-                <div class="translated-label">&gt; 2025年9月初め、Salesforceは未インストールの接続アプリの使用を制限し始めました。この制限はSalesforceへのUnity Catalogの既存の接続を壊しませんが、Databricksの接続アプリがインストールされていない限り、新しいSalesforceインスタンスへの接続を作成することを防ぎます。
+                <div class="original-text"><p>You can now define semantic metadata in a metric view. Semantic metadata helps AI tools such as Genie spaces and AI/BI dashboards interpret and use your data more effectively.</p>
+<p>To use semantic metadata, your metric view must use YAML specification version 1.1 or higher and run on DBR 17.2 or above. The corresponding Databricks SQL version is 2025.30, available in the Preview channel for SQL warehouses.</p>
+<p>See <a href="https://docs.databricks.com/aws/en/metric-views/semantic-metadata">Use semantic metadata in metric views</a> and <a href="https://docs.databricks.com/aws/en/metric-views/yaml-ref#upgrade-recs">Upgrade considerations</a>.</p></div>
+                <div class="translated-label">&gt; メトリックビューでセマンティックメタデータを定義できるようになりました。セマンティックメタデータにより、Genie spacesやAI/BIダッシュボードなどのAIツールがデータを効果的に解釈し活用できるようになります。
 
-詳細については、Salesforceのドキュメントの「Prepare for Connected App Usage Restrictions Change」を参照してください。
+セマンティックメタデータを使用するには、メトリックビューがYAML仕様バージョン1.1以降を使用し、DBR 17.2以降で実行されている必要があります。対応するDatabricks SQLのバージョンは2025.30で、SQLウェアハウスのプレビューチャンネルで利用可能です。
 
-Salesforceに接続する手順については、「Salesforce」のDatabricksのドキュメントを参照してください。</div>
+「メトリックビューでセマンティックメタデータを使用する」と「アップグレードの考慮事項」を参照してください。</div>
+            </div>
+        </div>
+        
+        <div class="article">
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/october#convert-to-unity-catalog-managed-table-from-external-table" target="_blank">
+                <div class="article-title">Convert to Unity Catalog managed table from external table</div>
+            </a>
+            <div class="translated-label">&gt; Unity Catalog管理テーブルへの外部テーブルの変換</div>
+            <div class="date">October 02, 2025</div>
+            <div class="content">
+                <div class="original-text"><p>The <code>ALTER TABLE ... SET MANAGED</code> command is now generally available. This command seamlessly converts Unity Catalog external tables to managed tables. It allows you to take full advantage of Unity Catalog managed table features, such as enhanced governance, reliability, and performance. See <a href="https://docs.databricks.com/aws/en/tables/convert-external-managed">Convert an external table to a managed Unity Catalog table</a>.</p></div>
+                <div class="translated-label">&gt; <p><code>ALTER TABLE ... SET MANAGED</code>コマンドが一般的に利用可能になりました。このコマンドは、Unity Catalogの外部テーブルを管理テーブルに自然に変換します。これにより、ガバナンス、信頼性、パフォーマンスなどの管理テーブルの機能を十分に活用できます。<a href="https://docs.databricks.com/aws/en/tables/convert-external-managed">外部テーブルをUnity Catalog管理テーブルに変換する</a>をご覧ください。</p></div>
+            </div>
+        </div>
+        
+        <div class="article">
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/october#new-permissions-for-the-databricks-github-app" target="_blank">
+                <div class="article-title">New permissions for the Databricks GitHub App</div>
+            </a>
+            <div class="translated-label">&gt; データブリックスGitHubアプリの新しい権限</div>
+            <div class="date">October 01, 2025</div>
+            <div class="content">
+                <div class="original-text"><p>If you own a Databricks account with the Databricks <a href="https://github.com/apps/databricks">GitHub app</a> installed, you may receive an email titled "Databricks is requesting updated permissions" from GitHub.</p>
+<p>This is a legitimate request from Databricks. It asks you to approve a new permission that allows Databricks to read your <a href="https://docs.github.com/en/rest/users/emails">GitHub account email(s)</a>. Granting this permission will let Databricks retrieve and save your primary GitHub account email to your Linked Git credential in Databricks. In an upcoming feature, this will ensure that commits made from Databricks are <a href="https://docs.github.com/en/account-and-profile/how-tos/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/setting-your-commit-email-address">properly linked</a> to your GitHub identity.</p>
+<p>If you don't accept the new permission, your Linked Git credential will still authenticate with GitHub. However, future commits from this credential will not be <a href="https://docs.github.com/en/account-and-profile/how-tos/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/setting-your-commit-email-address">associated with your GitHub account identity</a></p></div>
+                <div class="translated-label">&gt; Databricksアカウントにデータブリックスの[GitHub app](https://github.com/apps/databricks)がインストールされている場合、GitHub から「Databricksは更新された権限を要求しています」というタイトルのメールが届く可能性があります。
+
+これはデータブリックスからの正当な要求です。Databricksが[GitHub アカウントのメール](https://docs.github.com/en/rest/users/emails)を読み取ることを許可するよう求めています。この権限を許可すると、データブリックスはお客様の主要なGitHubアカウントのメールアドレスを取得し、Databricksの紐付けられたGitの資格情報に保存できるようになります。今後の機能では、これによりDatabricksからのコミットが[GitHub アカウントに適切に紐付けられるようになります](https://docs.github.com/en/account-and-profile/how-tos/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/setting-your-commit-email-address)。
+
+新しい権限を承認しない場合でも、紐付けられたGitの資格情報はGitHubで認証できます。ただし、この資格情報から行う今後のコミットは[GitHub アカウントのアイデンティティに関連付けられません](https://docs.github.com/en/account-and-profile/how-tos/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/setting-your-commit-email-address)。</div>
             </div>
         </div>
         
