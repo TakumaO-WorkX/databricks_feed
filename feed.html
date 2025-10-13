@@ -26,7 +26,7 @@
             <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2025#aibi-dashboard-table-and-text-widget-improvements" target="_blank">
                 <div class="article-title">AI/BI dashboard table and text widget improvements</div>
             </a>
-            <div class="translated-label">&gt; AIとBIのダッシュボード、テーブル、およびテキストウィジェットの改善</div>
+            <div class="translated-label">&gt; AIとBIのダッシュボードのテーブルとテキストウィジェットの改善</div>
             <div class="date">October 09, 2025</div>
             <div class="content">
                 <div class="original-text"><ul>
@@ -37,11 +37,11 @@
 <li><strong>Additional predicate support for custom calculations</strong>: Custom calculations now support <code>IN</code>, <code>BETWEEN</code>, and pattern matching predicates (<code>LIKE</code>, <code>ILIKE</code>, <code>RLIKE</code>) for more flexible filtering and comparison operations. See <a href="https://docs.databricks.com/aws/en/dashboards/datasets/custom-calculations">What are custom calculations?</a>.</li>
 </ul></div>
                 <div class="translated-label">&gt; <ul>
-<li><strong>テーブルからのリンクURLのコピー</strong>: テーブルの視覚化から直接リンクURLをコピーできるようになりました。</li>
-<li><strong>ピボットの行ヘッダーの改善</strong>: ピボットテーブルの行ヘッダーのフィールド名が溢れることなく、行の値と一緒にスクロールするようになりました。</li>
-<li><strong>テキストウィジェットの<code>&#x3c;</code>文字の改善された処理</strong>: テキストウィジェットが<code>&#x3c;</code>文字を正しく処理するようになり、予期せぬ動作が防がれます。</li>
-<li><strong>カスタム計算の精度の向上</strong>: 集計関数で<code>DISTINCT</code>キーワードと<code>FILTER(WHERE ...)</code>句がサポートされるようになりました。これを使って固有のエンティティをカウントし、複雑な<code>CASE</code>ステートメントを置き換えて条件付きの集計を行えます。<a href="https://docs.databricks.com/aws/en/dashboards/datasets/custom-calculations#aggregate-functions">集計関数</a>をご覧ください。</li>
-<li><strong>カスタム計算のための追加の述語サポート</strong>: カスタム計算で<code>IN</code>、<code>BETWEEN</code>、パターン照合述語(<code>LIKE</code>、<code>ILIKE</code>、<code>RLIKE</code>)がサポートされるようになり、より柔軟なフィルタリングと比較操作が可能になりました。<a href="https://docs.databricks.com/aws/en/dashboards/datasets/custom-calculations">カスタム計算とは何ですか?</a>をご覧ください。</li>
+<li><strong>テーブルからリンクURLをコピーする</strong>: テーブルの可視化から直接にリンクURLをコピーできるようになりました。</li>
+<li><strong>ピボットの行ヘッダーが改善されました</strong>: ピボットテーブルの行ヘッダーのフィールド名がオーバーフローせず、行の値と一緒にスクロールします。</li>
+<li><strong>テキストウィジェットの<code>&#x3c;</code>文字の処理が改善されました</strong>: テキストウィジェットが<code>&#x3c;</code>文字を正しく処理し、予期しない動作を防ぐようになりました。</li>
+<li><strong>カスタム計算の精度が向上しました</strong>: 集計関数で<code>DISTINCT</code>キーワードと<code>FILTER(WHERE ...)</code>句がサポートされるようになりました。これらを使ってユニークなエンティティの件数を数えたり、条件付きの集計を行うことができ、複雑な<code>CASE</code>文を置き換えられます。<a href="https://docs.databricks.com/aws/en/dashboards/datasets/custom-calculations#aggregate-functions">集計関数</a>を参照してください。</li>
+<li><strong>カスタム計算に対してさらに条件式がサポートされるようになりました</strong>: カスタム計算で<code>IN</code>、<code>BETWEEN</code>、パターンマッチング条件式(<code>LIKE</code>、<code>ILIKE</code>、<code>RLIKE</code>)がサポートされるようになり、より柔軟なフィルタリングと比較が行えるようになりました。<a href="https://docs.databricks.com/aws/en/dashboards/datasets/custom-calculations">カスタム計算とは何ですか?</a>を参照してください。</li>
 </ul></div>
             </div>
         </div>
@@ -50,7 +50,7 @@
             <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2025#genie-knowledge-store-enhancements-and-benchmark-improvements" target="_blank">
                 <div class="article-title">Genie knowledge store enhancements and benchmark improvements</div>
             </a>
-            <div class="translated-label">&gt; 知識ストアの拡張とベンチマークの改善</div>
+            <div class="translated-label">&gt; 魔法の知識ストアの改善とベンチマークの改善</div>
             <div class="date">October 09, 2025</div>
             <div class="content">
                 <div class="original-text"><ul>
@@ -64,14 +64,14 @@
 <li><strong>Improved performance and latency:</strong> Genie's internal reasoning process has been simplified, slightly improving overall latency and streamlining context for SQL generation.</li>
 </ul></div>
                 <div class="translated-label">&gt; <ul>
-<li><strong>ベンチマーク生成の簡易化:</strong>
+<li><strong>ベンチマークの生成が容易になりました:</strong>
 <ul>
-<li>スペースエディターは、チャット会話からの代表的なメッセージやSQL回答をベンチマーク質問として保存できます。「<a href="https://docs.databricks.com/aws/en/genie/set-up#other-actions">その他のレスポンスアクション</a>」を参照してください。</li>
-<li>スペースエディターは、ベンチマーク文章の質問を入力した後、ベンチマークのSQL回答を生成できます。「<a href="https://docs.databricks.com/aws/en/genie/benchmarks#add-benchmark">ベンチマーク質問を追加する</a>」を参照してください。</li>
-<li>1つのベンチマーク結果からの正確なGenieの回答を、今後のベンチマークセットを更新するために保存できます。「<a href="https://docs.databricks.com/aws/en/genie/benchmarks#review-single-eval">個別の評価を確認する</a>」を参照してください。</li>
+<li>Space エディターは、チャット会話からの代表的なメッセージやSQL回答をベンチマーク質問として保存できます。「<a href="https://docs.databricks.com/aws/en/genie/set-up#other-actions">その他のレスポンスアクション</a>」をご覧ください。</li>
+<li>Space エディターは、ベンチマークのテキスト質問を入力した後、ベンチマークのSQL回答を生成できます。「<a href="https://docs.databricks.com/aws/en/genie/benchmarks#add-benchmark">ベンチマーク質問の追加</a>」をご覧ください。</li>
+<li>1つのベンチマークの結果から得られた正確なGenie回答は、今後のベンチマークセットを更新するために保存できます。「<a href="https://docs.databricks.com/aws/en/genie/benchmarks#review-single-eval">個々の評価の確認</a>」をご覧ください。</li>
 </ul>
 </li>
-<li><strong>パフォーマンスとレイテンシの改善:</strong> Genieの内部推論プロセスが簡素化され、全体的なレイテンシがわずかに改善され、SQLの生成のコンテキストが整理されました。</li>
+<li><strong>パフォーマンスとレイテンシーが改善されました:</strong> Genieの内部推論プロセスが簡素化され、全体的なレイテンシーが若干改善され、SQLの生成にコンテキストが最適化されました。</li>
 </ul></div>
             </div>
         </div>
@@ -80,79 +80,44 @@
             <a href="https://docs.databricks.com/aws/en/sql/release-notes/2025#visualizations-fix" target="_blank">
                 <div class="article-title">Visualizations fix</div>
             </a>
-            <div class="translated-label">&gt; 視覚化を改善する</div>
+            <div class="translated-label">&gt; 視覚化が解決策となる</div>
             <div class="date">October 09, 2025</div>
             <div class="content">
                 <div class="original-text"><ul>
 <li><strong>Legend selection for aliased series names:</strong> Legend selection now works correctly for charts with aliased series names in SQL editor and notebooks.</li>
 </ul></div>
                 <div class="translated-label">&gt; <ul>
-<li><strong>エイリアス化されたシリーズ名のレジェンド選択:</strong> SQLエディターおよびノートブックの別名付きのシリーズ名のチャートでレジェンドの選択が正しく機能するようになりました。</li>
+<li><strong>エイリアスシリーズ名の凡例選択:</strong> SQL エディターおよびノートブックのエイリアスシリーズ名を持つチャートの凡例選択が正しく機能するようになりました。</li>
 </ul></div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/whats-coming#behavioral-change-for-working-with-delta-table-history-and-vacuum" target="_blank">
-                <div class="article-title">Behavioral change for working with Delta table history and VACUUM</div>
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/october#context-based-ingress-control-beta" target="_blank">
+                <div class="article-title">Context based ingress control (Beta)</div>
             </a>
-            <div class="translated-label">&gt; デルタ表の履歴と VACUUMを操作するための行動変容</div>
-            <div class="date">October 08, 2025</div>
+            <div class="translated-label">&gt; コンテキストに基づくインバウンドコントロール (ベータ)</div>
+            <div class="date">October 09, 2025</div>
             <div class="content">
-                <div class="original-text"><p>Databricks Runtime 18.0 will change how <a href="https://docs.databricks.com/aws/en/delta/history#delta-time-travel-syntax">time travel queries</a> and <a href="https://docs.databricks.com/aws/en/delta/vacuum">VACUUM</a> work in Delta Lake for more predictable behavior.</p>
-<p><strong>Current behavior:</strong></p>
-<p>Time travel availability depends on when <code>VACUUM</code> last ran, which can be difficult to predict.</p>
-<p><strong>Changes in Databricks Runtime 18.0:</strong></p>
-<p>The following updates will make time travel deterministic and aligned with retention settings:</p>
-<ul>
-<li>Time travel queries (<code>SELECT</code>, <code>RESTORE</code>, <code>CDC</code>, and <code>CLONE</code> with <code>AS OF</code> syntax) are blocked if they exceed <a href="https://docs.databricks.com/aws/en/delta/history#data-retention"><code>delta.deletedFileRetentionDuration</code></a>.</li>
-<li>The <a href="https://docs.databricks.com/aws/en/sql/language-manual/delta-vacuum#parameters">retention period</a> (<code>RETAIN num HOURS</code>) in <code>VACUUM</code> is ignored with a warning, with an exception of 0 hours, which permanently removes all history from a Delta table.</li>
-<li><code>delta.logRetentionDuration</code> must be greater than or equal to <code>delta.deletedFileRetentionDuration</code> if you modify either property.</li>
-</ul>
-<p>These changes will be released on the following timeline:</p>
-<ul>
-<li><strong>Mid-December 2025:</strong> Applies to all Delta tables on Databricks Runtime 18.0.</li>
-<li><strong>January 2026:</strong> Extends to serverless compute, Databricks SQL, and Databricks Runtime 12.2 and above for <a href="https://docs.databricks.com/aws/en/tables/managed">Unity Catalog managed tables</a>.</li>
-</ul>
-<p>For Unity Catalog managed tables, the changes apply to Databricks Runtime 12.2 and above. For all other Delta tables, changes apply to Databricks Runtime 18.0 and above.</p>
-<p><strong>Action required:</strong></p>
-<p>Verify that your time travel queries continue to work after the Databricks Runtime 18.0 release:</p>
-<ul>
-<li>Review and update <code>delta.deletedFileRetentionDuration</code> to match your time travel needs. Verify that it’s less than or equal to <code>delta.logRetentionDuration</code>.</li>
-<li>Stop setting the retention period in the <code>VACUUM</code> command. Use <code>delta.deletedFileRetentionDuration</code> instead.</li>
-</ul></div>
-                <div class="translated-label">&gt; <p>Databricks Runtime 18.0では、Delta Lakeでの時間旅行クエリとVACUUMの動作が、より予測可能な動作に変更されます。</p>
-<p><strong>現在の動作:</strong></p>
-<p>時間旅行の可用性は、前回のVACUUMの実行時期に依存するため、予測が困難です。</p>
-<p><strong>Databricks Runtime 18.0での変更:</strong></p>
-<p>以下の更新により、時間旅行が確定的になり、保持設定に沿うようになります:</p>
-<ul>
-<li>時間旅行クエリ(AS OF構文を使った SELECT、RESTORE、CDC、CLONE)は、delta.deletedFileRetentionDurationを超える場合はブロックされます。</li>
-<li>VACUUMの保持期間(RETAIN num HOURS)は無視され、0時間の例外を除いて警告が表示されます。これにより、Delta テーブルの履歴が完全に削除されます。</li>
-<li>delta.logRetentionDurationは、delta.deletedFileRetentionDurationと同等以上に設定する必要があります。</li>
-</ul>
-<p>これらの変更は以下のタイムラインで適用されます:</p>
-<ul>
-<li><strong>2025年12月中旬:</strong> Databricks Runtime 18.0のすべてのDelta テーブルに適用されます。</li>
-<li><strong>2026年1月:</strong> Unity Catalog管理テーブルのサーバーレスコンピューティング、Databricks SQL、Databricks Runtime 12.2以降にも拡張されます。</li>
-</ul>
-<p><strong>必要な対応:</strong></p>
-<ul>
-<li>delta.deletedFileRetentionDurationを時間旅行のニーズに合わせて見直し、delta.logRetentionDurationと同等以下に設定してください。</li>
-<li>VACUUMコマンドの保持期間の設定を停止し、代わりにdelta.deletedFileRetentionDurationを使用してください。</li>
-</ul></div>
+                <div class="original-text"><p>Context-based ingress control is now in <a href="https://docs.databricks.com/aws/en/release-notes/release-types">Beta</a>. This enables account admins to set allow and deny rules that combine <em>who</em> is calling, <em>from where</em> they are calling, and <em>what</em> they can reach in Databricks. Context-based ingress control ensures that only trusted combinations of identity, request type, and network source can reach your workspace. A single policy can govern multiple workspaces, ensuring consistent enforcement across your organization.</p>
+<p>See <a href="https://docs.databricks.com/aws/en/security/network/front-end/context-based-ingress">Context-based ingress control</a>.</p></div>
+                <div class="translated-label">&gt; コンテキストベースのイングレス制御は現在<a href="https://docs.databricks.com/aws/en/release-notes/release-types">ベータ</a>版にあります。これにより、管理者は「誰が」、「どこから」、「何に」アクセスできるかというルールを設定できるようになりました。コンテキストベースのイングレス制御は、信頼できる識別子、リクエストタイプ、ネットワークソースの組み合わせのみがワークスペースにアクセスできるようにします。単一のポリシーで複数のワークスペースを制御し、組織全体で一貫した施行を行うことができます。
+
+<a href="https://docs.databricks.com/aws/en/security/network/front-end/context-based-ingress">コンテキストベースのイングレス制御</a>を参照してください。</div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/october#the-data-science-agent-can-now-also-use-models-served-through-amazon-bedrock" target="_blank">
-                <div class="article-title">The Data Science Agent can now also use models served through Amazon Bedrock</div>
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/october#the-billable-usage-table-now-records-the-performance-mode-of-serverless-jobs-and-pipelines" target="_blank">
+                <div class="article-title">The billable usage table now records the performance mode of serverless jobs and pipelines</div>
             </a>
-            <div class="translated-label">&gt; データサイエンスエージェントは、Amazon Bedrock を通じてサービス提供されるモデルも使えるようになりました。</div>
-            <div class="date">October 08, 2025</div>
+            <div class="translated-label">&gt; ビリング可能な使用量テーブルに、サーバーレスジョブとパイプラインのパフォーマンス モードが記録されるようになりました。</div>
+            <div class="date">October 09, 2025</div>
             <div class="content">
-                <div class="original-text"><p>The Databricks Assistant can now also use models served through Amazon Bedrock as part of the <a href="https://docs.databricks.com/aws/en/notebooks/ds-agent">Data Science Agent</a> when <a href="https://docs.databricks.com/aws/en/databricks-ai/partner-powered">partner-powered AI features</a> are enabled.</p></div>
-                <div class="translated-label">&gt; <p>Databricksアシスタントは、<a href="https://docs.databricks.com/aws/en/databricks-ai/partner-powered">パートナーパワードAI機能</a>が有効になっている場合、<a href="https://docs.databricks.com/aws/en/notebooks/ds-agent">Data Science Agent</a>の一部としてAmazon Bedrock経由でサーブされるモデルを使用することができるようになりました。</p></div>
+                <div class="original-text"><p>Billing logs now record the <a href="https://docs.databricks.com/aws/en/jobs/run-serverless-jobs#performance">performance mode</a> of serverless jobs and pipelines. The workload's performance mode is logged in the <code>product_features.performance_target</code> column and can include values of <code>PERFORMANCE_OPTIMIZED</code>, <code>STANDARD</code>, or <code>null</code>.</p>
+<p>For billing log reference, see <a href="https://docs.databricks.com/aws/en/admin/system-tables/billing">Billable usage system table reference</a>.</p></div>
+                <div class="translated-label">&gt; <p>サーバーレスジョブおよびパイプラインのパフォーマンスモードが、ビリングログに記録されるようになりました。ワークロードのパフォーマンスモードは、<code>product_features.performance_target</code>列に記録され、<code>PERFORMANCE_OPTIMIZED</code>、<code>STANDARD</code>、または<code>null</code>のいずれかの値を含むことができます。</p>
+<p>ビリングログに関する参照情報については、<a href="https://docs.databricks.com/aws/en/admin/system-tables/billing">Billable usage system table reference</a>を参照してください。</p></div>
             </div>
         </div>
         
