@@ -23,6 +23,70 @@
         <h1>Databricks Docs Updates</h1>
     
         <div class="article">
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/october#create-backfill-job-runs" target="_blank">
+                <div class="article-title">Create backfill job runs</div>
+            </a>
+            <div class="translated-label">&gt; ジョブ実行の埋め戻し作成</div>
+            <div class="date">October 14, 2025</div>
+            <div class="content">
+                <div class="original-text"><p>Job backfills allow you to trigger job runs to backfill data from the past. This is useful for loading older data, or repairing data when there are failures in processing. For more details, see <a href="https://docs.databricks.com/aws/en/jobs/backfill-jobs">Backfill jobs</a>.</p></div>
+                <div class="translated-label">&gt; ジョブのバックフィルは、過去からデータを取り込むためのジョブを実行するのに使えます。これは、古いデータをロードしたり、処理の失敗を修復するのに役立ちます。詳細については、<a href="https://docs.databricks.com/aws/en/jobs/backfill-jobs">バックフィルジョブ</a>をご覧ください。</div>
+            </div>
+        </div>
+        
+        <div class="article">
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/october#data-classification-public-preview" target="_blank">
+                <div class="article-title">Data Classification (Public Preview)</div>
+            </a>
+            <div class="translated-label">&gt; データ分類 (パブリックプレビュー)</div>
+            <div class="date">October 13, 2025</div>
+            <div class="content">
+                <div class="original-text"><p>Databricks Data Classification is now in Public Preview and supports all catalog types, consolidates all classification results into a single system table, and a new UI to review and auto-tag classifications. See <a href="https://docs.databricks.com/aws/en/data-governance/unity-catalog/data-classification">Data Classification</a>.</p></div>
+                <div class="translated-label">&gt; データブリックスのデータ分類がパブリックプレビューに登場し、すべてのカタログタイプをサポートし、分類結果をすべて単一のシステムテーブルに統合し、分類を確認および自動タグ付けするための新しいUIを提供しています。「データ分類」をご覧ください。</div>
+            </div>
+        </div>
+        
+        <div class="article">
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/october#multimodal-support-is-now-available" target="_blank">
+                <div class="article-title">Multimodal support is now available</div>
+            </a>
+            <div class="translated-label">&gt; マルチモーダルサポートが今後利用可能となります。</div>
+            <div class="date">October 13, 2025</div>
+            <div class="content">
+                <div class="original-text"><p>Mosaic AI Model Serving now supports multimodal inputs for the Databricks hosted foundation models. See <a href="https://docs.databricks.com/aws/en/machine-learning/model-serving/query-vision-models">Query vision models</a>.</p>
+<p>This multimodal support is available using the following functionalities:</p>
+<ul>
+<li><a href="https://docs.databricks.com/aws/en/machine-learning/foundation-model-apis#token-foundation-apis">Foundation Model APIs pay-per-token</a>.</li>
+<li><a href="https://docs.databricks.com/aws/en/machine-learning/foundation-model-apis#throughput">Foundation Model APIs provisioned throughput</a>.</li>
+<li><a href="https://docs.databricks.com/aws/en/large-language-models/ai-functions">AI Functions</a>. Both real-time inference and batch inference workloads.</li>
+</ul></div>
+                <div class="translated-label">&gt; <p>Databricks社ホスト型基盤モデルに対するマルチモーダル入力をMosaic AIモデルサーバーがサポートするようになりました。<a href="https://docs.databricks.com/aws/en/machine-learning/model-serving/query-vision-models">Query vision models</a>をご覧ください。</p>
+<p>このマルチモーダルサポートは以下の機能を使って利用できます:</p>
+<ul>
+<li><a href="https://docs.databricks.com/aws/en/machine-learning/foundation-model-apis#token-foundation-apis">基盤モデルAPI トークン従量課金</a>。</li>
+<li><a href="https://docs.databricks.com/aws/en/machine-learning/foundation-model-apis#throughput">基盤モデルAPI 処理能力確保</a>。</li>
+<li><a href="https://docs.databricks.com/aws/en/large-language-models/ai-functions">AIファンクション</a>。リアルタイム推論およびバッチ推論ワークロード。</li>
+</ul></div>
+            </div>
+        </div>
+        
+        <div class="article">
+            <a href="https://docs.databricks.com/aws/en/sql/release-notes/2025#visualizations-fix" target="_blank">
+                <div class="article-title">Visualizations fix</div>
+            </a>
+            <div class="translated-label">&gt; 視覚化が修正される</div>
+            <div class="date">October 09, 2025</div>
+            <div class="content">
+                <div class="original-text"><ul>
+<li><strong>Legend selection for aliased series names:</strong> Legend selection now works correctly for charts with aliased series names in SQL editor and notebooks.</li>
+</ul></div>
+                <div class="translated-label">&gt; <ul>
+<li><strong>エイリアス付きシリーズ名のレジェンド選択:</strong> SQL エディターとノートブックの別名付きシリーズ名のチャートでレジェンド選択が正しく機能するようになりました。</li>
+</ul></div>
+            </div>
+        </div>
+        
+        <div class="article">
             <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2025#aibi-dashboard-table-and-text-widget-improvements" target="_blank">
                 <div class="article-title">AI/BI dashboard table and text widget improvements</div>
             </a>
@@ -37,87 +101,12 @@
 <li><strong>Additional predicate support for custom calculations</strong>: Custom calculations now support <code>IN</code>, <code>BETWEEN</code>, and pattern matching predicates (<code>LIKE</code>, <code>ILIKE</code>, <code>RLIKE</code>) for more flexible filtering and comparison operations. See <a href="https://docs.databricks.com/aws/en/dashboards/datasets/custom-calculations">What are custom calculations?</a>.</li>
 </ul></div>
                 <div class="translated-label">&gt; <ul>
-<li><strong>テーブルからリンクURLをコピーする</strong>: テーブルの可視化から直接にリンクURLをコピーできるようになりました。</li>
-<li><strong>ピボットの行ヘッダーが改善されました</strong>: ピボットテーブルの行ヘッダーのフィールド名がオーバーフローせず、行の値と一緒にスクロールします。</li>
-<li><strong>テキストウィジェットの<code>&#x3c;</code>文字の処理が改善されました</strong>: テキストウィジェットが<code>&#x3c;</code>文字を正しく処理し、予期しない動作を防ぐようになりました。</li>
-<li><strong>カスタム計算の精度が向上しました</strong>: 集計関数で<code>DISTINCT</code>キーワードと<code>FILTER(WHERE ...)</code>句がサポートされるようになりました。これらを使ってユニークなエンティティの件数を数えたり、条件付きの集計を行うことができ、複雑な<code>CASE</code>文を置き換えられます。<a href="https://docs.databricks.com/aws/en/dashboards/datasets/custom-calculations#aggregate-functions">集計関数</a>を参照してください。</li>
-<li><strong>カスタム計算に対してさらに条件式がサポートされるようになりました</strong>: カスタム計算で<code>IN</code>、<code>BETWEEN</code>、パターンマッチング条件式(<code>LIKE</code>、<code>ILIKE</code>、<code>RLIKE</code>)がサポートされるようになり、より柔軟なフィルタリングと比較が行えるようになりました。<a href="https://docs.databricks.com/aws/en/dashboards/datasets/custom-calculations">カスタム計算とは何ですか?</a>を参照してください。</li>
+<li><strong>テーブルからリンクURLをコピーする</strong>: テーブルの視覚化からリンクURLを直接コピーできるようになりました。</li>
+<li><strong>ピボットテーブルのヘッダーが改善されました</strong>: ピボットテーブルの行ヘッダーフィールド名が溢れることなく、行の値とともにスクロールするようになりました。</li>
+<li><strong>テキストウィジェットの<code>&#x3c;</code>文字の処理が改善されました</strong>: テキストウィジェットで<code>&#x3c;</code>文字が正しく処理されるようになり、予期せぬ動作が防げるようになりました。</li>
+<li><strong>カスタム計算の精度が改善されました</strong>: 集計関数で<code>DISTINCT</code>キーワードと<code>FILTER(WHERE ...)</code>句がサポートされるようになりました。これを使ってユニークなエンティティをカウントしたり、条件付き集計を行ったりすることができ、複雑な<code>CASE</code>ステートメントを置き換えることができます。<a href="https://docs.databricks.com/aws/en/dashboards/datasets/custom-calculations#aggregate-functions">集計関数</a>を参照してください。</li>
+<li><strong>カスタム計算の述語サポートが追加されました</strong>: カスタム計算で<code>IN</code>、<code>BETWEEN</code>、パターンマッチング述語(<code>LIKE</code>、<code>ILIKE</code>、<code>RLIKE</code>)がサポートされるようになり、より柔軟なフィルタリングと比較処理が可能になりました。<a href="https://docs.databricks.com/aws/en/dashboards/datasets/custom-calculations">カスタム計算とは何ですか?</a>を参照してください。</li>
 </ul></div>
-            </div>
-        </div>
-        
-        <div class="article">
-            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2025#genie-knowledge-store-enhancements-and-benchmark-improvements" target="_blank">
-                <div class="article-title">Genie knowledge store enhancements and benchmark improvements</div>
-            </a>
-            <div class="translated-label">&gt; 魔法の知識ストアの改善とベンチマークの改善</div>
-            <div class="date">October 09, 2025</div>
-            <div class="content">
-                <div class="original-text"><ul>
-<li><strong>Easier benchmark generation:</strong>
-<ul>
-<li>Space editors can save representative messages or SQL answers from chat conversations to benchmark questions. See <a href="https://docs.databricks.com/aws/en/genie/set-up#other-actions">Other response actions</a>.</li>
-<li>Space editors can generate benchmark SQL answers after entering a benchmark text question. See <a href="https://docs.databricks.com/aws/en/genie/benchmarks#add-benchmark">Add benchmark questions</a>.</li>
-<li>Accurate Genie answers from one benchmark result can now be saved to update future benchmark sets. See <a href="https://docs.databricks.com/aws/en/genie/benchmarks#review-single-eval">Review individual evaluations</a>.</li>
-</ul>
-</li>
-<li><strong>Improved performance and latency:</strong> Genie's internal reasoning process has been simplified, slightly improving overall latency and streamlining context for SQL generation.</li>
-</ul></div>
-                <div class="translated-label">&gt; <ul>
-<li><strong>ベンチマークの生成が容易になりました:</strong>
-<ul>
-<li>Space エディターは、チャット会話からの代表的なメッセージやSQL回答をベンチマーク質問として保存できます。「<a href="https://docs.databricks.com/aws/en/genie/set-up#other-actions">その他のレスポンスアクション</a>」をご覧ください。</li>
-<li>Space エディターは、ベンチマークのテキスト質問を入力した後、ベンチマークのSQL回答を生成できます。「<a href="https://docs.databricks.com/aws/en/genie/benchmarks#add-benchmark">ベンチマーク質問の追加</a>」をご覧ください。</li>
-<li>1つのベンチマークの結果から得られた正確なGenie回答は、今後のベンチマークセットを更新するために保存できます。「<a href="https://docs.databricks.com/aws/en/genie/benchmarks#review-single-eval">個々の評価の確認</a>」をご覧ください。</li>
-</ul>
-</li>
-<li><strong>パフォーマンスとレイテンシーが改善されました:</strong> Genieの内部推論プロセスが簡素化され、全体的なレイテンシーが若干改善され、SQLの生成にコンテキストが最適化されました。</li>
-</ul></div>
-            </div>
-        </div>
-        
-        <div class="article">
-            <a href="https://docs.databricks.com/aws/en/sql/release-notes/2025#visualizations-fix" target="_blank">
-                <div class="article-title">Visualizations fix</div>
-            </a>
-            <div class="translated-label">&gt; 視覚化が解決策となる</div>
-            <div class="date">October 09, 2025</div>
-            <div class="content">
-                <div class="original-text"><ul>
-<li><strong>Legend selection for aliased series names:</strong> Legend selection now works correctly for charts with aliased series names in SQL editor and notebooks.</li>
-</ul></div>
-                <div class="translated-label">&gt; <ul>
-<li><strong>エイリアスシリーズ名の凡例選択:</strong> SQL エディターおよびノートブックのエイリアスシリーズ名を持つチャートの凡例選択が正しく機能するようになりました。</li>
-</ul></div>
-            </div>
-        </div>
-        
-        <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/october#context-based-ingress-control-beta" target="_blank">
-                <div class="article-title">Context based ingress control (Beta)</div>
-            </a>
-            <div class="translated-label">&gt; コンテキストに基づくインバウンドコントロール (ベータ)</div>
-            <div class="date">October 09, 2025</div>
-            <div class="content">
-                <div class="original-text"><p>Context-based ingress control is now in <a href="https://docs.databricks.com/aws/en/release-notes/release-types">Beta</a>. This enables account admins to set allow and deny rules that combine <em>who</em> is calling, <em>from where</em> they are calling, and <em>what</em> they can reach in Databricks. Context-based ingress control ensures that only trusted combinations of identity, request type, and network source can reach your workspace. A single policy can govern multiple workspaces, ensuring consistent enforcement across your organization.</p>
-<p>See <a href="https://docs.databricks.com/aws/en/security/network/front-end/context-based-ingress">Context-based ingress control</a>.</p></div>
-                <div class="translated-label">&gt; コンテキストベースのイングレス制御は現在<a href="https://docs.databricks.com/aws/en/release-notes/release-types">ベータ</a>版にあります。これにより、管理者は「誰が」、「どこから」、「何に」アクセスできるかというルールを設定できるようになりました。コンテキストベースのイングレス制御は、信頼できる識別子、リクエストタイプ、ネットワークソースの組み合わせのみがワークスペースにアクセスできるようにします。単一のポリシーで複数のワークスペースを制御し、組織全体で一貫した施行を行うことができます。
-
-<a href="https://docs.databricks.com/aws/en/security/network/front-end/context-based-ingress">コンテキストベースのイングレス制御</a>を参照してください。</div>
-            </div>
-        </div>
-        
-        <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/october#the-billable-usage-table-now-records-the-performance-mode-of-serverless-jobs-and-pipelines" target="_blank">
-                <div class="article-title">The billable usage table now records the performance mode of serverless jobs and pipelines</div>
-            </a>
-            <div class="translated-label">&gt; ビリング可能な使用量テーブルに、サーバーレスジョブとパイプラインのパフォーマンス モードが記録されるようになりました。</div>
-            <div class="date">October 09, 2025</div>
-            <div class="content">
-                <div class="original-text"><p>Billing logs now record the <a href="https://docs.databricks.com/aws/en/jobs/run-serverless-jobs#performance">performance mode</a> of serverless jobs and pipelines. The workload's performance mode is logged in the <code>product_features.performance_target</code> column and can include values of <code>PERFORMANCE_OPTIMIZED</code>, <code>STANDARD</code>, or <code>null</code>.</p>
-<p>For billing log reference, see <a href="https://docs.databricks.com/aws/en/admin/system-tables/billing">Billable usage system table reference</a>.</p></div>
-                <div class="translated-label">&gt; <p>サーバーレスジョブおよびパイプラインのパフォーマンスモードが、ビリングログに記録されるようになりました。ワークロードのパフォーマンスモードは、<code>product_features.performance_target</code>列に記録され、<code>PERFORMANCE_OPTIMIZED</code>、<code>STANDARD</code>、または<code>null</code>のいずれかの値を含むことができます。</p>
-<p>ビリングログに関する参照情報については、<a href="https://docs.databricks.com/aws/en/admin/system-tables/billing">Billable usage system table reference</a>を参照してください。</p></div>
             </div>
         </div>
         
