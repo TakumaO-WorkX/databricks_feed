@@ -23,90 +23,96 @@
         <h1>Databricks Docs Updates</h1>
     
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/october#create-backfill-job-runs" target="_blank">
-                <div class="article-title">Create backfill job runs</div>
+            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2025#dashboard-pivot-tables-gridlines-and-drill-through-enhancements" target="_blank">
+                <div class="article-title">Dashboard pivot tables, gridlines, and drill-through enhancements</div>
             </a>
-            <div class="translated-label">&gt; ジョブ実行の埋め戻し作成</div>
-            <div class="date">October 14, 2025</div>
-            <div class="content">
-                <div class="original-text"><p>Job backfills allow you to trigger job runs to backfill data from the past. This is useful for loading older data, or repairing data when there are failures in processing. For more details, see <a href="https://docs.databricks.com/aws/en/jobs/backfill-jobs">Backfill jobs</a>.</p></div>
-                <div class="translated-label">&gt; ジョブのバックフィルは、過去からデータを取り込むためのジョブを実行するのに使えます。これは、古いデータをロードしたり、処理の失敗を修復するのに役立ちます。詳細については、<a href="https://docs.databricks.com/aws/en/jobs/backfill-jobs">バックフィルジョブ</a>をご覧ください。</div>
-            </div>
-        </div>
-        
-        <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/october#data-classification-public-preview" target="_blank">
-                <div class="article-title">Data Classification (Public Preview)</div>
-            </a>
-            <div class="translated-label">&gt; データ分類 (パブリックプレビュー)</div>
-            <div class="date">October 13, 2025</div>
-            <div class="content">
-                <div class="original-text"><p>Databricks Data Classification is now in Public Preview and supports all catalog types, consolidates all classification results into a single system table, and a new UI to review and auto-tag classifications. See <a href="https://docs.databricks.com/aws/en/data-governance/unity-catalog/data-classification">Data Classification</a>.</p></div>
-                <div class="translated-label">&gt; データブリックスのデータ分類がパブリックプレビューに登場し、すべてのカタログタイプをサポートし、分類結果をすべて単一のシステムテーブルに統合し、分類を確認および自動タグ付けするための新しいUIを提供しています。「データ分類」をご覧ください。</div>
-            </div>
-        </div>
-        
-        <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/october#multimodal-support-is-now-available" target="_blank">
-                <div class="article-title">Multimodal support is now available</div>
-            </a>
-            <div class="translated-label">&gt; マルチモーダルサポートが今後利用可能となります。</div>
-            <div class="date">October 13, 2025</div>
-            <div class="content">
-                <div class="original-text"><p>Mosaic AI Model Serving now supports multimodal inputs for the Databricks hosted foundation models. See <a href="https://docs.databricks.com/aws/en/machine-learning/model-serving/query-vision-models">Query vision models</a>.</p>
-<p>This multimodal support is available using the following functionalities:</p>
-<ul>
-<li><a href="https://docs.databricks.com/aws/en/machine-learning/foundation-model-apis#token-foundation-apis">Foundation Model APIs pay-per-token</a>.</li>
-<li><a href="https://docs.databricks.com/aws/en/machine-learning/foundation-model-apis#throughput">Foundation Model APIs provisioned throughput</a>.</li>
-<li><a href="https://docs.databricks.com/aws/en/large-language-models/ai-functions">AI Functions</a>. Both real-time inference and batch inference workloads.</li>
-</ul></div>
-                <div class="translated-label">&gt; <p>Databricks社ホスト型基盤モデルに対するマルチモーダル入力をMosaic AIモデルサーバーがサポートするようになりました。<a href="https://docs.databricks.com/aws/en/machine-learning/model-serving/query-vision-models">Query vision models</a>をご覧ください。</p>
-<p>このマルチモーダルサポートは以下の機能を使って利用できます:</p>
-<ul>
-<li><a href="https://docs.databricks.com/aws/en/machine-learning/foundation-model-apis#token-foundation-apis">基盤モデルAPI トークン従量課金</a>。</li>
-<li><a href="https://docs.databricks.com/aws/en/machine-learning/foundation-model-apis#throughput">基盤モデルAPI 処理能力確保</a>。</li>
-<li><a href="https://docs.databricks.com/aws/en/large-language-models/ai-functions">AIファンクション</a>。リアルタイム推論およびバッチ推論ワークロード。</li>
-</ul></div>
-            </div>
-        </div>
-        
-        <div class="article">
-            <a href="https://docs.databricks.com/aws/en/sql/release-notes/2025#visualizations-fix" target="_blank">
-                <div class="article-title">Visualizations fix</div>
-            </a>
-            <div class="translated-label">&gt; 視覚化が修正される</div>
-            <div class="date">October 09, 2025</div>
+            <div class="translated-label">&gt; ダッシュボードの pivot テーブル、グリッドライン、およびドリルスルーの機能強化</div>
+            <div class="date">October 16, 2025</div>
             <div class="content">
                 <div class="original-text"><ul>
-<li><strong>Legend selection for aliased series names:</strong> Legend selection now works correctly for charts with aliased series names in SQL editor and notebooks.</li>
+<li><strong>Dynamic text functions in pivot tables</strong>: Pivot tables now support <code>contains()</code>, <code>startswith()</code>, and <code>endswith()</code> functions for conditional formatting. See <a href="https://docs.databricks.com/aws/en/dashboards/visualizations/tables#conditional-formatting-text">Conditional formatting with text functions</a>.</li>
+<li><strong>Gridline toggle</strong>: Charts now support toggling gridlines on and off. See <a href="https://docs.databricks.com/aws/en/dashboards/visualizations#gridlines">Gridlines</a></li>
+<li><strong>Dashboard tags and certification in Public Preview</strong>: You can now add tags to dashboards and Genie spaces to improve organization, search, and discovery across your workspace. Tagged items are indexed for search, making it easier for users to find relevant dashboards and spaces quickly.</li>
+<li><strong>Drill-through without target filters</strong>: Drill-through now filters any visualization based on the same dataset as the source selection without an explicit target filter. If a target filter exists, it is still applied. See <a href="https://docs.databricks.com/aws/en/dashboards#drill-through-filter">Use drill through to filter data</a>.</li>
+<li><strong>Fixed discarded dashboard API error</strong>: APIs now return <code>404 NOT_FOUND</code> instead of <code>403 PERMISSION_DENIED</code> when accessing dashboards in the trash.</li>
 </ul></div>
                 <div class="translated-label">&gt; <ul>
-<li><strong>エイリアス付きシリーズ名のレジェンド選択:</strong> SQL エディターとノートブックの別名付きシリーズ名のチャートでレジェンド選択が正しく機能するようになりました。</li>
+<li><strong>ピボットテーブルのダイナミックテキスト関数</strong>: ピボットテーブルで条件付き書式設定に <code>contains()</code>、<code>startswith()</code>、<code>endswith()</code> 関数がサポートされるようになりました。<a href="https://docs.databricks.com/aws/en/dashboards/visualizations/tables#conditional-formatting-text">テキスト関数による条件付き書式設定</a>をご覧ください。</li>
+<li><strong>グリッド線のトグル</strong>: チャートでグリッド線のオン/オフの切り替えがサポートされるようになりました。<a href="https://docs.databricks.com/aws/en/dashboards/visualizations#gridlines">グリッド線</a>をご覧ください。</li>
+<li><strong>ダッシュボードタグと認証の公開プレビュー</strong>: ワークスペース全体のオーガナイゼーション、検索、発見を改善するためにダッシュボードとGenieスペースにタグを追加できるようになりました。タグ付きの項目は検索対象にインデックスされるため、ユーザーが関連するダッシュボードとスペースをすばやく見つけやすくなります。</li>
+<li><strong>ターゲットフィルターなしのドリルスルー</strong>: ドリルスルーは、ソース選択と同じデータセットに基づいて任意の視覚化をフィルタリングするようになりました。ターゲットフィルターが存在する場合でも、それが引き続き適用されます。<a href="https://docs.databricks.com/aws/en/dashboards#drill-through-filter">ドリルスルーを使ってデータをフィルタリングする</a>をご覧ください。</li>
+<li><strong>破棄されたダッシュボードのAPIエラーを修正</strong>: ゴミ箱のダッシュボードにアクセスする際、APIは <code>403 PERMISSION_DENIED</code> ではなく <code>404 NOT_FOUND</code> を返すようになりました。</li>
 </ul></div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2025#aibi-dashboard-table-and-text-widget-improvements" target="_blank">
-                <div class="article-title">AI/BI dashboard table and text widget improvements</div>
+            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2025#genie-api-updates-benchmark-explanations-and-join-improvements" target="_blank">
+                <div class="article-title">Genie API updates, benchmark explanations, and JOIN improvements</div>
             </a>
-            <div class="translated-label">&gt; AIとBIのダッシュボードのテーブルとテキストウィジェットの改善</div>
-            <div class="date">October 09, 2025</div>
+            <div class="translated-label">&gt; ジーニーAPI更新、ベンチマーク説明、JOINの改善</div>
+            <div class="date">October 16, 2025</div>
             <div class="content">
                 <div class="original-text"><ul>
-<li><strong>Copy link URLs from tables</strong>: You can now copy link URLs directly from table visualizations.</li>
-<li><strong>Improved pivot row headers</strong>: Row header field names in pivot tables no longer overflow and now scroll together with row values.</li>
-<li><strong>Improved handling of <code>&#x3c;</code> character in text widgets</strong>: Text widgets now correctly handle the <code>&#x3c;</code> character to prevent unexpected behavior.</li>
-<li><strong>Improved precision for custom calculations</strong>: Aggregate functions now support the <code>DISTINCT</code> keyword and the <code>FILTER(WHERE ...)</code> clause. Use them to count unique entities and perform conditional aggregation, replacing complex <code>CASE</code> statements. See <a href="https://docs.databricks.com/aws/en/dashboards/datasets/custom-calculations#aggregate-functions">Aggregate functions</a>.</li>
-<li><strong>Additional predicate support for custom calculations</strong>: Custom calculations now support <code>IN</code>, <code>BETWEEN</code>, and pattern matching predicates (<code>LIKE</code>, <code>ILIKE</code>, <code>RLIKE</code>) for more flexible filtering and comparison operations. See <a href="https://docs.databricks.com/aws/en/dashboards/datasets/custom-calculations">What are custom calculations?</a>.</li>
+<li><strong>JOIN relationship discovery improvements</strong>: You can now sort <code>JOIN</code> relationships and SQL snippet definitions for easier management.</li>
+<li><strong>API endpoints moving to Public Preview</strong>: The following Genie API endpoints are moving from Beta to Public Preview: list conversation messages, delete conversation message, and send thumbs up/down feedback.</li>
+<li><strong>Benchmark result explanations</strong>: Benchmark results now include an explanation for why a result was rated incorrect.</li>
+<li><strong>SQL execution result summaries</strong>: Genie now automatically generates summaries of SQL execution results to make responses more natural and easier to interpret.</li>
+<li><strong>SQL measures in knowledge stores:</strong> Users can now add SQL measures to a space's knowledge store, along with filters and dimensions, to guide Genie in generating specific SQL expressions. See <a href="https://docs.databricks.com/aws/en/genie/knowledge-store">Build a knowledge store for more reliable Genie spaces</a>.</li>
+<li><strong>Fixed permissions messaging</strong>: Messaging for users with CAN RUN or CAN VIEW permissions has been corrected to accurately reflect their capabilities in the monitoring and data tabs.</li>
+<li><strong>Workspace asset tagging support</strong>: Genie spaces are now included in the workspace asset tagging public preview.</li>
 </ul></div>
                 <div class="translated-label">&gt; <ul>
-<li><strong>テーブルからリンクURLをコピーする</strong>: テーブルの視覚化からリンクURLを直接コピーできるようになりました。</li>
-<li><strong>ピボットテーブルのヘッダーが改善されました</strong>: ピボットテーブルの行ヘッダーフィールド名が溢れることなく、行の値とともにスクロールするようになりました。</li>
-<li><strong>テキストウィジェットの<code>&#x3c;</code>文字の処理が改善されました</strong>: テキストウィジェットで<code>&#x3c;</code>文字が正しく処理されるようになり、予期せぬ動作が防げるようになりました。</li>
-<li><strong>カスタム計算の精度が改善されました</strong>: 集計関数で<code>DISTINCT</code>キーワードと<code>FILTER(WHERE ...)</code>句がサポートされるようになりました。これを使ってユニークなエンティティをカウントしたり、条件付き集計を行ったりすることができ、複雑な<code>CASE</code>ステートメントを置き換えることができます。<a href="https://docs.databricks.com/aws/en/dashboards/datasets/custom-calculations#aggregate-functions">集計関数</a>を参照してください。</li>
-<li><strong>カスタム計算の述語サポートが追加されました</strong>: カスタム計算で<code>IN</code>、<code>BETWEEN</code>、パターンマッチング述語(<code>LIKE</code>、<code>ILIKE</code>、<code>RLIKE</code>)がサポートされるようになり、より柔軟なフィルタリングと比較処理が可能になりました。<a href="https://docs.databricks.com/aws/en/dashboards/datasets/custom-calculations">カスタム計算とは何ですか?</a>を参照してください。</li>
+<li><strong>JOIN関係の検出機能の改善</strong>: <code>JOIN</code>関係およびSQL断片の定義を簡単に管理できるようになりました。</li>
+<li><strong>APIエンドポイントがパブリックプレビューに移行</strong>: 以下のGenieAPIエンドポイントがベータから公開プレビューに移行しました: 会話メッセージの一覧取得、会話メッセージの削除、感謝または非難のフィードバックの送信。</li>
+<li><strong>ベンチマーク結果の説明</strong>: ベンチマーク結果に、結果が正しくない理由の説明が含まれるようになりました。</li>
+<li><strong>SQL実行結果の概要</strong>: Genieが自動的にSQL実行結果の概要を生成するようになり、レスポンスがより自然で解釈しやすくなりました。</li>
+<li><strong>ナレッジストアでのSQL指標:</strong> ユーザーは、フィルターや次元と一緒に、ナレッジストアにSQL指標を追加して、Genieが特定のSQL式を生成するのを支援できるようになりました。詳細は<a href="https://docs.databricks.com/aws/en/genie/knowledge-store">ナレッジストアの構築でより信頼性の高いGenieスペースを作成する</a>をご覧ください。</li>
+<li><strong>権限メッセージの修正</strong>: CAN RUNまたはCAN VIEW権限を持つユーザーに対するメッセージが、モニタリングやデータタブでの機能を正確に反映するよう修正されました。</li>
+<li><strong>ワークスペースアセットタギングのサポート</strong>: Genieスペースがワークスペースアセットタギングのパブリックプレビューに含まれるようになりました。</li>
 </ul></div>
+            </div>
+        </div>
+        
+        <div class="article">
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/october#dashboard-and-genie-spaces-tagging-public-preview" target="_blank">
+                <div class="article-title">Dashboard and Genie spaces tagging (Public Preview)</div>
+            </a>
+            <div class="translated-label">&gt; ダッシュボードとジーニースペースのタグ付け(パブリックプレビュー)</div>
+            <div class="date">October 16, 2025</div>
+            <div class="content">
+                <div class="original-text"><p>You can now add tags to dashboards and Genie spaces to improve organization, search, and discovery across your workspace. Tagged items are indexed for search, making it easier for users to find relevant dashboards and spaces quickly.</p>
+<p>See <a href="https://docs.databricks.com/aws/en/dashboards#tag">Manage dashboard tags</a> and <a href="https://docs.databricks.com/aws/en/genie/set-up#tag">Add tags</a>.</p></div>
+                <div class="translated-label">&gt; ダッシュボードとGenieスペースにタグを追加して、ワークスペース全体の整理、検索、発見をより良くすることができます。タグ付きアイテムは検索インデックスされるため、ユーザーがすぐに関連するダッシュボードやスペースを見つけやすくなります。
+
+ダッシュボードタグの管理と、タグの追加の詳細については、以下をご覧ください。</div>
+            </div>
+        </div>
+        
+        <div class="article">
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/october#jobs-can-now-be-triggered-on-source-table-update" target="_blank">
+                <div class="article-title">Jobs can now be triggered on source table update</div>
+            </a>
+            <div class="translated-label">&gt; 仕事は今、ソーステーブルの更新に基づいてトリガーされることができます。</div>
+            <div class="date">October 16, 2025</div>
+            <div class="content">
+                <div class="original-text"><p>You may now create triggers for jobs to run when a source table is updated. See <a href="https://docs.databricks.com/aws/en/jobs/trigger-table-update">Trigger jobs when source tables are updated</a>.</p></div>
+                <div class="translated-label">&gt; <p>ソース表が更新されたときにジョブを実行するトリガーを作成できます。<a href="https://docs.databricks.com/aws/en/jobs/trigger-table-update">ソース表が更新されたときにジョブをトリガーする</a>を参照してください。</p></div>
+            </div>
+        </div>
+        
+        <div class="article">
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/october#databricks-asset-bundles-in-the-workspace-is-ga" target="_blank">
+                <div class="article-title">Databricks Asset Bundles in the workspace is GA</div>
+            </a>
+            <div class="translated-label">&gt; データブリックス ワークスペースのアセットバンドルがGAになりました。</div>
+            <div class="date">October 16, 2025</div>
+            <div class="content">
+                <div class="original-text"><p>Databricks Asset Bundles in the workspace is now generally available (GA). This feature allows you to collaborate with other users in your organization to edit, commit, test, and deploy bundle updates through the UI.</p>
+<p>See <a href="https://docs.databricks.com/aws/en/dev-tools/bundles/workspace">Collaborate on bundles in the workspace</a>.</p></div>
+                <div class="translated-label">&gt; ワークスペース内のDatabricks Asset Bundlesが一般に公開されました。この機能により、組織の他のユーザーと協力して、UIを通じてバンドルの更新を編集、コミット、テスト、およびデプロイすることができます。
+
+ワークスペース内でバンドルを共同作業するには、<a href="https://docs.databricks.com/aws/en/dev-tools/bundles/workspace">こちら</a>をご覧ください。</div>
             </div>
         </div>
         
