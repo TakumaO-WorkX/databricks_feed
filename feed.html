@@ -23,96 +23,76 @@
         <h1>Databricks Docs Updates</h1>
     
         <div class="article">
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/october#compatibility-mode-public-preview" target="_blank">
+                <div class="article-title">Compatibility Mode (Public Preview)</div>
+            </a>
+            <div class="translated-label">&gt; 互換性モード (パブリックプレビュー)</div>
+            <div class="date">October 21, 2025</div>
+            <div class="content">
+                <div class="original-text"><p>Compatibility Mode is now in Public Preview. Compatibility Mode generates a read-only version of a Unity Catalog managed table, streaming table, or materialized view that is automatically synced with the original table. This enables external Delta Lake and Iceberg clients, such as Amazon Athena, Snowflake, and Microsoft Fabric to read your tables and views without sacrificing performance on Databricks. You can configure how often your read-only versions are refreshed, up to near real-time.</p>
+<p>See <a href="https://docs.databricks.com/aws/en/external-access/compatibility-mode">Compatibility Mode</a>.</p></div>
+                <div class="translated-label">&gt; 互換性モードは現在パブリックプレビューの状態にあります。互換性モードは、Unity Catalogによって管理されるテーブル、ストリーミングテーブル、またはマテリアライズドビューの読み取り専用バージョンを生成し、オリジナルのテーブルと自動的に同期します。これにより、Amazon Athena、Snowflake、Microsoft Fabricなどの外部のDelta Lake and Iceberg クライアントがデータブリックスのパフォーマンスを犠牲にすることなく、テーブルやビューを読み取ることができます。読み取り専用バージョンの更新頻度をほぼリアルタイムまで設定できます。
+
+詳細は<a href="https://docs.databricks.com/aws/en/external-access/compatibility-mode">互換性モード</a>をご確認ください。</div>
+            </div>
+        </div>
+        
+        <div class="article">
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/october#zstd-is-now-the-default-compression-for-new-delta-tables" target="_blank">
+                <div class="article-title">Zstd is now the default compression for new Delta tables</div>
+            </a>
+            <div class="translated-label">&gt; Delta Lake 用の新しいテーブルの標準圧縮方式が Zstd になりました。</div>
+            <div class="date">October 21, 2025</div>
+            <div class="content">
+                <div class="original-text"><p>All newly created Delta tables in Databricks Runtime 16.0 and above now use Zstandard (Zstd) compression by default instead of Snappy.</p>
+<p>Existing tables continue to use their current compression codec. To change the compression codec for an existing table, set the <code>delta.parquet.compression.codec</code> table property. See <a href="https://docs.databricks.com/aws/en/delta/table-properties">Delta table properties reference</a>.</p></div>
+                <div class="translated-label">&gt; <p>Databricks Runtime 16.0以降で作成された新しいすべてのDeltaテーブルでは、デフォルトでSnappyではなくZstandard (Zstd)圧縮が使用されるようになりました。</p>
+<p>既存のテーブルは現在の圧縮コーデックを継続して使用します。既存のテーブルの圧縮コーデックを変更するには、<code>delta.parquet.compression.codec</code>テーブルプロパティを設定します。<a href="https://docs.databricks.com/aws/en/delta/table-properties">Delta テーブルプロパティリファレンス</a>を参照してください。</p></div>
+            </div>
+        </div>
+        
+        <div class="article">
+            <a href="https://docs.databricks.com/aws/en/sql/release-notes/2025#new-alert-editing-experience" target="_blank">
+                <div class="article-title">New alert editing experience</div>
+            </a>
+            <div class="translated-label">&gt; 新しい警告編集体験</div>
+            <div class="date">October 20, 2025</div>
+            <div class="content">
+                <div class="original-text"><ul>
+<li><strong>New alert editing experience:</strong> Creating or editing an alert now opens in the new multi-tab editor, providing a unified editing workflow. See <a href="https://docs.databricks.com/aws/en/sql/user/alerts">Databricks SQL alerts</a>.</li>
+</ul></div>
+                <div class="translated-label">&gt; <ul>
+<li><strong>新しいアラートの編集エクスペリエンス:</strong> アラートの作成または編集は、新しい複数のタブがあるエディターで開くようになり、統一されたワークフローが提供されます。<a href="https://docs.databricks.com/aws/en/sql/user/alerts">Databricks SQLアラート</a>をご確認ください。</li>
+</ul></div>
+            </div>
+        </div>
+        
+        <div class="article">
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/october#unified-runs-list-public-preview" target="_blank">
+                <div class="article-title">Unified runs list (Public Preview)</div>
+            </a>
+            <div class="translated-label">&gt; 統合されたランのリスト(パブリックプレビュー)</div>
+            <div class="date">October 20, 2025</div>
+            <div class="content">
+                <div class="original-text"><p>The unified runs list is in Public Preview. Monitor both job and pipeline runs in a single unified list.</p>
+<p>See <a href="https://docs.databricks.com/aws/en/ldp/monitoring-ui#unified-preview">What changes are in the Unified Runs List preview?</a>.</p></div>
+                <div class="translated-label">&gt; <p>統一されたランのリストはパブリックプレビューにあります。単一の統一されたリストでジョブとパイプラインの実行を監視できます。</p>
+<p>「<a href="https://docs.databricks.com/aws/en/ldp/monitoring-ui#unified-preview">統一されたランのリストのプレビューに含まれる変更点は何ですか?</a>」をご覧ください。</p></div>
+            </div>
+        </div>
+        
+        <div class="article">
             <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/october#databricks-connector-for-google-sheets-offers-additional-features-public-preview" target="_blank">
                 <div class="article-title">Databricks Connector for Google Sheets offers additional features (Public Preview)</div>
             </a>
-            <div class="translated-label">&gt; データブリックスの Google Sheets コネクタには、追加の機能(パブリックプレビュー)があります。</div>
+            <div class="translated-label">&gt; データブリックス Googleスプレッドシート用コネクター (パブリックプレビュー)</div>
             <div class="date">October 17, 2025</div>
             <div class="content">
                 <div class="original-text"><p>The Databricks Connector for Google Sheets introduces improved query management options. Users can save queries within a Google Sheet spreadsheet, enabling easy data refresh, query reuse, and query editing.</p>
 <p>See <a href="https://docs.databricks.com/aws/en/integrations/google-sheets">Connect to Databricks from Google Sheets</a>.</p></div>
-                <div class="translated-label">&gt; Databricksのグーグルシート用コネクタは、クエリ管理オプションを改善しました。ユーザーはグーグルシートスプレッドシート内でクエリを保存できるようになり、簡単なデータ更新、クエリの再利用、クエリの編集が可能になりました。
+                <div class="translated-label">&gt; GoogleシートのためのDatabricksコネクターは、クエリ管理オプションを改善しました。ユーザーはGoogleシートスプレッドシート内でクエリを保存できるため、データの更新、クエリの再利用、クエリの編集が簡単になります。
 
-グーグルシートからDatabricksに接続するにはこちらをご覧ください。</div>
-            </div>
-        </div>
-        
-        <div class="article">
-            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2025#dashboard-pivot-tables-gridlines-and-drill-through-enhancements" target="_blank">
-                <div class="article-title">Dashboard pivot tables, gridlines, and drill-through enhancements</div>
-            </a>
-            <div class="translated-label">&gt; ダッシュボードのピボットテーブル、グリッドライン、およびドリルスルー機能の強化</div>
-            <div class="date">October 16, 2025</div>
-            <div class="content">
-                <div class="original-text"><ul>
-<li><strong>Dynamic text functions in pivot tables</strong>: Pivot tables now support <code>contains()</code>, <code>startswith()</code>, and <code>endswith()</code> functions for conditional formatting. See <a href="https://docs.databricks.com/aws/en/dashboards/visualizations/tables#conditional-formatting-text">Conditional formatting with text functions</a>.</li>
-<li><strong>Gridline toggle</strong>: Charts now support toggling gridlines on and off. See <a href="https://docs.databricks.com/aws/en/dashboards/visualizations#gridlines">Gridlines</a></li>
-<li><strong>Dashboard tags and certification in Public Preview</strong>: You can now add tags to dashboards and Genie spaces to improve organization, search, and discovery across your workspace. Tagged items are indexed for search, making it easier for users to find relevant dashboards and spaces quickly. See <a href="https://docs.databricks.com/aws/en/dashboards/settings#tags">Manage dashboard tags</a> and <a href="https://docs.databricks.com/aws/en/genie/set-up#tags">Add tags</a>.</li>
-<li><strong>Drill-through without target filters</strong>: Drill-through now filters any visualization based on the same dataset as the source selection without an explicit target filter. If a target filter exists, it is still applied. See <a href="https://docs.databricks.com/aws/en/dashboards#drill-through-filter">Use drill through to filter data</a>.</li>
-<li><strong>Fixed discarded dashboard API error</strong>: APIs now return <code>404 NOT_FOUND</code> instead of <code>403 PERMISSION_DENIED</code> when accessing dashboards in the trash.</li>
-</ul></div>
-                <div class="translated-label">&gt; <ul>
-<li><strong>ピボットテーブルの動的テキスト関数</strong>: ピボットテーブルでは、条件付き書式設定に <code>contains()</code>、<code>startswith()</code>、<code>endswith()</code> 関数がサポートされるようになりました。<a href="https://docs.databricks.com/aws/en/dashboards/visualizations/tables#conditional-formatting-text">テキスト関数を使った条件付き書式設定</a>を参照してください。</li>
-<li><strong>グリッド線の切り替え</strong>: チャートでグリッド線の表示/非表示を切り替えられるようになりました。<a href="https://docs.databricks.com/aws/en/dashboards/visualizations#gridlines">グリッド線</a>を参照してください。</li>
-<li><strong>ダッシュボードのタグ付けと認証がパブリックプレビューに</strong>: ダッシュボードとGenieスペースにタグを付けることで、ワークスペース全体の整理、検索、発見が容易になります。タグ付きのアイテムはインデックス化され、関連のダッシュボードやスペースをすぐに見つけられます。<a href="https://docs.databricks.com/aws/en/dashboards/settings#tags">ダッシュボードのタグ管理</a>と<a href="https://docs.databricks.com/aws/en/genie/set-up#tags">タグの追加</a>を参照してください。</li>
-<li><strong>ターゲットフィルターなしのドリルスルー</strong>: ドリルスルーでは、ソースの選択と同じデータセットを持つ任意の視覚化がフィルタリングされます。ターゲットフィルターが存在する場合は、それも適用されます。<a href="https://docs.databricks.com/aws/en/dashboards#drill-through-filter">ドリルスルーを使ってデータをフィルタリングする</a>を参照してください。</li>
-<li><strong>破棄されたダッシュボードのAPI エラーを修正</strong>: ごみ箱のダッシュボードにアクセスした場合、API は <code>403 PERMISSION_DENIED</code> ではなく <code>404 NOT_FOUND</code> を返すようになりました。</li>
-</ul></div>
-            </div>
-        </div>
-        
-        <div class="article">
-            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2025#genie-api-updates-benchmark-explanations-and-join-improvements" target="_blank">
-                <div class="article-title">Genie API updates, benchmark explanations, and JOIN improvements</div>
-            </a>
-            <div class="translated-label">&gt; APIアップデート、ベンチマーク説明、JOINの改善</div>
-            <div class="date">October 16, 2025</div>
-            <div class="content">
-                <div class="original-text"><ul>
-<li><strong>JOIN relationship discovery improvements</strong>: You can now sort <code>JOIN</code> relationships and SQL snippet definitions for easier management.</li>
-<li><strong>API endpoints moving to Public Preview</strong>: The following Genie API endpoints are moving from Beta to Public Preview: list conversation messages, delete conversation message, and send thumbs up/down feedback.</li>
-<li><strong>Benchmark result explanations</strong>: Benchmark results now include an explanation for why a result was rated incorrect.</li>
-<li><strong>SQL execution result summaries</strong>: Genie now automatically generates summaries of SQL execution results to make responses more natural and easier to interpret.</li>
-<li><strong>SQL measures in knowledge stores:</strong> Users can now add SQL measures to a space's knowledge store, along with filters and dimensions, to guide Genie in generating specific SQL expressions. See <a href="https://docs.databricks.com/aws/en/genie/knowledge-store">Build a knowledge store for more reliable Genie spaces</a>.</li>
-<li><strong>Fixed permissions messaging</strong>: Messaging for users with CAN RUN or CAN VIEW permissions has been corrected to accurately reflect their capabilities in the monitoring and data tabs.</li>
-<li><strong>Workspace asset tagging support</strong>: Genie spaces are now included in the workspace asset tagging public preview.</li>
-</ul></div>
-                <div class="translated-label">&gt; <ul>
-<li><strong>JOIN関係の発見改善</strong>: 管理が容易になるように、<code>JOIN</code>関係とSQL スニペット定義を並べ替えることができるようになりました。</li>
-<li><strong>APIエンドポイントがパブリックプレビューに移行</strong>: 以下のGenieAPIエンドポイントがベータから公開プレビューに移行します: 会話メッセージの一覧表示、会話メッセージの削除、および拇印アップ/ダウンフィードバックの送信。</li>
-<li><strong>ベンチマーク結果の説明</strong>: ベンチマーク結果には、結果が不正解と評価された理由の説明が含まれるようになりました。</li>
-<li><strong>SQL実行結果の概要</strong>: Genieは現在、応答をより自然で解釈しやすくするためにSQL実行結果の概要を自動的に生成します。</li>
-<li><strong>ナレッジストア内のSQLメジャー</strong>: ユーザーはスペースのナレッジストアにフィルターと次元とともにSQLメジャーを追加できるようになり、Genieが特定のSQL式を生成するのを支援できます。 <a href="https://docs.databricks.com/aws/en/genie/knowledge-store">信頼性の高いGenieスペースを構築するためのナレッジストアの構築</a>をご覧ください。</li>
-<li><strong>固定パーミッションメッセージング</strong>: CAN RUNまたはCAN VIEW権限を持つユーザーのメッセージングが、モニタリングおよびデータタブでの機能を正確に反映するように修正されました。</li>
-<li><strong>ワークスペースアセットタギングサポート</strong>: Genieスペースが、ワークスペースアセットタギングのパブリックプレビューに含まれるようになりました。</li>
-</ul></div>
-            </div>
-        </div>
-        
-        <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/october#dashboard-and-genie-spaces-tagging-public-preview" target="_blank">
-                <div class="article-title">Dashboard and Genie spaces tagging (Public Preview)</div>
-            </a>
-            <div class="translated-label">&gt; ダッシュボードとジーニースペースのタグ付け（パブリックプレビュー）</div>
-            <div class="date">October 16, 2025</div>
-            <div class="content">
-                <div class="original-text"><p>You can now add tags to dashboards and Genie spaces to improve organization, search, and discovery across your workspace. Tagged items are indexed for search, making it easier for users to find relevant dashboards and spaces quickly.</p>
-<p>See <a href="https://docs.databricks.com/aws/en/dashboards/settings#tags">Manage dashboard tags</a> and <a href="https://docs.databricks.com/aws/en/genie/set-up#tags">Add tags</a>.</p></div>
-                <div class="translated-label">&gt; ダッシュボードとGenieスペースにタグを追加して、ワークスペース全体の整理、検索、発見を改善できるようになりました。タグ付きアイテムは検索に索引付けされているため、ユーザーは関連するダッシュボードとスペースをすばやく見つけやすくなります。
-
-ダッシュボードのタグの管理と、タグの追加の詳細は以下を参照してください。</div>
-            </div>
-        </div>
-        
-        <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/october#jobs-can-now-be-triggered-on-source-table-update" target="_blank">
-                <div class="article-title">Jobs can now be triggered on source table update</div>
-            </a>
-            <div class="translated-label">&gt; 仕事は現在、ソーステーブルの更新時にトリガーされることができます。</div>
-            <div class="date">October 16, 2025</div>
-            <div class="content">
-                <div class="original-text"><p>You may now create triggers for jobs to run when a source table is updated. See <a href="https://docs.databricks.com/aws/en/jobs/trigger-table-update">Trigger jobs when source tables are updated</a>.</p></div>
-                <div class="translated-label">&gt; <p>ソーステーブルが更新されたときに実行するジョブのトリガーを作成できます。<a href="https://docs.databricks.com/aws/en/jobs/trigger-table-update">ソーステーブルが更新されたときにジョブをトリガーする</a>を参照してください。</p></div>
+<a href="https://docs.databricks.com/aws/en/integrations/google-sheets">GoogleシートからDatabricksに接続する</a>。</div>
             </div>
         </div>
         
