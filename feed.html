@@ -23,76 +23,80 @@
         <h1>Databricks Docs Updates</h1>
     
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/october#compatibility-mode-public-preview" target="_blank">
-                <div class="article-title">Compatibility Mode (Public Preview)</div>
+            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2025#dashboard-publishing-scheduling-and-field-management-improvements" target="_blank">
+                <div class="article-title">Dashboard publishing, scheduling, and field management improvements</div>
             </a>
-            <div class="translated-label">&gt; 互換性モード (パブリックプレビュー)</div>
-            <div class="date">October 21, 2025</div>
-            <div class="content">
-                <div class="original-text"><p>Compatibility Mode is now in Public Preview. Compatibility Mode generates a read-only version of a Unity Catalog managed table, streaming table, or materialized view that is automatically synced with the original table. This enables external Delta Lake and Iceberg clients, such as Amazon Athena, Snowflake, and Microsoft Fabric to read your tables and views without sacrificing performance on Databricks. You can configure how often your read-only versions are refreshed, up to near real-time.</p>
-<p>See <a href="https://docs.databricks.com/aws/en/external-access/compatibility-mode">Compatibility Mode</a>.</p></div>
-                <div class="translated-label">&gt; 互換性モードは現在パブリックプレビューの状態にあります。互換性モードは、Unity Catalogによって管理されるテーブル、ストリーミングテーブル、またはマテリアライズドビューの読み取り専用バージョンを生成し、オリジナルのテーブルと自動的に同期します。これにより、Amazon Athena、Snowflake、Microsoft Fabricなどの外部のDelta Lake and Iceberg クライアントがデータブリックスのパフォーマンスを犠牲にすることなく、テーブルやビューを読み取ることができます。読み取り専用バージョンの更新頻度をほぼリアルタイムまで設定できます。
-
-詳細は<a href="https://docs.databricks.com/aws/en/external-access/compatibility-mode">互換性モード</a>をご確認ください。</div>
-            </div>
-        </div>
-        
-        <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/october#zstd-is-now-the-default-compression-for-new-delta-tables" target="_blank">
-                <div class="article-title">Zstd is now the default compression for new Delta tables</div>
-            </a>
-            <div class="translated-label">&gt; Delta Lake 用の新しいテーブルの標準圧縮方式が Zstd になりました。</div>
-            <div class="date">October 21, 2025</div>
-            <div class="content">
-                <div class="original-text"><p>All newly created Delta tables in Databricks Runtime 16.0 and above now use Zstandard (Zstd) compression by default instead of Snappy.</p>
-<p>Existing tables continue to use their current compression codec. To change the compression codec for an existing table, set the <code>delta.parquet.compression.codec</code> table property. See <a href="https://docs.databricks.com/aws/en/delta/table-properties">Delta table properties reference</a>.</p></div>
-                <div class="translated-label">&gt; <p>Databricks Runtime 16.0以降で作成された新しいすべてのDeltaテーブルでは、デフォルトでSnappyではなくZstandard (Zstd)圧縮が使用されるようになりました。</p>
-<p>既存のテーブルは現在の圧縮コーデックを継続して使用します。既存のテーブルの圧縮コーデックを変更するには、<code>delta.parquet.compression.codec</code>テーブルプロパティを設定します。<a href="https://docs.databricks.com/aws/en/delta/table-properties">Delta テーブルプロパティリファレンス</a>を参照してください。</p></div>
-            </div>
-        </div>
-        
-        <div class="article">
-            <a href="https://docs.databricks.com/aws/en/sql/release-notes/2025#new-alert-editing-experience" target="_blank">
-                <div class="article-title">New alert editing experience</div>
-            </a>
-            <div class="translated-label">&gt; 新しい警告編集体験</div>
-            <div class="date">October 20, 2025</div>
+            <div class="translated-label">&gt; ダッシュボードの公開、スケジューリング、およびフィールド管理の改善</div>
+            <div class="date">October 23, 2025</div>
             <div class="content">
                 <div class="original-text"><ul>
-<li><strong>New alert editing experience:</strong> Creating or editing an alert now opens in the new multi-tab editor, providing a unified editing workflow. See <a href="https://docs.databricks.com/aws/en/sql/user/alerts">Databricks SQL alerts</a>.</li>
+<li>****Notify viewers** disabled by default for dashboard publishing**: When publishing dashboards, the <strong>Notify viewers</strong> option is now turned off by default to reduce unintended notifications. See <a href="https://docs.databricks.com/aws/en/dashboards#publish-dashboard">Publish a dashboard</a>.</li>
+<li><strong>New functions for custom calculations</strong>: Custom calculations now support over 170 functions. See <a href="https://docs.databricks.com/aws/en/dashboards/custom-calculations/function-reference">Custom calculation function reference</a>.</li>
+<li><strong>Drag-and-drop field reordering in visualizations</strong>: Authors can now drag to reorder fields when creating some visualizations such as <strong>Pivot</strong> and <strong>Line</strong> charts.</li>
+<li><strong>Waterfall visualization type</strong>: Waterfall charts are now available for dashboards. See <a href="https://docs.databricks.com/aws/en/dashboards/visualizations/types#waterfall">Waterfall chart</a>.</li>
 </ul></div>
                 <div class="translated-label">&gt; <ul>
-<li><strong>新しいアラートの編集エクスペリエンス:</strong> アラートの作成または編集は、新しい複数のタブがあるエディターで開くようになり、統一されたワークフローが提供されます。<a href="https://docs.databricks.com/aws/en/sql/user/alerts">Databricks SQLアラート</a>をご確認ください。</li>
+<li>**デフォルトではダッシュボード公開時の閲覧者への通知が無効**: ダッシュボードを公開する際、偶発的な通知を減らすため、<strong>閲覧者に通知</strong>オプションがデフォルトで無効になりました。詳しくは<a href="https://docs.databricks.com/aws/en/dashboards#publish-dashboard">ダッシュボードの公開</a>をご覧ください。</li>
+<li><strong>カスタム計算用の新しい関数</strong>: カスタム計算では170以上の関数がサポートされるようになりました。詳細は<a href="https://docs.databricks.com/aws/en/dashboards/custom-calculations/function-reference">カスタム計算関数リファレンス</a>をご覧ください。</li>
+<li><strong>ビジュアライゼーションでのフィールド並び替え機能</strong>: 作成者は、<strong>ピボット</strong>や<strong>折れ線</strong>チャートなどのビジュアライゼーションでフィールドの順序を並び替えることができます。</li>
+<li><strong>ウォーターフォールビジュアライゼーションタイプ</strong>: ウォーターフォールチャートがダッシュボードで利用できるようになりました。詳しくは<a href="https://docs.databricks.com/aws/en/dashboards/visualizations/types#waterfall">ウォーターフォールチャート</a>をご覧ください。</li>
 </ul></div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/october#unified-runs-list-public-preview" target="_blank">
-                <div class="article-title">Unified runs list (Public Preview)</div>
+            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2025#genie-benchmark-scaling-and-sql-function-support" target="_blank">
+                <div class="article-title">Genie benchmark scaling and SQL function support</div>
             </a>
-            <div class="translated-label">&gt; 統合されたランのリスト(パブリックプレビュー)</div>
-            <div class="date">October 20, 2025</div>
+            <div class="translated-label">&gt; ジーニー・ベンチマークのスケーリングとSQLファンクションのサポート</div>
+            <div class="date">October 23, 2025</div>
             <div class="content">
-                <div class="original-text"><p>The unified runs list is in Public Preview. Monitor both job and pipeline runs in a single unified list.</p>
-<p>See <a href="https://docs.databricks.com/aws/en/ldp/monitoring-ui#unified-preview">What changes are in the Unified Runs List preview?</a>.</p></div>
-                <div class="translated-label">&gt; <p>統一されたランのリストはパブリックプレビューにあります。単一の統一されたリストでジョブとパイプラインの実行を監視できます。</p>
-<p>「<a href="https://docs.databricks.com/aws/en/ldp/monitoring-ui#unified-preview">統一されたランのリストのプレビューに含まれる変更点は何ですか?</a>」をご覧ください。</p></div>
+                <div class="original-text"><ul>
+<li><strong>Increased benchmark limit</strong>: The maximum number of benchmarks you can add to a Genie space has been raised from 100 to 500.</li>
+<li><strong>Run benchmarks selectively</strong>: You can now select a subset of benchmark questions to start a run from either the benchmark list page or from a previous benchmark result. See <a href="https://docs.databricks.com/aws/en/genie/benchmarks#review-single-eval">Review individual evaluations</a>.</li>
+<li><strong>Unity Catalog SQL functions as benchmark answers</strong>: You can now add Unity Catalog SQL functions as gold standard answers to benchmarks for more comprehensive testing.</li>
+</ul></div>
+                <div class="translated-label">&gt; <ul>
+<li><strong>ベンチマーク上限の増加</strong>: Genieスペースに追加できるベンチマークの最大数が100から500に引き上げられました。</li>
+<li><strong>選択的にベンチマークを実行</strong>: ベンチマークリストページや前のベンチマーク結果から、ベンチマーク質問の一部を選択して実行を開始できるようになりました。<a href="https://docs.databricks.com/aws/en/genie/benchmarks#review-single-eval">個別の評価の確認</a>を参照してください。</li>
+<li><strong>Unity Catalog SQLの関数をベンチマークの回答として使用</strong>: より包括的なテストのために、Unity Catalog SQLの関数をベンチマークの正解回答として追加できるようになりました。</li>
+</ul></div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/october#databricks-connector-for-google-sheets-offers-additional-features-public-preview" target="_blank">
-                <div class="article-title">Databricks Connector for Google Sheets offers additional features (Public Preview)</div>
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/october#zerobus-ingest-connector-in-lakeflow-connect-public-preview" target="_blank">
+                <div class="article-title">Zerobus Ingest connector in Lakeflow Connect (Public Preview)</div>
             </a>
-            <div class="translated-label">&gt; データブリックス Googleスプレッドシート用コネクター (パブリックプレビュー)</div>
-            <div class="date">October 17, 2025</div>
+            <div class="translated-label">&gt; ゼロバス・インジェストコネクタ in Lakeflow Connect (パブリックプレビュー)</div>
+            <div class="date">October 23, 2025</div>
             <div class="content">
-                <div class="original-text"><p>The Databricks Connector for Google Sheets introduces improved query management options. Users can save queries within a Google Sheet spreadsheet, enabling easy data refresh, query reuse, and query editing.</p>
-<p>See <a href="https://docs.databricks.com/aws/en/integrations/google-sheets">Connect to Databricks from Google Sheets</a>.</p></div>
-                <div class="translated-label">&gt; GoogleシートのためのDatabricksコネクターは、クエリ管理オプションを改善しました。ユーザーはGoogleシートスプレッドシート内でクエリを保存できるため、データの更新、クエリの再利用、クエリの編集が簡単になります。
-
-<a href="https://docs.databricks.com/aws/en/integrations/google-sheets">GoogleシートからDatabricksに接続する</a>。</div>
+                <div class="original-text"><p>The Zerobus Ingest connector in Lakeflow Connect is in Public Preview. This connector enables record-by-record data ingestion directly into Delta tables using a gRPC API. See <a href="https://docs.databricks.com/aws/en/ingestion/lakeflow-connect/zerobus-overview">Zerobus Ingest connector overview</a>.</p></div>
+                <div class="translated-label">&gt; Lakeflow Connectのゼロバスインジェストコネクターは、パブリックプレビュー中です。このコネクターは、gRPCAPIを使用して、レコード単位でデータをDeltaテーブルに直接取り込めるようにします。ゼロバスインジェストコネクターの概要については、<a href="https://docs.databricks.com/aws/en/ingestion/lakeflow-connect/zerobus-overview">こちらを参照してください</a>。</div>
+            </div>
+        </div>
+        
+        <div class="article">
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/october#ai_parse_document-public-preview" target="_blank">
+                <div class="article-title">ai_parse_document (Public Preview)</div>
+            </a>
+            <div class="translated-label">&gt; AIを使用してドキュメントを解析する</div>
+            <div class="date">October 23, 2025</div>
+            <div class="content">
+                <div class="original-text"><p><code>ai_parse_document</code> is now available in <a href="https://docs.databricks.com/aws/en/release-notes/release-types">Public Preview</a>. See <a href="https://docs.databricks.com/aws/en/sql/language-manual/functions/ai_parse_document"><code>ai_parse_document</code> function</a>.</p></div>
+                <div class="translated-label">&gt; <p><code>ai_parse_document</code>は現在<a href="https://docs.databricks.com/aws/en/release-notes/release-types">パブリックプレビュー</a>で利用可能です。<a href="https://docs.databricks.com/aws/en/sql/language-manual/functions/ai_parse_document"><code>ai_parse_document</code>関数</a>を参照してください。</p></div>
+            </div>
+        </div>
+        
+        <div class="article">
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/october#column-drop-behavior-updated" target="_blank">
+                <div class="article-title">Column drop behavior updated</div>
+            </a>
+            <div class="translated-label">&gt; 列ドロップ動作が更新されました。</div>
+            <div class="date">October 22, 2025</div>
+            <div class="content">
+                <div class="original-text"><p>When you attempt to drop a column that has one or more governed tags assigned, the operation now fails. To drop a tagged column, you must first remove all governed tags from it. See <a href="https://docs.databricks.com/aws/en/database-objects/tags#drop">Drop a column with governed tags</a>.</p></div>
+                <div class="translated-label">&gt; <p>列に1つ以上の管理されたタグが割り当てられている場合、その列を削除しようとすると、操作が失敗します。管理されたタグのついた列を削除するには、まずその列からすべての管理されたタグを削除する必要があります。<a href="https://docs.databricks.com/aws/en/database-objects/tags#drop">管理されたタグのついた列の削除</a>を参照してください。</p></div>
             </div>
         </div>
         
