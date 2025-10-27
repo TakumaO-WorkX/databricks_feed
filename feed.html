@@ -23,24 +23,36 @@
         <h1>Databricks Docs Updates</h1>
     
         <div class="article">
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/october#configure-compute-to-use-aws-capacity-blocks" target="_blank">
+                <div class="article-title">Configure compute to use AWS Capacity Blocks</div>
+            </a>
+            <div class="translated-label">&gt; AWS Capacity Blocksを使用するようにコンピュートを設定する</div>
+            <div class="date">October 24, 2025</div>
+            <div class="content">
+                <div class="original-text"><p>You can now configure classic Databricks compute to use AWS Capacity Blocks.</p>
+<p>See <a href="https://docs.databricks.com/aws/en/compute/configure#aws-capacity-blocks">AWS Capacity Blocks</a></p></div>
+                <div class="translated-label">&gt; <p>クラシック Databricks コンピューティングを AWS Capacity Blocks を使うように構成できるようになりました。</p>
+<p><a href="https://docs.databricks.com/aws/en/compute/configure#aws-capacity-blocks">AWS Capacity Blocks</a>をご覧ください。</p></div>
+            </div>
+        </div>
+        
+        <div class="article">
             <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2025#dashboard-publishing-scheduling-and-field-management-improvements" target="_blank">
                 <div class="article-title">Dashboard publishing, scheduling, and field management improvements</div>
             </a>
-            <div class="translated-label">&gt; ダッシュボードの公開、スケジューリング、およびフィールド管理の改善</div>
+            <div class="translated-label">&gt; ダッシュボードの出版、スケジューリング、およびフィールド管理の改善</div>
             <div class="date">October 23, 2025</div>
             <div class="content">
                 <div class="original-text"><ul>
-<li>****Notify viewers** disabled by default for dashboard publishing**: When publishing dashboards, the <strong>Notify viewers</strong> option is now turned off by default to reduce unintended notifications. See <a href="https://docs.databricks.com/aws/en/dashboards#publish-dashboard">Publish a dashboard</a>.</li>
+<li><strong>Notify viewers disabled by default for dashboard publishing</strong>: When publishing dashboards, the <strong>Notify viewers</strong> option is now turned off by default to reduce unintended notifications. See <a href="https://docs.databricks.com/aws/en/dashboards#publish-dashboard">Publish a dashboard</a>.</li>
 <li><strong>New functions for custom calculations</strong>: Custom calculations now support over 170 functions. See <a href="https://docs.databricks.com/aws/en/dashboards/custom-calculations/function-reference">Custom calculation function reference</a>.</li>
 <li><strong>Drag-and-drop field reordering in visualizations</strong>: Authors can now drag to reorder fields when creating some visualizations such as <strong>Pivot</strong> and <strong>Line</strong> charts.</li>
 <li><strong>Waterfall visualization type</strong>: Waterfall charts are now available for dashboards. See <a href="https://docs.databricks.com/aws/en/dashboards/visualizations/types#waterfall">Waterfall chart</a>.</li>
 </ul></div>
-                <div class="translated-label">&gt; <ul>
-<li>**デフォルトではダッシュボード公開時の閲覧者への通知が無効**: ダッシュボードを公開する際、偶発的な通知を減らすため、<strong>閲覧者に通知</strong>オプションがデフォルトで無効になりました。詳しくは<a href="https://docs.databricks.com/aws/en/dashboards#publish-dashboard">ダッシュボードの公開</a>をご覧ください。</li>
-<li><strong>カスタム計算用の新しい関数</strong>: カスタム計算では170以上の関数がサポートされるようになりました。詳細は<a href="https://docs.databricks.com/aws/en/dashboards/custom-calculations/function-reference">カスタム計算関数リファレンス</a>をご覧ください。</li>
-<li><strong>ビジュアライゼーションでのフィールド並び替え機能</strong>: 作成者は、<strong>ピボット</strong>や<strong>折れ線</strong>チャートなどのビジュアライゼーションでフィールドの順序を並び替えることができます。</li>
-<li><strong>ウォーターフォールビジュアライゼーションタイプ</strong>: ウォーターフォールチャートがダッシュボードで利用できるようになりました。詳しくは<a href="https://docs.databricks.com/aws/en/dashboards/visualizations/types#waterfall">ウォーターフォールチャート</a>をご覧ください。</li>
-</ul></div>
+                <div class="translated-label">&gt; ダッシュボードの公開時、「視聴者に通知する」オプションはデフォルトで無効になりました。これにより、意図しない通知を防ぐことができます。「ダッシュボードを公開する」をご確認ください。
+カスタム計算では170以上の関数をサポートしています。「カスタム計算の関数リファレンス」をご確認ください。
+作成時に一部のビジュアライゼーション(ピボットチャートやラインチャートなど)で、フィールドの順序をドラッグアンドドロップで変更できるようになりました。
+ウォーターフォールチャートがダッシュボードに使用できるようになりました。「ウォーターフォールチャート」をご確認ください。</div>
             </div>
         </div>
         
@@ -57,9 +69,37 @@
 <li><strong>Unity Catalog SQL functions as benchmark answers</strong>: You can now add Unity Catalog SQL functions as gold standard answers to benchmarks for more comprehensive testing.</li>
 </ul></div>
                 <div class="translated-label">&gt; <ul>
-<li><strong>ベンチマーク上限の増加</strong>: Genieスペースに追加できるベンチマークの最大数が100から500に引き上げられました。</li>
-<li><strong>選択的にベンチマークを実行</strong>: ベンチマークリストページや前のベンチマーク結果から、ベンチマーク質問の一部を選択して実行を開始できるようになりました。<a href="https://docs.databricks.com/aws/en/genie/benchmarks#review-single-eval">個別の評価の確認</a>を参照してください。</li>
-<li><strong>Unity Catalog SQLの関数をベンチマークの回答として使用</strong>: より包括的なテストのために、Unity Catalog SQLの関数をベンチマークの正解回答として追加できるようになりました。</li>
+<li><strong>ベンチマーク制限の増加</strong>: Genieスペースに追加できるベンチマークの最大数が100から500に引き上げられました。</li>
+<li><strong>選択的にベンチマークを実行</strong>: ベンチマークリストページや前のベンチマーク結果から、実行するベンチマーク質問のサブセットを選択できるようになりました。<a href="https://docs.databricks.com/aws/en/genie/benchmarks#review-single-eval">個別の評価の確認</a>を参照してください。</li>
+<li><strong>Unity Catalog SQLの関数がベンチマークの回答として使用可能</strong>: より包括的なテストのために、Unity Catalog SQLの関数をベンチマークのゴールド標準の回答として追加できるようになりました。</li>
+</ul></div>
+            </div>
+        </div>
+        
+        <div class="article">
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/october#databricks-jdbc-driver-275" target="_blank">
+                <div class="article-title">Databricks JDBC Driver 2.7.5</div>
+            </a>
+            <div class="translated-label">&gt; データブリックスJDBCドライバー2.7.5</div>
+            <div class="date">October 23, 2025</div>
+            <div class="content">
+                <div class="original-text"><p>Databricks JDBC Driver (Simba) version 2.7.5 is now available with the following improvements:</p>
+<p><strong>New features</strong></p>
+<p>The connector now supports Kerberos with proxy connections. To enable Kerberos proxy, set <code>UseProxy=1</code> and <code>ProxyAuth=2</code>. To set proxy details, use <code>ProxyHost</code>, <code>ProxyPort</code>, <code>ProxyKrbRealm</code>, <code>ProxyKrbFQDN</code>, and <code>ProxyKrbService</code>.</p>
+<p><strong>Resolved issues</strong></p>
+<ul>
+<li>Fixed an issue where the connector failed to run complex queries that contained <code>?</code> characters in native mode.</li>
+<li>Fixed intermittent failures in Unity Catalog volume ingestion caused by unexpected connector behavior.</li>
+<li>Fixed an assertion error in <code>getColumns</code> when a table included a column of type <code>Void</code> or <code>Variant</code> and the <code>java -ea</code> flag was enabled.</li>
+</ul></div>
+                <div class="translated-label">&gt; <p>バージョン2.7.5のDatabricks JDBC ドライバー(Simba)が次の改善点を含んで利用可能になりました:</p>
+<p><strong>新機能</strong></p>
+<p>このコネクタはKerberosプロキシ接続をサポートするようになりました。Kerberosプロキシを有効にするには、<code>UseProxy=1</code>と<code>ProxyAuth=2</code>を設定してください。プロキシの詳細は、<code>ProxyHost</code>、<code>ProxyPort</code>、<code>ProxyKrbRealm</code>、<code>ProxyKrbFQDN</code>、<code>ProxyKrbService</code>を使用して設定してください。</p>
+<p><strong>解決された問題</strong></p>
+<ul>
+<li>ネイティブモードで<code>?</code>文字を含む複雑なクエリの実行に失敗する問題を修正しました。</li>
+<li>Unity Catalogボリューム取り込みの予期せぬコネクタの動作によって発生していた断続的な障害を修正しました。</li>
+<li><code>java -ea</code>フラグが有効になっている際に、テーブルに<code>Void</code>型や<code>Variant</code>型の列がある場合の<code>getColumns</code>でのアサーションエラーを修正しました。</li>
 </ul></div>
             </div>
         </div>
@@ -68,35 +108,11 @@
             <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/october#zerobus-ingest-connector-in-lakeflow-connect-public-preview" target="_blank">
                 <div class="article-title">Zerobus Ingest connector in Lakeflow Connect (Public Preview)</div>
             </a>
-            <div class="translated-label">&gt; ゼロバス・インジェストコネクタ in Lakeflow Connect (パブリックプレビュー)</div>
+            <div class="translated-label">&gt; ゼロバスインジェストコネクタLakeflowConnect（パブリックプレビュー）</div>
             <div class="date">October 23, 2025</div>
             <div class="content">
                 <div class="original-text"><p>The Zerobus Ingest connector in Lakeflow Connect is in Public Preview. This connector enables record-by-record data ingestion directly into Delta tables using a gRPC API. See <a href="https://docs.databricks.com/aws/en/ingestion/lakeflow-connect/zerobus-overview">Zerobus Ingest connector overview</a>.</p></div>
-                <div class="translated-label">&gt; Lakeflow Connectのゼロバスインジェストコネクターは、パブリックプレビュー中です。このコネクターは、gRPCAPIを使用して、レコード単位でデータをDeltaテーブルに直接取り込めるようにします。ゼロバスインジェストコネクターの概要については、<a href="https://docs.databricks.com/aws/en/ingestion/lakeflow-connect/zerobus-overview">こちらを参照してください</a>。</div>
-            </div>
-        </div>
-        
-        <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/october#ai_parse_document-public-preview" target="_blank">
-                <div class="article-title">ai_parse_document (Public Preview)</div>
-            </a>
-            <div class="translated-label">&gt; AIを使用してドキュメントを解析する</div>
-            <div class="date">October 23, 2025</div>
-            <div class="content">
-                <div class="original-text"><p><code>ai_parse_document</code> is now available in <a href="https://docs.databricks.com/aws/en/release-notes/release-types">Public Preview</a>. See <a href="https://docs.databricks.com/aws/en/sql/language-manual/functions/ai_parse_document"><code>ai_parse_document</code> function</a>.</p></div>
-                <div class="translated-label">&gt; <p><code>ai_parse_document</code>は現在<a href="https://docs.databricks.com/aws/en/release-notes/release-types">パブリックプレビュー</a>で利用可能です。<a href="https://docs.databricks.com/aws/en/sql/language-manual/functions/ai_parse_document"><code>ai_parse_document</code>関数</a>を参照してください。</p></div>
-            </div>
-        </div>
-        
-        <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/october#column-drop-behavior-updated" target="_blank">
-                <div class="article-title">Column drop behavior updated</div>
-            </a>
-            <div class="translated-label">&gt; 列ドロップ動作が更新されました。</div>
-            <div class="date">October 22, 2025</div>
-            <div class="content">
-                <div class="original-text"><p>When you attempt to drop a column that has one or more governed tags assigned, the operation now fails. To drop a tagged column, you must first remove all governed tags from it. See <a href="https://docs.databricks.com/aws/en/database-objects/tags#drop">Drop a column with governed tags</a>.</p></div>
-                <div class="translated-label">&gt; <p>列に1つ以上の管理されたタグが割り当てられている場合、その列を削除しようとすると、操作が失敗します。管理されたタグのついた列を削除するには、まずその列からすべての管理されたタグを削除する必要があります。<a href="https://docs.databricks.com/aws/en/database-objects/tags#drop">管理されたタグのついた列の削除</a>を参照してください。</p></div>
+                <div class="translated-label">&gt; <p>Lakeflow ConnectのZerobus Ingestコネクタは、パブリックプレビューとなっています。このコネクタを使うことで、gRPC APIを利用して、レコードごとにデータをDeltaテーブルに取り込むことができます。詳細は<a href="https://docs.databricks.com/aws/en/ingestion/lakeflow-connect/zerobus-overview">Zerobus Ingestコネクタの概要</a>をご覧ください。</p></div>
             </div>
         </div>
         
