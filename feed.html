@@ -23,10 +23,37 @@
         <h1>Databricks Docs Updates</h1>
     
         <div class="article">
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/october#skip-cells-when-running-notebooks" target="_blank">
+                <div class="article-title">Skip cells when running notebooks</div>
+            </a>
+            <div class="translated-label">&gt; セルをスキップしてノートブックを実行する</div>
+            <div class="date">October 31, 2025</div>
+            <div class="content">
+                <div class="original-text"><p>You can now skip individual cells when running multiple cells in a notebook using the <code>%skip</code> magic command. Add <code>%skip</code> at the beginning of any cell you want to skip. See <a href="https://docs.databricks.com/aws/en/notebooks/run-notebook">Run Databricks notebooks</a>.</p></div>
+                <div class="translated-label">&gt; <p>ノートブックで複数のセルを実行するときに、<code>%skip</code>マジックコマンドを使って個別のセルをスキップできるようになりました。スキップしたいセルの冒頭に<code>%skip</code>を追加してください。詳しくは<a href="https://docs.databricks.com/aws/en/notebooks/run-notebook">Databricksノートブックの実行</a>をご覧ください。</p></div>
+            </div>
+        </div>
+        
+        <div class="article">
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/october#improved-notebook-debugger-experience" target="_blank">
+                <div class="article-title">Improved notebook debugger experience</div>
+            </a>
+            <div class="translated-label">&gt; ノートブックデバッガの改善された体験</div>
+            <div class="date">October 31, 2025</div>
+            <div class="content">
+                <div class="original-text"><p>The Python notebook interactive debugger now supports multi-file debugging. You can set breakpoints and step into functions across multiple workspace files. The debugger automatically opens the file in a new tab when you step into it. This improvement makes it easier to debug code that spans multiple files in your workspace.</p>
+<p>See <a href="https://docs.databricks.com/aws/en/notebooks/debugger#debugger-on-workspace-files">Step into workspace files</a>.</p></div>
+                <div class="translated-label">&gt; Pythonのノートブック対話的デバッガーは、マルチファイルデバッグをサポートするようになりました。ワークスペースファイルにまたがる関数にブレークポイントを設定し、ステップインできるようになりました。デバッガーは、ステップインするときに自動的にファイルを新しいタブで開きます。この改善により、ワークスペースの複数のファイルにまたがるコードのデバッグが容易になりました。
+
+<a href="https://docs.databricks.com/aws/en/notebooks/debugger#debugger-on-workspace-files">ワークスペースファイルにステップイン</a>を参照してください。</div>
+            </div>
+        </div>
+        
+        <div class="article">
             <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2025#dashboard-visualization-pivot-table-and-authoring-improvements" target="_blank">
                 <div class="article-title">Dashboard visualization, pivot table, and authoring improvements</div>
             </a>
-            <div class="translated-label">&gt; ダッシュボードのビジュアライゼーション、ピボットテーブル、およびコンテンツ作成の改善</div>
+            <div class="translated-label">&gt; ダッシュボードの視覚化、ピボットテーブル、そしてオーサリングの改善</div>
             <div class="date">October 30, 2025</div>
             <div class="content">
                 <div class="original-text"><ul>
@@ -46,17 +73,16 @@
 <li><strong>Duplicative audit log events</strong>: Dashboards with companion Genie spaces no longer emit duplicative <code>getPublishedDashboard</code> events in audit logs.</li>
 </ul></div>
                 <div class="translated-label">&gt; <ul>
-<li><strong>Slackチャンネルへのダッシュボードサブスクリプション</strong>: ダッシュボードの作成者は、スケジュールされたダッシュボードのリフレッシュにSlackチャンネルをサブスクライバーとして追加できるようになりました。<a href="https://docs.databricks.com/aws/en/dashboards/schedule-subscribe#add-slack-subscriber">Slackチャンネルをサブスクライブする</a>を参照してください。</li>
-<li><strong>Top Nスクロールバーの動作</strong>: Top N視覚化でのスクロールバーは、よりすっきりしたインターフェースのためにマウスオーバー時にのみ表示されるようになりました。</li>
-<li><strong>凡例の配置オプション</strong>: 視覚化の上部と左側に凡例を配置することができるようになりました。既存の配置オプションに加えて。<a href="https://docs.databricks.com/aws/en/dashboards/visualizations#format-details">チャート要素をカスタマイズする</a>を参照してください。</li>
-<li><strong>フィルターのカット、コピー、ペースト</strong>: 作成者はキャンバスからフィルターをカットまたはコピーできるようになりました。グローバルパネルにペーストするには、空の場所を右クリックして<strong>ペースト</strong>を選択してください。<a href="https://docs.databricks.com/aws/en/dashboards#filters">フィルターを使用する</a>を参照してください。</li>
-<li><strong>ラベルがY軸の書式設定と一致</strong>: ラベルがデフォルトでY軸と同じ書式に設定されるようになり、小さな値も適切に表示されるようになりました。</li>
-<li><strong>マテリアライズドビューへのエクスポート</strong>: 作成者は、ダッシュボードのデータセットからマテリアライズドビューを生成できるようになりました。これにより、パフォーマンスが向上し、リフレッシュと実行がより効率的になります。この機能にアクセスするには、データセットの横にあるケバブメニューをクリックし、<strong>マテリアライズドビューへエクスポート</strong>を選択してください。<a href="https://docs.databricks.com/aws/en/dashboards/datasets">ダッシュボードデータセットの作成と管理</a>および<a href="https://docs.databricks.com/aws/en/ldp/materialized-views">マテリアライズドビュー</a>を参照してください。</li>
-<li><strong>ピボットテーブルの機能改善</strong>: <a href="https://docs.databricks.com/aws/en/dashboards/visualizations/tables#pivot-table-configuration">ピボットテーブルの設定</a>を参照してください。
+<li><strong>Slackチャンネルへのダッシュボードサブスクリプション</strong>: ダッシュボードの作成者は、スケジュールされたダッシュボードのリフレッシュにSlackチャンネルをサブスクライバーとして追加できるようになりました。<a href="https://docs.databricks.com/aws/en/dashboards/schedule-subscribe#add-slack-subscriber">Slackチャンネルをサブスクライブする</a>をご覧ください。</li>
+<li><strong>トップNスクロールバーの動作</strong>: トップNの視覚化でスクロールバーは、よりクリーンなインターフェイスのためにマウスオーバー時にのみ表示されるようになりました。</li>
+<li><strong>凡例の配置オプション</strong>: 視覚化に凡例を上部と左側に配置することができるようになりました。既存の配置オプションに加えて。<a href="https://docs.databricks.com/aws/en/dashboards/visualizations#format-details">チャートの要素をカスタマイズする</a>をご覧ください。</li>
+<li><strong>フィルターのカット、コピー、ペースト</strong>: 作成者は、キャンバスからフィルターをカットまたはコピーできるようになりました。グローバルパネルにペーストするには、空の場所を右クリックして<strong>貼り付け</strong>を選択します。<a href="https://docs.databricks.com/aws/en/dashboards#filters">フィルターを使用する</a>をご覧ください。</li>
+<li><strong>ラベルがY軸の書式に合わせる</strong>: ラベルはデフォルトでY軸と同じ書式になり、デフォルトで小数点以下2桁を表示し、小さな値を適切に扱うようになりました。</li>
+<li><strong>マテリアライズドビューにエクスポート</strong>: 作成者は、ダッシュボードのどのデータセットからでもマテリアライズドビューを生成できるようになり、パフォーマンスの向上と効率的なリフレッシュや実行が可能になりました。この機能にアクセスするには、データセットの隣のケバブメニューをクリックし、<strong>マテリアライズドビューにエクスポート</strong>を選択してください。<a href="https://docs.databricks.com/aws/en/dashboards/datasets">ダッシュボードデータセットの作成と管理</a>と<a href="https://docs.databricks.com/aws/en/ldp/materialized-views">マテリアライズドビュー</a>をご覧ください。</li>
+<li><strong>ピボットテーブルの改善</strong>: <a href="https://docs.databricks.com/aws/en/dashboards/visualizations/tables#pivot-table-configuration">ピボットテーブルの設定</a>をご覧ください。
 <ul>
-<li>作成者はピボットテーブルの値に<strong>アクション</strong>タブでURLパスを指定して、テキストにリンクを追加できるようになりました。</li>
-<li>ピボットテーブルのヘッダー値がスクロール中に画面に固定表示されるようになりました。</li>
-<li>ユーザーはピボットテーブルのテキ</div>
+<li>作成者は、ピボットテーブルの値の<strong>アクション</strong>タブにURLパスを指定することで、ピボットテーブルのテキストにリンクを追加できるようになりました。</li>
+<li>ピボットテーブルのヘッダー値は固定され、スクロール中も画面に表</div>
             </div>
         </div>
         
@@ -64,7 +90,7 @@
             <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2025#genie-thinking-steps-and-benchmark-error-resolution" target="_blank">
                 <div class="article-title">Genie thinking steps and benchmark error resolution</div>
             </a>
-            <div class="translated-label">&gt; ジーニーの思考プロセスとベンチマークエラー解決</div>
+            <div class="translated-label">&gt; ジーニーの思考ステップとベンチマークのエラー解決</div>
             <div class="date">October 30, 2025</div>
             <div class="content">
                 <div class="original-text"><ul>
@@ -81,14 +107,14 @@
 </ul></div>
                 <div class="translated-label">&gt; <ul>
 <li>
-<p><strong>Genieの思考過程を平易な言葉で表す</strong>: Genieの思考過程をSQLのロジックを平易な言葉で説明することで、非技術的なユーザーがどのように答えが生成されているかを理解し、信頼を得ることができます。</p>
-<p><img alt="Genie thinking steps showing plain language explanation of SQL logic" src="https://docs.databricks.com/images/genie/thinking-steps.png" /></p>
+<p><strong>平易な言葉でのGenieの思考ステップ</strong>: Genieの思考ステップは、非専門家ユーザーがSQL論理の理解を深め、答えの生成方法に対する信頼を構築するのに役立つように、平易な言葉でSQL論理を説明しています。</p>
+<p><img alt="平易な言葉でのSQL論理の説明を示すGenieの思考ステップ" src="https://docs.databricks.com/images/genie/thinking-steps.png" /></p>
 </li>
 <li>
-<p><strong>選択ダイアログでのアセットのプレビュー</strong>: <strong>アセットの選択</strong>ダイアログでテーブルやビューを選択する際に、アセットにカーソルを合わせるとそのスキーマやメタデータ、所有者や最終更新時間などを確認できます。これにより、Genieスペースに適したデータソースを素早く識別できます。</p>
+<p><strong>選択ダイアログでのアセットプレビュー</strong>: <strong>アセットの選択</strong>ダイアログでテーブルまたはビューを選択する際、アセットにカーソルを合わせるとそのスキーマとメタデータ(オーナーや最終更新時間など)をプレビューできるようになりました。これにより、Genieスペースに適したデータソースを素早く特定できます。</p>
 </li>
 <li>
-<p><strong>ベンチマークサービスプリンシパルのエラーを修正</strong>: ベンチマークを実行すると時折サービスプリンシパルの資格情報エラーが返されるバグを修正しました。</p>
+<p><strong>ベンチマークサービスプリンシパルエラーの修正</strong>: ベンチマークを実行するとサービスプリンシパル資格情報エラーが時折発生する問題を修正しました。</p>
 </li>
 </ul></div>
             </div>
@@ -98,7 +124,7 @@
             <a href="https://docs.databricks.com/aws/en/sql/release-notes/2025#databricks-sql-version-202535-is-now-available-in-preview" target="_blank">
                 <div class="article-title">Databricks SQL version 2025.35 is now available in Preview</div>
             </a>
-            <div class="translated-label">&gt; データブリックス SQL バージョン 2025.35がプレビューで利用可能になりました。</div>
+            <div class="translated-label">&gt; データブリックスSQL バージョン2025.35がプレビュー利用可能となりました。</div>
             <div class="date">October 30, 2025</div>
             <div class="content">
                 <div class="original-text"><p>Databricks SQL version 2025.35 is now available in the <strong>Preview</strong> channel. Review the following section to learn about new features, behavioral changes, and bug fixes.</p>
@@ -124,53 +150,23 @@
 <p>The <a href="https://docs.databricks.com/aws/en/sql/language-manual/delta-fsck"><code>FSCK REPAIR TABLE</code></a> command now includes an initial metadata repair step that validates checkpoints and partition values before removing references to missing data files.</p>
 <h4>Correct handling of null structs when dropping <code>NullType</code> columns</h4>
 <p>When writing to Delta tables, Databricks now correctly preserves null struct values when dropping <code>NullType</code> columns from the schema. Previously, null structs were incorrectly replaced with non-null struct values where all fields were set to null.</p></div>
-                <div class="translated-label">&gt; <p>Databricks SQL バージョン 2025.35が<strong>プレビュー</strong>チャンネルで利用可能になりました。新機能、動作の変更、バグ修正について次のセクションをご確認ください。</p>
-<h4><code>EXECUTE IMMEDIATE</code>での定数式の使用</h4>
-<p><a href="https://docs.databricks.com/aws/en/sql/language-manual/sql-ref-syntax-aux-execute-immediate"><code>EXECUTE IMMEDIATE</code></a>ステートメントでは、SQL文字列およびパラメータマーカーの引数に定数式を渡すことができるようになりました。</p>
+                <div class="translated-label">&gt; <p>Databricks SQL バージョン 2025.35が<strong>プレビュー</strong>チャンネルで利用可能になりました。新機能、動作の変更、バグ修正について以下をご確認ください。</p>
+<h4><code>EXECUTE IMMEDIATE</code> による定数式の使用</h4>
+<p><a href="https://docs.databricks.com/aws/en/sql/language-manual/sql-ref-syntax-aux-execute-immediate"><code>EXECUTE IMMEDIATE</code></a>文で、SQL文字列と引数のパラメータマーカーに定数式を渡すことができるようになりました。</p>
 <h4>再帰的CTEでの<code>LIMIT ALL</code>のサポート</h4>
-<p>再帰的共通テーブル式(CTE)の総サイズ制限を削除するため、<code>LIMIT ALL</code>を使用できるようになりました。</p>
+<p>再帰的共通テーブル式(CTE)の総サイズ制限を取り除くために<code>LIMIT ALL</code>を使えるようになりました。</p>
 <h4><code>st_dump</code>関数のサポート</h4>
-<p><code>st_dump</code>関数を使って、入力ジオメトリの単一ジオメトリを含む配列を取得できるようになりました。<a href="https://docs.databricks.com/aws/en/sql/language-manual/functions/st_dump"><code>st_dump</code>関数</a>をご覧ください。</p>
-<h4>ポリゴンの内部リングの関数がサポートされるようになりました</h4>
-<p>ポリゴンの内部リングを操作するために、次の関数が使用できるようになりました:</p>
+<p><code>st_dump</code>関数を使って、入力ジオメトリの個別のジオメトリを含む配列を取得できるようになりました。詳しくは<a href="https://docs.databricks.com/aws/en/sql/language-manual/functions/st_dump"><code>st_dump</code>関数</a>をご覧ください。</p>
+<h4>ポリゴンの内部リングに関する関数がサポートされました</h4>
+<p>ポリゴンの内部リングを操作するため、以下の関数を使えるようになりました:</p>
 <ul>
-<li><code>st_numinteriorrings</code>:ポリゴンの内部境界(リング)の数を取得します。<a href="https://docs.databricks.com/aws/en/sql/language-manual/functions/st_numinteriorrings"><code>st_numinteriorrings</code>関数</a>をご覧ください。</li>
-<li><code>st_interiorringn</code>:ポリゴンの第n番目の内部境界を抽出し、それをラインストリングとして返します。<a href="https://docs.databricks.com/aws/en/sql/language-manual/functions/st_interiorringn"><code>st_interiorringn</code>関数</a>をご覧ください。</li>
+<li><code>st_numinteriorrings</code>: ポリゴンの内部境界(リング)の数を取得します。<a href="https://docs.databricks.com/aws/en/sql/language-manual/functions/st_numinteriorrings"><code>st_numinteriorrings</code>関数</a>をご覧ください。</li>
+<li><code>st_interiorringn</code>: ポリゴンのn番目の内部境界(リング)を抽出し、ラインストリングとして返します。<a href="https://docs.databricks.com/aws/en/sql/language-manual/functions/st_interiorringn"><code>st_interiorringn</code>関数</a>をご覧ください。</li>
 </ul>
-<h4><code>DESCRIBE EXTENDED AS JSON</code>でのMV/STリフレッシュ情報のサポート</h4>
-<p>Databricksは、<a href="https://docs.databricks.com/aws/en/sql/language-manual/sql-ref-syntax-aux-describe-table"><code>DESCRIBE EXTENDED AS JSON</code></a>出力にマテリアライズドビューおよびストリーミングテーブルのリフレッシュ情報のセクションを生成するようになりました。これには、最終リフレッシュ時間、リフレッシュタイプ、ステータス、およびスケジュールが含まれています。</p>
-<h4><code>DESCRIBE QUERY</code>および<code>DESCRIBE TABLE</code>へのメタデータ列の追加</h4>
-<p>Databricksは、<a href="https://docs.databricks.com/aws/en/sql/language-manual/sql-ref-syntax-aux-describe-query"><code>DESCRIBE QUERY</code></a>および<a href="https://docs.databricks.com/aws/en/sql/language-manual/sql-ref-</div>
-            </div>
-        </div>
-        
-        <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/october#lakebase-autoscaling-beta-now-available" target="_blank">
-                <div class="article-title">Lakebase (Autoscaling Beta) now available</div>
-            </a>
-            <div class="translated-label">&gt; レイクベース (オートスケーリングベータ) 今すぐ利用可能</div>
-            <div class="date">October 30, 2025</div>
-            <div class="content">
-                <div class="original-text"><p>Lakebase (Autoscaling Beta) is now available on AWS only. This new offering of Lakebase introduces enhanced database management capabilities, including a redesigned UI, project-based organization, autoscaling, scale-to-zero, database branching, and instant restore.</p>
-<p>See <a href="https://docs.databricks.com/aws/en/oltp/projects">Lakebase (Autoscaling Beta)</a>.</p></div>
-                <div class="translated-label">&gt; Lakebase (Autoscaling Beta)はAWS上でのみ利用可能となりました。このLakebaseの新しいサービスでは、リデザインされたUI、プロジェクトベースの組織化、オートスケーリング、スケールトゼロ、データベースのブランチ作成、即時リストアなど、データベース管理機能が強化されています。
-
-<a href="https://docs.databricks.com/aws/en/oltp/projects">Lakebase (Autoscaling Beta)</a>をご覧ください。</div>
-            </div>
-        </div>
-        
-        <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/october#new-compute-policy-form-is-now-generally-available" target="_blank">
-                <div class="article-title">New compute policy form is now generally available</div>
-            </a>
-            <div class="translated-label">&gt; 新しいコンピューティングポリシーフォームが一般的に利用可能になりました。</div>
-            <div class="date">October 29, 2025</div>
-            <div class="content">
-                <div class="original-text"><p>The new compute policy form is now generally available. The new form allows you to configure policy definitions using dropdown menus and other UI elements. This means admins can write policies without having to learn or reference the policy syntax.</p>
-<p>See <a href="https://docs.databricks.com/aws/en/admin/clusters/policies">Create and manage compute policies</a> and <a href="https://docs.databricks.com/aws/en/admin/clusters/policy-definition">Compute policy reference</a>.</p></div>
-                <div class="translated-label">&gt; 新しい compute policy フォームが一般提供されました。新しいフォームでは、ドロップダウンメニューやその他のUIエレメントを使ってポリシー定義を設定できます。これにより、管理者はポリシー構文を学習したり参照したりする必要がなくなります。
-
-「compute ポリシーの作成と管理」および「compute ポリシーのリファレンス」をご覧ください。</div>
+<h4><code>DESCRIBE EXTENDED AS JSON</code>での物化ビューとストリーミングテーブルのリフレッシュ情報のサポート</h4>
+<p>Databricksは<a href="https://docs.databricks.com/aws/en/sql/language-manual/sql-ref-syntax-aux-describe-table"><code>DESCRIBE EXTENDED AS JSON</code></a>出力に、物化ビューとストリーミングテーブルのリフレッシュ情報(最終リフレッシュ時間、リフレッシュタイプ、ステータス、スケジュール)のセクションを生成するようになりました。</p>
+<h4><code>DESCRIBE QUERY</code>と<code>DESCRIBE TABLE</code>にメタデータ列の追加</h4>
+<p>Databricksは<a href="https://docs.databricks.com/aws/en/sql/language-manual/sql-ref-syntax-aux-describe-query"><code>DESCRIBE QUERY</code></a>と<a href="https://docs.databricks.com/aws/en/sql/language-manual/sql-ref-syntax-aux-describe-table"><code></div>
             </div>
         </div>
         
