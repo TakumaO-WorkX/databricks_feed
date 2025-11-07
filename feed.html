@@ -23,88 +23,91 @@
         <h1>Databricks Docs Updates</h1>
     
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/november#function-calling-and-structured-output-now-available-using-the-alibaba-cloud-qwen3-next-instruct-model-beta" target="_blank">
-                <div class="article-title">Function calling and structured output now available using the Alibaba Cloud Qwen3-Next Instruct model (Beta)</div>
+            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2025#dashboard-filter-and-counter-enhancements" target="_blank">
+                <div class="article-title">Dashboard filter and counter enhancements</div>
             </a>
-            <div class="translated-label">&gt; 関数呼び出しと構造化出力がAlibaba Cloud Qwen3-Next Instructモデル(ベータ版)を使用して利用可能になりました。</div>
-            <div class="date">November 04, 2025</div>
+            <div class="translated-label">&gt; ダッシュボードのフィルターとカウンターの機能強化</div>
+            <div class="date">November 06, 2025</div>
             <div class="content">
-                <div class="original-text"><p>Mosaic AI Model Serving now supports function calling and structured output using Alibaba Cloud's <a href="https://docs.databricks.com/aws/en/machine-learning/foundation-model-apis/supported-models#qwen3-next-80b-a3b-instruct">Qwen3-Next 80B A3B Instruct</a>.</p>
-<ul>
-<li>See <a href="https://docs.databricks.com/aws/en/machine-learning/model-serving/function-calling">Function calling on Databricks</a></li>
-<li>See <a href="https://docs.databricks.com/aws/en/machine-learning/model-serving/structured-outputs">Structured outputs on Databricks</a></li>
+                <div class="original-text"><ul>
+<li><strong>Per-widget filter enhancements</strong>: Per-widget filters now support date ranges, relative date ranges, and number filters.</li>
+<li><strong>Counter visualization improvements</strong>: You can now use counters to track and compare metrics over time and show sparklines. To create a counter with a sparkline, select a main value and a date column. See <a href="https://docs.databricks.com/aws/en/dashboards/visualizations/types#counter">Counter visualization</a>.</li>
+<li><strong>Metric view metadata support</strong>: AI/BI dashboards now consume Unity Catalog metadata from metric views, including formatting and display name.</li>
+<li><strong>Horizontal chart scrollbars on hover</strong>: Scrollbars for horizontal charts now show on hover.</li>
+<li><strong>Fixed custom calculations display in draft mode</strong>: Resolved an issue where visualizations using custom calculations were not displaying in draft mode.</li>
+<li><strong>Fixed Slack notification OAuth token field</strong>: Resolved a bug where the OAuth token field appeared pre-filled with placeholder text despite no prior token being provided for dashboard subscription Slack notifications.</li>
 </ul></div>
-                <div class="translated-label">&gt; <p>モザイクAIモデルサーバーは、アリババクラウドの<a href="https://docs.databricks.com/aws/en/machine-learning/foundation-model-apis/supported-models#qwen3-next-80b-a3b-instruct">Qwen3-Next 80B A3B Instruct</a>を使用したファンクション呼び出しと構造化出力をサポートするようになりました。</p>
-<ul>
-<li><a href="https://docs.databricks.com/aws/en/machine-learning/model-serving/function-calling">Databricksのファンクション呼び出し</a>を参照してください。</li>
-<li><a href="https://docs.databricks.com/aws/en/machine-learning/model-serving/structured-outputs">Databricksの構造化出力</a>を参照してください。</li>
+                <div class="translated-label">&gt; <ul>
+<li><strong>ウィジェットごとのフィルター機能の強化</strong>: ウィジェットごとのフィルターでは、日付範囲、相対的な日付範囲、数値フィルターをサポートするようになりました。</li>
+<li><strong>カウンターの視覚化の改善</strong>: カウンターを使って時間の経過とともにメトリクスを追跡・比較し、スパークラインを表示することができるようになりました。スパークラインつきのカウンターを作成するには、メイン値と日付列を選択してください。<a href="https://docs.databricks.com/aws/en/dashboards/visualizations/types#counter">カウンターの視覚化</a>をご確認ください。</li>
+<li><strong>メトリクスビューのメタデータサポート</strong>: AI/BIダッシュボードでは、Unity Catalogのメタデータ(フォーマットや表示名)をメトリクスビューから取得できるようになりました。</li>
+<li><strong>ホバー時の水平チャートスクロールバー</strong>: 水平チャートのスクロールバーがホバー時に表示されるようになりました。</li>
+<li><strong>ドラフトモードでの正常な独自計算の表示</strong>: 独自計算を使用する視覚化がドラフトモードで正しく表示されるようになりました。</li>
+<li><strong>Slackの通知OAuthトークンフィールドの修正</strong>: ダッシュボードのSubscription Slack通知で、OAuthトークンフィールドがダミーテキストで事前入力されていた問題を解決しました。</li>
 </ul></div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/november#gcp-private-service-connect-generally-available" target="_blank">
-                <div class="article-title">GCP Private Service Connect generally available</div>
+            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2025#genie-visualization-and-query-result-improvements" target="_blank">
+                <div class="article-title">Genie visualization and query result improvements</div>
             </a>
-            <div class="translated-label">&gt; GCP プライベート サービス コネクトが一般公開されました</div>
-            <div class="date">November 03, 2025</div>
+            <div class="translated-label">&gt; ジーニー視覚化とクエリ結果の改善</div>
+            <div class="date">November 06, 2025</div>
             <div class="content">
-                <div class="original-text"></div>
-                <div class="translated-label">&gt; </div>
+                <div class="original-text"><ul>
+<li><strong>Text explanations for empty results</strong>: Genie now includes text explanations of query results when query results are empty.</li>
+<li><strong>Improved auto-generated charts</strong>: Visualizations now use query result metadata for higher-quality auto-generated charts.</li>
+<li><strong>Improved date formatting</strong>: The process for formatting date results in visualizations has been improved.</li>
+</ul></div>
+                <div class="translated-label">&gt; <ul>
+<li><strong>クエリ結果が空の場合のテキスト説明</strong>: Genieは、クエリ結果が空の場合にクエリ結果のテキスト説明を含むようになりました。</li>
+<li><strong>自動生成チャートの改善</strong>: ビジュアライゼーションでは、クエリ結果のメタデータを使って高品質な自動生成チャートを使うようになりました。</li>
+<li><strong>日付の書式設定の改善</strong>: ビジュアライゼーションの日付結果の書式設定プロセスが改善されています。</li>
+</ul></div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/november#attribute-based-access-control-abac-now-in-public-preview" target="_blank">
-                <div class="article-title">Attribute-based access control (ABAC) now in Public Preview</div>
+            <a href="https://docs.databricks.com/aws/en/sql/release-notes/2025#sql-editor-visualization-fix" target="_blank">
+                <div class="article-title">SQL Editor visualization fix</div>
             </a>
-            <div class="translated-label">&gt; 属性ベースアクセス制御(ABAC)が現在パブリックプレビューで利用可能になりました。</div>
-            <div class="date">November 03, 2025</div>
+            <div class="translated-label">&gt; SQL エディターの視覚的な修正</div>
+            <div class="date">November 06, 2025</div>
             <div class="content">
-                <div class="original-text"><p>Attribute-based access control (ABAC) is now in Public Preview. ABAC is a data governance model that provides flexible, scalable, and centralized access control by defining policies based on governed tags applied to data assets.</p>
-<p>In Public Preview, ABAC includes two key changes from the Beta:</p>
-<ul>
-<li>
-<p><strong>Account-level enforcement:</strong> ABAC has transitioned from a workspace-level preview to an account-level preview. ABAC policies are now enforced across all workspaces attached to an account’s metastore by default. See <a href="https://docs.databricks.com/aws/en/archive/unity-catalog/abac-public-preview-transition">ABAC Beta to Public Preview transition</a>.</p>
-</li>
-<li>
-<p><strong>Automatic type casting for column masks:</strong> Databricks now automatically casts the output of column mask functions defined in ABAC policies to match the target column’s data type. This ensures consistent typing and more reliable query behavior. Existing column mask functions might fail if their return types are incompatible with the target column’s type. See <a href="https://docs.databricks.com/aws/en/data-governance/unity-catalog/abac/udf-best-practices#auto-casting"> ABAC column mask type casting</a></p>
-</li>
-</ul>
-<p>For more information, see <a href="https://docs.databricks.com/aws/en/data-governance/unity-catalog/abac">Unity Catalog attribute-based access control (ABAC)</a>.</p></div>
-                <div class="translated-label">&gt; 属性ベースのアクセス制御(ABAC)がパブリックプレビューになりました。 ABACは、データアセットに適用されたガバナンスタグに基づいてポリシーを定義することで、柔軟、スケーラブル、集中的なアクセス制御を提供するデータガバナンスモデルです。
-
-パブリックプレビューでは、ABACにはベータからの2つの主要な変更点があります:
-
-- アカウントレベルの施行: ABACがワークスペースレベルのプレビューからアカウントレベルのプレビューに移行しました。ABAC ポリシーは、デフォルトでアカウントのメタストアに接続されたすべてのワークスペースで適用されるようになりました。
-
-- カラムマスクの自動的な型変換: Databricksは、ABAC ポリシーで定義されたカラムマスク関数の出力を、ターゲットカラムのデータ型に合わせて自動的に変換するようになりました。これにより、一貫した型指定と信頼性の高いクエリ動作が確保されます。既存のカラムマスク関数は、戻り値の型がターゲットカラムの型と互換性がない場合、失敗する可能性があります。
-
-詳細については、「Unity Catalog attribute-based access control (ABAC)」をご覧ください。</div>
+                <div class="original-text"><ul>
+<li><strong>Fixed tooltip display issue</strong>: Resolved an issue where tooltips were hidden behind the legend in Notebook and SQL Editor visualizations.</li>
+</ul></div>
+                <div class="translated-label">&gt; <ul>
+<li><strong>固定ツールチップの表示問題を解決</strong>: ノートブックおよびSQL Editorのビジュアライゼーションでレジェンドの後ろにツールチップが隠れる問題を解決しました。</li>
+</ul></div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/november#audit-logs-for-request-for-access-events-are-now-emitted" target="_blank">
-                <div class="article-title">Audit logs for request-for-access events are now emitted</div>
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/november#list-mcp-servers-in-databricks-marketplace" target="_blank">
+                <div class="article-title">List MCP servers in Databricks Marketplace</div>
             </a>
-            <div class="translated-label">&gt; アクセス要求イベントの監査ログが現在出力されています。</div>
-            <div class="date">November 03, 2025</div>
+            <div class="translated-label">&gt; MCP サーバーを Databricks Marketplace にリストアップする</div>
+            <div class="date">November 06, 2025</div>
             <div class="content">
-                <div class="original-text"><p>Actions related to <a href="https://docs.databricks.com/aws/en/data-governance/unity-catalog/manage-privileges/access-request-destinations">access request destinations (Public Preview)</a> are now emitted in the audit logs. For more details, see <a href="https://docs.databricks.com/aws/en/admin/account-settings/audit-logs#request-for-access">Request for access events</a>.</p></div>
-                <div class="translated-label">&gt; <p>アクセス要求先（パブリックプレビュー）に関連するアクションは、現在監査ログに出力されています。詳細については、<a href="https://docs.databricks.com/aws/en/admin/account-settings/audit-logs#request-for-access">アクセス要求イベント</a>をご覧ください。</p></div>
+                <div class="original-text"><p>Databricks Marketplace now supports listing Model Context Protocol (MCP) servers. Providers can list MCP servers to distribute AI tools and other Databricks users can install MCP servers from Marketplace to connect AI agents to external data sources, SaaS tools, and developer APIs.</p>
+<p>See <a href="https://docs.databricks.com/aws/en/marketplace/get-started-provider">List your data product in Databricks Marketplace</a> and <a href="https://docs.databricks.com/aws/en/marketplace/get-started-consumer#install-mcp">Get access to external MCP servers</a>.</p></div>
+                <div class="translated-label">&gt; データブリックスマーケットプレイスはNow、Model Context Protocol（MCP）サーバーの掲載をサポートしています。プロバイダーはMCPサーバーを掲載して、AI ツールを配布することができ、DatabricksユーザーはマーケットプレイスからMCPサーバーをインストールして、外部データソース、SaaSツール、開発者APIにAIエージェントを接続することができます。
+
+<a href="https://docs.databricks.com/aws/en/marketplace/get-started-provider">データブリックスマーケットプレイスであなたのデータ製品を掲載する</a>と<a href="https://docs.databricks.com/aws/en/marketplace/get-started-consumer#install-mcp">外部MCPサーバーにアクセスする</a>を参照してください。</div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/november#disable-dbfs-root-and-mounts-workspace-setting-is-ga" target="_blank">
-                <div class="article-title">Disable DBFS root and mounts workspace setting is GA</div>
+            <a href="https://docs.databricks.com/aws/en/release-notes/whats-coming#genie-research-agent-mode-can-soon-use-models-served-through-amazon-bedrock" target="_blank">
+                <div class="article-title">Genie Research agent mode can soon use models served through Amazon Bedrock</div>
             </a>
-            <div class="translated-label">&gt; DBFSルートの無効化とワークスペース設定のマウントはGAになりました。</div>
-            <div class="date">November 03, 2025</div>
+            <div class="translated-label">&gt; ジーニー・リサーチのエージェントモードは、Amazon Bedrock経由でサービスされたモデルを使用できるようになる予定です。</div>
+            <div class="date">November 05, 2025</div>
             <div class="content">
-                <div class="original-text"><p>The workspace setting that allows workspace admins to disable access to the Databricks Filesystem (DBFS) root and mounts in existing Databricks workspaces is now generally available. See <a href="https://docs.databricks.com/aws/en/dbfs/disable-dbfs-root-mounts">Disable access to DBFS root and mounts in your existing Databricks workspace</a>.</p></div>
-                <div class="translated-label">&gt; <p>Databricksのファイルシステム(DBFS)のルートとマウントへのアクセスを無効化できる設定がワークスペース管理者に提供されるようになりました。詳細は<a href="https://docs.databricks.com/aws/en/dbfs/disable-dbfs-root-mounts">DatabricksワークスペースでのDBFS ルートとマウントへのアクセスの無効化</a>を参照してください。</p></div>
+                <div class="original-text"><p>Genie Research agent mode will soon be able to use models served through Amazon Bedrock when <a href="https://docs.databricks.com/aws/en/databricks-ai/partner-powered">partner-powered AI features</a> are enabled.</p></div>
+                <div class="translated-label">&gt; <p>ジーニー・リサーチのエージェントモードは、<a href="https://docs.databricks.com/aws/en/databricks-ai/partner-powered">パートナー主導のAI機能</a>が有効になると、Amazon Bedrock を介して提供されるモデルを使用できるようになる予定です。</p></div>
             </div>
         </div>
         
