@@ -23,14 +23,79 @@
         <h1>Databricks Docs Updates</h1>
     
         <div class="article">
+            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2025#dashboard-search-and-embedding-enhancements" target="_blank">
+                <div class="article-title">Dashboard search and embedding enhancements</div>
+            </a>
+            <div class="translated-label">&gt; ダッシュボードの検索およびEmbeddingの強化</div>
+            <div class="date">November 13, 2025</div>
+            <div class="content">
+                <div class="original-text"><ul>
+<li><strong>Enhanced search functionality</strong>: Users can now search over dashboard names, page names, widget titles and descriptions, dataset names, and their queries. Dataset queries are searchable only from the <a href="https://docs.databricks.com/aws/en/search">workspace search bar</a>.</li>
+<li><strong>Ask Genie button for embedded dashboards</strong>: When viewers access dashboards configured with <a href="https://docs.databricks.com/aws/en/dashboards/embedding/basic">basic embedding</a>, they can now access the <strong>Ask Genie</strong> button for dashboards published with an <a href="https://docs.databricks.com/aws/en/dashboards/genie-spaces">associated Genie space</a>.</li>
+<li><strong>Fixed browser window navigation issue</strong>: Resolved a bug where navigating to a different browser window and back to the dashboard caused the dashboard to display no data.</li>
+</ul></div>
+                <div class="translated-label">&gt; <ul>
+<li><strong>検索機能の強化</strong>: ユーザーは、ダッシュボード名、ページ名、ウィジェットのタイトルと説明、データセット名、およびクエリを検索できるようになりました。データセットのクエリは、<a href="https://docs.databricks.com/aws/en/search">ワークスペースの検索バー</a>からのみ検索できます。</li>
+<li><strong>埋め込みダッシュボードの「Ask Genie」ボタン</strong>: 視聴者が<a href="https://docs.databricks.com/aws/en/dashboards/embedding/basic">基本的な埋め込み</a>で設定されたダッシュボードにアクセスすると、<a href="https://docs.databricks.com/aws/en/dashboards/genie-spaces">関連付けられたGenieスペース</a>で公開されたダッシュボードに「Ask Genie」ボタンにアクセスできるようになりました。</li>
+<li><strong>ブラウザのウィンドウ遷移の不具合を修正</strong>: ダッシュボードを表示中に別のブラウザウィンドウに遷移してから戻ると、ダッシュボードにデータが表示されないバグを修正しました。</li>
+</ul></div>
+            </div>
+        </div>
+        
+        <div class="article">
+            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2025#genie-navigation-and-accuracy-improvements" target="_blank">
+                <div class="article-title">Genie navigation and accuracy improvements</div>
+            </a>
+            <div class="translated-label">&gt; ジーニー ナビゲーションと精度の向上</div>
+            <div class="date">November 13, 2025</div>
+            <div class="content">
+                <div class="original-text"><ul>
+<li><strong>Fixed back navigation error</strong>: Resolved a bug where clicking the browser back button while viewing a Genie space would result in an error.</li>
+<li><strong>Fixed value dictionary documentation link</strong>: Fixed a broken link to the description of value dictionaries.</li>
+<li><strong>Improved column selection</strong>: Genie now optimizes column selection to provide more columns with higher relevance while efficiently managing context consumption.</li>
+</ul></div>
+                <div class="translated-label">&gt; <ul>
+<li><strong>固定バックナビゲーションエラー</strong>: Genieのスペースを表示中にブラウザの戻るボタンをクリックするとエラーが発生するバグを修正しました。</li>
+<li><strong>値辞書のドキュメンテーションリンクを修正</strong>: 値辞書の説明へのリンクが壊れていたのを修正しました。</li>
+<li><strong>列選択の改善</strong>: Genieは列選択を最適化して、より高い関連性の列を多く提供しつつ、コンテキスト消費を効率的に管理するようになりました。</li>
+</ul></div>
+            </div>
+        </div>
+        
+        <div class="article">
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/november#convert-foreign-tables-to-unity-catalog-managed-or-external-tables-public-preview" target="_blank">
+                <div class="article-title">Convert foreign tables to Unity Catalog managed or external tables (Public Preview)</div>
+            </a>
+            <div class="translated-label">&gt; Unity Catalog 管理または外部テーブルへの外部テーブルの変換 (パブリックプレビュー)</div>
+            <div class="date">November 13, 2025</div>
+            <div class="content">
+                <div class="original-text"><p>You can now convert foreign tables from external catalogs (such as Hive Metastore or AWS Glue) to Unity Catalog managed or external tables while retaining table history and configurations. Use <code>ALTER TABLE SET MANAGED</code> to convert to managed tables with <code>MOVE</code> (disable source access) or <code>COPY</code> (keep source accessible) options, or use <code>ALTER TABLE SET EXTERNAL</code> to convert to external tables with an optional <code>DRY RUN</code> validation. Additionally, you can convert entire foreign catalogs to standard Unity Catalog catalogs using <code>ALTER CATALOG DROP CONNECTION</code>. See <a href="https://docs.databricks.com/aws/en/tables/convert-foreign-managed">Convert a foreign table to a managed Unity Catalog table</a> and <a href="https://docs.databricks.com/aws/en/tables/convert-foreign-external">Convert a foreign table to an external Unity Catalog table</a>.</p>
+<p><strong>Minimum Databricks Runtime versions:</strong></p>
+<ul>
+<li><code>ALTER TABLE SET MANAGED</code>: DBR 17.3 LTS or above</li>
+<li><code>ALTER TABLE SET EXTERNAL</code>: DBR 17.0 LTS or above</li>
+<li><code>ALTER CATALOG DROP CONNECTION</code>: DBR 17.3 LTS or above</li>
+<li><code>ALTER SCHEMA SET MANAGED LOCATION</code>: DBR 16.4 LTS or above</li>
+</ul></div>
+                <div class="translated-label">&gt; 外部カタログ（Hive Metastoreや AWS Glue など）から Unity Catalog管理テーブルや外部テーブルへのテーブル変換が可能になりました。<code>ALTER TABLE SET MANAGED</code>コマンドを使ってテーブルを管理テーブルに変換できます。<code>MOVE</code>（ソースアクセスを無効化）や<code>COPY</code>（ソースアクセスを維持）オプションを指定できます。また、<code>ALTER TABLE SET EXTERNAL</code>コマンドを使って外部テーブルに変換できます。<code>DRY RUN</code>検証も可能です。さらに、<code>ALTER CATALOG DROP CONNECTION</code>コマンドを使って、外部カタログ全体をUnity Catalogのスタンダードカタログに変換できます。
+
+最低限必要なデータブリックスランタイムバージョンは以下の通りです:
+- <code>ALTER TABLE SET MANAGED</code>: DBR 17.3 LTS以上
+- <code>ALTER TABLE SET EXTERNAL</code>: DBR 17.0 LTS以上
+- <code>ALTER CATALOG DROP CONNECTION</code>: DBR 17.3 LTS以上
+- <code>ALTER SCHEMA SET MANAGED LOCATION</code>: DBR 16.4 LTS以上</div>
+            </div>
+        </div>
+        
+        <div class="article">
             <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/november#lakeflow-declarative-pipelines-has-been-renamed-to-lakeflow-spark-declarative-pipelines" target="_blank">
                 <div class="article-title">Lakeflow Declarative Pipelines has been renamed to Lakeflow Spark Declarative Pipelines</div>
             </a>
-            <div class="translated-label">&gt; Lakeflow Spark 宣言型パイプラインに改名されました。</div>
+            <div class="translated-label">&gt; レイクフロー宣言型パイプラインはレイクフロースパーク宣言型パイプラインに名称変更されました。</div>
             <div class="date">November 12, 2025</div>
             <div class="content">
                 <div class="original-text"><p>Lakeflow Declarative Pipelines has been renamed to Lakeflow Spark Declarative Pipelines. See <a href="https://docs.databricks.com/aws/en/ldp">Lakeflow Spark Declarative Pipelines</a>.</p></div>
-                <div class="translated-label">&gt; <p>Lakeflow 宣言型パイプラインは、Lakeflow Spark 宣言型パイプラインに改称されました。<a href="https://docs.databricks.com/aws/en/ldp">Lakeflow Spark 宣言型パイプライン</a>をご覧ください。</p></div>
+                <div class="translated-label">&gt; <p>Lakeflow Declarative Pipelines は Lakeflow Spark Declarative Pipelines に名称変更されました。<a href="https://docs.databricks.com/aws/en/ldp">Lakeflow Spark Declarative Pipelines</a>をご覧ください。</p></div>
             </div>
         </div>
         
@@ -38,73 +103,11 @@
             <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/november#migrate-community-edition-workspaces-to-free-edition-public-preview" target="_blank">
                 <div class="article-title">Migrate Community Edition workspaces to Free Edition (Public Preview)</div>
             </a>
-            <div class="translated-label">&gt; コミュニティエディションのワークスペースを無料エディション(パブリックプレビュー)に移行する</div>
+            <div class="translated-label">&gt; コミュニティ・エディションのワークスペースを無料エディション（パブリック・プレビュー）に移行する</div>
             <div class="date">November 07, 2025</div>
             <div class="content">
                 <div class="original-text"><p>The migration tool for migrating Community Edition workspaces to Free Edition is now available. See <a href="https://docs.databricks.com/aws/en/getting-started/ce-migration">Migrate Community Edition workspaces to Free Edition</a>.</p></div>
-                <div class="translated-label">&gt; コミュニティ版ワークスペースからフリー版へ移行するための移行ツールが利用可能になりました。<a href="https://docs.databricks.com/aws/en/getting-started/ce-migration">コミュニティ版ワークスペースをフリー版へ移行する</a>を参照してください。</div>
-            </div>
-        </div>
-        
-        <div class="article">
-            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2025#dashboard-filter-and-counter-enhancements" target="_blank">
-                <div class="article-title">Dashboard filter and counter enhancements</div>
-            </a>
-            <div class="translated-label">&gt; ダッシュボードのフィルターと件数の機能強化</div>
-            <div class="date">November 06, 2025</div>
-            <div class="content">
-                <div class="original-text"><ul>
-<li><strong>Per-widget filter enhancements</strong>: Per-widget filters now support date ranges, relative date ranges, and number filters.</li>
-<li><strong>Counter visualization improvements</strong>: You can now use counters to track and compare metrics over time and show sparklines. To create a counter with a sparkline, select a main value and a date column. See <a href="https://docs.databricks.com/aws/en/dashboards/visualizations/types#counter">Counter visualization</a>.</li>
-<li><strong>Metric view metadata support</strong>: AI/BI dashboards now consume Unity Catalog metadata from metric views, including formatting and display name.</li>
-<li><strong>Horizontal chart scrollbars on hover</strong>: Scrollbars for horizontal charts now show on hover.</li>
-<li><strong>Fixed custom calculations display in draft mode</strong>: Resolved an issue where visualizations using custom calculations were not displaying in draft mode.</li>
-<li><strong>Fixed Slack notification OAuth token field</strong>: Resolved a bug where the OAuth token field appeared pre-filled with placeholder text despite no prior token being provided for dashboard subscription Slack notifications.</li>
-</ul></div>
-                <div class="translated-label">&gt; <ul>
-<li><strong>個別のウィジェットのフィルター機能強化</strong>：個別のウィジェットのフィルターで、日付範囲、相対的な日付範囲、数値フィルターがサポートされるようになりました。</li>
-<li><strong>カウンターの視覚化の改善</strong>：時間の経過とともにメトリクスを追跡および比較し、スパークラインを表示できるようになりました。カウンターにスパークラインを作成するには、メインの値と日付列を選択してください。詳しくは<a href="https://docs.databricks.com/aws/en/dashboards/visualizations/types#counter">カウンターの視覚化</a>を参照してください。</li>
-<li><strong>メトリック表示のメタデータサポート</strong>：AI/BIダッシュボードでは、メトリック表示からUnity Catalogメタデータ（書式設定と表示名を含む）を取り込むことができるようになりました。</li>
-<li><strong>ホバー時の水平チャートのスクロールバー</strong>：水平チャートのスクロールバーがホバー時に表示されるようになりました。</li>
-<li><strong>下書きモードでのカスタム計算の表示を修正</strong>：カスタム計算を使用する視覚化が下書きモードで表示されない問題を解決しました。</li>
-<li><strong>Slackの通知のOAuthトークンフィールドを修正</strong>：ダッシュボードのSubscription Slack通知で、事前に設定されたトークンがない場合にOAuthトークンフィールドがプレースホルダーテキストで事前入力されていた問題を解決しました。</li>
-</ul></div>
-            </div>
-        </div>
-        
-        <div class="article">
-            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2025#genie-visualization-and-query-result-improvements" target="_blank">
-                <div class="article-title">Genie visualization and query result improvements</div>
-            </a>
-            <div class="translated-label">&gt; ジーニー視覚化とクエリ結果の改善</div>
-            <div class="date">November 06, 2025</div>
-            <div class="content">
-                <div class="original-text"><ul>
-<li><strong>Text explanations for empty results</strong>: Genie now includes text explanations of query results when query results are empty.</li>
-<li><strong>Improved auto-generated charts</strong>: Visualizations now use query result metadata for higher-quality auto-generated charts.</li>
-<li><strong>Improved date formatting</strong>: The process for formatting date results in visualizations has been improved.</li>
-</ul></div>
-                <div class="translated-label">&gt; <ul>
-<li><strong>空の結果のためのテキストの説明</strong>: Genieは、クエリ結果が空の場合にクエリ結果のテキストの説明を含むようになりました。</li>
-<li><strong>改善された自動生成されたチャート</strong>: 視覚化では、より高品質の自動生成されたチャートのためにクエリ結果のメタデータが使用されるようになりました。</li>
-<li><strong>改善された日付のフォーマット</strong>: 視覚化における日付結果のフォーマット処理が改善されました。</li>
-</ul></div>
-            </div>
-        </div>
-        
-        <div class="article">
-            <a href="https://docs.databricks.com/aws/en/sql/release-notes/2025#sql-editor-visualization-fix" target="_blank">
-                <div class="article-title">SQL Editor visualization fix</div>
-            </a>
-            <div class="translated-label">&gt; SQLエディターの視覚化修正</div>
-            <div class="date">November 06, 2025</div>
-            <div class="content">
-                <div class="original-text"><ul>
-<li><strong>Fixed tooltip display issue</strong>: Resolved an issue where tooltips were hidden behind the legend in Notebook and SQL Editor visualizations.</li>
-</ul></div>
-                <div class="translated-label">&gt; <ul>
-<li><strong>固定ツールチップの表示問題を修正</strong>:ノートブックおよびSQLエディターのビジュアライゼーションでレジェンドの後ろにツールチップが隠れる問題を解決しました。</li>
-</ul></div>
+                <div class="translated-label">&gt; コミュニティ版ワークスペースをフリー版に移行するための移行ツールが利用可能になりました。<a href="https://docs.databricks.com/aws/en/getting-started/ce-migration">コミュニティ版ワークスペースをフリー版に移行する</a>をご覧ください。</div>
             </div>
         </div>
         
