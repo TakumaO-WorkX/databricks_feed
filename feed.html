@@ -23,82 +23,89 @@
         <h1>Databricks Docs Updates</h1>
     
         <div class="article">
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/november#jobs-can-now-be-triggered-on-source-view-update" target="_blank">
+                <div class="article-title">Jobs can now be triggered on source view update</div>
+            </a>
+            <div class="translated-label">&gt; ジョブは今では、ソースビューの更新をトリガーできます。</div>
+            <div class="date">November 17, 2025</div>
+            <div class="content">
+                <div class="original-text"><p>Table update triggers for jobs now support views as a source, when the view references supported table types. See <a href="https://docs.databricks.com/aws/en/jobs/trigger-table-update">Trigger jobs when source tables are updated</a>.</p></div>
+                <div class="translated-label">&gt; <p>ジョブのテーブルアップデートトリガーでは、サポートされるテーブルタイプを参照するビューをソースとしてサポートするようになりました。詳細は <a href="https://docs.databricks.com/aws/en/jobs/trigger-table-update">ソーステーブルが更新されたときにジョブをトリガーする</a>をご覧ください。</p></div>
+            </div>
+        </div>
+        
+        <div class="article">
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/november#delta-sharing-views-automatically-permitted-in-serverless-network-policies" target="_blank">
+                <div class="article-title">Delta Sharing views automatically permitted in serverless network policies</div>
+            </a>
+            <div class="translated-label">&gt; デルタ共有は、サーバーレスネットワーク ポリシーで自動的に許可されます。</div>
+            <div class="date">November 17, 2025</div>
+            <div class="content">
+                <div class="original-text"><p>Delta Sharing views are now permitted when using serverless network policies, regardless of storage location alignment between shared tables and view dependencies. This removes the previous limitation and simplifies network policy configuration for Delta Sharing workloads.</p>
+<p>See <a href="https://docs.databricks.com/aws/en/security/network/serverless-network-security/manage-network-policies">Manage network policies for serverless egress control</a>.</p></div>
+                <div class="translated-label">&gt; デルタ共有ビューは、共有テーブルとビューの依存関係の保管場所の整合性に関係なく、サーバーレスネットワークポリシーを使用する際に許可されています。これにより、以前の制限が解除され、デルタ共有ワークロードのネットワークポリシー構成が簡素化されます。
+
+「サーバーレスエグレスコントロールのネットワークポリシーを管理する」を参照してください。</div>
+            </div>
+        </div>
+        
+        <div class="article">
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/november#abac-secured-assets-shared-using-delta-sharing-is-in-public-preview" target="_blank">
+                <div class="article-title">ABAC-secured assets shared using Delta Sharing is in Public Preview</div>
+            </a>
+            <div class="translated-label">&gt; ABACで保護された資産をデルタ共有を使ってパブリックプレビュー版で共有しています。</div>
+            <div class="date">November 17, 2025</div>
+            <div class="content">
+                <div class="original-text"><p>Applying attribute-based access control (ABAC) policies to tables and schemas shared through Delta Sharing is now in Public Preview. However, recipients can't apply ABAC policies on shared streaming tables.</p>
+<p>See <a href="https://docs.databricks.com/aws/en/delta-sharing/create-share#abac">Add tables and schemas secured by ABAC policies to a share</a> and <a href="https://docs.databricks.com/aws/en/delta-sharing/read-data-databricks#abac">Read data assets secured by ABAC policies</a>.</p></div>
+                <div class="translated-label">&gt; <p>デルタ共有を介して共有されるテーブルとスキーマへの属性ベースのアクセス制御(ABAC)ポリシーの適用が、パブリックプレビューで利用可能になりました。ただし、受信者は共有ストリーミングテーブルにABACポリシーを適用することはできません。</p>
+<p><a href="https://docs.databricks.com/aws/en/delta-sharing/create-share#abac">ABACポリシーで保護されたテーブルとスキーマを共有に追加する</a>と<a href="https://docs.databricks.com/aws/en/delta-sharing/read-data-databricks#abac">ABACポリシーで保護されたデータアセットを読み取る</a>をご覧ください。</p></div>
+            </div>
+        </div>
+        
+        <div class="article">
             <a href="https://docs.databricks.com/aws/en/sql/release-notes/2025#databricks-sql-alerts-are-now-in-public-preview" target="_blank">
                 <div class="article-title">Databricks SQL alerts are now in Public Preview</div>
             </a>
-            <div class="translated-label">&gt; データブリックス SQL アラートがパブリックプレビューに登場</div>
+            <div class="translated-label">&gt; データブリックスSQL アラートがパブリックプレビューになりました。</div>
             <div class="date">November 14, 2025</div>
             <div class="content">
                 <div class="original-text"><ul>
 <li><strong>Databricks SQL alerts:</strong> The latest version of Databricks SQL alerts, with a new editing experience, is now in Public Preview. See <a href="https://docs.databricks.com/aws/en/sql/user/alerts">Databricks SQL alerts</a>.</li>
 </ul></div>
                 <div class="translated-label">&gt; <ul>
-<li><strong>Databricks SQLアラート:</strong> Databricks SQLアラートの最新バージョンに新しい編集体験が加わり、パブリックプレビューとして提供されています。<a href="https://docs.databricks.com/aws/en/sql/user/alerts">Databricks SQLアラート</a>をご覧ください。</li>
+<li><strong>Databricks SQLアラート:</strong> Databricks SQLアラートの最新バージョンには新しい編集エクスペリエンスが搭載されており、現在パブリックプレビューの段階にあります。<a href="https://docs.databricks.com/aws/en/sql/user/alerts">Databricks SQLアラート</a>をご覧ください。</li>
 </ul></div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/november#connect-genie-spaces-to-microsoft-copilot-studio-public-preview" target="_blank">
-                <div class="article-title">Connect Genie spaces to Microsoft Copilot Studio (Public Preview)</div>
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/november#openai-gpt-51-now-available-as-a-databricks-hosted-model" target="_blank">
+                <div class="article-title">OpenAI GPT-5.1 now available as a Databricks-hosted model</div>
             </a>
-            <div class="translated-label">&gt; Microsoft Copilot スタジオ（パブリックプレビュー）に Genie スペースを接続します。</div>
+            <div class="translated-label">&gt; OpenAIのGPT-5.1が、Databricksホストのモデルとして利用可能になりました。</div>
             <div class="date">November 14, 2025</div>
             <div class="content">
-                <div class="original-text"><p>Connecting Databricks Genie spaces as tools in Microsoft Copilot Studio agents is in Public Preview. To use this feature, enable the Managed MCP Servers preview in your workspace and add your Genie space as a tool when configuring a Copilot Studio agent. See <a href="https://docs.databricks.com/aws/en/integrations/msft-power-platform">Connect to Databricks from Microsoft Power Platform</a>.</p></div>
-                <div class="translated-label">&gt; Databricksの Genie スペースをMicrosoft Copilot Studioのエージェントとしてツールとして接続することがPublic Previewで利用可能です。この機能を使うには、ワークスペースで Managed MCP Servers preview を有効にし、Copilot Studioのエージェントを設定する際にGenie スペースをツールとして追加してください。詳しくは<a href="https://docs.databricks.com/aws/en/integrations/msft-power-platform">Microsoft Power Platformからのデータブリックス接続</a>を参照してください。</div>
-            </div>
-        </div>
-        
-        <div class="article">
-            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2025#dashboard-search-and-embedding-enhancements" target="_blank">
-                <div class="article-title">Dashboard search and embedding enhancements</div>
-            </a>
-            <div class="translated-label">&gt; ダッシュボードの検索と埋め込みの強化</div>
-            <div class="date">November 13, 2025</div>
-            <div class="content">
-                <div class="original-text"><ul>
-<li><strong>Enhanced search functionality</strong>: Users can now search over dashboard names, page names, widget titles and descriptions, dataset names, and their queries. Dataset queries are searchable only from the <a href="https://docs.databricks.com/aws/en/search">workspace search bar</a>.</li>
-<li><strong>Ask Genie button for embedded dashboards</strong>: When viewers access dashboards configured with <a href="https://docs.databricks.com/aws/en/dashboards/embedding/basic">basic embedding</a>, they can now access the <strong>Ask Genie</strong> button for dashboards published with an <a href="https://docs.databricks.com/aws/en/dashboards/genie-spaces">associated Genie space</a>.</li>
-<li><strong>Fixed browser window navigation issue</strong>: Resolved a bug where navigating to a different browser window and back to the dashboard caused the dashboard to display no data.</li>
+                <div class="original-text"><p>Mosaic AI Model Serving now supports OpenAI <a href="https://docs.databricks.com/aws/en/machine-learning/foundation-model-apis/supported-models#openai-gpt-5-1">GPT-5.1</a> as a Databricks-hosted model. You can access this model using,</p>
+<ul>
+<li><a href="https://docs.databricks.com/aws/en/machine-learning/foundation-model-apis#token-foundation-apis">Foundation Model APIs pay-per-token</a>
+<ul>
+<li><a href="https://docs.databricks.com/aws/en/machine-learning/model-serving/query-reason-models">Query reasoning models</a></li>
+<li><a href="https://docs.databricks.com/aws/en/machine-learning/model-serving/query-vision-models">Query vision models</a></li>
+</ul>
+</li>
+<li><a href="https://docs.databricks.com/aws/en/large-language-models/ai-functions">Batch inference workloads using AI Functions</a></li>
 </ul></div>
-                <div class="translated-label">&gt; <ul>
-<li><strong>検索機能の強化</strong>: ユーザーは、ダッシュボード名、ページ名、ウィジェットのタイトルや説明、データセット名、およびクエリを検索できるようになりました。データセットのクエリは<a href="https://docs.databricks.com/aws/en/search">ワークスペースの検索バー</a>からのみ検索可能です。</li>
-<li><strong>組み込みダッシュボードのAsk Genieボタン</strong>: ビューアーが<a href="https://docs.databricks.com/aws/en/dashboards/embedding/basic">基本的な埋め込み</a>で設定されたダッシュボードにアクセスすると、<a href="https://docs.databricks.com/aws/en/dashboards/genie-spaces">関連付けられたGenieスペース</a>で公開されたダッシュボードのAsk Genieボタンにアクセスできるようになりました。</li>
-<li><strong>ブラウザウィンドウのナビゲーション問題を修正</strong>: 異なるブラウザウィンドウに移動してダッシュボードに戻ると、ダッシュボードにデータが表示されないバグを修正しました。</li>
+                <div class="translated-label">&gt; <p>モザイクAIモデルサービングは現在、DatabricksがホストするモデルとしてOpenAI <a href="https://docs.databricks.com/aws/en/machine-learning/foundation-model-apis/supported-models#openai-gpt-5-1">GPT-5.1</a>をサポートしています。このモデルにアクセスできます。</p>
+<ul>
+<li><a href="https://docs.databricks.com/aws/en/machine-learning/foundation-model-apis#token-foundation-apis">Foundation Model APIs pay-per-token</a>
+<ul>
+<li><a href="https://docs.databricks.com/aws/en/machine-learning/model-serving/query-reason-models">Query reasoning models</a></li>
+<li><a href="https://docs.databricks.com/aws/en/machine-learning/model-serving/query-vision-models">Query vision models</a></li>
+</ul>
+</li>
+<li><a href="https://docs.databricks.com/aws/en/large-language-models/ai-functions">Batch inference workloads using AI Functions</a></li>
 </ul></div>
-            </div>
-        </div>
-        
-        <div class="article">
-            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2025#genie-navigation-and-accuracy-improvements" target="_blank">
-                <div class="article-title">Genie navigation and accuracy improvements</div>
-            </a>
-            <div class="translated-label">&gt; ジーニー・ナビゲーションと精度の向上</div>
-            <div class="date">November 13, 2025</div>
-            <div class="content">
-                <div class="original-text"><ul>
-<li><strong>Fixed back navigation error</strong>: Resolved a bug where clicking the browser back button while viewing a Genie space would result in an error.</li>
-<li><strong>Fixed value dictionary documentation link</strong>: Fixed a broken link to the description of value dictionaries.</li>
-<li><strong>Improved column selection</strong>: Genie now optimizes column selection to provide more columns with higher relevance while efficiently managing context consumption.</li>
-</ul></div>
-                <div class="translated-label">&gt; <ul>
-<li><strong>固定バックナビゲーションエラー</strong>: Genieスペースを表示中にブラウザの戻るボタンをクリックするとエラーが発生するバグを修正しました。</li>
-<li><strong>値辞書ドキュメントリンクを修正</strong>: 値辞書の説明へのリンクが壊れていたのを修正しました。</li>
-<li><strong>列選択の改善</strong>: Genieは列選択を最適化し、より高い関連性を持つ多くの列を効率的にコンテキストを消費しながら提供するようになりました。</li>
-</ul></div>
-            </div>
-        </div>
-        
-        <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/november#sftp-connector-public-preview" target="_blank">
-                <div class="article-title">SFTP connector (Public Preview)</div>
-            </a>
-            <div class="translated-label">&gt; SFTP コネクタ (パブリック プレビュー)</div>
-            <div class="date">November 13, 2025</div>
-            <div class="content">
-                <div class="original-text"><p>The SFTP connector in Lakeflow Connect (Public Preview) extends Auto Loader functionality to ingest files from SFTP servers. See <a href="https://docs.databricks.com/aws/en/ingestion/sftp">Ingest files from SFTP servers</a>.</p></div>
-                <div class="translated-label">&gt; Lakeflow Connect (パブリックプレビュー)のSFTPコネクタは、Auto Loaderの機能を拡張し、SFTPサーバーからファイルをインジェストできるようになります。詳細は<a href="https://docs.databricks.com/aws/en/ingestion/sftp">SFTPサーバーからファイルをインジェストする</a>をご覧ください。</div>
             </div>
         </div>
         
