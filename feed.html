@@ -23,10 +23,22 @@
         <h1>Databricks Docs Updates</h1>
     
         <div class="article">
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/november#lakeflow-spark-declarative-pipelines-stream-progress-metrics-are-generally-available" target="_blank">
+                <div class="article-title">Lakeflow Spark Declarative Pipelines stream progress metrics are generally available</div>
+            </a>
+            <div class="translated-label">&gt; レイクフロースパーク宣言型パイプラインのストリームプログレスメトリクスが一般に利用可能となりました。</div>
+            <div class="date">November 25, 2025</div>
+            <div class="content">
+                <div class="original-text"><p>Lakeflow Spark Declarative Pipelines support for querying the event log for metrics about the progress of a stream is now generally available. See <a href="https://docs.databricks.com/aws/en/ldp/monitor-event-logs#stream-progress">Monitor pipeline streaming metrics</a>.</p></div>
+                <div class="translated-label">&gt; <p>ラクフロースパーク宣言パイプラインでは、ストリームの進捗に関するメトリクスを取得するためのイベントログのクエリがサポートされるようになりました。詳細は<a href="https://docs.databricks.com/aws/en/ldp/monitor-event-logs#stream-progress">パイプラインのストリーミングメトリクスの監視</a>をご確認ください。</p></div>
+            </div>
+        </div>
+        
+        <div class="article">
             <a href="https://docs.databricks.com/aws/en/release-notes/whats-coming#databricks-assistant-agent-mode-preview" target="_blank">
                 <div class="article-title">Databricks Assistant Agent Mode preview</div>
             </a>
-            <div class="translated-label">&gt; データブリックス・アシスタントのエージェントモードプレビュー</div>
+            <div class="translated-label">&gt; データブリックス アシスタント エージェントモード プレビュー</div>
             <div class="date">November 21, 2025</div>
             <div class="content">
                 <div class="original-text"><p>The Databricks Assistant Agent Mode preview will soon be enabled by default for most customers.</p>
@@ -36,13 +48,25 @@
 <li>Admins can disable the preview if needed until the feature reaches General Availability.</li>
 </ul>
 <p>See <a href="https://docs.databricks.com/aws/en/notebooks/ds-agent">Use the Data Science Agent</a>, <a href="https://www.databricks.com/blog/introducing-databricks-assistant-data-science-agent">the blog post</a>, and <a href="https://docs.databricks.com/aws/en/databricks-ai/partner-powered">Partner-powered AI features</a>.</p></div>
-                <div class="translated-label">&gt; <p>Databricks アシスタントエージェントモードのプレビューが間もなくほとんどのお客様にデフォルトで有効になります。</p>
+                <div class="translated-label">&gt; <p>Databricks Assistantエージェントモードプレビューが、ほとんどのお客様のデフォルトで間もなく有効になります。</p>
 <ul>
-<li>エージェントは複数のステップを自動化することができます。単一のプロンプトから、関連するアセットを取得し、コードを生成して実行し、自動的にエラーを修正し、結果を可視化することができます。データのサンプリングとセル出力の機能を追加して、より良い結果を提供できるようになります。</li>
-<li>エージェントモードのアシスタントは、Azure OpenAI またはAnthropic on Databricks (Databricks Inc. が AWS 内のDatabricks セキュリティ境界でホストしているエンドポイントを使用) を選択し、パートナー提供のAI 機能設定が有効になっている場合にのみ利用できます。</li>
-<li>管理者は、機能が一般公開に達するまでプレビューを必要に応じて無効にできます。</li>
+<li>エージェントは複数のステップを自動化できます。単一のプロンプトから、関連するアセットを取得し、コードを生成して実行し、エラーを自動的に修正し、結果を視覚化できます。データのサンプリングとセル出力の機能を追加して、より良い結果を提供します。</li>
+<li>エージェントモードのアシスタントは、Databricksでホストされているエンドポイントを使用して、Azure OpenAIまたはAnthropic AIを選択します。パートナー提供のAI機能の設定が有効になっている場合にのみ利用できます。</li>
+<li>管理者は、この機能が一般提供される前に、必要に応じてプレビューを無効にできます。</li>
 </ul>
-<p><a href="https://docs.databricks.com/aws/en/notebooks/ds-agent">データサイエンスエージェントの使用</a>、<a href="https://www.databricks.com/blog/introducing-databricks-assistant-data-science-agent">ブログ記事</a>、および<a href="https://docs.databricks.com/aws/en/databricks-ai/partner-powered">パートナー提供のAI 機能</a>をご覧ください。</p></div>
+<p><a href="https://docs.databricks.com/aws/en/notebooks/ds-agent">データサイエンスエージェントの使用</a>、<a href="https://www.databricks.com/blog/introducing-databricks-assistant-data-science-agent">ブログ記事</a>、および<a href="https://docs.databricks.com/aws/en/databricks-ai/partner-powered">パートナー提供のAI機能</a>をご覧ください。</p></div>
+            </div>
+        </div>
+        
+        <div class="article">
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/november#configure-full-refresh-behavior-for-managed-database-connectors" target="_blank">
+                <div class="article-title">Configure full refresh behavior for managed database connectors</div>
+            </a>
+            <div class="translated-label">&gt; データベースコネクターの完全更新動作を構成する</div>
+            <div class="date">November 21, 2025</div>
+            <div class="content">
+                <div class="original-text"><p>You can now schedule when full refresh snapshots occur and enable automatic full refresh to recover from unsupported schema changes. This applies to managed database connectors like SQL Server in Lakeflow Connect. See <a href="https://docs.databricks.com/aws/en/ingestion/lakeflow-connect/full-refresh-config">Configure full refresh behavior for database connectors</a>.</p></div>
+                <div class="translated-label">&gt; 今、完全リフレッシュのスナップショットが発生するタイミングをスケジュールできるようになりました。また、サポートされていないスキーマの変更から回復するために、自動的な完全リフレッシュを有効にできるようになりました。これは、Lakeflow ConnectのSQL Serverなどの管理されたデータベースコネクタに適用されます。「データベースコネクタの完全リフレッシュの動作を設定する」をご覧ください。</div>
             </div>
         </div>
         
@@ -50,13 +74,14 @@
             <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/november#automate-classic-workspace-creation-with-aws-iam-temporary-delegation" target="_blank">
                 <div class="article-title">Automate classic workspace creation with AWS IAM temporary delegation</div>
             </a>
-            <div class="translated-label">&gt; 作業スペースの自動作成をAWS IAMの一時委任で行う</div>
+            <div class="translated-label">&gt; AWSのIAM一時的な委任を使ってクラシックワークスペースの作成を自動化する</div>
             <div class="date">November 21, 2025</div>
             <div class="content">
                 <div class="original-text"><p>You can now automate the creation of classic workspaces using AWS IAM temporary delegation, which grants Databricks temporary access to provision the required IAM roles, S3 bucket, access policies, and customer-managed VPC in your AWS account. This workspace creation flow replaces the AWS Quickstart template.</p>
 <p>See <a href="https://docs.databricks.com/aws/en/admin/workspace/create-workspace">Create a classic workspace</a>.</p></div>
-                <div class="translated-label">&gt; AWSIAMの一時的な委任を使用して、必要なIAMロール、S3バケット、アクセスポリシー、およびお客様管理VPCをプロビジョニングするクラシックワークスペースの作成を自動化できるようになりました。このワークスペースの作成フローは、AWSクイックスタートテンプレートに代わるものです。
-クラシックワークスペースの作成については、次のリンクを参照してください。</div>
+                <div class="translated-label">&gt; AWS IATMの一時的な委任を使用して、クラシック・ワークスペースの作成を自動化できるようになりました。これにより、Databricksに、必要なIAMロール、S3バケット、アクセスポリシー、およびカスタマー管理VPCをプロビジョニングするための一時的なアクセス権限が付与されます。このワークスペース作成フローは、AWS Quickstartテンプレートに置き換わるものです。
+
+<a href="https://docs.databricks.com/aws/en/admin/workspace/create-workspace">クラシック・ワークスペースの作成</a>をご覧ください。</div>
             </div>
         </div>
         
@@ -64,45 +89,11 @@
             <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/november#real-time-collaboration-in-notebook-cells-files-and-sql-editor" target="_blank">
                 <div class="article-title">Real-time collaboration in notebook cells, files, and SQL editor</div>
             </a>
-            <div class="translated-label">&gt; リアルタイムのノートブックセル、ファイル、およびSQL エディターでのコラボレーション</div>
+            <div class="translated-label">&gt; リアルタイムのノートブックセル、ファイル、SQLエディタでのコラボレーション</div>
             <div class="date">November 21, 2025</div>
             <div class="content">
                 <div class="original-text"><p>Real-time collaboration is now available in notebook cells, files, and the new SQL editor. Multiple users can edit the same cell simultaneously and can view each other's edits. For more information, see <a href="https://docs.databricks.com/aws/en/notebooks/notebooks-collaborate">Collaborate using Databricks notebooks</a>.</p></div>
-                <div class="translated-label">&gt; ノートブックのセルやファイル、新しいSQLエディターでリアルタイムコラボレーションが利用可能になりました。複数のユーザーが同時に同じセルを編集し、お互いの編集内容を確認できます。詳細については、<a href="https://docs.databricks.com/aws/en/notebooks/notebooks-collaborate">Databricksノートブックを使ったコラボレーション</a>を参照してください。</div>
-            </div>
-        </div>
-        
-        <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/november#use-git-cli-commands-in-git-folders-beta" target="_blank">
-                <div class="article-title">Use Git CLI commands in Git folders (Beta)</div>
-            </a>
-            <div class="translated-label">&gt; Gitフォルダ内でGitコマンドラインインターフェイスを使用する(ベータ版)</div>
-            <div class="date">November 21, 2025</div>
-            <div class="content">
-                <div class="original-text"><p>You can now run standard Git commands directly from the Databricks web terminal in Git folders. See <a href="https://docs.databricks.com/aws/en/repos/git-operations-with-repos#use-git-cli">Use Git CLI commands (Beta)</a>.</p></div>
-                <div class="translated-label">&gt; データブリックスのWebターミナルでGitフォルダから直接標準のGitコマンドを実行できるようになりました。<a href="https://docs.databricks.com/aws/en/repos/git-operations-with-repos#use-git-cli">Gitコマンドラインインターフェースの使用(ベータ版)</a>を参照してください。</div>
-            </div>
-        </div>
-        
-        <div class="article">
-            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2025#dashboard-visualization-improvements-and-bug-fixes" target="_blank">
-                <div class="article-title">Dashboard visualization improvements and bug fixes</div>
-            </a>
-            <div class="translated-label">&gt; ダッシュボード・ビジュアライゼーションの改善とバグ修正</div>
-            <div class="date">November 20, 2025</div>
-            <div class="content">
-                <div class="original-text"><ul>
-<li><strong>Counter visualization improvements</strong>: You can now use counters to track and compare metrics over time and show sparklines. To create a counter with a sparkline, select a main value and a date column. See <a href="https://docs.databricks.com/aws/en/dashboards/visualizations/types#counter">Counter visualization</a>.</li>
-<li><strong>Configure filter application behavior</strong>: Dashboards now support applying multiple filters at the same time alongside the default instant application. See <a href="https://docs.databricks.com/aws/en/dashboards/settings#apply-filters">Configure filter application behavior</a>.</li>
-<li><strong>Fixed data label positioning</strong>: Resolved an issue where data labels were sometimes half above and half below bars on bar charts.</li>
-<li><strong>Fixed label color legibility</strong>: Resolved an issue where label color was not legible against all background colors.</li>
-</ul></div>
-                <div class="translated-label">&gt; <ul>
-<li><strong>カウンター可視化の改善</strong>: カウンターを使って時間の経過と比較に沿ってメトリックを追跡し、スパークラインを表示できるようになりました。メイン値と日付列を選択してカウンターにスパークラインを作成します。<a href="https://docs.databricks.com/aws/en/dashboards/visualizations/types#counter">カウンター可視化</a>をご覧ください。</li>
-<li><strong>フィルターの適用方法の設定</strong>: ダッシュボードで、デフォルトの即時適用に加えて複数のフィルターを同時に適用できるようになりました。<a href="https://docs.databricks.com/aws/en/dashboards/settings#apply-filters">フィルターの適用方法の設定</a>をご覧ください。</li>
-<li><strong>データラベルの位置の修正</strong>: バーチャート上でデータラベルが時々バーの上半分と下半分に分かれて表示されていた問題を解決しました。</li>
-<li><strong>ラベルの色の見やすさの修正</strong>: ラベルの色が背景色によっては見づらくなっていた問題を解決しました。</li>
-</ul></div>
+                <div class="translated-label">&gt; リアルタイムのコラボレーションがノートブックセル、ファイル、および新しいSQLエディターで利用可能になりました。複数のユーザーが同じセルを同時に編集し、お互いの編集を表示できます。詳細については、「<a href="https://docs.databricks.com/aws/en/notebooks/notebooks-collaborate">Databricksノートブックを使用してコラボレーションする</a>」を参照してください。</div>
             </div>
         </div>
         
