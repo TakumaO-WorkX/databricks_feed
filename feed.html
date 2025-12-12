@@ -23,130 +23,94 @@
         <h1>Databricks Docs Updates</h1>
     
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/whats-coming#changes-to-open-delta-sharing-recipient-tokens" target="_blank">
-                <div class="article-title">Changes to open Delta Sharing recipient tokens</div>
+            <a href="https://docs.databricks.com/aws/en/release-notes/whats-coming#time-travel-and-vacuum-behavioral-changes-for-unity-catalog-managed-tables" target="_blank">
+                <div class="article-title">Time travel and VACUUM behavioral changes for Unity Catalog managed tables</div>
             </a>
-            <div class="translated-label">&gt; デルタ共有レシピエントトークンの変更</div>
-            <div class="date">December 09, 2025</div>
+            <div class="translated-label">&gt; 時間旅行とVACUUMテーブル変更の行動Unity Catalogの管理</div>
+            <div class="date">December 19, 2025</div>
             <div class="content">
-                <div class="original-text"><p>Delta Sharing for open recipients will transition to a new recipient-specific URL format that is used to connect to the Delta Sharing server. This change improves network security and firewall configurations, aligning to best practices for sharing endpoints.</p>
-<p><strong>Recipient tokens created on or after March 9, 2026:</strong></p>
-<p>Starting <em>March 9, 2026</em>, new open recipient tokens will use a new, recipient-specific URL format to improve security and network filtering. This change applies to tokens issued on or after this date; earlier tokens can continue to use the older URL format until they expire. See <strong>New token expiration lifetime policy</strong> in the following section.</p>
-<p>For AWS GovCloud and AWS GovCloud DoD, the transition will be announced later.</p>
-<p>For OIDC, recipients must transition to the new URL format by <em>March 9, 2027</em>. Starting March 9, 2026, providers will be able to view the new URL format for existing recipients in the Delta Sharing page to share with recipients.</p>
-<p>The new URLs will be in the following format:</p>
-<pre><code class="language-text">https://2d4b0370-9d5c-4743-9297-72ba0f5caa8d.delta-sharing.us-west-2.cloud.databricks.com
-</code></pre>
-<p><strong>New token expiration lifetime policy:</strong></p>
-<p>Starting <em>December 8, 2025</em>, all new open sharing recipient tokens will be issued with a maximum expiration of <em>one year</em> from the date of creation. Tokens with longer or unlimited validity can no longer be created.</p>
-<p>For tokens created using the previous recipient URL format between December 8, 2025 and March 9, 2026, each token automatically expires one year after its creation. When rotating tokens, providers can configure a downtime window to allow recipients to migrate. During this window, both the old and new recipient URLs continue to work.</p>
-<p>If you currently use recipient tokens with long or unlimited lifetimes, review your integrations and remember to <a href="https://docs.databricks.com/aws/en/delta-sharing/create-recipient-token#rotate-token">rotate tokens</a> annually as needed as tokens will expire on December 8, 2026.</p></div>
-                <div class="translated-label">&gt; 以下が日本語訳です。
-
-<p>オープンな受信者向けのDelta Sharingは、Delta Sharing サーバーに接続するために使用される新しい受信者固有のURLフォーマットに移行します。この変更によりネットワークセキュリティとファイアウォール設定が改善され、共有エンドポイントのベストプラクティスに沿うものです。</p>
-<p><strong>2026年3月9日以降に作成された受信者トークン:</strong></p>
-<p><em>2026年3月9日</em>以降、新しいオープン受信者トークンは、セキュリティと
-ネットワーク フィルタリングを改善するため、新しい受信者固有のURLフォーマットを使用します。この変更は、この日付以降に発行されるトークンに適用されます。以前のトークンは有効期限が切れるまで、古いURLフォーマットを使い続けることができます。以下のセクションの<strong>新しいトークンの有効期限ポリシー</strong>をご覧ください。</p>
-<p>AWS GovCloud およびAWS GovCloud DoD については、後日発表されます。</p>
-<p>OIDC の場合、受信者は<em>2027年3月9日</em>までに新しいURLフォーマットに移行する必要があります。2026年3月9日以降、プロバイダーは既存の受信者の新しいURL
-フォーマットをDelta Sharing ページで確認し、受信者に共有することができます。</p>
-<p>新しいURLは以下のフォーマットになります:</p>
-<pre><code class="language-text">https://2d4b0370-9d5c-4743-9297-72ba0f5caa8d.delta-sharing.us-west-2.cloud.databricks.com
-</code></pre>
-<p><strong>新しいトークン有効期限ポリシー:</strong></p>
-<p><em>2025年12月8日</em>以降、新しいオープン共有受信者トークンは、作成日から<em>1年</em>以内の有効期限で発行されます。それ以上の長期的な有効期限やunlimited有効期限のトークンは作成できなくなります。</p>
-<p>2025年12月8日から2026年3月9日の間に、前の受信者URLフォーマットで作成されたトークンは、作成日から1年後に自動的に期限切れになります。トークンを更新する際は、受信者が移行できるダウンタイム
-ウィンドウを設定できます。このウィンドウ中は、旧URL
-フォーマットと新しいURLフォーマットの両方が機能します。</p>
-<p>長期的な有効期限や無期限のトークンを現在使用している場合は、インテグレーションを見直し、トークンを<a href="https://docs.databricks.com/aws/en/delta-sharing/create-recipient-token#rotate-token">年次で更新</a>することを忘れないでください。トークンは2026年12月8日に期限切れになります。</p></div>
-            </div>
-        </div>
-        
-        <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/december#databricks-runtime-180-and-databricks-runtime-180-ml-are-in-beta" target="_blank">
-                <div class="article-title">Databricks Runtime 18.0 and Databricks Runtime 18.0 ML are in Beta</div>
-            </a>
-            <div class="translated-label">&gt; データブリックス ランタイム 18.0とデータブリックス ランタイム 18.0 MLがベータ版にあります。</div>
-            <div class="date">December 09, 2025</div>
-            <div class="content">
-                <div class="original-text"><p>Databricks Runtime 18.0 and Databricks Runtime 18.0 ML are now in Beta, powered by Apache Spark 4.0.0. The release includes JDK 21 as the default, new features for jobs and streaming, and library upgrades.</p>
-<p>See <a href="https://docs.databricks.com/aws/en/release-notes/runtime/18.0">Databricks Runtime 18.0 (Beta)</a> and <a href="https://docs.databricks.com/aws/en/release-notes/runtime/18.0ml">Databricks Runtime 18.0 for Machine Learning (Beta)</a>.</p></div>
-                <div class="translated-label">&gt; Databricks Runtime 18.0およびDatabricks Runtime 18.0 MLがベータ版としてリリースされました。Apache Spark 4.0.0をベースとしており、JDK 21がデフォルトとなっています。ジョブやストリーミングの新機能や、ライブラリのアップグレードも含まれています。
-
-Databricks Runtime 18.0(ベータ版)とDatabricks Runtime 18.0 for Machine Learning(ベータ版)の詳細はこちらをご覧ください。</div>
-            </div>
-        </div>
-        
-        <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/december#databricks-runtime-maintenance-updates-1209" target="_blank">
-                <div class="article-title">Databricks Runtime maintenance updates (12/09)</div>
-            </a>
-            <div class="translated-label">&gt; データブリックスランタイムメンテナンスアップデート (12/09)</div>
-            <div class="date">December 09, 2025</div>
-            <div class="content">
-                <div class="original-text"><p>New maintenance updates are available for supported Databricks Runtime versions. These updates include bug fixes, security patches, and performance improvements. For details, see:</p>
+                <div class="original-text"><p>In January 2026, the <a href="https://docs.databricks.com/aws/en/delta/history#time-travel">time travel</a> and <a href="https://docs.databricks.com/aws/en/delta/vacuum">VACUUM</a> behavioral changes introduced in Databricks Runtime 18.0 will extend to serverless compute, Databricks SQL, and Databricks Runtime 12.2 and above for <a href="https://docs.databricks.com/aws/en/tables/managed">Unity Catalog managed tables</a>.</p>
+<p>These changes include:</p>
 <ul>
-<li><a href="https://docs.databricks.com/aws/en/release-notes/runtime/maintenance-updates#173">Databricks Runtime 17.3 LTS</a></li>
-<li><a href="https://docs.databricks.com/aws/en/release-notes/runtime/maintenance-updates#172">Databricks Runtime 17.2</a></li>
-<li><a href="https://docs.databricks.com/aws/en/release-notes/runtime/maintenance-updates#171">Databricks Runtime 17.1</a></li>
-<li><a href="https://docs.databricks.com/aws/en/release-notes/runtime/maintenance-updates#170">Databricks Runtime 17.0</a></li>
-<li><a href="https://docs.databricks.com/aws/en/release-notes/runtime/maintenance-updates#164">Databricks Runtime 16.4 LTS</a></li>
-<li><a href="https://docs.databricks.com/aws/en/release-notes/runtime/maintenance-updates#154">Databricks Runtime 15.4 LTS</a></li>
-<li><a href="https://docs.databricks.com/aws/en/release-notes/runtime/maintenance-updates#143">Databricks Runtime 14.3 LTS</a></li>
-<li><a href="https://docs.databricks.com/aws/en/release-notes/runtime/maintenance-updates#133">Databricks Runtime 13.3 LTS</a></li>
-<li><a href="https://docs.databricks.com/aws/en/release-notes/runtime/maintenance-updates#122">Databricks Runtime 12.2 LTS</a></li>
+<li>Time travel queries are blocked if they exceed <code>delta.deletedFileRetentionDuration</code>.</li>
+<li><code>delta.logRetentionDuration</code> must be greater than or equal to <code>delta.deletedFileRetentionDuration</code>.</li>
 </ul></div>
-                <div class="translated-label">&gt; サポートされているDatabricsRuntime(データブリックスランタイム)のバージョンに対する新しいメンテナンスアップデートが利用可能です。これらのアップデートには、バグ修正、セキュリティパッチ、パフォーマンス改善が含まれています。詳細は以下をご覧ください:
+                <div class="translated-label">&gt; 2026年1月、Databricks Runtime 18.0で導入された<a href="https://docs.databricks.com/aws/en/delta/history#time-travel">タイムトラベル</a>と<a href="https://docs.databricks.com/aws/en/delta/vacuum">VACUUM</a>の動作変更は、<a href="https://docs.databricks.com/aws/en/tables/managed">Unity Catalog管理テーブル</a>に対してサーバーレスコンピューティング、Databricks SQL、およびDatabricks Runtime 12.2以降にも拡大されます。
 
-- Databricks Runtime 17.3 LTS
-- Databricks Runtime 17.2
-- Databricks Runtime 17.1
-- Databricks Runtime 17.0
-- Databricks Runtime 16.4 LTS
-- Databricks Runtime 15.4 LTS
-- Databricks Runtime 14.3 LTS
-- Databricks Runtime 13.3 LTS
-- Databricks Runtime 12.2 LTS</div>
+これらの変更には以下が含まれます:
+
+- タイムトラベルクエリは、<code>delta.deletedFileRetentionDuration</code>を超えた場合にブロックされます。
+- <code>delta.logRetentionDuration</code>は<code>delta.deletedFileRetentionDuration</code>以上でなければなりません。</div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/december#new-columns-in-lakeflow-system-tables-public-preview" target="_blank">
-                <div class="article-title">New columns in Lakeflow system tables (Public Preview)</div>
+            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2025#dashboard-visualization-enhancements-and-fixes" target="_blank">
+                <div class="article-title">Dashboard visualization enhancements and fixes</div>
             </a>
-            <div class="translated-label">&gt; 新しいLakeflowシステムテーブルの列（パブリックプレビュー）</div>
-            <div class="date">December 09, 2025</div>
+            <div class="translated-label">&gt; ダッシュボードの視覚化の改善と修正</div>
+            <div class="date">December 11, 2025</div>
             <div class="content">
-                <div class="original-text"><p>New columns are now available in the Lakeflow system tables to provide enhanced job monitoring and troubleshooting capabilities:</p>
-<p><strong><a href="https://docs.databricks.com/aws/en/admin/system-tables/jobs#jobs">jobs</a> table</strong>: <code>trigger</code>, <code>trigger_type</code>, <code>run_as_user_name</code>, <code>creator_user_name</code>, <code>paused</code>, <code>timeout_seconds</code>, <code>health_rules</code>, <code>deployment</code>, <code>create_time</code></p>
-<p><strong><a href="https://docs.databricks.com/aws/en/admin/system-tables/jobs#job-tasks">job_tasks</a> table</strong>: <code>timeout_seconds</code>, <code>health_rules</code></p>
-<p><strong><a href="https://docs.databricks.com/aws/en/admin/system-tables/jobs#runs">job_run_timeline</a> table</strong>: <code>source_task_run_id</code>, <code>root_task_run_id</code>, <code>compute</code>, <code>termination_type</code>, <code>setup_duration_seconds</code>, <code>queue_duration_seconds</code>, <code>run_duration_seconds</code>, <code>cleanup_duration_seconds</code>, <code>execution_duration_seconds</code></p>
-<p><strong><a href="https://docs.databricks.com/aws/en/admin/system-tables/jobs#task-timeline">job_task_run_timeline</a> table</strong>: <code>compute</code>, <code>termination_type</code>, <code>task_parameters</code>, <code>setup_duration_seconds</code>, <code>cleanup_duration_seconds</code>, <code>execution_duration_seconds</code></p>
-<p><strong><a href="https://docs.databricks.com/aws/en/admin/system-tables/jobs#pipelines">pipelines</a> table</strong>: <code>create_time</code></p>
-<p>These columns are not populated for rows emitted before early December 2025. See <a href="https://docs.databricks.com/aws/en/admin/system-tables/jobs">Jobs system table reference</a>.</p></div>
-                <div class="translated-label">&gt; <p>ニューコラムがLakeflowシステムテーブルで利用可能になり、強化された仕事の監視とトラブルシューティングの機能を提供します:</p>
-<p><strong><a href="https://docs.databricks.com/aws/en/admin/system-tables/jobs#jobs">jobs</a>テーブル</strong>: <code>trigger</code>, <code>trigger_type</code>, <code>run_as_user_name</code>, <code>creator_user_name</code>, <code>paused</code>, <code>timeout_seconds</code>, <code>health_rules</code>, <code>deployment</code>, <code>create_time</code></p>
-<p><strong><a href="https://docs.databricks.com/aws/en/admin/system-tables/jobs#job-tasks">job_tasks</a>テーブル</strong>: <code>timeout_seconds</code>, <code>health_rules</code></p>
-<p><strong><a href="https://docs.databricks.com/aws/en/admin/system-tables/jobs#runs">job_run_timeline</a>テーブル</strong>: <code>source_task_run_id</code>, <code>root_task_run_id</code>, <code>compute</code>, <code>termination_type</code>, <code>setup_duration_seconds</code>, <code>queue_duration_seconds</code>, <code>run_duration_seconds</code>, <code>cleanup_duration_seconds</code>, <code>execution_duration_seconds</code></p>
-<p><strong><a href="https://docs.databricks.com/aws/en/admin/system-tables/jobs#task-timeline">job_task_run_timeline</a>テーブル</strong>: <code>compute</code>, <code>termination_type</code>, <code>task_parameters</code>, <code>setup_duration_seconds</code>, <code>cleanup_duration_seconds</code>, <code>execution_duration_seconds</code></p>
-<p><strong><a href="https://docs.databricks.com/aws/en/admin/system-tables/jobs#pipelines">pipelines</a>テーブル</strong>: <code>create_time</code></p>
-<p>これらのカラムは2025年12月初旬以前に出力されたロウには反映されていません。<a href="https://docs.databricks.com/aws/en/admin/system-tables/jobs">Jobs system table referenceを参照してください</a>。</p></div>
+                <div class="original-text"><ul>
+<li><strong>Sort by hidden measure fields</strong>: Users can now sort charts by a different measure field that does not visually appear on the bar chart. See <a href="https://docs.databricks.com/aws/en/dashboards/visualizations#format-axis">Format axis settings</a>.</li>
+<li><strong>Map legend position control</strong>: Authors can now change map legend positions.</li>
+<li><strong>Safari cross-filtering fix</strong>: Fixed an issue where cross-filtering was not working in Safari.</li>
+<li><strong>Counter visualization text</strong>: Removed automatic "vs" text from counter visualizations.</li>
+<li><strong>Range filter spacing</strong>: Added spacing between minimum and maximum values in range filters when the slider bar is hidden.</li>
+</ul></div>
+                <div class="translated-label">&gt; <ul>
+<li><strong>非表示のメジャーフィールドでソートする</strong>: ユーザーは、バーチャートに視覚的には表示されないメジャーフィールドでチャートをソートできるようになりました。<a href="https://docs.databricks.com/aws/en/dashboards/visualizations#format-axis">軸の書式設定</a>をご覧ください。</li>
+<li><strong>地図凡例の位置コントロール</strong>: 作成者は地図の凡例の位置を変更できるようになりました。</li>
+<li><strong>Safariのクロスフィルタリングの修正</strong>: Safariでクロスフィルタリングが機能しない問題を修正しました。</li>
+<li><strong>カウンター可視化のテキスト</strong>: カウンター可視化から自動的に挿入される「vs」のテキストを削除しました。</li>
+<li><strong>範囲フィルターの間隔</strong>: スライダーバーが非表示の場合、範囲フィルターの最小値と最大値の間に間隔を追加しました。</li>
+</ul></div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/december#new-token-expiration-policy-for-open-delta-sharing" target="_blank">
-                <div class="article-title">New token expiration policy for open Delta Sharing</div>
+            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2025#dashboard-subscriptions-to-microsoft-teams-channels-public-preview" target="_blank">
+                <div class="article-title">Dashboard subscriptions to Microsoft Teams channels (Public Preview)</div>
             </a>
-            <div class="translated-label">&gt; 新しいトークン有効期限ポリシーのオープンデルタ共有</div>
-            <div class="date">December 08, 2025</div>
+            <div class="translated-label">&gt; Microsoft Teamsチャンネルへのダッシュボードサブスクリプション(パブリックプレビュー)</div>
+            <div class="date">December 11, 2025</div>
             <div class="content">
-                <div class="original-text"><p>All new Delta Sharing open sharing recipient tokens are issued with a maximum expiration of one year from the date of creation. Tokens with an expiration period longer than one year or no expiration date can no longer be created.</p>
-<p>Existing open sharing recipient tokens issued before December 8, 2025, with expiration dates after December 8, 2026, or with no expiration date, automatically expire on December 8, 2026. If you currently use recipient tokens with long or unlimited lifetimes, review your integrations and renew tokens as needed to avoid breaking changes after this date.</p>
-<p>See <a href="https://docs.databricks.com/aws/en/delta-sharing/create-recipient-token">Create a recipient object for non-Databricks users using bearer tokens (open sharing)</a>.</p></div>
-                <div class="translated-label">&gt; <p>すべての新しいデルタシェアリングオープンシェアリング受信者トークンは、作成日から1年以内の最大有効期限で発行されます。1年を超える有効期限または有効期限なしのトークンはもはや作成できません。</p>
-<p>2025年12月8日より前に発行された、2026年12月8日以降の有効期限または有効期限なしの既存のオープンシェアリング受信者トークンは、2026年12月8日に自動的に期限切れになります。長期または無制限の有効期間の受信者トークンを現在使用している場合は、この日付以降の変更を回避するために、統合を見直し、必要に応じてトークンを更新してください。</p>
-<p><a href="https://docs.databricks.com/aws/en/delta-sharing/create-recipient-token">ベアラートークン (オープンシェアリング) を使用してDatabricsユーザー以外のための受信者オブジェクトを作成する</a>をご覧ください。</p></div>
+                <div class="original-text"><p>AI/BI dashboards now support sending scheduled snapshots to Microsoft Teams channels. Teams can receive dashboard updates directly in their Teams workspace, including a PNG image snapshot, a direct link to open the dashboard in Databricks, and a PDF attachment. See <a href="https://docs.databricks.com/aws/en/ai-bi/admin/teams-subscriptions">Configure Microsoft Teams notifications</a>.</p></div>
+                <div class="translated-label">&gt; AIおよびBIダッシュボードでは、Microsoft Teamsチャネルに定期的なスナップショットを送信することがサポートされています。Teamsでは、ダッシュボードの更新情報を直接Teamsワークスペースで受け取れるようになりました。これには、PNGイメージのスナップショット、Databricksでダッシュボードを開くためのダイレクトリンク、PDFの添付ファイルが含まれています。詳細については、「Configure Microsoft Teams notifications」をご覧ください。</div>
+            </div>
+        </div>
+        
+        <div class="article">
+            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2025#genie-enhancements-and-fixes" target="_blank">
+                <div class="article-title">Genie enhancements and fixes</div>
+            </a>
+            <div class="translated-label">&gt; ジーニーの機能強化と修正</div>
+            <div class="date">December 11, 2025</div>
+            <div class="content">
+                <div class="original-text"><ul>
+<li><strong>Service Principal monitoring display</strong>: The user column in the Monitoring page now shows the Service Principal ID when a service principal is used, instead of displaying as empty.</li>
+<li><strong>Genie API suggested questions fix</strong>: Fixed an issue where messages sent through the API didn't return suggested questions.</li>
+</ul></div>
+                <div class="translated-label">&gt; <ul>
+<li><strong>サービス プリンシパルの監視ディスプレイ</strong>:監視ページのユーザー列に、サービス プリンシパルが使用されている場合、空ではなくサービス プリンシパル ID が表示されるようになりました。</li>
+<li><strong>Genieの API提案された質問の修正</strong>:API経由で送信されたメッセージに提案された質問が返されない問題を修正しました。</li>
+</ul></div>
+            </div>
+        </div>
+        
+        <div class="article">
+            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2025#genie-research-agent-architecture-update-beta" target="_blank">
+                <div class="article-title">Genie Research Agent architecture update (Beta)</div>
+            </a>
+            <div class="translated-label">&gt; ジーニー リサーチ エージェント アーキテクチャ アップデート (ベータ)</div>
+            <div class="date">December 11, 2025</div>
+            <div class="content">
+                <div class="original-text"><ul>
+<li><strong>Genie Research Agent architecture update</strong>: Research Agent (Beta) now has a single reasoning agent that generates hypotheses and SQL. This helps Research Agent follow instructions more effectively, produce more concise reports, and deliver answers with lower latency.</li>
+</ul></div>
+                <div class="translated-label">&gt; <ul>
+<li><strong>ジーニー・リサーチ・エージェントのアーキテクチャアップデート</strong>:リサーチ・エージェント(ベータ版)には、仮説と SQLを生成する単一の推論エージェントが追加されました。これにより、リサーチ・エージェントは指示に従って更に効果的に機能し、より簡潔なレポートを作成し、遅延の少ない回答を提供することができます。</li>
+</ul></div>
             </div>
         </div>
         
