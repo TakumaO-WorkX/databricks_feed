@@ -23,90 +23,86 @@
         <h1>Databricks Docs Updates</h1>
     
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/whats-coming#time-travel-and-vacuum-behavioral-changes-for-unity-catalog-managed-tables" target="_blank">
-                <div class="article-title">Time travel and VACUUM behavioral changes for Unity Catalog managed tables</div>
+            <a href="https://docs.databricks.com/aws/en/release-notes/whats-coming#catalog-explorer-navigation-updates" target="_blank">
+                <div class="article-title">Catalog Explorer navigation updates</div>
             </a>
-            <div class="translated-label">&gt; タイムトラベルとVACUUM動作変更Unity Catalogテーブル管理用</div>
-            <div class="date">December 19, 2025</div>
+            <div class="translated-label">&gt; カタログ・エクスプローラーのナビゲーション更新</div>
+            <div class="date">December 16, 2025</div>
             <div class="content">
-                <div class="original-text"><p>In January 2026, the <a href="https://docs.databricks.com/aws/en/delta/history#time-travel">time travel</a> and <a href="https://docs.databricks.com/aws/en/delta/vacuum">VACUUM</a> behavioral changes introduced in Databricks Runtime 18.0 will extend to serverless compute, Databricks SQL, and Databricks Runtime 12.2 and above for <a href="https://docs.databricks.com/aws/en/tables/managed">Unity Catalog managed tables</a>.</p>
-<p>These changes include:</p>
+                <div class="original-text"><p>Catalog Explorer will soon receive navigation improvements to streamline workflows and help you discover and manage data assets more efficiently.</p>
+<p><strong>Simplified navigation:</strong></p>
+<p>The duplicative Catalogs tab is removed to reduce redundancy and focus on a single catalog navigation surface. <strong>DBFS</strong> and <strong>Send feedback</strong> actions move into the kebab menu <img alt="Kebab menu icon." src="https://docs.databricks.com/images/product-icons/OverflowIcon.svg" /> for a cleaner layout.</p>
+<p><strong>New Suggested section:</strong></p>
+<p>A new <strong>Suggested</strong> tab on the Catalog Explorer landing page highlights frequently used objects, example objects for first-time users, and user favorites. This helps you quickly re-engage with important assets or discover helpful starting points.</p>
+<p><strong>Consolidated entry points:</strong></p>
+<p>Related capabilities are grouped under clearer categories to reduce visual noise and improve findability:</p>
 <ul>
-<li>Time travel queries are blocked if they exceed <code>delta.deletedFileRetentionDuration</code>.</li>
-<li><code>delta.logRetentionDuration</code> must be greater than or equal to <code>delta.deletedFileRetentionDuration</code>.</li>
-</ul></div>
-                <div class="translated-label">&gt; 2026年1月に、Databricks Runtime 18.0で導入された<a href="https://docs.databricks.com/aws/en/delta/history#time-travel">時間旅行</a>と<a href="https://docs.databricks.com/aws/en/delta/vacuum">VACUUM</a>の動作変更は、サーバーレスコンピューティング、Databricks SQL、およびDatabricks Runtime 12.2以降の<a href="https://docs.databricks.com/aws/en/tables/managed">Unity Catalog管理テーブル</a>にも拡張されます。
-
-これらの変更には以下が含まれます:
-
-- 時間旅行クエリは、<code>delta.deletedFileRetentionDuration</code>を超えると阻止されます。
-- <code>delta.logRetentionDuration</code>は、<code>delta.deletedFileRetentionDuration</code>以上でなければなりません。</div>
+<li><strong>Govern</strong> – Entry point for governed tags, metastore administration, and data classification</li>
+<li><strong>Connect</strong> – Entry points for external locations, external data, credentials, and connections</li>
+<li><strong>Share</strong> – Entry points for Delta Sharing and Clean Rooms</li>
+</ul>
+<p>These groupings replace scattered sub-tabs and create a more intuitive, scalable information architecture.</p></div>
+                <div class="translated-label">&gt; <p>カタログ エクスプローラーには、ワークフローの効率化と、データ アセットの発見と管理をより効率的に行うための、ナビゲーションの改善が間もなく行われます。</p>
+<p><strong>ナビゲーションの簡素化:</strong></p>
+<p>重複しているカタログタブが削除されて、単一のカタログ ナビゲーション領域に集中できるようになります。<strong>DBFS</strong>と<strong>フィードバックの送信</strong>アクションは、よりすっきりとしたレイアウトのためにケバブメニュー<img alt="Kebab menu icon." src="https://docs.databricks.com/images/product-icons/OverflowIcon.svg" />に移動されます。</p>
+<p><strong>新しい「おすすめ」セクション:</strong></p>
+<p>カタログ エクスプローラーのランディングページに新しく追加された<strong>おすすめ</strong>タブでは、頻繁に使用されるオブジェクト、初めてのユーザーのための例示的なオブジェクト、ユーザーのお気に入りなどがハイライトされます。これにより、重要なアセットをすぐに再利用したり、役立つ出発点を発見したりできます。</p>
+<p><strong>統合されたエントリーポイント:</strong></p>
+<p>関連機能が、視覚的なノイズを減らし、検索性を向上させるために、より明確なカテゴリの下にグループ化されています:</p>
+<ul>
+<li><strong>ガバナンス</strong> – ガバナンス タグ、メタストア管理、データ分類のエントリーポイント</li>
+<li><strong>接続</strong> – 外部ロケーション、外部データ、資格情報、接続のエントリーポイント</li>
+<li><strong>共有</strong> – Delta Sharing およびクリーンルームのエントリーポイント</li>
+</ul>
+<p>これらのグループ化により、散在していたサブタブが置き換えられ、より直感的で拡張性のある情報アーキテクチャが実現します。</p></div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/december#lakebase-autoscaling-now-in-public-preview" target="_blank">
-                <div class="article-title">Lakebase (Autoscaling) now in Public Preview</div>
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/december#confluence-connector-beta" target="_blank">
+                <div class="article-title">Confluence connector (Beta)</div>
             </a>
-            <div class="translated-label">&gt; レイクベース（オートスケーリング）が公開プレビューに提供されました。</div>
-            <div class="date">December 12, 2025</div>
+            <div class="translated-label">&gt; コンフルエンスコネクタ(ベータ)</div>
+            <div class="date">December 16, 2025</div>
             <div class="content">
-                <div class="original-text"><p>Lakebase (Autoscaling) is now in Public Preview on AWS. This new version of Lakebase introduces autoscaling compute, scale-to-zero, database branching, instant restore, and a redesigned project-based interface. To allow users to explore the new version, usage of Lakebase Autoscaling is free for a limited time. Billing for Lakebase Autoscaling usage begins in January 2026. See <a href="https://docs.databricks.com/aws/en/oltp/projects/get-started">Get started with Lakebase Postgres (Autoscaling Preview)</a>.</p></div>
-                <div class="translated-label">&gt; <p>Lakebase (自動スケーリング) は現在、AWS の一般公開プレビューに登場しています。このLakebaseの新バージョンでは、コンピューティングの自動スケーリング、スケール・ツー・ゼロ、データベースのブランチ化、インスタント・リストア、そしてプロジェクトベースのデザインが一新されました。ユーザーが新しいバージョンを体験できるよう、Lakebase自動スケーリングの使用は期間限定で無料となります。Lakebase自動スケーリングの利用料金は2026年1月から課金されます。<a href="https://docs.databricks.com/aws/en/oltp/projects/get-started">Lakebase Postgres (自動スケーリングプレビュー) の使い始め</a>をご覧ください。</p></div>
+                <div class="original-text"><p>The fully-managed Confluence connector in Lakeflow Connect enables you to ingest Confluence spaces, pages, attachments, blogposts, labels, and classification levels into Databricks. See <a href="https://docs.databricks.com/aws/en/ingestion/lakeflow-connect/confluence-source-setup">Configure OAuth U2M for Confluence ingestion</a>.</p></div>
+                <div class="translated-label">&gt; Lakeflow Connectの完全管理型Confluenceコネクタにより、Confluenceのスペース、ページ、添付ファイル、ブログ投稿、ラベル、および分類レベルをDatabricksに取り込むことができます。<a href="https://docs.databricks.com/aws/en/ingestion/lakeflow-connect/confluence-source-setup">Confluenceへの取り込みのためのOAuth U2Mの設定</a>を参照してください。</div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2025#dashboard-visualization-enhancements-and-fixes" target="_blank">
-                <div class="article-title">Dashboard visualization enhancements and fixes</div>
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/december#postgresql-connector-in-lakeflow-connect-public-preview" target="_blank">
+                <div class="article-title">PostgreSQL connector in Lakeflow Connect (Public Preview)</div>
             </a>
-            <div class="translated-label">&gt; ダッシュボードの視覚化の改善と修正</div>
-            <div class="date">December 11, 2025</div>
+            <div class="translated-label">&gt; PostgreSQLコネクタ付きLakeflow Connect (パブリックプレビュー)</div>
+            <div class="date">December 16, 2025</div>
             <div class="content">
-                <div class="original-text"><ul>
-<li><strong>Sort by hidden measure fields</strong>: Users can now sort charts by a different measure field that does not visually appear on the bar chart. See <a href="https://docs.databricks.com/aws/en/dashboards/visualizations#format-axis">Format axis settings</a>.</li>
-<li><strong>Map legend position control</strong>: Authors can now change map legend positions.</li>
-<li><strong>Safari cross-filtering fix</strong>: Fixed an issue where cross-filtering was not working in Safari.</li>
-<li><strong>Counter visualization text</strong>: Removed automatic "vs" text from counter visualizations.</li>
-<li><strong>Range filter spacing</strong>: Added spacing between minimum and maximum values in range filters when the slider bar is hidden.</li>
-</ul></div>
-                <div class="translated-label">&gt; <ul>
-<li><strong>ヒドゥン メジャー フィールドでソートする</strong>: ユーザーは now バー チャートに視覚的に表示されない別のメジャー フィールドでチャートをソートできます。<a href="https://docs.databricks.com/aws/en/dashboards/visualizations#format-axis">軸の書式設定設定</a>を参照してください。</li>
-<li><strong>地図凡例の位置制御</strong>: 作成者は now 地図凡例の位置を変更できます。</li>
-<li><strong>Safari のクロス フィルタリングの修正</strong>: Safari でクロス フィルタリングが機能していない問題を修正しました。</li>
-<li><strong>カウンター視覚化テキスト</strong>: カウンター視覚化から自動的に追加される "vs" テキストを削除しました。</li>
-<li><strong>範囲フィルターの余白</strong>: スライダー バーが非表示の場合、範囲フィルターで最小値と最大値の間に余白を追加しました。</li>
-</ul></div>
+                <div class="original-text"><p>The fully-managed PostgreSQL connector in Lakeflow Connect is in Public Preview. This connector enables incremental data ingestion from PostgreSQL databases, including Amazon RDS PostgreSQL, Amazon Aurora PostgreSQL, Azure Database for PostgreSQL, Google Cloud SQL for PostgreSQL, and on-premises PostgreSQL databases. See <a href="https://docs.databricks.com/aws/en/ingestion/lakeflow-connect/postgresql-source-setup">Configure PostgreSQL for ingestion into Databricks</a>.</p></div>
+                <div class="translated-label">&gt; Lakeflow Connectの完全管理PostgreSQLコネクタがPublic Previewになりました。このコネクタにより、Amazon RDS PostgreSQL、Amazon Aurora PostgreSQL、Azure Database for PostgreSQL、Google Cloud SQL for PostgreSQL、およびオンプレミスのPostgreSQLデータベースからの増分データ取り込みが可能です。詳細は<a href="https://docs.databricks.com/aws/en/ingestion/lakeflow-connect/postgresql-source-setup">Databricksへのデータ取り込みのためのPostgreSQLの設定</a>をご覧ください。</div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2025#dashboard-subscriptions-to-microsoft-teams-channels-public-preview" target="_blank">
-                <div class="article-title">Dashboard subscriptions to Microsoft Teams channels (Public Preview)</div>
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/december#run-read-only-queries-on-lakebase-provisioned-readable-secondaries-from-sql-editor" target="_blank">
+                <div class="article-title">Run read-only queries on Lakebase (Provisioned) readable secondaries from SQL editor</div>
             </a>
-            <div class="translated-label">&gt; Microsoft Teamsチャンネルのダッシュボードサブスクリプション(パブリックプレビュー)</div>
-            <div class="date">December 11, 2025</div>
+            <div class="translated-label">&gt; Lakebaseの読み取り専用クエリを(プロビジョニング済み)読み取り専用セカンダリから SQL エディターで実行してください。</div>
+            <div class="date">December 15, 2025</div>
             <div class="content">
-                <div class="original-text"><p>AI/BI dashboards now support sending scheduled snapshots to Microsoft Teams channels. Teams can receive dashboard updates directly in their Teams workspace, including a PNG image snapshot, a direct link to open the dashboard in Databricks, and a PDF attachment. See <a href="https://docs.databricks.com/aws/en/ai-bi/admin/teams-subscriptions">Configure Microsoft Teams notifications</a>.</p></div>
-                <div class="translated-label">&gt; AIとBIダッシュボードは、Microsoft Teamsチャンネルに定期的なスナップショットを送信するようになりました。Teamsユーザーは、ダッシュボードの更新をTeamsのワークスペース内で直接受け取ることができ、そこには、PNGイメージのスナップショット、ダッシュボードをDatabricksで開く直接リンク、そしてPDFの添付ファイルが含まれています。詳細については、「Configure Microsoft Teams notifications」をご覧ください。</div>
+                <div class="original-text"><p>You can now connect to Lakebase (Provisioned) readable secondaries and run read-only queries from the Databricks SQL editor. See <a href="https://docs.databricks.com/aws/en/oltp/instances/create/high-availability#sql-editor">Execute read-only queries from Databricks SQL Editor</a> and <a href="https://docs.databricks.com/aws/en/oltp/instances/query/sql-editor">Access a database instance from the SQL editor</a>.</p></div>
+                <div class="translated-label">&gt; <p>データブリックス SQL エディターから読み取り専用クエリを実行して、Lakebase (Provisioned) の読み取り専用セカンダリにアクセスできるようになりました。「データブリックス SQL エディターから読み取り専用クエリを実行する」と「SQL エディターからデータベースインスタンスにアクセスする」をご参照ください。</p></div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2025#genie-enhancements-and-fixes" target="_blank">
-                <div class="article-title">Genie enhancements and fixes</div>
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/december#delta-sharing-to-external-iceberg-clients-is-in-public-preview" target="_blank">
+                <div class="article-title">Delta Sharing to external Iceberg clients is in Public Preview</div>
             </a>
-            <div class="translated-label">&gt; ジーニーの強化とバグ修正</div>
-            <div class="date">December 11, 2025</div>
+            <div class="translated-label">&gt; デルタ共有が外部のアイスバーグクライアントに公開プレビューになりました</div>
+            <div class="date">December 15, 2025</div>
             <div class="content">
-                <div class="original-text"><ul>
-<li><strong>Service Principal monitoring display</strong>: The user column in the Monitoring page now shows the Service Principal ID when a service principal is used, instead of displaying as empty.</li>
-<li><strong>Genie API suggested questions fix</strong>: Fixed an issue where messages sent through the API didn't return suggested questions.</li>
-</ul></div>
-                <div class="translated-label">&gt; <ul>
-<li><strong>サービス プリンシパルの監視表示</strong>: 監視ページのユーザー列に、サービス プリンシパルが使用されている場合、サービス プリンシパル ID が表示されるようになりました。</li>
-<li><strong>Genie API の提案された質問の修正</strong>: API を介して送信されたメッセージに提案された質問が返されない問題を修正しました。</li>
-</ul></div>
+                <div class="original-text"><p>You can now share tables, foreign tables, materialized views, and streaming tables to external Iceberg clients such as Snowflake, Trino, Flink, and Spark. External Iceberg clients can query shared Delta tables with zero-copy access. For details, see <a href="https://docs.databricks.com/aws/en/delta-sharing/create-share#iceberg-clients">Enable sharing to external Iceberg clients</a> and <a href="https://docs.databricks.com/aws/en/delta-sharing/read-data-open#iceberg">Iceberg clients: Read shared Delta tables</a>.</p></div>
+                <div class="translated-label">&gt; あなたは今、Snowflake、Trino、Flink、Sparkなどの外部Icebergクライアントとテーブル、外部テーブル、マテリアライズドビュー、ストリーミングテーブルを共有できます。外部Icebergクライアントは、ゼロコピーアクセスで共有Deltaテーブルを照会することができます。詳細については、「外部Icebergクライアントへの共有を有効にする」および「Icebergクライアント: 共有Deltaテーブルの読み取り」をご覧ください。</div>
             </div>
         </div>
         
