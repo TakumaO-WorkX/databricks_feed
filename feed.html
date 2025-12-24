@@ -23,14 +23,65 @@
         <h1>Databricks Docs Updates</h1>
     
         <div class="article">
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/december#databricks-assistant-agent-mode-is-now-in-public-preview" target="_blank">
+                <div class="article-title">Databricks Assistant Agent Mode is now in Public Preview</div>
+            </a>
+            <div class="translated-label">&gt; データブリックス・アシスタントエージェントモードは現在パブリックプレビュー中です。</div>
+            <div class="date">December 23, 2025</div>
+            <div class="content">
+                <div class="original-text"><p>The Databricks Assistant Agent Mode preview is now enabled by default for most customers.</p>
+<ul>
+<li>The agent can automate multiple steps. From a single prompt, it can retrieve relevant assets, generate and run code, fix errors automatically, and visualize results. It adds the ability to sample data and cell outputs to provide better results.</li>
+<li>The Assistant in Agent Mode will choose between Azure OpenAI or Anthropic on Databricks (uses endpoints hosted by Databricks Inc. in AWS within the Databricks security perimeter), and is only available when the partner-powered AI features setting is enabled.</li>
+<li>Admins can disable the preview if needed until the feature reaches General Availability.</li>
+</ul>
+<p>See <a href="https://docs.databricks.com/aws/en/notebooks/ds-agent">Use the Data Science Agent</a>, <a href="https://www.databricks.com/blog/introducing-databricks-assistant-data-science-agent">the blog post</a>, and <a href="https://docs.databricks.com/aws/en/databricks-ai/partner-powered">Partner-powered AI features</a>.</p></div>
+                <div class="translated-label">&gt; <p>Databricksアシスタントエージェントモードのプレビューが、ほとんどのお客様のデフォルトで有効になっています。</p>
+<ul>
+<li>エージェントは複数のステップを自動化できます。1つのプロンプトから、関連するアセットを取得し、コードを生成して実行し、エラーを自動的に修正し、結果を視覚化することができます。データのサンプリングとセル出力の追加により、より良い結果を提供できるようになりました。</li>
+<li>エージェントモードのアシスタントは、DatabricksでのAzure OpenAIまたはAnthropicのどちらかを選択します(Databricks Inc.が提供するAWS内のDatabricks セキュリティ境界内のエンドポイントを使用)。パートナー提供のAI機能設定が有効な場合のみ利用できます。</li>
+<li>管理者は、機能が一般提供されるまでプレビューを無効にできます。</li>
+</ul>
+<p><a href="https://docs.databricks.com/aws/en/notebooks/ds-agent">データサイエンスエージェントの使用</a>、<a href="https://www.databricks.com/blog/introducing-databricks-assistant-data-science-agent">ブログ記事</a>、および<a href="https://docs.databricks.com/aws/en/databricks-ai/partner-powered">パートナー提供のAI機能</a>をご覧ください。</p></div>
+            </div>
+        </div>
+        
+        <div class="article">
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/december#single-use-refresh-tokens-for-oauth-applications" target="_blank">
+                <div class="article-title">Single-use refresh tokens for OAuth applications</div>
+            </a>
+            <div class="translated-label">&gt; シングル使用リフレッシュトークンForOAuthアプリケーション</div>
+            <div class="date">December 22, 2025</div>
+            <div class="content">
+                <div class="original-text"><p>You can now configure single-use refresh tokens for OAuth applications integrated with Databricks. This security feature requires token rotation after each use, enhancing protection for user-to-machine authentication flows. See <a href="https://docs.databricks.com/aws/en/integrations/single-use-tokens">Single-use refresh tokens</a>.</p></div>
+                <div class="translated-label">&gt; 以下のように翻訳しました。
+
+Databricksと統合されたOAuthアプリケーションに対し、使い捨てのリフレッシュトークンの設定が可能になりました。このセキュリティ機能は、ユーザーとマシンの認証フローの保護を強化するため、トークンを使用する度に更新する必要があります。詳しくは<a href="https://docs.databricks.com/aws/en/integrations/single-use-tokens">使い捨てのリフレッシュトークン</a>をご覧ください。</div>
+            </div>
+        </div>
+        
+        <div class="article">
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/december#update-request-parameters-for-delta-sharing-recipient-audit-log-events" target="_blank">
+                <div class="article-title">Update request parameters for Delta Sharing recipient audit log events</div>
+            </a>
+            <div class="translated-label">&gt; デルタ共有受信者監査ログイベントのアップデートリクエストパラメーター</div>
+            <div class="date">December 19, 2025</div>
+            <div class="content">
+                <div class="original-text"><p>For Delta Sharing recipients, <code>deltaSharingProxy*</code> audit log events now also include the <code>catalog_name</code> request parameter, in addition to <code>share_name</code> (previously named <code>share</code>). See <a href="https://docs.databricks.com/aws/en/admin/account-settings/audit-logs#recipient">Delta Sharing recipient events</a>.</p></div>
+                <div class="translated-label">&gt; デルタ共有の受信者には、<code>share_name</code>（以前は<code>share</code>と呼ばれていた）に加えて、<code>catalog_name</code>リクエストパラメーターも含まれるようになりました。<a href="https://docs.databricks.com/aws/en/admin/account-settings/audit-logs#recipient">デルタ共有の受信者イベント</a>をご確認ください。</div>
+            </div>
+        </div>
+        
+        <div class="article">
             <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/december#anthropic-claude-haiku-45-now-available-as-a-databricks-hosted-model" target="_blank">
                 <div class="article-title">Anthropic Claude Haiku 4.5 now available as a Databricks-hosted model</div>
             </a>
-            <div class="translated-label">&gt; アンソロポック・クロード・ハイク 4.5 がデータブリックスホストのモデルとして利用可能になりました。</div>
+            <div class="translated-label">&gt; アンソロピックのクロード・ハイク 4.5が、Databricksホストモデルとして利用可能になりました。</div>
             <div class="date">December 19, 2025</div>
             <div class="content">
                 <div class="original-text"><p>Mosaic AI Model Serving now supports Anthropic <a href="https://docs.databricks.com/aws/en/machine-learning/foundation-model-apis/supported-models#claude-haiku-4-5">Claude Haiku 4.5</a> as a Databricks-hosted model. You can access this model using <a href="https://docs.databricks.com/aws/en/machine-learning/foundation-model-apis#token-foundation-apis">Foundation Model APIs pay-per-token</a>.</p></div>
-                <div class="translated-label">&gt; <p>モザイクAIモデルサービングは、Databricksホスト型モデルとして<a href="https://docs.databricks.com/aws/en/machine-learning/foundation-model-apis/supported-models#claude-haiku-4-5">Claude Haiku 4.5</a>をサポートしています。<a href="https://docs.databricks.com/aws/en/machine-learning/foundation-model-apis#token-foundation-apis">トークン従量課金型の基盤モデルAPI</a>を使ってこのモデルにアクセスできます。</p></div>
+                <div class="translated-label">&gt; <p>モザイック AI モデル サーブ
+は現在、アントロピック社の<a href="https://docs.databricks.com/aws/en/machine-learning/foundation-model-apis/supported-models#claude-haiku-4-5">Claude Haiku 4.5</a>をDatabricksホストされたモデルとしてサポートしています。<a href="https://docs.databricks.com/aws/en/machine-learning/foundation-model-apis#token-foundation-apis">トークンごとの課金制の基礎モデルAPI</a>を使用してこのモデルにアクセスできます。</p></div>
             </div>
         </div>
         
@@ -38,84 +89,14 @@
             <a href="https://docs.databricks.com/aws/en/release-notes/product/2025/december#new-databricks-accounts-will-not-have-access-to-legacy-features" target="_blank">
                 <div class="article-title">New Databricks accounts will not have access to legacy features</div>
             </a>
-            <div class="translated-label">&gt; 新しい Databricks アカウントには従来のフィーチャーにアクセスできません。</div>
+            <div class="translated-label">&gt; 新しいDatabricksアカウントは、レガシー機能にはアクセスできません。</div>
             <div class="date">December 19, 2025</div>
             <div class="content">
                 <div class="original-text"><p>Databricks accounts created after December 18, 2025 will not have access to certain legacy features such as access to DBFS root and mounts, Hive Metastore, and No-isolation shared compute. These accounts will exclusively use Unity Catalog for unified governance and enterprise-grade security.</p>
 <p>This behavior enforces the <strong>Disable legacy features</strong> account setting available in existing Databricks accounts. See <a href="https://docs.databricks.com/aws/en/admin/account-settings/legacy-features">Disable access to legacy features in new workspaces</a>.</p></div>
-                <div class="translated-label">&gt; 2025年12月18日以降に作成されたDatabricksアカウントは、DBFS root and mountsやHive Metastore、No-isolation shared computeなどの一部の従来のfeatureにアクセスできなくなります。これらのアカウントは、統一ガバナンスと企業レベルのセキュリティのためにUnity Catalogを専用で使用します。
+                <div class="translated-label">&gt; 2025年12月18日以降に作成されたDatabricksアカウントは、DBFS rootとマウント、Hive Metastoreおよび非隔離型共有コンピューティングなどの一部のレガシー機能にアクセスできません。これらのアカウントでは、統一ガバナンスと企業レベルのセキュリティを実現するためにUnity Catalogを独占的に使用します。
 
-既存のDatabricksアカウントで利用可能な<strong>Disable legacy features</strong>アカウント設定により、この動作が強制されます。詳細は<a href="https://docs.databricks.com/aws/en/admin/account-settings/legacy-features">Disable access to legacy features in new workspaces</a>を参照してください。</div>
-            </div>
-        </div>
-        
-        <div class="article">
-            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2025#dashboard-enhancements-and-fixes" target="_blank">
-                <div class="article-title">Dashboard enhancements and fixes</div>
-            </a>
-            <div class="translated-label">&gt; ダッシュボードの機能強化と修正</div>
-            <div class="date">December 18, 2025</div>
-            <div class="content">
-                <div class="original-text"><ul>
-<li><strong>Boolean alias formatting</strong>: Boolean values now support alias formatting, allowing users to replace "true" and "false" with custom strings.</li>
-<li><strong>Compact global filters</strong>: Reduced the size of global filters to save space.</li>
-<li><strong>Relative date range options</strong>: Relative date range filters now include yesterday, last week, last month, and last year.</li>
-<li><strong>Filter widget background fix</strong>: Fixed an issue where a gray background appeared on some filter widgets.</li>
-<li><strong>Filter reset button fix</strong>: Fixed an issue where the "Reset to default" button appeared on the active filter bar when all filters showed default values.</li>
-<li><strong>Custom chart labels</strong>: You can now choose a custom field for chart labels. See <a href="https://docs.databricks.com/aws/en/dashboards/visualizations#value-labels">Value labels</a>.</li>
-<li><strong>Sortable filter dropdown options</strong>: Authors can now sort filter dropdown options by another field.</li>
-<li><strong>Multi-select filter paste</strong>: Viewers can now copy a column of values from a spreadsheet and paste them into a multi-select filter.</li>
-<li><strong>Chart tooltip overflow indicator</strong>: Chart tooltips with many series now indicate when there are more series.</li>
-<li><strong>Axis label spacing fix</strong>: Fixed an issue where long axis labels took up too much plotting area.</li>
-<li><strong>Agent-created widget consistency</strong>: Agent-created widgets now work consistently across edit and published dashboards.</li>
-<li><strong>Mark label angle fix</strong>: Fixed mark label angle for charts with multiple Y axes without an X axis.</li>
-</ul></div>
-                <div class="translated-label">&gt; <ul>
-<li><strong>ブール値エイリアス形式</strong>: ブール値のエイリアス形式がサポートされ、ユーザーが"true"と"false"をカスタムの文字列に置き換えることができるようになりました。</li>
-<li><strong>コンパクトなグローバルフィルター</strong>: グローバルフィルターのサイズを縮小し、スペースを節約しました。</li>
-<li><strong>相対日付範囲オプション</strong>: 相対日付範囲フィルターに、昨日、先週、先月、および昨年が含まれるようになりました。</li>
-<li><strong>フィルターウィジェットの背景の修正</strong>: 一部のフィルターウィジェットにグレーの背景が表示される問題を修正しました。</li>
-<li><strong>フィルターリセットボタンの修正</strong>: すべてのフィルターがデフォルト値を表示しているときに、アクティブなフィルターバーに"デフォルトにリセット"ボタンが表示される問題を修正しました。</li>
-<li><strong>カスタムチャートラベル</strong>: チャートラベルのためのカスタムフィールドを選択できるようになりました。<a href="https://docs.databricks.com/aws/en/dashboards/visualizations#value-labels">値ラベル</a>を参照してください。</li>
-<li><strong>ソート可能なフィルタードロップダウンオプション</strong>: 作成者は、他のフィールドによってフィルターのドロップダウンオプションをソートできるようになりました。</li>
-<li><strong>マルチ選択フィルターの貼り付け</strong>: 閲覧者は、スプレッドシートから値のカラムをコピーし、マルチ選択フィルターに貼り付けることができます。</li>
-<li><strong>チャートツールチップのオーバーフロー表示</strong>: 多くのシリーズを持つチャートツールチップに、さらにシリーズがあることを示すインジケーターが追加されました。</li>
-<li><strong>軸ラベルの間隔の修正</strong>: 長い軸ラベルが描画領域を過剰に占める問題を修正しました。</li>
-<li><strong>エージェント作成ウィジェットの一貫性</strong>: エージェント作成ウィジェットが、編集中のダッシュボードと公開されたダッシュボードで一貫して動作するようになりました。</li>
-<li><strong>マークラベルの角度の修正</strong>: X軸のないチャートで、複数のY軸を持つチャートのマークラベルの角度を修正しました。</li>
-</ul></div>
-            </div>
-        </div>
-        
-        <div class="article">
-            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2025#genie-enhancements-and-fixes" target="_blank">
-                <div class="article-title">Genie enhancements and fixes</div>
-            </a>
-            <div class="translated-label">&gt; ジーニー改善とバグ修正</div>
-            <div class="date">December 18, 2025</div>
-            <div class="content">
-                <div class="original-text"><ul>
-<li><strong>Numeric column formatting</strong>: Numeric columns in tables are now formatted more effectively, including IDs, ZIP codes, and currency.</li>
-<li><strong>File upload fix for CAN MANAGE users</strong>: Fixed an issue where CAN MANAGE users couldn't use the upload file feature.</li>
-<li><strong>Value dictionary indexing improvements</strong>: Improved value dictionary indexing for better coverage and recall on user prompts.</li>
-</ul></div>
-                <div class="translated-label">&gt; <ul>
-<li><strong>数値列の書式設定</strong>: テーブルの数値列の書式設定が改善され、IDやZIPコード、通貨などが効果的に表示されるようになりました。</li>
-<li><strong>CAN MANAGEユーザーのファイルアップロードの修正</strong>: CAN MANAGEユーザーがファイルアップロード機能を使えなかった問題を修正しました。</li>
-<li><strong>値辞書のインデックス化の改善</strong>: ユーザーのプロンプトに対するカバレッジと再現率を向上させるために、値辞書のインデックス化を改善しました。</li>
-</ul></div>
-            </div>
-        </div>
-        
-        <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/whats-coming#public-urls-for-odbc-driver-downloads-will-be-disabled" target="_blank">
-                <div class="article-title">Public URLs for ODBC driver downloads will be disabled</div>
-            </a>
-            <div class="translated-label">&gt; パブリックURLのODBCドライバーダウンロードは無効化されます。</div>
-            <div class="date">December 18, 2025</div>
-            <div class="content">
-                <div class="original-text"><p>In an upcoming release, public URLs for automated <a href="https://www.databricks.com/spark/odbc-drivers-download">Apache Spark ODBC driver</a> downloads will be disabled. After this change, all driver downloads, including automated processes, will require authentication. This will break automated processes that download Apache Spark ODBC drivers using direct public links without authentication.</p></div>
-                <div class="translated-label">&gt; 自動化された<a href="https://www.databricks.com/spark/odbc-drivers-download">Apache Spark ODBCドライバー</a>のダウンロード用の一般向けURLが、今後のリリースで無効化されます。この変更後、認証なしで直接公開リンクを使ったダウンロードが含め、すべてのドライバーダウンロードには認証が必要になります。これにより、認証なしでApache Spark ODBCドライバーをダウンロードする自動化プロセスが破綻します。</div>
+この動作により、既存のDatabricksアカウントで利用可能な「レガシー機能の無効化」アカウント設定が適用されます。「新しいワークスペースでのレガシー機能へのアクセスの無効化」をご覧ください。</div>
             </div>
         </div>
         
