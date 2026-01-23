@@ -23,85 +23,95 @@
         <h1>Databricks Docs Updates</h1>
     
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#databricks-one-is-generally-available" target="_blank">
-                <div class="article-title">Databricks One is generally available</div>
+            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#databricks-one-search-and-discovery-improvements" target="_blank">
+                <div class="article-title">Databricks One search and discovery improvements</div>
             </a>
-            <div class="translated-label">&gt; データブリックス ワンは一般に利用可能になりました。</div>
-            <div class="date">January 20, 2026</div>
-            <div class="content">
-                <div class="original-text"><p>Databricks One is now generally available. Databricks One is a simplified user interface designed for business users, providing a single, intuitive entry point to interact with data and AI in Databricks without requiring technical knowledge of compute resources, queries, models, or notebooks. Using Databricks One, business users can view and interact with dashboards, ask data questions in natural language using Genie, and use custom-built Databricks Apps that combine analytics, AI, and workflows. See <a href="https://docs.databricks.com/aws/en/workspace/databricks-one">What is Databricks One?</a>.</p></div>
-                <div class="translated-label">&gt; Databricks Oneは現在一般に利用可能です。Databricks Oneは、コンピューティングリソース、クエリ、モデル、ノートブックの技術的な知識を必要とせずに、DatabricksのデータおよびAIとやり取りできる単一の直感的なエントリポイントを提供するように設計された簡略化されたユーザーインターフェイスです。Databricks Oneを使用すると、ビジネスユーザーはダッシュボードの表示と操作、Genieを使用した自然言語によるデータ問合せ、分析、AI、ワークフローを組み合わせたDatabricksアプリの利用ができます。<a href="https://docs.databricks.com/aws/en/workspace/databricks-one">Databricks Oneとは何ですか?</a>をご覧ください。</div>
-            </div>
-        </div>
-        
-        <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/january#you-can-now-use-custom-base-environments-for-python-python-wheels-and-notebook-tasks-in-serverless-jobs" target="_blank">
-                <div class="article-title">You can now use custom base environments for Python, Python Wheels, and notebook tasks in serverless jobs</div>
-            </a>
-            <div class="translated-label">&gt; Python、Python Wheels、ノートブックタスクにカスタムベース環境を使用できるようになりました。</div>
-            <div class="date">January 20, 2026</div>
-            <div class="content">
-                <div class="original-text"><p>Serverless jobs now support custom base environments defined with YAML files for Python, Python wheel, and notebook tasks. For notebook tasks, you can either select a custom base environment in the job’s environment configuration or use the notebook’s own environment settings, which support both workspace environments and custom base environments.</p>
-<p>For more information, see <a href="https://docs.databricks.com/aws/en/admin/workspace-settings/base-environment">Manage serverless base environments</a>.</p></div>
-                <div class="translated-label">&gt; サーバーレスジョブは、Python、Pythonホイール、およびノートブークタスクのYAMLファイルで定義されたカスタム基本環境をサポートするようになりました。ノートブークタスクの場合、ジョブの環境設定でカスタム基本環境を選択するか、ワークスペース環境とカスタム基本環境の両方をサポートするノートブークの独自の環境設定を使用できます。
-
-詳細については、「サーバーレス基本環境の管理」をご覧ください。</div>
-            </div>
-        </div>
-        
-        <div class="article">
-            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#level-of-detail-expressions-for-custom-calculations" target="_blank">
-                <div class="article-title">Level of detail expressions for custom calculations</div>
-            </a>
-            <div class="translated-label">&gt; レベルの詳細表現をカスタム計算に使用します</div>
-            <div class="date">January 19, 2026</div>
-            <div class="content">
-                <div class="original-text"><p>Level of detail expressions let you control aggregation granularity independently of the dimensions in your visualizations. Use fixed level of detail expressions to aggregate over specific dimensions regardless of visualization groupings, or use coarser level of detail expressions to aggregate at a higher level by excluding dimensions. Common use cases include calculating percentages of total, comparing values to dataset-wide aggregates, and creating cohort-level metrics. See <a href="https://docs.databricks.com/aws/en/dashboards/custom-calculations/level-of-detail">Level of detail expressions</a>.</p></div>
-                <div class="translated-label">&gt; <p>詳細レベルの式を使うと、視覚化に含まれる次元とは無関係に、集計の粒度を制御できます。固定の詳細レベルの式を使うと、視覚化のグループ化に関係なく、特定の次元で集計できます。あるいは、より粗い詳細レベルの式を使うと、次元を除外して、より高いレベルで集計できます。一般的な使用例には、合計に対するパーセンテージの計算、データセット全体の集計値との比較、コホート単位のメトリクスの作成などがあります。<a href="https://docs.databricks.com/aws/en/dashboards/custom-calculations/level-of-detail">詳細レベルの式</a>を参照してください。</p></div>
-            </div>
-        </div>
-        
-        <div class="article">
-            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#value-sampling-features-renamed" target="_blank">
-                <div class="article-title">Value sampling features renamed</div>
-            </a>
-            <div class="translated-label">&gt; 価値サンプリング機能の名称変更</div>
-            <div class="date">January 16, 2026</div>
-            <div class="content">
-                <div class="original-text"><p>The value sampling features in Genie have been renamed to better describe their function:</p>
-<ul>
-<li><a href="https://docs.databricks.com/aws/en/genie/knowledge-store#prompt-matching-overview">Prompt matching</a> (previously value sampling)</li>
-<li><a href="https://docs.databricks.com/aws/en/genie/knowledge-store#manage-format-assistance">Format assistance</a> (previously example values)</li>
-<li><a href="https://docs.databricks.com/aws/en/genie/knowledge-store#configure-entity-matching">Entity matching</a> (previously value dictionaries)</li>
-</ul></div>
-                <div class="translated-label">&gt; <p>Genieの値サンプリング機能は、その機能をより適切に説明するために名称が変更されました:</p>
-<ul>
-<li><a href="https://docs.databricks.com/aws/en/genie/knowledge-store#prompt-matching-overview">プロンプトマッチング</a>(以前の値サンプリング)</li>
-<li><a href="https://docs.databricks.com/aws/en/genie/knowledge-store#manage-format-assistance">フォーマットアシスト</a>(以前の例示値)</li>
-<li><a href="https://docs.databricks.com/aws/en/genie/knowledge-store#configure-entity-matching">エンティティマッチング</a>(以前の値辞書)</li>
-</ul></div>
-            </div>
-        </div>
-        
-        <div class="article">
-            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#dashboard-navigation-pivot-tables-and-text-widget-improvements" target="_blank">
-                <div class="article-title">Dashboard navigation, pivot tables, and text widget improvements</div>
-            </a>
-            <div class="translated-label">&gt; ダッシュボードナビゲーション、ピボットテーブル、テキストウィジェットの改善</div>
-            <div class="date">January 15, 2026</div>
+            <div class="translated-label">&gt; データブリックスのワンサーチと探索の改善</div>
+            <div class="date">January 22, 2026</div>
             <div class="content">
                 <div class="original-text"><ul>
-<li><strong>Dashboard page navigation scroll bar</strong>: The horizontal scroll bar to navigate between dashboard pages is now thicker.</li>
-<li><strong>Dashboard title character limit</strong>: Dashboard titles now have more horizontal space before truncating.</li>
-<li><strong>Pivot table header height</strong>: Pivot table header height can be configured to enable wrapping for multi-row heights.</li>
-<li><strong>Text widget markdown tables</strong>: Text widgets now support markdown table syntax.</li>
+<li><strong>Databricks Apps filtering</strong>: Databricks One consumers can now filter to include or exclude unavailable Databricks apps when browsing. Unavailable apps are those with a status other than Running, such as Stopped, Deploying, or Crashed. See <a href="https://docs.databricks.com/aws/en/dev-tools/databricks-apps/key-concepts#app-status">App status</a>.</li>
+<li><strong>Dashboard widget title search</strong>: Search now supports dashboard widget titles.</li>
+<li><strong>Enhanced search rankings</strong>: Certified and favorite content is now boosted in search rankings in Databricks One.</li>
+<li><strong>Recents and favorites in discovery</strong>: Recents and favorites are now surfaced in the <strong>For you</strong> page.</li>
 </ul></div>
                 <div class="translated-label">&gt; <ul>
-<li><strong>ダッシュボードページのナビゲーションスクロールバー</strong>: ダッシュボードページを移動するための水平スクロールバーが太くなりました。</li>
-<li><strong>ダッシュボードのタイトル文字数制限</strong>: ダッシュボードのタイトルは、切り詰められる前に水平方向によりスペースが取れるようになりました。</li>
-<li><strong>ピボットテーブルのヘッダー高さ</strong>: ピボットテーブルのヘッダー高さを設定して、複数行の高さに折り返すことができるようになりました。</li>
-<li><strong>テキストウィジェットのMarkdownテーブル</strong>: テキストウィジェットでMarkdownのテーブル構文がサポートされるようになりました。</li>
+<li><strong>Databricks Appsのフィルタリング</strong>: Databricks Oneのユーザーは、Databricksアプリを参照する際に、利用可能なアプリのみを表示するか、利用不可能なアプリも含めて表示するかをフィルタリングできるようになりました。利用不可能なアプリとは、停止中、デプロイ中、クラッシュしているなど、実行中以外の状態のアプリのことです。詳細は<a href="https://docs.databricks.com/aws/en/dev-tools/databricks-apps/key-concepts#app-status">アプリの状態</a>をご覧ください。</li>
+<li><strong>ダッシュボードウィジェットのタイトル検索</strong>: 検索はダッシュボードウィジェットのタイトルにも対応するようになりました。</li>
+<li><strong>検索ランキングの強化</strong>: Databricks Oneでは、認証済みコンテンツおよびお気に入りコンテンツが検索ランキングで優先されるようになりました。</li>
+<li><strong>最近使ったアイテムとお気に入りのディスカバリー</strong>: 最近使ったアイテムとお気に入りが<strong>For you</strong>ページに表示されるようになりました。</li>
 </ul></div>
+            </div>
+        </div>
+        
+        <div class="article">
+            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#dashboard-subscriptions-custom-calculations-and-visualization-improvements" target="_blank">
+                <div class="article-title">Dashboard subscriptions, custom calculations, and visualization improvements</div>
+            </a>
+            <div class="translated-label">&gt; ダッシュボードのサブスクリプション、カスタムの計算、可視化の改善</div>
+            <div class="date">January 22, 2026</div>
+            <div class="content">
+                <div class="original-text"><ul>
+<li><strong>Account-level user subscriptions</strong>: Dashboard authors can now subscribe account-level users to scheduled dashboard updates. See <a href="https://docs.databricks.com/aws/en/dashboards/schedule-subscribe">Manage scheduled dashboard updates and subscriptions</a>.</li>
+<li><strong>Custom calculation references</strong>: Custom calculations can now reference custom calculations on dashboard datasets.</li>
+<li><strong>Cumulative totals on stacked bar charts</strong>: Stacked bar charts can now display the cumulative total of values.</li>
+<li><strong>Improved tooltips on combo and dual axis charts</strong>: Tooltips are now easier to access when hovering over combo and dual axis charts.</li>
+<li><strong>Fixed static widget filter drop-down menu values</strong>: Resolved an issue where values in static widget filter drop-down menus were not available when applied on a metric view.</li>
+<li><strong>Fixed text widget character limit error message</strong>: Resolved an issue where trying to save a dashboard with text widgets exceeding 50,000 characters would fail without an error message. An error message now appears informing the author.</li>
+</ul></div>
+                <div class="translated-label">&gt; <ul>
+<li><strong>アカウントレベルのユーザーサブスクリプション</strong>: ダッシュボードの作成者は、アカウントレベルのユーザーを定期的なダッシュボードの更新にサブスクライブできるようになりました。<a href="https://docs.databricks.com/aws/en/dashboards/schedule-subscribe">定期的なダッシュボードの更新とサブスクリプションの管理</a>を参照してください。</li>
+<li><strong>カスタム計算の参照</strong>: カスタム計算では、ダッシュボードデータセット上のカスタム計算を参照できるようになりました。</li>
+<li><strong>積み上げ棒グラフの累計合計</strong>: 積み上げ棒グラフに、値の累計合計を表示できるようになりました。</li>
+<li><strong>コンボチャートと両軸チャートのツールチップの改善</strong>: コンボチャートと両軸チャートにカーソルを重ねると、ツールチップがアクセスしやすくなりました。</li>
+<li><strong>静的ウィジェットのフィルタードロップダウンメニューの値の修正</strong>: メトリックビューに適用すると、静的ウィジェットのフィルタードロップダウンメニューの値が利用できないという問題を解決しました。</li>
+<li><strong>テキストウィジェットの文字数制限エラーメッセージの修正</strong>: テキストウィジェットに50,000文字を超える入力をしようとすると、エラーメッセージなしで保存に失敗する問題を解決しました。作成者に通知するエラーメッセージが表示されるようになりました。</li>
+</ul></div>
+            </div>
+        </div>
+        
+        <div class="article">
+            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#genie-lineage-and-entity-matching-improvements" target="_blank">
+                <div class="article-title">Genie lineage and entity matching improvements</div>
+            </a>
+            <div class="translated-label">&gt; 遺伝子系譜および実体マッチングの改善</div>
+            <div class="date">January 22, 2026</div>
+            <div class="content">
+                <div class="original-text"><ul>
+<li><strong>Unity Catalog lineage for Genie spaces</strong>: Genie spaces are now discoverable in Unity Catalog lineage.</li>
+<li><strong>Bulk actions for entity matching</strong>: Users can now make bulk actions for entity matching (add, remove, and refresh).</li>
+</ul></div>
+                <div class="translated-label">&gt; <ul>
+<li><strong>Genie スペースの Unity Catalog lineage</strong>: Genie スペースは Unity Catalog lineage で発見可能になりました。</li>
+<li><strong>エンティティ マッチングのバルクアクション</strong>: ユーザーはエンティティ マッチングにバルクアクション(追加、削除、更新)を行えるようになりました。</li>
+</ul></div>
+            </div>
+        </div>
+        
+        <div class="article">
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/january#front-end-privatelink-for-performance-intensive-services-beta" target="_blank">
+                <div class="article-title">Front-end PrivateLink for performance-intensive services (Beta)</div>
+            </a>
+            <div class="translated-label">&gt; フロントエンド PrivateLinkのパフォーマンス集約型サービス (ベータ版)</div>
+            <div class="date">January 22, 2026</div>
+            <div class="content">
+                <div class="original-text"><p>You can now use AWS front-end PrivateLink for private connectivity to performance-intensive services like Zerobus Ingest and Lakebase Autoscaling. See <a href="https://docs.databricks.com/aws/en/security/network/front-end/service-direct-privatelink">Configure front-end PrivateLink for performance-intensive services</a>.</p></div>
+                <div class="translated-label">&gt; <p>AWSのフロントエンドPrivateLinkを使用して、ZerobuスインジェストやLakebaseオートスケーリングなどのパフォーマンスの高いサービスに対する秘密の接続を行うことができます。<a href="https://docs.databricks.com/aws/en/security/network/front-end/service-direct-privatelink">パフォーマンスの高いサービスのフロントエンドPrivateLinkの設定</a>を参照してください。</p></div>
+            </div>
+        </div>
+        
+        <div class="article">
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/january#lakebase-is-now-generally-available" target="_blank">
+                <div class="article-title">Lakebase is now generally available</div>
+            </a>
+            <div class="translated-label">&gt; 湖底（レイクベース）は現在一般に利用可能となりました。</div>
+            <div class="date">January 22, 2026</div>
+            <div class="content">
+                <div class="original-text"><p>Lakebase is now generally available. Lakebase Autoscaling and Lakebase Provisioned are now unified in a single UI. GA includes autoscaling, scale-to-zero, instant branching, automated backups, point-in-time recovery, storage up to 8 TB, and expanded region availability.</p>
+<p>See <a href="https://docs.databricks.com/aws/en/oltp/projects/get-started">Get started with Lakebase Postgres</a>.</p></div>
+                <div class="translated-label">&gt; レイクベースは現在一般公開されています。レイクベースの自動スケーリングとプロビジョンドが単一のUIに統合されました。一般公開には、自動スケーリング、ゼロスケール、即時のブランチ作成、自動バックアップ、特定時点への復元、最大8TBのストレージ、拡大したリージョンの提供が含まれます。
+
+「レイクベースPosgresの使い始め」をご覧ください。</div>
             </div>
         </div>
         
