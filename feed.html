@@ -23,104 +23,90 @@
         <h1>Databricks Docs Updates</h1>
     
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/january#databricks-runtime-maintenance-updates-0127" target="_blank">
-                <div class="article-title">Databricks Runtime maintenance updates (01/27)</div>
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/january#view-and-restore-your-recent-workspace-tab-sessions" target="_blank">
+                <div class="article-title">View and restore your recent workspace tab sessions</div>
             </a>
-            <div class="translated-label">&gt; データブリックスランタイムのメンテナンスアップデート (01/27)</div>
-            <div class="date">January 27, 2026</div>
+            <div class="translated-label">&gt; 最近のワークスペースタブセッションを表示して復元する</div>
+            <div class="date">January 30, 2026</div>
             <div class="content">
-                <div class="original-text"><p>New maintenance updates are available for supported Databricks Runtime versions. These updates include bug fixes, security patches, and performance improvements. For details, see:</p>
-<ul>
-<li><a href="https://docs.databricks.com/aws/en/release-notes/runtime/maintenance-updates#180">Databricks Runtime 18.0</a></li>
-<li><a href="https://docs.databricks.com/aws/en/release-notes/runtime/maintenance-updates#173">Databricks Runtime 17.3 LTS</a></li>
-<li><a href="https://docs.databricks.com/aws/en/release-notes/runtime/maintenance-updates#172">Databricks Runtime 17.2</a></li>
-<li><a href="https://docs.databricks.com/aws/en/release-notes/runtime/maintenance-updates#171">Databricks Runtime 17.1</a></li>
-<li><a href="https://docs.databricks.com/aws/en/release-notes/runtime/maintenance-updates#164">Databricks Runtime 16.4 LTS</a></li>
-<li><a href="https://docs.databricks.com/aws/en/release-notes/runtime/maintenance-updates#154">Databricks Runtime 15.4 LTS</a></li>
-<li><a href="https://docs.databricks.com/aws/en/release-notes/runtime/maintenance-updates#143">Databricks Runtime 14.3 LTS</a></li>
-<li><a href="https://docs.databricks.com/aws/en/release-notes/runtime/maintenance-updates#133">Databricks Runtime 13.3 LTS</a></li>
-<li><a href="https://docs.databricks.com/aws/en/release-notes/runtime/maintenance-updates#122">Databricks Runtime 12.2 LTS</a></li>
+                <div class="original-text"><p>You can now view your past workspace tab sessions and restore them. See <a href="https://docs.databricks.com/aws/en/workspace/navigate-workspace#authoring-contexts">Switch between authoring contexts</a>.</p></div>
+                <div class="translated-label">&gt; <p>これで過去のワークスペースタブセッションを表示し、それらを復元することができます。<a href="https://docs.databricks.com/aws/en/workspace/navigate-workspace#authoring-contexts">編集コンテキストの切り替え</a>をご覧ください。</p></div>
+            </div>
+        </div>
+        
+        <div class="article">
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/january#paste-images-into-notebooks" target="_blank">
+                <div class="article-title">Paste images into notebooks</div>
+            </a>
+            <div class="translated-label">&gt; イメージをノートブックに貼り付ける</div>
+            <div class="date">January 30, 2026</div>
+            <div class="content">
+                <div class="original-text"><p>You can now copy images from your local file system and paste them into markdown cells in Databricks notebooks using <code>⌘ + V</code> (mac) or <code>Ctrl + V</code> (Windows). See <a href="https://docs.databricks.com/aws/en/notebooks/notebook-media#display-images">Display images</a>.</p></div>
+                <div class="translated-label">&gt; <p>ローカルファイルシステムからイメージをコピーし、Databricksノートブックのマークダウンセルに貼り付けることができるようになりました。<code>⌘ + V</code> (mac) または <code>Ctrl + V</code> (Windows) を使用してください。<a href="https://docs.databricks.com/aws/en/notebooks/notebook-media#display-images">イメージの表示</a>を参照してください。</p></div>
+            </div>
+        </div>
+        
+        <div class="article">
+            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#dashboard-visualization-and-data-improvements" target="_blank">
+                <div class="article-title">Dashboard visualization and data improvements</div>
+            </a>
+            <div class="translated-label">&gt; ダッシュボードの視覚化とデータの改善</div>
+            <div class="date">January 29, 2026</div>
+            <div class="content">
+                <div class="original-text"><ul>
+<li><strong>Fixed access request availability</strong>: Resolved an issue where the option to request access was not available and a "Resource not found" error was incorrectly shown.</li>
+<li><strong>Full-width pivot tables</strong>: Widgets now render pivot tables at full width for better readability.</li>
+<li><strong>Tooltip encodings on charts</strong>: Combo and dual-axis charts now support tooltip encodings.</li>
+<li><strong>Image rendering in pivot tables</strong>: Cells can now display images directly in pivot tables.</li>
+<li><strong>Dark mode scrollbar visibility</strong>: Scrollbars are now easier to see when using dark mode.</li>
+<li><strong>Increased pivot data download limits</strong>: Download limits now support up to 10,000 rows by 1,000 columns for pivoted data.</li>
+<li><strong>Fixed filter paste behavior</strong>: Resolved an issue where pasting a comma-separated list into a single-select filter only parsed the first element instead of keeping all values.</li>
+<li><strong>Fixed stacked chart label rendering</strong>: Labels on stacked charts with a quantitative x-axis now render correctly in notebooks and in the SQL Editor.</li>
 </ul></div>
-                <div class="translated-label">&gt; サポートされている Databricks Runtime のバージョンのための新しい保守アップデートが利用可能です。これらのアップデートには、バグ修正、セキュリティパッチ、パフォーマンス改善が含まれています。詳細は以下をご覧ください:
-
-- Databricks Runtime 18.0
-- Databricks Runtime 17.3 LTS
-- Databricks Runtime 17.2
-- Databricks Runtime 17.1
-- Databricks Runtime 16.4 LTS
-- Databricks Runtime 15.4 LTS
-- Databricks Runtime 14.3 LTS
-- Databricks Runtime 13.3 LTS
-- Databricks Runtime 12.2 LTS</div>
+                <div class="translated-label">&gt; <ul>
+<li><strong>固定アクセス要求の利用可能性</strong>：アクセスを要求するオプションが利用できず、「リソースが見つかりません」というエラーが誤って表示されていた問題を解決しました。</li>
+<li><strong>全幅のピボットテーブル</strong>：ウィジェットがピボットテーブルを全幅で表示するようになり、よりわかりやすくなりました。</li>
+<li><strong>チャートのツールチップエンコーディング</strong>：コンボチャートと二重軸チャートでツールチップエンコーディングがサポートされるようになりました。</li>
+<li><strong>ピボットテーブルでの画像の表示</strong>：ピボットテーブルの中で直接、画像を表示できるようになりました。</li>
+<li><strong>ダークモードでのスクロールバーの表示</strong>：ダークモードでも、スクロールバーがよりはっきりと表示されるようになりました。</li>
+<li><strong>ピボットデータのダウンロード制限の増加</strong>：ダウンロード制限が、最大10,000行×1,000列のピボットデータに対応するようになりました。</li>
+<li><strong>フィルターへの貼り付けの修正</strong>：単一選択フィルターにカンマ区切りのリストを貼り付けると、最初の要素しか解析されない問題を解決しました。</li>
+<li><strong>積み上げチャートのラベルの表示の修正</strong>：数量軸を持つ積み上げチャートのラベルが、ノートブックとSQL Editorで正しく表示されるようになりました。</li>
+</ul></div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/january#agent-bricks-knowledge-assistant-is-now-available-in-more-regions" target="_blank">
-                <div class="article-title">Agent Bricks: Knowledge Assistant is now available in more regions</div>
+            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#genie-api-and-user-experience-improvements" target="_blank">
+                <div class="article-title">Genie API and user experience improvements</div>
             </a>
-            <div class="translated-label">&gt; エージェント ブリックス:ナレッジアシスタントが今、より多くの地域で利用可能になりました。</div>
-            <div class="date">January 27, 2026</div>
+            <div class="translated-label">&gt; ジーニーAPIとユーザー体験の改善</div>
+            <div class="date">January 29, 2026</div>
             <div class="content">
-                <div class="original-text"><p>Agent Bricks: Knowledge Assistant is now available in the following AWS regions: <code>us-east-2</code>, <code>ca-central-1</code>, <code>eu-central-1</code>, <code>eu-west-1</code>, <code>ap-southeast-1</code> (requires <a href="https://docs.databricks.com/aws/en/resources/databricks-geos#cross-geo-processing">cross-geo processing</a>), and <code>ap-southeast-2</code> (requires <a href="https://docs.databricks.com/aws/en/resources/databricks-geos#cross-geo-processing">cross-geo processing</a>).</p>
-<p>Users in these regions can now use Agent Bricks: Knowledge Assistant to create a production-grade AI agent that can answer questions about their documents and provide high-quality responses with citations.</p>
-<p>See <a href="https://docs.databricks.com/aws/en/generative-ai/agent-bricks/knowledge-assistant">Use Agent Bricks: Knowledge Assistant to create a high-quality chatbot over your documents</a>.</p></div>
-                <div class="translated-label">&gt; <p>エージェント ブリックス: ナレッジ アシスタントは、次の AWS リージョンで利用可能になりました。<code>us-east-2</code>、<code>ca-central-1</code>、<code>eu-central-1</code>、<code>eu-west-1</code>、<code>ap-southeast-1</code> (クロスジオ プロセッシングが必要)、および <code>ap-southeast-2</code> (クロスジオ プロセッシングが必要)。</p>
-<p>これらのリージョンのユーザーは、エージェント ブリックス: ナレッジ アシスタントを使用して、ドキュメントに関する質問に答え、引用を含む高品質な回答を提供する、運用グレードの AI エージェントを作成できるようになりました。</p>
-<p><a href="https://docs.databricks.com/aws/en/generative-ai/agent-bricks/knowledge-assistant">ドキュメントでの高品質なチャットボットを作成するためにエージェント ブリックス: ナレッジ アシスタントを使う</a>をご覧ください。</p></div>
+                <div class="original-text"><ul>
+<li><strong>Full query result downloads</strong>: A new API endpoint supports downloading complete result sets up to about 1 GB.</li>
+<li><strong>Fixed chart generation from prompts</strong>: Resolved an issue where requesting charts directly in the prompt would not create visualizations.</li>
+<li><strong>Collapsible error messages</strong>: Errors now appear in a collapsible modal for improved readability.</li>
+<li><strong>Catalog permission warnings</strong>: Users now see an informative banner when they lack <code>USE CATALOG</code> permissions on attached tables, rather than encountering errors at SQL execution time.</li>
+</ul></div>
+                <div class="translated-label">&gt; <ul>
+<li><strong>クエリ結果のフルダウンロード</strong>: 新しいAPIエンドポイントでは、約1GBまでの完全なクエリ結果セットをダウンロードできるようになりました。</li>
+<li><strong>プロンプトからのチャート生成の修正</strong>: プロンプトで直接チャートを要求する際に、可視化が作成されない問題を修正しました。</li>
+<li><strong>折りたたみ式のエラーメッセージ</strong>: エラーがより読みやすい折りたたみ式のモーダルで表示されるようになりました。</li>
+<li><strong>カタログアクセス権の警告</strong>: ユーザーは、SQL実行時にエラーが発生するのではなく、接続されたテーブルに対する<code>USE CATALOG</code>権限がない場合に、それを示す情報バナーが表示されるようになりました。</li>
+</ul></div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/january#store-and-query-mlflow-traces-in-unity-catalog-beta" target="_blank">
-                <div class="article-title">Store and query MLflow traces in Unity Catalog (Beta)</div>
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/january#serverless-workspaces-are-now-generally-available" target="_blank">
+                <div class="article-title">Serverless workspaces are now generally available</div>
             </a>
-            <div class="translated-label">&gt; Unity Catalog (ベータ版)でMLflowトレースを格納およびクエリする</div>
-            <div class="date">January 26, 2026</div>
+            <div class="translated-label">&gt; サーバーレスワークスペースが一般提供されるようになりました。</div>
+            <div class="date">January 29, 2026</div>
             <div class="content">
-                <div class="original-text"><p>You can now store MLflow traces in Unity Catalog tables using OpenTelemetry format and query them using Databricks SQL. This provides several benefits:</p>
-<ul>
-<li>Store unlimited traces in Delta tables for long-term retention and analysis</li>
-<li>Query trace data directly using SQL through a Databricks SQL warehouse</li>
-<li>Manage access control through Unity Catalog schema and table permissions</li>
-<li>Ensure compatibility with other OpenTelemetry clients and tools</li>
-</ul>
-<p>See <a href="https://docs.databricks.com/aws/en/mlflow3/genai/tracing/trace-unity-catalog">Store MLflow traces in Unity Catalog</a> and <a href="https://docs.databricks.com/aws/en/mlflow3/genai/tracing/observe-with-traces/query-dbsql">Query MLflow traces using MLflow Databricks SQL</a>.</p></div>
-                <div class="translated-label">&gt; <p>OpenTelemetryフォーマットを使用してUnity CatalogテーブルにMLflowトレースを保存し、Databricks SQLを使ってクエリできるようになりました。これにより以下の利点があります:</p>
-<ul>
-<li>Delta表に無制限のトレースを保存して長期的に保管・分析できる</li>
-<li>Databricks SQLウェアハウスからSQL直接クエリできる</li>
-<li>Unity Catalogのスキーマとテーブルの権限でアクセス制御を管理できる</li>
-<li>他のOpenTelemetryクライアントやツールとの互換性を確保できる</li>
-</ul>
-<p><a href="https://docs.databricks.com/aws/en/mlflow3/genai/tracing/trace-unity-catalog">Unity CatalogにMLflowトレースを保存する</a>と<a href="https://docs.databricks.com/aws/en/mlflow3/genai/tracing/observe-with-traces/query-dbsql">MLflow Databricks SQLでMLflowトレースをクエリする</a>をご覧ください。</p></div>
-            </div>
-        </div>
-        
-        <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/whats-coming#regional-model-hosting-for-genie-in-japan-and-korea" target="_blank">
-                <div class="article-title">Regional model hosting for Genie in Japan and Korea</div>
-            </a>
-            <div class="translated-label">&gt; 地域モデルホスティングforGenie in Japan and Korea</div>
-            <div class="date">January 23, 2026</div>
-            <div class="content">
-                <div class="original-text"><p>Beginning January 31, 2026, for workspaces in <code>ap-northeast-1</code> (Tokyo) and <code>ap-northeast-2</code> (Seoul) regions, <a href="https://docs.databricks.com/aws/en/genie">Genie</a> will use models hosted in the same region. Users in these regions will no longer require <a href="https://docs.databricks.com/aws/en/resources/databricks-geos#cross-geo-processing">cross-Geo processing</a> to use Genie.</p>
-<p>See <a href="https://docs.databricks.com/aws/en/resources/designated-services#ds-availability">Availability of Designated Services in each Geo</a> for more information on which features require cross-geo processing.</p></div>
-                <div class="translated-label">&gt; 2026年1月31日から、ap-northeast-1(東京)およびap-northeast-2(ソウル)リージョンのワークスペースでは、Genieが同じリージョンでホストされているモデルを使用します。これらのリージョンのユーザーは、Genieを使用するためにクロスジオ処理を必要としなくなります。
-
-クロスジオ処理を必要とする機能については、「Availability of Designated Services in each Geo」をご覧ください。</div>
-            </div>
-        </div>
-        
-        <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/january#google-drive-connector-beta" target="_blank">
-                <div class="article-title">Google Drive connector (Beta)</div>
-            </a>
-            <div class="translated-label">&gt; Googleドライブコネクター（ベータ）</div>
-            <div class="date">January 23, 2026</div>
-            <div class="content">
-                <div class="original-text"><p>The standard Google Drive connector in Lakeflow Connect allows you ingest Google Drive files into Databricks. You can use <code>read_files</code>, <code>spark.read</code>, <code>COPY INTO</code>, and Auto Loader to create Spark DataFrames, materialized views, and streaming tables, enabling you to build custom pipelines for common file ingestion use cases. See <a href="https://docs.databricks.com/aws/en/ingestion/google-drive">Ingest Google Drive files into Databricks</a>.</p></div>
-                <div class="translated-label">&gt; Lakeflowtビジネス用コネクターのGoogle Driveコネクターを使うと、Google Driveのファイルをデータブリックスにインジェストできます。<code>read_files</code>、<code>spark.read</code>、<code>COPY INTO</code>、Auto Loaderを使って、Sparkデータフレーム、物化ビュー、ストリーミングテーブルを作成し、一般的なファイルインジェストのユースケースに合わせてカスタムパイプラインを構築できます。<a href="https://docs.databricks.com/aws/en/ingestion/google-drive">Google Driveファイルをデータブリックスにインジェストする</a>をご覧ください。</div>
+                <div class="original-text"><p>Serverless workspaces are now generally available. Serverless workspaces come pre-configured with serverless compute and default storage, providing a fully-managed, enterprise-ready SaaS experience. See <a href="https://docs.databricks.com/aws/en/admin/workspace/serverless-workspaces">Create a serverless workspace</a>.</p></div>
+                <div class="translated-label">&gt; サーバーレスワークスペースが一般提供されるようになりました。サーバーレスワークスペースはサーバーレスコンピューティングと既定のストレージが事前構成されており、完全に管理された企業向けSaaSの体験を提供します。<a href="https://docs.databricks.com/aws/en/admin/workspace/serverless-workspaces">サーバーレスワークスペースの作成</a>を参照してください。</div>
             </div>
         </div>
         
