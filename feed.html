@@ -23,84 +23,64 @@
         <h1>Databricks Docs Updates</h1>
     
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/january#trigger-on-update-for-pipelines-ga" target="_blank">
-                <div class="article-title">Trigger on update for pipelines (GA)</div>
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/february#select-tables-and-create-pivot-tables-in-google-sheets" target="_blank">
+                <div class="article-title">Select tables and create pivot tables in Google Sheets</div>
             </a>
-            <div class="translated-label">&gt; パイプラインの更新トリガー (GA)</div>
-            <div class="date">January 30, 2026</div>
+            <div class="translated-label">&gt; Google Sheetsでテーブルを選択し、ピボットテーブルを作成する</div>
+            <div class="date">February 03, 2026</div>
             <div class="content">
-                <div class="original-text"><p><code>TRIGGER ON UPDATE</code> is now generally available. Use trigger on update in Databricks SQL when creating a pipeline schedule to refresh the pipeline when a source table changes.</p>
-<p>See <a href="https://docs.databricks.com/aws/en/ldp/dbsql/materialized#schedule">Schedule materialized view refreshes</a> and <a href="https://docs.databricks.com/aws/en/ldp/dbsql/streaming#schedule">Change the schedule for a streaming table</a> for more information.</p></div>
-                <div class="translated-label">&gt; <p><code>UPDATE時のTRIGGER</code>が一般的に利用可能になりました。Databricks SQLでパイプラインのスケジュールを作成する際に、ソーステーブルが変更された時にパイプラインをリフレッシュするためにUPDATE時のTRIGGERを使用してください。</p>
-<p><a href="https://docs.databricks.com/aws/en/ldp/dbsql/materialized#schedule">マテリアライズドビューのリフレッシュをスケジュールする</a>と<a href="https://docs.databricks.com/aws/en/ldp/dbsql/streaming#schedule">ストリーミングテーブルのスケジュールを変更する</a>で詳細情報をご確認ください。</p></div>
+                <div class="original-text"><p>You can now directly select Databricks tables from the catalog explorer and import data as pivot tables in Google Sheets using the Databricks Connector. See <a href="https://docs.databricks.com/aws/en/integrations/google-sheets">Connect to Databricks from Google Sheets</a>.</p></div>
+                <div class="translated-label">&gt; <p>データブリックステーブルをカタログエクスプローラから直接選択し、データブリックスコネクタを使ってGoogleスプレッドシートでピボットテーブルとしてデータをインポートできるようになりました。<a href="https://docs.databricks.com/aws/en/integrations/google-sheets">Googleスプレッドシートからデータブリックスに接続する</a>をご覧ください。</p></div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/january#lakeflow-jobs-system-tables-are-now-generally-available-ga" target="_blank">
-                <div class="article-title">Lakeflow jobs system tables are now generally available (GA)</div>
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/february#regional-model-hosting-for-genie-in-japan-and-korea" target="_blank">
+                <div class="article-title">Regional model hosting for Genie in Japan and Korea</div>
             </a>
-            <div class="translated-label">&gt; レイクフロー ジョブ システム テーブルが一般利用可能になりました。</div>
-            <div class="date">January 30, 2026</div>
+            <div class="translated-label">&gt; 地域モデルホスティング for Genie in 日本 and 韓国</div>
+            <div class="date">February 02, 2026</div>
             <div class="content">
-                <div class="original-text"><p>The lakeflow system tables <code>jobs</code>, <code>job_tasks</code>, <code>job_run_timeline</code>, and <code>job_task_run_timeline</code> are now generally available (GA). These tables provide insights into all jobs and job runs in your account.</p>
-<p>For a reference of these tables, see <a href="https://docs.databricks.com/aws/en/admin/system-tables/jobs">Jobs system table reference</a>.</p></div>
-                <div class="translated-label">&gt; <p>湖流システムテーブル <code>jobs</code>、<code>job_tasks</code>、<code>job_run_timeline</code>、および <code>job_task_run_timeline</code> が一般提供 (GA) されるようになりました。これらのテーブルは、アカウントのすべてのジョブとジョブ実行の洞察を提供します。</p>
-<p>これらのテーブルのリファレンスについては、<a href="https://docs.databricks.com/aws/en/admin/system-tables/jobs">ジョブシステムテーブルリファレンス</a>を参照してください。</p></div>
+                <div class="original-text"><p>For workspaces in <code>ap-northeast-1</code> (Tokyo) and <code>ap-northeast-2</code> (Seoul), <a href="https://docs.databricks.com/aws/en/genie">Genie</a> now uses models hosted in the same region. Users in these regions no longer require <a href="https://docs.databricks.com/aws/en/resources/databricks-geos#cross-geo-processing">cross-Geo processing</a> to use Genie.</p>
+<p>See <a href="https://docs.databricks.com/aws/en/resources/designated-services#ds-availability">Availability of Designated Services in each Geo</a> for more information on which features require cross-geo processing.</p></div>
+                <div class="translated-label">&gt; <p>ap-northeast-1(東京)およびap-northeast-2(ソウル)のワークスペースの場合、<a href="https://docs.databricks.com/aws/en/genie">Genie</a>は同じリージョンでホストされているモデルを使用するようになりました。これらのリージョンのユーザーは、Genieを使用するためにもはや<a href="https://docs.databricks.com/aws/en/resources/databricks-geos#cross-geo-processing">クロスGeo処理</a>を必要としません。</p>
+<p>クロスGeo処理を必要とする機能については、<a href="https://docs.databricks.com/aws/en/resources/designated-services#ds-availability">各Geoでの指定サービスの可用性</a>を参照してください。</p></div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/january#view-and-restore-your-recent-workspace-tab-sessions" target="_blank">
-                <div class="article-title">View and restore your recent workspace tab sessions</div>
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/february#tag-databricks-apps-public-preview" target="_blank">
+                <div class="article-title">Tag Databricks Apps (Public Preview)</div>
             </a>
-            <div class="translated-label">&gt; 閲覧と復元最近のワークスペースのタブセッション</div>
-            <div class="date">January 30, 2026</div>
+            <div class="translated-label">&gt; タグ Databricks Apps (パブリックプレビュー)</div>
+            <div class="date">February 02, 2026</div>
             <div class="content">
-                <div class="original-text"><p>You can now view your past workspace tab sessions and restore them. See <a href="https://docs.databricks.com/aws/en/workspace/navigate-workspace#authoring-contexts">Switch between authoring contexts</a>.</p></div>
-                <div class="translated-label">&gt; 過去のワークスペース タブセッションを表示し、復元することができるようになりました。 <a href="https://docs.databricks.com/aws/en/workspace/navigate-workspace#authoring-contexts">オーサリングコンテキストの切り替え</a>をご確認ください。</div>
+                <div class="original-text"><p>You can now apply tags to Databricks apps to organize and categorize them. See <a href="https://docs.databricks.com/aws/en/dev-tools/databricks-apps/tags">Apply tags to Databricks apps</a>. Search is not supported using Databricks apps tags.</p></div>
+                <div class="translated-label">&gt; <p>Databricksのアプリにタグを適用して、それらを整理およびカテゴリ化できるようになりました。<a href="https://docs.databricks.com/aws/en/dev-tools/databricks-apps/tags">Databricksのアプリにタグを適用する</a>をご確認ください。Databricksのアプリタグを使用した検索はサポートされていません。</p></div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/january#paste-images-into-notebooks" target="_blank">
-                <div class="article-title">Paste images into notebooks</div>
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/february#zendesk-support-connector-beta" target="_blank">
+                <div class="article-title">Zendesk Support connector (Beta)</div>
             </a>
-            <div class="translated-label">&gt; 画像をノートブックに貼り付けます。</div>
-            <div class="date">January 30, 2026</div>
+            <div class="translated-label">&gt; Zendesk サポートコネクタ (ベータ版)</div>
+            <div class="date">February 02, 2026</div>
             <div class="content">
-                <div class="original-text"><p>You can now copy images from your local file system and paste them into markdown cells in Databricks notebooks using <code>⌘ + V</code> (mac) or <code>Ctrl + V</code> (Windows). See <a href="https://docs.databricks.com/aws/en/notebooks/notebook-media#display-images">Display images</a>.</p></div>
-                <div class="translated-label">&gt; <p>ローカルファイルシステムから画像をコピーして、Databricksノートブックのmarkdownセルに<code>⌘ + V</code>(Mac)または<code>Ctrl + V</code>(Windows)でペーストできるようになりました。<a href="https://docs.databricks.com/aws/en/notebooks/notebook-media#display-images">画像の表示</a>を参照してください。</p></div>
+                <div class="original-text"><p>The Zendesk Support connector allows you to ingest ticket data, help center content, and community forum data from Zendesk Support. See <a href="https://docs.databricks.com/aws/en/ingestion/lakeflow-connect/zendesk-support-overview">Zendesk Support connector overview</a>.</p></div>
+                <div class="translated-label">&gt; Zendeskサポートコネクタはチケットデータ、ヘルプセンターのコンテンツ、およびZendeskサポートからのコミュニティフォーラムデータを取り込むことができます。<a href="https://docs.databricks.com/aws/en/ingestion/lakeflow-connect/zendesk-support-overview">Zendeskサポートコネクタの概要</a>を参照してください。</div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#dashboard-visualization-and-data-improvements" target="_blank">
-                <div class="article-title">Dashboard visualization and data improvements</div>
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/february#data-quality-monitoring-anomaly-detection-public-preview" target="_blank">
+                <div class="article-title">Data Quality Monitoring Anomaly Detection public preview</div>
             </a>
-            <div class="translated-label">&gt; ダッシュボードのビジュアル化とデータの改善</div>
-            <div class="date">January 29, 2026</div>
+            <div class="translated-label">&gt; データ品質モニタリング異常検知パブリックプレビュー</div>
+            <div class="date">February 02, 2026</div>
             <div class="content">
-                <div class="original-text"><ul>
-<li><strong>Fixed access request availability</strong>: Resolved an issue where the option to request access was not available and a "Resource not found" error was incorrectly shown.</li>
-<li><strong>Full-width pivot tables</strong>: Widgets now render pivot tables at full width for better readability.</li>
-<li><strong>Tooltip encodings on charts</strong>: Combo and dual-axis charts now support tooltip encodings.</li>
-<li><strong>Image rendering in pivot tables</strong>: Cells can now display images directly in pivot tables.</li>
-<li><strong>Dark mode scrollbar visibility</strong>: Scrollbars are now easier to see when using dark mode.</li>
-<li><strong>Increased pivot data download limits</strong>: Download limits now support up to 10,000 rows by 1,000 columns for pivoted data.</li>
-<li><strong>Fixed filter paste behavior</strong>: Resolved an issue where pasting a comma-separated list into a single-select filter only parsed the first element instead of keeping all values.</li>
-<li><strong>Fixed stacked chart label rendering</strong>: Labels on stacked charts with a quantitative x-axis now render correctly in notebooks and in the SQL Editor.</li>
-</ul></div>
-                <div class="translated-label">&gt; <ul>
-<li><strong>固定アクセス要求の利用可能性</strong>: アクセスを要求するオプションが利用できず、「リソースが見つかりませんでした」というエラーが誤って表示されていた問題を解決しました。</li>
-<li><strong>全幅ピボットテーブル</strong>: ウィジェットでピボットテーブルが読みやすいように全幅で表示されるようになりました。</li>
-<li><strong>チャートのツールチップエンコーディング</strong>: コンボチャートと双対軸チャートでツールチップエンコーディングがサポートされるようになりました。</li>
-<li><strong>ピボットテーブルでの画像表示</strong>: ピボットテーブルの中で画像を直接表示できるようになりました。</li>
-<li><strong>ダークモードのスクロールバー表示</strong>: ダークモードを使用する際にスクロールバーが見やすくなりました。</li>
-<li><strong>ピボットデータダウンロード制限の引き上げ</strong>: ダウンロードの制限が10,000行×1,000列まで対応するようになりました。</li>
-<li><strong>フィルターの貼り付け動作の修正</strong>: 単一選択フィルターにコンマ区切りのリストを貼り付けた場合、最初の要素のみ解析されていた問題を修正しました。</li>
-<li><strong>積み上げチャートのラベル表示修正</strong>: 数量的なx軸を持つ積み上げチャートのラベルが、ノートブックやSQLエディターで正しく表示されるようになりました。</li>
-</ul></div>
+                <div class="original-text"><p>Databricks Data Quality Monitoring Anomaly Detection is now in Public Preview. The feature is enabled at the schema level and learns from historical data patterns to detect data quality anomalies. The health of all monitored tables is consolidated into a single system table and a new UI. See <a href="https://docs.databricks.com/aws/en/data-quality-monitoring/anomaly-detection">Anomaly detection</a>.</p></div>
+                <div class="translated-label">&gt; Databricks のデータ品質モニタリング異常検出機能が一般公開プレビューになりました。この機能はスキーマレベルで有効化され、過去のデータパターンを学習して、データ品質の異常を検出します。監視対象のすべてのテーブルの健全性は、単一のシステムテーブルと新しい UI に集約されます。<a href="https://docs.databricks.com/aws/en/data-quality-monitoring/anomaly-detection">異常検出</a>の詳細をご確認ください。</div>
             </div>
         </div>
         
