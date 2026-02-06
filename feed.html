@@ -23,64 +23,109 @@
         <h1>Databricks Docs Updates</h1>
     
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/february#select-tables-and-create-pivot-tables-in-google-sheets" target="_blank">
-                <div class="article-title">Select tables and create pivot tables in Google Sheets</div>
+            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#dashboard-enhancements-and-new-capabilities" target="_blank">
+                <div class="article-title">Dashboard enhancements and new capabilities</div>
             </a>
-            <div class="translated-label">&gt; Google Sheetsでテーブルを選択し、ピボットテーブルを作成する</div>
-            <div class="date">February 03, 2026</div>
+            <div class="translated-label">&gt; ダッシュボードの機能強化と新機能</div>
+            <div class="date">February 05, 2026</div>
             <div class="content">
-                <div class="original-text"><p>You can now directly select Databricks tables from the catalog explorer and import data as pivot tables in Google Sheets using the Databricks Connector. See <a href="https://docs.databricks.com/aws/en/integrations/google-sheets">Connect to Databricks from Google Sheets</a>.</p></div>
-                <div class="translated-label">&gt; <p>データブリックステーブルをカタログエクスプローラから直接選択し、データブリックスコネクタを使ってGoogleスプレッドシートでピボットテーブルとしてデータをインポートできるようになりました。<a href="https://docs.databricks.com/aws/en/integrations/google-sheets">Googleスプレッドシートからデータブリックスに接続する</a>をご覧ください。</p></div>
+                <div class="original-text"><ul>
+<li><strong>Parameterized dashboard tasks</strong>: Dashboard tasks in Jobs can now be parameterized, allowing job parameters to dynamically set dashboard filter values at runtime.</li>
+<li><strong>Workspace-level dashboard themes</strong>: Dashboard themes can now be configured at the workspace level. See <a href="https://docs.databricks.com/aws/en/ai-bi/admin/themes">Manage AI/BI dashhoard workspace themes</a>.</li>
+<li><strong>Top-aligned text widgets</strong>: Text widgets now default to top-aligned text.</li>
+<li><strong>Refresh-only schedules for individual data permissions</strong>: Authors and viewers of dashboards published with individual data permissions can now create refresh-only schedules that trigger cache refreshes without sending notifications, improving dashboard load times. See <a href="https://docs.databricks.com/aws/en/dashboards/schedule-subscribe#subscribe"> Subscribe to an existing schedule</a>.</li>
+<li><strong>Genie spaces enabled by default</strong>: Genie is now on by default for published dashboards, allowing viewers to ask questions using the Ask Genie button.</li>
+<li><strong>Tag search</strong>: Tag search is now supported for dashboards, allowing users to find dashboards by their assigned tags.</li>
+<li><strong>Dashboard authoring agent (Beta)</strong>: Authors can now automate multi-step dashboard workflows using natural language prompts to create datasets, visualizations, layouts, and filters. See <a href="https://docs.databricks.com/aws/en/dashboards/dashboard-agent">Use the Dashboard Authoring Agent</a>.</li>
+</ul></div>
+                <div class="translated-label">&gt; <ul>
+<li><strong>パラメータ化されたダッシュボードタスク</strong>: Jobsのダッシュボードタスクはパラメータ化できるようになり、ジョブのパラメーターを使ってダッシュボードのフィルター値を実行時に動的に設定できます。</li>
+<li><strong>ワークスペースレベルのダッシュボードテーマ</strong>: ダッシュボードのテーマをワークスペースレベルで設定できるようになりました。<a href="https://docs.databricks.com/aws/en/ai-bi/admin/themes">AI/BIダッシュボードのワークスペーステーマの管理</a>を参照してください。</li>
+<li><strong>上揃えのテキストウィジェット</strong>: テキストウィジェットのデフォルトが上揃えになりました。</li>
+<li><strong>個別のデータ権限のための更新専用のスケジュール</strong>: 個別のデータ権限で公開されたダッシュボードの作成者と閲覧者は、通知を送らずにキャッシュを更新する更新専用のスケジュールを作成できるようになりました。これによりダッシュボードの読み込み時間が改善されます。<a href="https://docs.databricks.com/aws/en/dashboards/schedule-subscribe#subscribe">既存のスケジュールへの購読</a>を参照してください。</li>
+<li><strong>デフォルトでGengeスペースが有効</strong>: Gengeが公開されたダッシュボードのデフォルトで有効になり、閲覧者がAsk Genieボタンを使って質問できるようになりました。</li>
+<li><strong>タグ検索</strong>: ダッシュボードのタグ検索がサポートされるようになり、ユーザーが割り当てたタグでダッシュボードを見つけられるようになりました。</li>
+<li><strong>ダッシュボード作成エージェント(ベータ版)</strong>: 作成者は自然言語プロンプトを使ってデータセット、視覚化、レイアウト、フィルターなどのダッシュボードワークフローを自動化できるようになりました。<a href="https://docs.databricks.com/aws/en/dashboards/dashboard-agent">ダッシュボード作成エージェントの使用</a>を参照してください。</li>
+</ul></div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/february#regional-model-hosting-for-genie-in-japan-and-korea" target="_blank">
-                <div class="article-title">Regional model hosting for Genie in Japan and Korea</div>
+            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#databricks-one-app-thumbnail-support" target="_blank">
+                <div class="article-title">Databricks One app thumbnail support</div>
             </a>
-            <div class="translated-label">&gt; 地域モデルホスティング for Genie in 日本 and 韓国</div>
-            <div class="date">February 02, 2026</div>
+            <div class="translated-label">&gt; データブリックス ワンアプリサムネイルサポート</div>
+            <div class="date">February 05, 2026</div>
             <div class="content">
-                <div class="original-text"><p>For workspaces in <code>ap-northeast-1</code> (Tokyo) and <code>ap-northeast-2</code> (Seoul), <a href="https://docs.databricks.com/aws/en/genie">Genie</a> now uses models hosted in the same region. Users in these regions no longer require <a href="https://docs.databricks.com/aws/en/resources/databricks-geos#cross-geo-processing">cross-Geo processing</a> to use Genie.</p>
-<p>See <a href="https://docs.databricks.com/aws/en/resources/designated-services#ds-availability">Availability of Designated Services in each Geo</a> for more information on which features require cross-geo processing.</p></div>
-                <div class="translated-label">&gt; <p>ap-northeast-1(東京)およびap-northeast-2(ソウル)のワークスペースの場合、<a href="https://docs.databricks.com/aws/en/genie">Genie</a>は同じリージョンでホストされているモデルを使用するようになりました。これらのリージョンのユーザーは、Genieを使用するためにもはや<a href="https://docs.databricks.com/aws/en/resources/databricks-geos#cross-geo-processing">クロスGeo処理</a>を必要としません。</p>
-<p>クロスGeo処理を必要とする機能については、<a href="https://docs.databricks.com/aws/en/resources/designated-services#ds-availability">各Geoでの指定サービスの可用性</a>を参照してください。</p></div>
+                <div class="original-text"><ul>
+<li><strong>App thumbnail uploads</strong>: Customers can now upload thumbnails as the preview image for Databricks apps.</li>
+</ul></div>
+                <div class="translated-label">&gt; <ul>
+<li><strong>アプリサムネイルのアップロード</strong>: お客様はデータブリックスアプリのプレビュー画像としてサムネイルをアップロードできるようになりました。</li>
+</ul></div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/february#tag-databricks-apps-public-preview" target="_blank">
-                <div class="article-title">Tag Databricks Apps (Public Preview)</div>
+            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#genie-space-improvements" target="_blank">
+                <div class="article-title">Genie space improvements</div>
             </a>
-            <div class="translated-label">&gt; タグ Databricks Apps (パブリックプレビュー)</div>
-            <div class="date">February 02, 2026</div>
+            <div class="translated-label">&gt; 宇宙開発の改良</div>
+            <div class="date">February 05, 2026</div>
             <div class="content">
-                <div class="original-text"><p>You can now apply tags to Databricks apps to organize and categorize them. See <a href="https://docs.databricks.com/aws/en/dev-tools/databricks-apps/tags">Apply tags to Databricks apps</a>. Search is not supported using Databricks apps tags.</p></div>
-                <div class="translated-label">&gt; <p>Databricksのアプリにタグを適用して、それらを整理およびカテゴリ化できるようになりました。<a href="https://docs.databricks.com/aws/en/dev-tools/databricks-apps/tags">Databricksのアプリにタグを適用する</a>をご確認ください。Databricksのアプリタグを使用した検索はサポートされていません。</p></div>
+                <div class="original-text"><ul>
+<li><strong>Embedded compute credentials</strong>: Compute credentials are now embedded for all users of a Genie space. These credentials are embedded when a Genie space author changes the attached warehouse in the Genie space.</li>
+<li><strong>Paginated column lists</strong>: Column lists in the Configure tab are now paginated for improved usability, especially for rendering tables with many columns.</li>
+<li><strong>Tag search</strong>: Tag search is now supported for Genie spaces, allowing users to find spaces by their assigned tags.</li>
+</ul></div>
+                <div class="translated-label">&gt; <ul>
+<li><strong>組み込みコンピューティング資格情報</strong>:Genieスペースのすべてのユーザーに対して、コンピューティング資格情報が組み込まれるようになりました。Genieスペースの作成者が関連付けられたウェアハウスを変更すると、これらの資格情報が組み込まれます。</li>
+<li><strong>ページネーション付きの列リスト</strong>:「設定」タブの列リストは、多くの列を持つテーブルの表示を改善するためにページネーション化されました。</li>
+<li><strong>タグ検索</strong>:Genieスペースに対するタグ検索がサポートされるようになり、ユーザーがそれらに割り当てられたタグでスペースを見つけられるようになりました。</li>
+</ul></div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/february#zendesk-support-connector-beta" target="_blank">
-                <div class="article-title">Zendesk Support connector (Beta)</div>
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/february#applying-filters-masks-tags-and-comments-to-pipline-created-datasets-is-now-ga" target="_blank">
+                <div class="article-title">Applying filters, masks, tags, and comments to pipline-created datasets is now GA</div>
             </a>
-            <div class="translated-label">&gt; Zendesk サポートコネクタ (ベータ版)</div>
-            <div class="date">February 02, 2026</div>
+            <div class="translated-label">&gt; フィルター、マスク、タグ、パイプラインで作成されたデータセットへのコメントの適用がGAになりました。</div>
+            <div class="date">February 05, 2026</div>
             <div class="content">
-                <div class="original-text"><p>The Zendesk Support connector allows you to ingest ticket data, help center content, and community forum data from Zendesk Support. See <a href="https://docs.databricks.com/aws/en/ingestion/lakeflow-connect/zendesk-support-overview">Zendesk Support connector overview</a>.</p></div>
-                <div class="translated-label">&gt; Zendeskサポートコネクタはチケットデータ、ヘルプセンターのコンテンツ、およびZendeskサポートからのコミュニティフォーラムデータを取り込むことができます。<a href="https://docs.databricks.com/aws/en/ingestion/lakeflow-connect/zendesk-support-overview">Zendeskサポートコネクタの概要</a>を参照してください。</div>
+                <div class="original-text"><p>Using <code>CREATE</code>, <code>ALTER</code>, or the Lakeflow UI to modify ETL and ingestion pipelines (Lakeflow Spark Declarative Pipelines and Lakeflow Connect) is now GA. You can modify pipelines to apply row filters, columns masks, table and column tags, column comments, and (for materialized views only) table comments.</p>
+<p>See <a href="https://docs.databricks.com/aws/en/sql/language-manual/sql-ref-syntax-ddl-alter-streaming-table">ALTER STREAMING TABLE</a> and <a href="https://docs.databricks.com/aws/en/sql/language-manual/sql-ref-syntax-ddl-alter-materialized-view">ALTER MATERIALIZED VIEW</a>. For general information about using <code>ALTER</code> with Lakeflow Spark Declarative Pipelines, see <a href="https://docs.databricks.com/aws/en/ldp/using-alter-sql">Use <code>ALTER</code> statements with pipeline datasets</a>.</p></div>
+                <div class="translated-label">&gt; <p><code>CREATE</code>、<code>ALTER</code>、またはLakeflowのUIを使ってETLおよびインジェストパイプライン(LakeflowのSpark宣言型パイプラインおよびLakeflowConnectパイプライン)を修正することが、ついにガ一般公開されました。パイプラインを修正して、行フィルター、列マスク、テーブルおよび列のタグ、列コメント、ならびに(マテリアライズドビューのみ)テーブルコメントを適用することができます。</p>
+<p><a href="https://docs.databricks.com/aws/en/sql/language-manual/sql-ref-syntax-ddl-alter-streaming-table">ALTER STREAMING TABLE</a>と<a href="https://docs.databricks.com/aws/en/sql/language-manual/sql-ref-syntax-ddl-alter-materialized-view">ALTER MATERIALIZED VIEW</a>をご覧ください。LakeflowのSpark宣言型パイプラインでの<code>ALTER</code>の使用に関する一般情報については、<a href="https://docs.databricks.com/aws/en/ldp/using-alter-sql">パイプラインデータセットで<code>ALTER</code>ステートメントを使う</a>をご参照ください。</p></div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/february#data-quality-monitoring-anomaly-detection-public-preview" target="_blank">
-                <div class="article-title">Data Quality Monitoring Anomaly Detection public preview</div>
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/february#anthropic-claude-opus-46-now-available-as-a-databricks-hosted-model" target="_blank">
+                <div class="article-title">Anthropic Claude Opus 4.6 now available as a Databricks-hosted model</div>
             </a>
-            <div class="translated-label">&gt; データ品質モニタリング異常検知パブリックプレビュー</div>
-            <div class="date">February 02, 2026</div>
+            <div class="translated-label">&gt; アンソロピック・クロード・オープス4.6がダタブリックスホストモデルで利用可能になりました。</div>
+            <div class="date">February 05, 2026</div>
             <div class="content">
-                <div class="original-text"><p>Databricks Data Quality Monitoring Anomaly Detection is now in Public Preview. The feature is enabled at the schema level and learns from historical data patterns to detect data quality anomalies. The health of all monitored tables is consolidated into a single system table and a new UI. See <a href="https://docs.databricks.com/aws/en/data-quality-monitoring/anomaly-detection">Anomaly detection</a>.</p></div>
-                <div class="translated-label">&gt; Databricks のデータ品質モニタリング異常検出機能が一般公開プレビューになりました。この機能はスキーマレベルで有効化され、過去のデータパターンを学習して、データ品質の異常を検出します。監視対象のすべてのテーブルの健全性は、単一のシステムテーブルと新しい UI に集約されます。<a href="https://docs.databricks.com/aws/en/data-quality-monitoring/anomaly-detection">異常検出</a>の詳細をご確認ください。</div>
+                <div class="original-text"><p>Mosaic AI Model Serving now supports Anthropic <a href="https://docs.databricks.com/aws/en/machine-learning/foundation-model-apis/supported-models#claude-opus-4-6">Claude Opus 4.6</a> as a Databricks-hosted model.</p>
+<p>To access this model, use:</p>
+<ul>
+<li><a href="https://docs.databricks.com/aws/en/machine-learning/foundation-model-apis#token-foundation-apis">Foundation Model APIs pay-per-token</a>
+<ul>
+<li><a href="https://docs.databricks.com/aws/en/machine-learning/model-serving/query-reason-models">Query reasoning models</a></li>
+<li><a href="https://docs.databricks.com/aws/en/machine-learning/model-serving/query-vision-models">Query vision models</a></li>
+</ul>
+</li>
+<li><a href="https://docs.databricks.com/aws/en/large-language-models/ai-functions">Batch inference workloads using AI Functions</a></li>
+</ul></div>
+                <div class="translated-label">&gt; モザイクAIモデルサーバーは、Anthropicの<a href="https://docs.databricks.com/aws/en/machine-learning/foundation-model-apis/supported-models#claude-opus-4-6">Claude Opus 4.6</a>をDatabricksでホストされたモデルとしてサポートしています。
+
+このモデルにアクセスするには、以下のいずれかの方法を使ってください:
+
+- <a href="https://docs.databricks.com/aws/en/machine-learning/foundation-model-apis#token-foundation-apis">トークンごとの課金</a>のFoundation Model APIs
+  - <a href="https://docs.databricks.com/aws/en/machine-learning/model-serving/query-reason-models">クエリ推論モデル</a>
+  - <a href="https://docs.databricks.com/aws/en/machine-learning/model-serving/query-vision-models">クエリビジョンモデル</a>
+- <a href="https://docs.databricks.com/aws/en/large-language-models/ai-functions">AIファンクションを使ったバッチ推論ワークロード</a></div>
             </div>
         </div>
         
