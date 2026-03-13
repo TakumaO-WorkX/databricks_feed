@@ -23,94 +23,101 @@
         <h1>Databricks Docs Updates</h1>
     
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/march#databricks-assistant-is-now-genie-code" target="_blank">
-                <div class="article-title">Databricks Assistant is now Genie Code</div>
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/march#5x-large-sql-warehouse-size-beta" target="_blank">
+                <div class="article-title">5X-Large SQL warehouse size (Beta)</div>
             </a>
-            <div class="translated-label">&gt; データブリックス アシスタントは現在ジーニー コードに名称が変更されました。</div>
-            <div class="date">March 11, 2026</div>
+            <div class="translated-label">&gt; 5X大型SQLウェアハウスサイズ(ベータ)</div>
+            <div class="date">March 13, 2026</div>
             <div class="content">
-                <div class="original-text"><p>Databricks Assistant has been renamed to Genie Code, with expanded agentic capabilities for autonomous, multi-step data tasks. Genie Code Agent mode is now generally available for data science, data engineering, and dashboard authoring. See <a href="https://docs.databricks.com/aws/en/genie-code">Genie Code</a>.</p></div>
-                <div class="translated-label">&gt; データブリックスアシスタントは、自律的な多段データタスクのためのエージェンティブな機能が拡張されて、Genie Codeに名称変更されました。Genie Codeエージェントモードは、データサイエンス、データエンジニアリング、ダッシュボードの作成に一般的に利用できるようになりました。<a href="https://docs.databricks.com/aws/en/genie-code">Genie Code</a>をご覧ください。</div>
+                <div class="original-text"><p>The 5X-Large cluster size for serverless and pro SQL warehouses is now available in <a href="https://docs.databricks.com/aws/en/release-notes/release-types">Beta</a>. For serverless SQL warehouses, 5X-Large is available in all supported regions. Workspace admins can control access to this feature from the <strong>Previews</strong> page. See <a href="https://docs.databricks.com/aws/en/admin/workspace-settings/manage-previews">Manage Databricks previews</a>.</p>
+<p>For more information on SQL warehouse sizing, see <a href="https://docs.databricks.com/aws/en/compute/sql-warehouse/warehouse-behavior">SQL warehouse sizing, scaling, and queuing behavior</a>.</p></div>
+                <div class="translated-label">&gt; <p>サーバーレスおよびProSQL倉庫のための5X-Largeクラスターサイズが、<a href="https://docs.databricks.com/aws/en/release-notes/release-types">ベータ版</a>で利用可能になりました。サーバーレスSQL倉庫の場合、5X-Largeは全ての対応リージョンで利用可能です。ワークスペース管理者は、<strong>プレビュー</strong>ページからこの機能へのアクセスを制御できます。<a href="https://docs.databricks.com/aws/en/admin/workspace-settings/manage-previews">Databricksのプレビューを管理する</a>を参照してください。</p>
+<p>SQL倉庫のサイジングの詳細については、<a href="https://docs.databricks.com/aws/en/compute/sql-warehouse/warehouse-behavior">SQL倉庫のサイジング、スケーリング、およびキューイング動作</a>を参照してください。</p></div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/march#databricks-runtime-maintenance-updates-0310" target="_blank">
-                <div class="article-title">Databricks Runtime maintenance updates (03/10)</div>
+            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#dashboard-enhancements-and-improvements" target="_blank">
+                <div class="article-title">Dashboard enhancements and improvements</div>
             </a>
-            <div class="translated-label">&gt; Databricks Runtime メンテナンスアップデート (03/10)</div>
-            <div class="date">March 10, 2026</div>
+            <div class="translated-label">&gt; ダッシュボードの機能強化と改善</div>
+            <div class="date">March 12, 2026</div>
             <div class="content">
-                <div class="original-text"><p>New maintenance updates are available for supported Databricks Runtime versions. These updates include bug fixes, security patches, and performance improvements. For details, see:</p>
-<ul>
-<li><a href="https://docs.databricks.com/aws/en/release-notes/runtime/maintenance-updates#180">Databricks Runtime 18.0</a></li>
-<li><a href="https://docs.databricks.com/aws/en/release-notes/runtime/maintenance-updates#173">Databricks Runtime 17.3 LTS</a></li>
-<li><a href="https://docs.databricks.com/aws/en/release-notes/runtime/maintenance-updates#172">Databricks Runtime 17.2</a></li>
-<li><a href="https://docs.databricks.com/aws/en/release-notes/runtime/maintenance-updates#164">Databricks Runtime 16.4 LTS</a></li>
-<li><a href="https://docs.databricks.com/aws/en/release-notes/runtime/maintenance-updates#154">Databricks Runtime 15.4 LTS</a></li>
-<li><a href="https://docs.databricks.com/aws/en/release-notes/runtime/maintenance-updates#143">Databricks Runtime 14.3 LTS</a></li>
-<li><a href="https://docs.databricks.com/aws/en/release-notes/runtime/maintenance-updates#133">Databricks Runtime 13.3 LTS</a></li>
+                <div class="original-text"><ul>
+<li><strong>Dashboard embedding for external users is generally available</strong>: Embed AI/BI dashboards in external applications without requiring viewers to have Databricks accounts. See <a href="https://docs.databricks.com/aws/en/dashboards/share/embedding/external-embed">What is embedding for external users?</a>.</li>
+<li><strong>Hide Databricks logo in embedded dashboards</strong>: Externally embedded dashboards now support hiding the Databricks logo using the <code>hideDatabricksLogo</code> option. See <a href="https://docs.databricks.com/aws/en/dashboards/share/embedding/external-embed#hide-logo">Hide the Databricks logo</a>.</li>
+<li><strong>Metric view lineage highlighting</strong>: Hovering over metric views in the lineage panel now highlights the visualizations built on those metric views.</li>
+<li><strong>Certification and deprecation icons in lineage</strong>: Data objects in the dashboard lineage panel now show their certification or deprecation status.</li>
+<li><strong>Clear individual active filters</strong>: You can now remove a single filter selection from the active filter bar without resetting all active filters.</li>
+<li><strong>Mobile layouts</strong>: Dashboards now automatically render in a mobile-friendly layout when viewed on small screens. See <a href="https://docs.databricks.com/aws/en/dashboards/concepts#mobile-layout">Mobile layout</a>.</li>
+<li><strong>Custom subscription email subjects</strong>: When configuring a dashboard subscription, authors can now edit the subject line of notification emails sent to subscribers.</li>
+<li><strong>Accounting-style number formatting</strong>: Number fields now support accounting-style formatting, which displays negative values in parentheses and vertically aligns currency symbols.</li>
+<li><strong>Custom fonts</strong>: Dashboard authors can now select custom fonts for dashboards. Fonts must be preinstalled on viewer machines. If a font is not available, dashboards fall back to Databricks default fonts. See <a href="https://docs.databricks.com/aws/en/dashboards/manage/settings#custom-font">Set a custom font</a>.</li>
+<li><strong>Genie Code for dashboard authoring (Public Preview)</strong>: Automate multi-step dashboard workflows using natural language prompts to create datasets, visualizations, layouts, and filters. See <a href="https://docs.databricks.com/aws/en/dashboards/manage/dashboard-agent">Use Genie Code for dashboard authoring</a>.</li>
 </ul></div>
-                <div class="translated-label">&gt; サポートされている Databricks Runtime のバージョンに対して新しいメンテナンスアップデートが利用可能です。これらのアップデートには、バグ修正、セキュリティパッチ、パフォーマンス改善が含まれています。詳細は以下をご覧ください:
-
-<a href="https://docs.databricks.com/aws/en/release-notes/runtime/maintenance-updates#180">Databricks Runtime 18.0</a>
-<a href="https://docs.databricks.com/aws/en/release-notes/runtime/maintenance-updates#173">Databricks Runtime 17.3 LTS</a>
-<a href="https://docs.databricks.com/aws/en/release-notes/runtime/maintenance-updates#172">Databricks Runtime 17.2</a>
-<a href="https://docs.databricks.com/aws/en/release-notes/runtime/maintenance-updates#164">Databricks Runtime 16.4 LTS</a>
-<a href="https://docs.databricks.com/aws/en/release-notes/runtime/maintenance-updates#154">Databricks Runtime 15.4 LTS</a>
-<a href="https://docs.databricks.com/aws/en/release-notes/runtime/maintenance-updates#143">Databricks Runtime 14.3 LTS</a>
-<a href="https://docs.databricks.com/aws/en/release-notes/runtime/maintenance-updates#133">Databricks Runtime 13.3 LTS</a></div>
+                <div class="translated-label">&gt; <ul>
+<li><strong>外部ユーザー向けダッシュボードの組み込みが一般公開されました</strong>: Databricksアカウントがなくてもビューアーがダッシュボードを表示できるように、外部アプリケーションにAI/BIダッシュボードを組み込むことができます。<a href="https://docs.databricks.com/aws/en/dashboards/share/embedding/external-embed">What is embedding for external users?</a>をご覧ください。</li>
+<li><strong>埋め込みダッシュボードからDatabricksロゴを非表示にできるようになりました</strong>: 外部に埋め込まれたダッシュボードで、<code>hideDatabricksLogo</code>オプションを使用してDatabricksロゴを非表示にできるようになりました。<a href="https://docs.databricks.com/aws/en/dashboards/share/embedding/external-embed#hide-logo">Hide the Databricks logo</a>をご覧ください。</li>
+<li><strong>メトリックビューのライネージハイライト機能</strong>: ライネージパネルのメトリックビューにカーソルを合わせると、そのメトリックビューで構築された可視化がハイライトされるようになりました。</li>
+<li><strong>ライネージの認定およびデプリケーションアイコン</strong>: ダッシュボードのライネージパネルにある各データオブジェクトに、認定またはデプリケーションのステータスが表示されるようになりました。</li>
+<li><strong>個別のアクティブフィルターのクリア</strong>: アクティブフィルターバーから、単一のフィルター選択を削除できるようになりました。他のアクティブフィルターはリセットされません。</li>
+<li><strong>モバイルレイアウト</strong>: ダッシュボードが小さな画面で表示されたときに、モバイルフレンドリーなレイアウトで自動的に表示されるようになりました。<a href="https://docs.databricks.com/aws/en/dashboards/concepts#mobile-layout">Mobile layout</a>をご覧ください。</li>
+<li><strong>カスタムサブスクリプションメールの件名</strong>: ダッシュボードのサブスクリプションを設定する際、作成者がサブスクライバーに送信される通知メールの件名を編集できるようになりました。</li>
+<li><strong>会計スタイルの数値書式設定</strong>: 数値フィールドで、マイナスの値を括弧で表示し、通貨記号を垂直方向に配置する会計スタイルの書式設定ができるようになりました。</li>
+<li><strong>カスタムフォント</strong>: ダッシュボードの作成者がカスタムフォントを選択できるようになりました。ただし、ビューアーの端末にそのフォントがインストールされている必要があります。フォントが利用できない場合は、Databricksのデフォルトフォントが使用されます。<a href="https://docs.databricks.com/aws/en/dashboards/manage/settings#custom-font">Set a custom font</a>をご覧ください。</li>
+<li><strong>ダッシュボードの作成にGenie Codeを使用できるようになりました(パブリック</div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/march#workday-hcm-connector-beta" target="_blank">
-                <div class="article-title">Workday HCM connector (Beta)</div>
+            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#genie-enhancements-and-improvements" target="_blank">
+                <div class="article-title">Genie enhancements and improvements</div>
             </a>
-            <div class="translated-label">&gt; ワークデイHCMコネクター (ベータ版)</div>
-            <div class="date">March 09, 2026</div>
+            <div class="translated-label">&gt; ジーニーの強化と改善</div>
+            <div class="date">March 12, 2026</div>
             <div class="content">
-                <div class="original-text"><p>The managed Workday HCM connector in Lakeflow Connect is now available in Beta. Use this connector to ingest data from Workday Human Capital Management into Databricks. See <a href="https://docs.databricks.com/aws/en/ingestion/lakeflow-connect/workday-hcm-overview">Workday Human Capital Management (HCM) connector</a>.</p></div>
-                <div class="translated-label">&gt; <p>Lakeflow ConnectのマネージドWorkday HCMコネクタがベータで利用可能になりました。このコネクタを使用してWorkday Human Capital Managementのデータをデータブリックスにインジェストできます。<a href="https://docs.databricks.com/aws/en/ingestion/lakeflow-connect/workday-hcm-overview">Workday Human Capital Management (HCM)コネクタ</a>をご確認ください。</p></div>
+                <div class="original-text"><ul>
+<li><strong>Workspace-level color palettes</strong>: Charts and graphs generated in Genie now use the visualization color palette configured at the workspace level.</li>
+<li><strong>Genie space management APIs are generally available</strong>: The <code>CreateSpace</code>, <code>UpdateSpace</code>, <code>GenieGetSpace</code>, <code>GenieListSpaces</code>, and <code>GenieTrashSpace</code> APIs hare now general availability. See <a href="https://docs.databricks.com/aws/en/genie/conversation-api">Use the Genie API to integrate Genie into your applications</a>.</li>
+<li><strong>API instruction length fix</strong>: Resolved a bug with the maximum instruction length in the CreateSpace and UpdateSpace APIs.</li>
+<li><strong>Improved context handling</strong>: Genie now better identifies relevant previous messages to include in context, reducing context loss.</li>
+<li><strong>Improved top-X answers with ties</strong>: Genie now more accurately answers top-X questions when results include ties.</li>
+</ul></div>
+                <div class="translated-label">&gt; <ul>
+<li><strong>ワークスペースレベルのカラーパレット</strong>:Genieで生成されたチャートやグラフは、ワークスペースレベルで設定された視覚化カラーパレットを使用しています。</li>
+<li><strong>Genieスペース管理APIが一般公開されました</strong>:<code>CreateSpace</code>、<code>UpdateSpace</code>、<code>GenieGetSpace</code>、<code>GenieListSpaces</code>、<code>GenieTrashSpace</code> APIが一般公開されました。<a href="https://docs.databricks.com/aws/en/genie/conversation-api">Use the Genie API to integrate Genie into your applications</a>を参照してください。</li>
+<li><strong>API命令長の修正</strong>:CreateSpaceおよびUpdateSpaceAPIの最大命令長のバグが修正されました。</li>
+<li><strong>コンテキストの処理改善</strong>:Genieは、コンテキストの損失を減らすため、関連する過去のメッセージをより正確に識別するようになりました。</li>
+<li><strong>Top-X回答の改善(同点)</strong>:Genieは、結果に同点が含まれる場合でも、Top-X質問により正確に回答するようになりました。</li>
+</ul></div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/march#declarative-feature-engineering-apis-beta" target="_blank">
-                <div class="article-title">Declarative Feature Engineering APIs (Beta)</div>
+            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#account-level-databricks-one-beta" target="_blank">
+                <div class="article-title">Account-level Databricks One (Beta)</div>
             </a>
-            <div class="translated-label">&gt; 宣言的な特徴エンジニアリング API (ベータ版)</div>
-            <div class="date">March 09, 2026</div>
+            <div class="translated-label">&gt; アカウントレベルのDatabricks One (ベータ版)</div>
+            <div class="date">March 12, 2026</div>
             <div class="content">
-                <div class="original-text"><p>Declarative Feature Engineering APIs are now available in Beta in the AWS <code>us-east-1</code> and <code>us-west-2</code> regions. These APIs let you declaratively define and compute time-windowed aggregation features from your data sources.</p>
-<p>With declarative feature engineering, you can:</p>
-<ul>
-<li>Define features in Unity Catalog.</li>
-<li>Materialize batch features to Delta tables or Lakebase.</li>
-<li>Serve Unity Catalog models using online model serving.</li>
-</ul>
-<p>See <a href="https://docs.databricks.com/aws/en/machine-learning/feature-store/declarative-apis">Declarative feature engineering and managed pipelines</a> and <a href="https://docs.databricks.com/aws/en/machine-learning/feature-store/materialized-features">Materialize and serve declarative features</a>.</p></div>
-                <div class="translated-label">&gt; デクララティブ特徴エンジニアリングAPIが、AWS us-east-1およびus-west-2リージョンでベータ版として利用可能になりました。これらのAPIを使用すると、データソースから時間枠付きの集計特徴を宣言的に定義し、計算することができます。
-
-デクララティブ特徴エンジニアリングによって以下のことができます:
-
-- Unity Catalogで特徴を定義する
-- バッチ特徴をDeltaテーブルまたはLakebaseにマテリアライズする
-- Unity Catalogモデルをオンラインモデル提供で提供する
-
-詳細は、『デクララティブ特徴エンジニアリングと管理パイプライン』と『デクララティブ特徴のマテリアライズと提供』をご覧ください。</div>
+                <div class="original-text"><ul>
+<li><strong>Account-level Databricks One (Beta)</strong>: Users can now discover and interact with AI/BI dashboards, Genie spaces, and Databricks Apps from all workspaces in their account from a single entry point. Account-level Databricks One provides a unified homepage, cross-account search, and recommendations and favorites across workspaces. See <a href="https://docs.databricks.com/aws/en/workspace/databricks-one-account">Account-level Databricks One</a>.</li>
+</ul></div>
+                <div class="translated-label">&gt; <ul>
+<li><strong>アカウントレベルの Databricks One (ベータ版)</strong>: ユーザーは、自身のアカウントにあるすべてのワークスペースから、AI/BI ダッシュボード、Genie スペース、およびDatabricks アプリを検索して操作できるようになりました。アカウントレベルの Databricks One では、統一されたホームページ、クロスアカウントの検索、ワークスペース間の推奨機能とお気に入りの設定が利用できます。詳細は <a href="https://docs.databricks.com/aws/en/workspace/databricks-one-account">アカウントレベルの Databricks One</a> をご覧ください。</li>
+</ul></div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/march#bi-compatibility-mode-for-metric-views-in-power-bi-beta" target="_blank">
-                <div class="article-title">BI compatibility mode for metric views in Power BI (Beta)</div>
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/march#data-quality-monitoring-documentation-moved-to-data-governance-unity-catalog" target="_blank">
+                <div class="article-title">Data quality monitoring documentation moved to Data governance (Unity Catalog)</div>
             </a>
-            <div class="translated-label">&gt; ビジネスインテリジェンス互換モードのメトリックビューをPower BI（ベータ）で使用する</div>
-            <div class="date">March 09, 2026</div>
+            <div class="translated-label">&gt; データ品質モニタリング文書がデータガバナンス（Unity Catalog）に移動されました。</div>
+            <div class="date">March 12, 2026</div>
             <div class="content">
-                <div class="original-text"><p>BI compatibility mode for metric views in Power BI is now available in Beta. You can query Databricks metric views in Power BI using standard SQL aggregation functions by enabling BI compatibility mode when creating a connection. It automatically rewrites aggregate functions to use the correct measure definitions. See <a href="https://docs.databricks.com/aws/en/partners/bi/power-bi-metric-views">Query metric views in Power BI</a>.</p></div>
-                <div class="translated-label">&gt; Power BI のメトリックビューでBI互換モードが現在ベータ版で利用可能になりました。BI互換モードを有効にすることで、標準SQLの集計関数を使用してPower BIからDatabricksのメトリックビューにクエリを実行できます。集計関数は自動的に正しいメジャー定義に書き換えられます。詳細は<a href="https://docs.databricks.com/aws/en/partners/bi/power-bi-metric-views">Power BIでメトリックビューを照会する</a>をご覧ください。</div>
+                <div class="original-text"><p>The <a href="https://docs.databricks.com/aws/en/data-governance/unity-catalog/data-quality-monitoring">Data quality monitoring</a> documentation has moved from Data guides to the Data governance (Unity Catalog) chapter.</p></div>
+                <div class="translated-label">&gt; <p>データクオリティの監視<a href="https://docs.databricks.com/aws/en/data-governance/unity-catalog/data-quality-monitoring">ドキュメンテーション</a>は、データガイドからデータガバナンス(Unity Catalog)の章に移動しました。</p></div>
             </div>
         </div>
         
