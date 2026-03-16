@@ -23,16 +23,73 @@
         <h1>Databricks Docs Updates</h1>
     
         <div class="article">
+            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#chat-in-databricks-one-beta" target="_blank">
+                <div class="article-title">Chat in Databricks One (Beta)</div>
+            </a>
+            <div class="translated-label">&gt; チャットInデータブリックスワン(ベータ)</div>
+            <div class="date">March 13, 2026</div>
+            <div class="content">
+                <div class="original-text"><p>Chat in Databricks One is now available in Beta. Chat provides a unified, full-screen interface for talking to Genie. Genie routes your question to the most relevant Genie space or directly answers your question agentically using available data and data assets. See <a href="https://docs.databricks.com/aws/en/workspace/databricks-one-chat">Chat in Databricks One</a>.</p></div>
+                <div class="translated-label">&gt; <p>Databricks Oneのチャットは現在ベータ版で利用可能です。チャットでは、Genieとの対話のためのユニファイドなフルスクリーンのインターフェイスが提供されます。Genieは、利用可能なデータやデータアセットを使って、最も関連性の高いGenieスペースにユーザーの質問をルーティングするか、直接回答します。<a href="https://docs.databricks.com/aws/en/workspace/databricks-one-chat">Databricks Oneのチャットについて</a>をご確認ください。</p></div>
+            </div>
+        </div>
+        
+        <div class="article">
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/march#some-partner-powered-ai-features-are-now-available-in-country-for-brazil-canada-japan-korea-singapore-and-the-uk" target="_blank">
+                <div class="article-title">Some partner-powered AI features are now available in-country for Brazil, Canada, Japan, Korea, Singapore, and the UK</div>
+            </a>
+            <div class="translated-label">&gt; ブラジル、カナダ、日本、韓国、シンガポール、英国で一部のパートナー駆動型AIの機能が利用できるようになりました。</div>
+            <div class="date">March 13, 2026</div>
+            <div class="content">
+                <div class="original-text"><p>The following features are now available through models hosted in-country in Brazil, Canada, Japan, Korea, Singapore, and the UK:</p>
+<ul>
+<li>Genie Code chat and cell actions</li>
+<li>Genie (excluding research agent)</li>
+<li>AI-generated comments</li>
+<li>AI/BI dashboards</li>
+</ul>
+<p>Workspaces in these countries can use these features with <a href="https://docs.databricks.com/aws/en/resources/databricks-geos">Enforce data processing within workspace Geography for Designated Services</a> enabled and <a href="https://docs.databricks.com/aws/en/databricks-ai/partner-powered">partner-powered AI features</a> enabled. For these features in the listed countries, in-country data routing is enforced, meaning data does not leave the country.</p>
+<p>If partner-powered AI features is disabled, Genie Code can use <a href="https://docs.databricks.com/aws/en/databricks-ai#db-hosted">Databricks-hosted models</a> only if <a href="https://docs.databricks.com/aws/en/resources/databricks-geos">Enforce data processing within workspace Geography for Designated Services</a> is disabled.</p>
+<p>All other designated services continue to comply with data residency managed by Databricks Geos. Some AI capabilities that depend on models not currently hosted in these countries might not be available when <a href="https://docs.databricks.com/aws/en/resources/databricks-geos">Enforce data processing within workspace Geography for Designated Services</a> is enabled. See <a href="https://docs.databricks.com/aws/en/resources/databricks-geos">Databricks Geos: Data residency</a> for more information on which features require cross-geo processing.</p></div>
+                <div class="translated-label">&gt; <p>以下の機能がブラジル、カナダ、日本、韓国、シンガポール、英国にホストされるモデルから利用可能になりました:</p>
+<ul>
+<li>Genie Codeチャットとセルのアクション</li>
+<li>Genie(リサーチエージェントを除く)</li>
+<li>AI生成コメント</li>
+<li>AI/BIダッシュボード</li>
+</ul>
+<p>これらの国のワークスペースでは、<a href="https://docs.databricks.com/aws/en/resources/databricks-geos">指定サービスのワークスペースエリア内でのデータ処理を強制</a>と<a href="https://docs.databricks.com/aws/en/databricks-ai/partner-powered">パートナー提供のAI機能</a>を有効にすることで、これらの機能を使用できます。これらの国の機能では、国内データルーティングが強制されるため、データが国外に出ることはありません。</p>
+<p>パートナー提供のAI機能が無効の場合、Genie Codeは<a href="https://docs.databricks.com/aws/en/resources/databricks-geos">指定サービスのワークスペースエリア内でのデータ処理を強制</a>を無効にすれば、<a href="https://docs.databricks.com/aws/en/databricks-ai#db-hosted">Databricksホストのモデル</a>のみを使用できます。</p>
+<p>その他の指定サービスについては、Databricks Geosによる データ保管場所の管理に準拠します。これらの国でホストされていないモデルに依存するAI機能の一部は、<a href="https://docs.databricks.com/aws/en/resources/databricks-geos">指定サービスのワークスペースエリア内でのデータ処理を強制</a>を有効にすると利用できなくなる可能性があります。詳細は、<a href="https://docs.databricks.com/aws/en/resources/databricks-geos">Databricks Geos: データ保管場所</a>を参照してください。</p></div>
+            </div>
+        </div>
+        
+        <div class="article">
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/march#automatic-deletion-of-empty-vector-search-endpoints" target="_blank">
+                <div class="article-title">Automatic deletion of empty vector search endpoints</div>
+            </a>
+            <div class="translated-label">&gt; 自動的な空ベクトル検索エンドポイントの削除</div>
+            <div class="date">March 13, 2026</div>
+            <div class="content">
+                <div class="original-text"><p>Vector search endpoints are now only charged after an index has been created, and 24 hours after the last index is deleted from the endpoint, the endpoint no longer incurs any charges.</p>
+<p>For more information, see <a href="https://docs.databricks.com/aws/en/vector-search/vector-search-cost-management">Mosaic AI Vector Search: Cost management guide</a>.</p></div>
+                <div class="translated-label">&gt; ベクターサーチのエンドポイントは、インデックスが作成された後にのみ課金されるようになり、最後のインデックスがエンドポイントから削除されてから24時間経つと、エンドポイントにはもはや課金されません。
+
+詳細については、「Mosaic AI ベクターサーチ:コスト管理ガイド」をご覧ください。</div>
+            </div>
+        </div>
+        
+        <div class="article">
             <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/march#5x-large-sql-warehouse-size-beta" target="_blank">
                 <div class="article-title">5X-Large SQL warehouse size (Beta)</div>
             </a>
-            <div class="translated-label">&gt; 5X大型SQLウェアハウスサイズ(ベータ)</div>
+            <div class="translated-label">&gt; 5XLarge SQLウェアハウスサイズ(ベータ)</div>
             <div class="date">March 13, 2026</div>
             <div class="content">
                 <div class="original-text"><p>The 5X-Large cluster size for serverless and pro SQL warehouses is now available in <a href="https://docs.databricks.com/aws/en/release-notes/release-types">Beta</a>. For serverless SQL warehouses, 5X-Large is available in all supported regions. Workspace admins can control access to this feature from the <strong>Previews</strong> page. See <a href="https://docs.databricks.com/aws/en/admin/workspace-settings/manage-previews">Manage Databricks previews</a>.</p>
 <p>For more information on SQL warehouse sizing, see <a href="https://docs.databricks.com/aws/en/compute/sql-warehouse/warehouse-behavior">SQL warehouse sizing, scaling, and queuing behavior</a>.</p></div>
-                <div class="translated-label">&gt; <p>サーバーレスおよびProSQL倉庫のための5X-Largeクラスターサイズが、<a href="https://docs.databricks.com/aws/en/release-notes/release-types">ベータ版</a>で利用可能になりました。サーバーレスSQL倉庫の場合、5X-Largeは全ての対応リージョンで利用可能です。ワークスペース管理者は、<strong>プレビュー</strong>ページからこの機能へのアクセスを制御できます。<a href="https://docs.databricks.com/aws/en/admin/workspace-settings/manage-previews">Databricksのプレビューを管理する</a>を参照してください。</p>
-<p>SQL倉庫のサイジングの詳細については、<a href="https://docs.databricks.com/aws/en/compute/sql-warehouse/warehouse-behavior">SQL倉庫のサイジング、スケーリング、およびキューイング動作</a>を参照してください。</p></div>
+                <div class="translated-label">&gt; <p>サーバーレスおよびプロのSQL ウェアハウスの5X-Large クラスタサイズが<a href="https://docs.databricks.com/aws/en/release-notes/release-types">ベータ</a>で利用可能になりました。サーバーレスSQL ウェアハウスでは、5X-Largeが全ての対応リージョンで利用可能です。ワークスペース管理者は<strong>プレビュー</strong>ページからこの機能へのアクセスを制御できます。<a href="https://docs.databricks.com/aws/en/admin/workspace-settings/manage-previews">Databricksプレビューの管理</a>をご覧ください。</p>
+<p>SQL ウェアハウスのサイジングの詳細については、<a href="https://docs.databricks.com/aws/en/compute/sql-warehouse/warehouse-behavior">SQL ウェアハウスのサイジング、スケーリング、およびキューイングの振る舞い</a>をご参照ください。</p></div>
             </div>
         </div>
         
@@ -56,68 +113,16 @@
 <li><strong>Genie Code for dashboard authoring (Public Preview)</strong>: Automate multi-step dashboard workflows using natural language prompts to create datasets, visualizations, layouts, and filters. See <a href="https://docs.databricks.com/aws/en/dashboards/manage/dashboard-agent">Use Genie Code for dashboard authoring</a>.</li>
 </ul></div>
                 <div class="translated-label">&gt; <ul>
-<li><strong>外部ユーザー向けダッシュボードの組み込みが一般公開されました</strong>: Databricksアカウントがなくてもビューアーがダッシュボードを表示できるように、外部アプリケーションにAI/BIダッシュボードを組み込むことができます。<a href="https://docs.databricks.com/aws/en/dashboards/share/embedding/external-embed">What is embedding for external users?</a>をご覧ください。</li>
-<li><strong>埋め込みダッシュボードからDatabricksロゴを非表示にできるようになりました</strong>: 外部に埋め込まれたダッシュボードで、<code>hideDatabricksLogo</code>オプションを使用してDatabricksロゴを非表示にできるようになりました。<a href="https://docs.databricks.com/aws/en/dashboards/share/embedding/external-embed#hide-logo">Hide the Databricks logo</a>をご覧ください。</li>
-<li><strong>メトリックビューのライネージハイライト機能</strong>: ライネージパネルのメトリックビューにカーソルを合わせると、そのメトリックビューで構築された可視化がハイライトされるようになりました。</li>
-<li><strong>ライネージの認定およびデプリケーションアイコン</strong>: ダッシュボードのライネージパネルにある各データオブジェクトに、認定またはデプリケーションのステータスが表示されるようになりました。</li>
-<li><strong>個別のアクティブフィルターのクリア</strong>: アクティブフィルターバーから、単一のフィルター選択を削除できるようになりました。他のアクティブフィルターはリセットされません。</li>
-<li><strong>モバイルレイアウト</strong>: ダッシュボードが小さな画面で表示されたときに、モバイルフレンドリーなレイアウトで自動的に表示されるようになりました。<a href="https://docs.databricks.com/aws/en/dashboards/concepts#mobile-layout">Mobile layout</a>をご覧ください。</li>
-<li><strong>カスタムサブスクリプションメールの件名</strong>: ダッシュボードのサブスクリプションを設定する際、作成者がサブスクライバーに送信される通知メールの件名を編集できるようになりました。</li>
-<li><strong>会計スタイルの数値書式設定</strong>: 数値フィールドで、マイナスの値を括弧で表示し、通貨記号を垂直方向に配置する会計スタイルの書式設定ができるようになりました。</li>
-<li><strong>カスタムフォント</strong>: ダッシュボードの作成者がカスタムフォントを選択できるようになりました。ただし、ビューアーの端末にそのフォントがインストールされている必要があります。フォントが利用できない場合は、Databricksのデフォルトフォントが使用されます。<a href="https://docs.databricks.com/aws/en/dashboards/manage/settings#custom-font">Set a custom font</a>をご覧ください。</li>
-<li><strong>ダッシュボードの作成にGenie Codeを使用できるようになりました(パブリック</div>
-            </div>
-        </div>
-        
-        <div class="article">
-            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#genie-enhancements-and-improvements" target="_blank">
-                <div class="article-title">Genie enhancements and improvements</div>
-            </a>
-            <div class="translated-label">&gt; ジーニーの強化と改善</div>
-            <div class="date">March 12, 2026</div>
-            <div class="content">
-                <div class="original-text"><ul>
-<li><strong>Workspace-level color palettes</strong>: Charts and graphs generated in Genie now use the visualization color palette configured at the workspace level.</li>
-<li><strong>Genie space management APIs are generally available</strong>: The <code>CreateSpace</code>, <code>UpdateSpace</code>, <code>GenieGetSpace</code>, <code>GenieListSpaces</code>, and <code>GenieTrashSpace</code> APIs hare now general availability. See <a href="https://docs.databricks.com/aws/en/genie/conversation-api">Use the Genie API to integrate Genie into your applications</a>.</li>
-<li><strong>API instruction length fix</strong>: Resolved a bug with the maximum instruction length in the CreateSpace and UpdateSpace APIs.</li>
-<li><strong>Improved context handling</strong>: Genie now better identifies relevant previous messages to include in context, reducing context loss.</li>
-<li><strong>Improved top-X answers with ties</strong>: Genie now more accurately answers top-X questions when results include ties.</li>
-</ul></div>
-                <div class="translated-label">&gt; <ul>
-<li><strong>ワークスペースレベルのカラーパレット</strong>:Genieで生成されたチャートやグラフは、ワークスペースレベルで設定された視覚化カラーパレットを使用しています。</li>
-<li><strong>Genieスペース管理APIが一般公開されました</strong>:<code>CreateSpace</code>、<code>UpdateSpace</code>、<code>GenieGetSpace</code>、<code>GenieListSpaces</code>、<code>GenieTrashSpace</code> APIが一般公開されました。<a href="https://docs.databricks.com/aws/en/genie/conversation-api">Use the Genie API to integrate Genie into your applications</a>を参照してください。</li>
-<li><strong>API命令長の修正</strong>:CreateSpaceおよびUpdateSpaceAPIの最大命令長のバグが修正されました。</li>
-<li><strong>コンテキストの処理改善</strong>:Genieは、コンテキストの損失を減らすため、関連する過去のメッセージをより正確に識別するようになりました。</li>
-<li><strong>Top-X回答の改善(同点)</strong>:Genieは、結果に同点が含まれる場合でも、Top-X質問により正確に回答するようになりました。</li>
-</ul></div>
-            </div>
-        </div>
-        
-        <div class="article">
-            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#account-level-databricks-one-beta" target="_blank">
-                <div class="article-title">Account-level Databricks One (Beta)</div>
-            </a>
-            <div class="translated-label">&gt; アカウントレベルのDatabricks One (ベータ版)</div>
-            <div class="date">March 12, 2026</div>
-            <div class="content">
-                <div class="original-text"><ul>
-<li><strong>Account-level Databricks One (Beta)</strong>: Users can now discover and interact with AI/BI dashboards, Genie spaces, and Databricks Apps from all workspaces in their account from a single entry point. Account-level Databricks One provides a unified homepage, cross-account search, and recommendations and favorites across workspaces. See <a href="https://docs.databricks.com/aws/en/workspace/databricks-one-account">Account-level Databricks One</a>.</li>
-</ul></div>
-                <div class="translated-label">&gt; <ul>
-<li><strong>アカウントレベルの Databricks One (ベータ版)</strong>: ユーザーは、自身のアカウントにあるすべてのワークスペースから、AI/BI ダッシュボード、Genie スペース、およびDatabricks アプリを検索して操作できるようになりました。アカウントレベルの Databricks One では、統一されたホームページ、クロスアカウントの検索、ワークスペース間の推奨機能とお気に入りの設定が利用できます。詳細は <a href="https://docs.databricks.com/aws/en/workspace/databricks-one-account">アカウントレベルの Databricks One</a> をご覧ください。</li>
-</ul></div>
-            </div>
-        </div>
-        
-        <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/march#data-quality-monitoring-documentation-moved-to-data-governance-unity-catalog" target="_blank">
-                <div class="article-title">Data quality monitoring documentation moved to Data governance (Unity Catalog)</div>
-            </a>
-            <div class="translated-label">&gt; データ品質モニタリング文書がデータガバナンス（Unity Catalog）に移動されました。</div>
-            <div class="date">March 12, 2026</div>
-            <div class="content">
-                <div class="original-text"><p>The <a href="https://docs.databricks.com/aws/en/data-governance/unity-catalog/data-quality-monitoring">Data quality monitoring</a> documentation has moved from Data guides to the Data governance (Unity Catalog) chapter.</p></div>
-                <div class="translated-label">&gt; <p>データクオリティの監視<a href="https://docs.databricks.com/aws/en/data-governance/unity-catalog/data-quality-monitoring">ドキュメンテーション</a>は、データガイドからデータガバナンス(Unity Catalog)の章に移動しました。</p></div>
+<li><strong>外部ユーザーのダッシュボード埋め込みが一般公開されました</strong>: Databricksアカウントを持っていなくてもダッシュボードをAI/BIアプリケーションに埋め込めます。詳細は<a href="https://docs.databricks.com/aws/en/dashboards/share/embedding/external-embed">外部ユーザーの埋め込みとは?</a>をご覧ください。</li>
+<li><strong>埋め込みダッシュボードからDatabricksロゴを非表示にする</strong>: 外部に埋め込まれたダッシュボードで、<code>hideDatabricksLogo</code>オプションを使ってDatabricksロゴを非表示にできます。詳細は<a href="https://docs.databricks.com/aws/en/dashboards/share/embedding/external-embed#hide-logo">Databricksロゴを非表示にする</a>をご覧ください。</li>
+<li><strong>メトリック表示のlineage強調表示</strong>: lineageパネルでメトリック表示にマウスオーバーすると、そのメトリック表示に基づいて構築された可視化が強調表示されます。</li>
+<li><strong>lineageでの認証/非推奨アイコン</strong>: ダッシュボードlineageパネルのデータオブジェクトに、認証状態や非推奨状態を示すアイコンが表示されます。</li>
+<li><strong>個別のアクティブフィルターのクリア</strong>: アクティブフィルターバーから単一のフィルターを選択して削除できるようになりました。他のアクティブフィルターはリセットされません。</li>
+<li><strong>モバイルレイアウト</strong>: 小さな画面でダッシュボードを表示すると、モバイル対応のレイアウトに自動的に切り替わります。詳細は<a href="https://docs.databricks.com/aws/en/dashboards/concepts#mobile-layout">モバイルレイアウト</a>をご覧ください。</li>
+<li><strong>サブスクリプションメールの件名のカスタマイズ</strong>: ダッシュボードのサブスクリプションを設定する際に、通知メールの件名を編集できるようになりました。</li>
+<li><strong>会計スタイルの数値書式設定</strong>: 数値フィールドで、マイナス値を括弧で表示し通貨記号を垂直方向に配置する会計スタイルの書式設定ができるようになりました。</li>
+<li><strong>カスタムフォント</strong>: ダッシュボード作成者がカスタムフォントを選択できるようになりました。フォントはビューアーのマシンにインストールされている必要があり、利用できない場合はDatabricksのデフォルトフォントが使用されます。詳細は<a href="https://docs.databricks.com/aws/en/dashboards/manage/settings#custom-font">カスタムフォントの設定</a>をご覧ください。</li>
+<li><strong>Genie Codeによるダッシュボード作成 (パブリックプレビュー)</strong>: 自然言語プロンプトを使って、データセット、可視化、レイアウト</div>
             </div>
         </div>
         
