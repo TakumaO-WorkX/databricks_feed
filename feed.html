@@ -23,67 +23,85 @@
         <h1>Databricks Docs Updates</h1>
     
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/april#git-backed-app-deployments-are-now-generally-available" target="_blank">
-                <div class="article-title">Git-backed app deployments are now generally available</div>
+            <a href="https://docs.databricks.com/aws/en/release-notes/whats-coming#upcoming-breaking-change-default-behavior-when-deleting-a-unity-catalog-pipeline" target="_blank">
+                <div class="article-title">Upcoming breaking change: default behavior when deleting a Unity Catalog pipeline</div>
             </a>
-            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZr7eT9LT919zT151Hi6u'}]</div>
-            <div class="date">April 07, 2026</div>
+            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZuuKjvUZLFLBxt4vJWG4'}]</div>
+            <div class="date">April 09, 2026</div>
             <div class="content">
-                <div class="original-text"><p>You can now deploy Databricks apps directly from Git repositories. Configure a Git reference, specify a source code path within a repository, and optionally enforce Git-only deployments across a workspace. See <a href="https://docs.databricks.com/aws/en/dev-tools/databricks-apps/deploy#deploy-git">Deploy from a Git repository</a>.</p></div>
-                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZr7eTaP7xN6tM5FoXjdn'}]</div>
+                <div class="original-text"><p>In an upcoming release, the default behavior when deleting a Unity Catalog pipeline will change. Currently, deleting a pipeline also removes all associated materialized views, streaming tables, and views. After this change, associated tables will be retained, but inactive after the pipeline is removed. The API will also change to retain tables by default, but setting the <code>cascade</code> field to <code>true</code> overrides this and keeps the current behavior.</p>
+<p>The <code>cascade</code> field is available now. To preserve the current behavior of removing all tables when deleting a pipeline, update your code to set <code>cascade=true</code>.</p>
+<p>See <a href="https://docs.databricks.com/api/workspace/pipelines/delete">Delete a pipeline</a>, and <a href="https://docs.databricks.com/aws/en/ldp/unity-catalog#delete-a-pipeline">Delete a pipeline</a>.</p></div>
+                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZuuKkUhyp45jgRhUUnHE'}]</div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/whats-coming#column-level-sap-governance-tags-for-sap-bdc-shares" target="_blank">
-                <div class="article-title">Column-level SAP governance tags for SAP BDC shares</div>
+            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#dashboard-enhancements" target="_blank">
+                <div class="article-title">Dashboard enhancements</div>
             </a>
-            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZr7eTrVpgRp3aVCseyfX'}]</div>
-            <div class="date">April 06, 2026</div>
+            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZuuKkqYK1nRVwcwtxyhZ'}]</div>
+            <div class="date">April 09, 2026</div>
             <div class="content">
-                <div class="original-text"><p>In late April 2026, SAP governance tags for columns will be available for SAP Business Data Cloud (BDC) shares mounted to Unity Catalog catalogs. These tags mark columns that might contain sensitive data, such as personally identifiable information, and can be used in attribute-based access control (ABAC) policies to enforce column-level access controls.</p>
-<p>See <a href="https://docs.databricks.com/aws/en/delta-sharing/sap-bdc/semantic-metadata">SAP BDC semantic metadata</a>.</p></div>
-                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZr7eUREBKgTRS2fQdj7i'}]</div>
+                <div class="original-text"><ul>
+<li><strong>Dashboard local metric views (Public Preview)</strong>: A new dataset type lets you create metric views directly in an AI/BI dashboard using a low-code visual interface, without publishing to Unity Catalog first. See <a href="https://docs.databricks.com/aws/en/dashboards/manage/data-modeling/local-metric-views">Dashboard local metric views</a>.</li>
+<li><strong>Edit hex color values inline</strong>: Authors can now click directly on a hex color value to edit it in place.</li>
+<li><strong>View SQL for visualization widgets</strong>: Authors can now view the SQL behind specific visualization widgets while in draft mode. See <a href="https://docs.databricks.com/aws/en/dashboards/manage/visualizations#view-visualization-query">View the visualization query</a>.</li>
+<li><strong>External embedding is now generally available</strong>: Embedding dashboards for external users is now generally available. See <a href="https://docs.databricks.com/aws/en/dashboards/share/embedding/external-embed">What is embedding for external users?</a></li>
+<li><strong>Genie Code dataset referencing</strong>: Improved the quality of Genie Code for dashboards when referencing datasets while authoring.</li>
+<li><strong>Waterfall chart totals</strong>: Waterfall charts with categorical X-axis now support a total bar.</li>
+<li><strong>Scatter plot shape encoding</strong>: Scatter plots now support a shape encoding to differentiate data points by category.</li>
+<li><strong>Vertical annotations with dual axis</strong>: Fixed a bug where vertical annotations did not appear in charts with dual axis enabled.</li>
+<li><strong>Text widget character limit</strong>: Fixed a bug where the text widget accepted more characters than supported but silently failed to save.</li>
+</ul></div>
+                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZuuKmE6ySfzAVQqKWWgD'}]</div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/whats-coming#list-dashboards-api-sort-order-change" target="_blank">
-                <div class="article-title">List Dashboards API sort order change</div>
+            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#genie-enhancements" target="_blank">
+                <div class="article-title">Genie enhancements</div>
             </a>
-            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZr7eUjLR3LkLZ8UyCzjg'}]</div>
-            <div class="date">April 06, 2026</div>
+            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZuuKmcv7a5Fi8PDSw91a'}]</div>
+            <div class="date">April 09, 2026</div>
             <div class="content">
-                <div class="original-text"><p>In an upcoming release on April 6, 2026, a new version of the <a href="https://docs.databricks.com/api/workspace/lakeview/list">List Dashboards API</a> will change the sort order of results. Dashboards will be returned in reverse chronological order by last modified date, with the most recently modified dashboard first, instead of alphabetically by title.</p>
-<p>This is a breaking change for users who paginate results using <code>next_page_token</code>. Tokens generated by a previous version of the API are not valid with the new version. If you use a token from a previous version, the API returns an error:</p>
-<pre><code>Invalid page_token: this token was generated by a previous/different API version. Please retry without page_token.
-</code></pre>
-<p>To continue paginating after this change, start a new request without a <code>next_page_token</code>.</p></div>
-                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZr7eV1Sw88c9LBAP8nt1'}]</div>
+                <div class="original-text"><ul>
+<li><strong>Embed a Genie space (Beta)</strong>: You can now embed a Genie space as an iframe in a website or application. See <a href="https://docs.databricks.com/aws/en/genie/embed">Embed a Genie space</a>.</li>
+<li><strong>Space thumbnails</strong>: Genie space authors can now attach thumbnails to a space. Thumbnails appear on the Genie space's initial chat page and in Databricks One. See <a href="https://docs.databricks.com/aws/en/genie/set-up#config"> Configure settings</a>.</li>
+<li><strong>Request Review for Agent mode (Public Preview)</strong>: Users can now request a review for Agent mode messages.</li>
+<li><strong>Table visualizations with conditional formatting</strong>: Genie can now generate table visualizations with conditional formatting colors for better readability.</li>
+<li><strong>Agent mode (Public Preview) as default</strong>: Agent mode is now the default conversation setting in Genie spaces when the Public Preview feature is enabled.</li>
+<li><strong>SQL attachment fix</strong>: Fixed a bug where SQL attachments generated from intermediate thinking steps appeared in the list conversation messages API response.</li>
+</ul></div>
+                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZuuKn6SjgmxRxJ9ED491'}]</div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/april#databricks-marketplace-listing-creation-wizard" target="_blank">
-                <div class="article-title">Databricks Marketplace listing creation wizard</div>
+            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#databricks-one-enhancements" target="_blank">
+                <div class="article-title">Databricks One enhancements</div>
             </a>
-            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZr7eVQWoHKNm8NpQ9bLx'}]</div>
-            <div class="date">April 06, 2026</div>
+            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZuuKnSmwgBghFgjZTZjg'}]</div>
+            <div class="date">April 09, 2026</div>
             <div class="content">
-                <div class="original-text"><p>The Marketplace provider console now features a step-by-step listing creation wizard that guides you through setting up general information, data assets, attributes, and details on separate pages. See <a href="https://docs.databricks.com/aws/en/marketplace/create-listing">Create a Marketplace listing</a>.</p></div>
-                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZr7eVpZudnKSFrLHmSPE'}]</div>
+                <div class="original-text"><ul>
+<li><strong>Account-level Databricks One is now generally available</strong>: Account-level Databricks One now includes Databricks Apps, Domains, and Genie. See <a href="https://docs.databricks.com/aws/en/workspace/databricks-one-account">Account-level Databricks One</a>.</li>
+<li><strong>Updated workspace Databricks One navigation</strong>: The workspace Databricks One left-hand navigation has been updated and now includes Genie Code chat history.</li>
+</ul></div>
+                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZuuKnr6EWwYUTbpigDRY'}]</div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/april#workspace-skills-for-genie-code-are-now-available" target="_blank">
-                <div class="article-title">Workspace skills for Genie Code are now available</div>
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/april#new-cascade-field-for-deleting-unity-catalog-pipelines-beta" target="_blank">
+                <div class="article-title">New cascade field for deleting Unity Catalog pipelines (Beta)</div>
             </a>
-            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZr7eW2UCvQTQYLhC5fE4'}]</div>
-            <div class="date">April 06, 2026</div>
+            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZuuKoDQuTrBmeSWZexCj'}]</div>
+            <div class="date">April 09, 2026</div>
             <div class="content">
-                <div class="original-text"><p>Workspace skills for Genie Code Agent mode are now available. Workspace admins can create shared skills that are available to everyone in the workspace. Use workspace skills for broadly useful workflows across your team, such as machine learning pipelines or domain-specific processes. See <a href="https://docs.databricks.com/aws/en/genie-code/skills">Extend Genie Code with agent skills</a>.</p></div>
-                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZr7eWGbjUWeeRUY2jmG2'}]</div>
+                <div class="original-text"><p>A new <code>cascade</code> field is available in the Pipelines <code>DELETE</code> API for Unity Catalog pipelines. By default, <code>cascade=true</code>, which preserves the existing behavior of deleting all associated materialized views, streaming tables, and views when a pipeline is deleted. Set <code>cascade=false</code> to retain associated tables as inactive after deletion.</p>
+<p>See <a href="https://docs.databricks.com/aws/en/ldp/unity-catalog#delete-a-pipeline">Delete a pipeline</a>.</p></div>
+                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZuuKobEnBRjUuwMZGGXQ'}]</div>
             </div>
         </div>
         
