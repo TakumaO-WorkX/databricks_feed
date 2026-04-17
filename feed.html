@@ -23,64 +23,77 @@
         <h1>Databricks Docs Updates</h1>
     
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/april#create-and-write-to-unity-catalog-tables-from-external-delta-clients-beta" target="_blank">
-                <div class="article-title">Create and write to Unity Catalog tables from external Delta clients (Beta)</div>
+            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#dashboard-enhancements-and-bug-fixes" target="_blank">
+                <div class="article-title">Dashboard enhancements and bug fixes</div>
             </a>
-            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ca5P2LdKtz5DgiPf9YSyE'}]</div>
-            <div class="date">April 14, 2026</div>
+            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ca9AScCd3ZhyTZjim2N1h'}]</div>
+            <div class="date">April 16, 2026</div>
             <div class="content">
-                <div class="original-text"><p>The Unity REST API now supports write and create access to Unity Catalog external and managed Delta tables from external Delta clients such as Apache Spark. External Delta tables support full read, write, and create operations. Creating and writing to Unity Catalog managed Delta tables is available in <a href="https://docs.databricks.com/aws/en/release-notes/release-types">Beta</a> and requires <a href="https://docs.databricks.com/aws/en/delta/catalog-commits">catalog-managed commits</a> to be enabled. See <a href="https://docs.databricks.com/aws/en/external-access/unity-rest">Access Databricks tables from Delta clients</a>.</p></div>
-                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ca5P2MBKB2Pnap8C6Qcfs'}]</div>
+                <div class="original-text"><ul>
+<li><strong>Warehouse overload message</strong>: Dashboards now show a message explaining when rendering is delayed due to the warehouse being overloaded.</li>
+<li><strong>Tabular attachments in email subscriptions</strong>: Dashboard email subscriptions now include tabular attachments.</li>
+<li><strong>Fullscreen scroll position</strong>: Exiting fullscreen mode on a published dashboard now returns you to your previous scroll position instead of jumping to the top of the page.</li>
+<li><strong>Widget query batch fix</strong>: Fixed a bug where a widget query failing for one widget caused all other widgets in the same query batch to fail.</li>
+</ul></div>
+                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ca9AScz16mjDVMGCMdwpM'}]</div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/whats-coming#upcoming-behavioral-change-void-columns-included-in-delta-table-reads" target="_blank">
-                <div class="article-title">Upcoming behavioral change: VOID columns included in Delta table reads</div>
+            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#visualization-enhancements" target="_blank">
+                <div class="article-title">Visualization enhancements</div>
             </a>
-            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ca5P2MRCsx5VpUjwR2YY4'}]</div>
-            <div class="date">April 13, 2026</div>
+            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ca9ASddh1q7gAAuiozJZd'}]</div>
+            <div class="date">April 16, 2026</div>
             <div class="content">
-                <div class="original-text"><p>In mid-June 2026, Delta Lake will fully support <a href="https://docs.databricks.com/aws/en/sql/language-manual/data-types/null-type"><code>VOID</code></a> columns. Previously, <code>VOID</code> columns were silently skipped by path-based DataFrame reads (for example, <code>spark.read.format("delta").load(path)</code>) and time travel queries. After this change, these queries include <code>VOID</code> columns in the output.</p>
-<p>Queries that depend on column count or position, such as <code>INSERT INTO ... SELECT *</code>, may fail or produce incorrect results after this change. Review any queries that read from Delta Lake tables with <code>VOID</code> columns to ensure they handle the additional columns correctly.</p>
-<p>See <a href="https://docs.databricks.com/aws/en/sql/language-manual/data-types/null-type"><code>VOID</code> type</a>.</p></div>
-                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ca5P2MjJpecpy3CRFmZh9'}]</div>
+                <div class="original-text"><ul>
+<li><strong>Dashed and dotted line styles</strong>: You can now style lines as dashed or dotted in the <strong>Pattern</strong> section of the configuration panel.</li>
+</ul></div>
+                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ca9ASeDfST3ekwXxwHsyw'}]</div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/april#column-level-sap-governance-tags-sync-into-unity-catalog" target="_blank">
-                <div class="article-title">Column-level SAP governance tags sync into Unity Catalog</div>
+            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#genie-enhancements" target="_blank">
+                <div class="article-title">Genie enhancements</div>
             </a>
-            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ca5P2Mvxqr3CKfek9UYe7'}]</div>
-            <div class="date">April 13, 2026</div>
+            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ca9ASeqsZNKf89ofwRU84'}]</div>
+            <div class="date">April 16, 2026</div>
             <div class="content">
-                <div class="original-text"><p>Column-level personal data governance tags from SAP Business Data Cloud (BDC) now sync into Unity Catalog, including <code>fieldSemantics</code>, <code>isPotentiallyPersonal</code>, and <code>isPotentiallySensitive</code>. Use these tags in attribute-based access control (ABAC) policies to govern access to sensitive columns. See <a href="https://docs.databricks.com/aws/en/delta-sharing/sap-bdc/semantic-metadata">SAP BDC semantic metadata</a>.</p></div>
-                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ca5P2N8cZ3igTZeeenLyP'}]</div>
+                <div class="original-text"><ul>
+<li><strong>Reasoning traces using the API (Public Preview)</strong>: Users can now access Genie's reasoning traces using the API through the <code>GenieQueryAttachments</code> field in the <code>GenieMessage</code> object. See <a href="https://docs.databricks.com/api/workspace/genie/getmessage">Get message</a>.</li>
+<li><strong>Message comments using the API (Public Preview)</strong>: Users can now add text comments to messages and list them using the API. See <a href="https://docs.databricks.com/api/workspace/genie/createmessagecomment">Create message comment</a>.</li>
+<li><strong>Increased token limit for Agent mode (Public Preview)</strong>: The maximum token limit for Agent mode conversations increased, improving performance and context retention across long, multi-turn interactions.</li>
+</ul></div>
+                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ca9ASfT5ih3bSpNFaPBFB'}]</div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/april#connect-lovable-apps-to-databricks" target="_blank">
-                <div class="article-title">Connect Lovable apps to Databricks</div>
+            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#metric-view-enhancements" target="_blank">
+                <div class="article-title">Metric view enhancements</div>
             </a>
-            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ca5P2NP11eWeNEn27Zmim'}]</div>
-            <div class="date">April 13, 2026</div>
+            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ca9ASfyasa3CkkzjU46Mn'}]</div>
+            <div class="date">April 16, 2026</div>
             <div class="content">
-                <div class="original-text"><p>You can now connect Lovable-hosted apps to your Databricks workspace to query lakehouse data using the REST API and OAuth machine-to-machine authentication. See <a href="https://docs.databricks.com/aws/en/integrations/lovable">Connect Lovable to Databricks</a>.</p></div>
-                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ca5P2NiqZwoHi5tmfLNTh'}]</div>
+                <div class="original-text"><ul>
+<li><strong>Measures and dimensions creation use Builder mode by default (Public Preview)</strong>: Builder mode, the UI-based transformation tool, is now the default experience for editing measures and dimensions in metric views.</li>
+</ul></div>
+                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ca9ASgPdy1Aej1iTpZ9zS'}]</div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/april#vector-search-retrieval-quality-beta" target="_blank">
-                <div class="article-title">Vector Search retrieval quality (Beta)</div>
+            <a href="https://docs.databricks.com/aws/en/release-notes/whats-coming#ai_parse_document-will-soon-be-available-by-default-for-workspaces-with-the-compliance-security-profile-enabled" target="_blank">
+                <div class="article-title">ai_parse_document will soon be available by default for workspaces with the compliance security profile enabled</div>
             </a>
-            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ca5P2P1TCh9P5iSpSGXjg'}]</div>
-            <div class="date">April 13, 2026</div>
+            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ca9ASgqRvwJd68S7PQxan'}]</div>
+            <div class="date">April 16, 2026</div>
             <div class="content">
-                <div class="original-text"><p>Mosaic AI Vector Search provides built-in retrieval quality evaluation that measures and compares the relevance of different search strategies on your data. For more information, see <a href="https://docs.databricks.com/aws/en/vector-search/retrieval-quality-eval">Evaluate vector search retrieval quality</a>.</p></div>
-                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ca5P2PCN4wenvLuTtE8DV'}]</div>
+                <div class="original-text"><p><a href="https://docs.databricks.com/aws/en/sql/language-manual/functions/ai_parse_document"><code>ai_parse_document</code></a> will be available <strong>by default</strong> for workspaces with the <a href="https://docs.databricks.com/aws/en/security/privacy/security-profile">compliance security profile</a> enabled and <strong>HIPAA</strong>, <strong>PCI-DSS</strong>, <strong>FedRAMP Moderate</strong>, <strong>CCCS Medium (Protected B)</strong>, <strong>UK Cyber Essentials Plus</strong>, <strong>HITRUST</strong>, <strong>IRAP</strong>, <strong>C5</strong>, and <strong>TISAX</strong> controls selected in mid-May 2026.</p>
+<p>Use <code>ai_parse_document</code> to parse structured content from unstructured documents including PDFs, images, Word documents, and PowerPoint files.</p>
+<p>See <a href="https://docs.databricks.com/aws/en/sql/language-manual/functions/ai_parse_document"><code>ai_parse_document</code> function</a>.</p></div>
+                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ca9AShMgcqqTBXMVxEDv3'}]</div>
             </div>
         </div>
         
