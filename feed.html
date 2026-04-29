@@ -23,69 +23,65 @@
         <h1>Databricks Docs Updates</h1>
     
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/april#manage-supervisor-agent-programmatically-with-the-databricks-sdk-beta" target="_blank">
-                <div class="article-title">Manage Supervisor Agent programmatically with the Databricks SDK (Beta)</div>
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/april#attribute-based-access-control-abac-is-now-generally-available" target="_blank">
+                <div class="article-title">Attribute-based access control (ABAC) is now generally available</div>
             </a>
-            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CaUAGtHJ81KuzSPhR4LtX'}]</div>
-            <div class="date">April 24, 2026</div>
+            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CaXwHUxd5z3Xewh94b5cN'}]</div>
+            <div class="date">April 28, 2026</div>
             <div class="content">
-                <div class="original-text"><p>You can now use the Databricks SDK for Python to create and manage Supervisor Agent and their tools. See <a href="https://docs.databricks.com/aws/en/generative-ai/agent-bricks/multi-agent-supervisor">Use Supervisor Agent to create a coordinated multi-agent system</a>.</p></div>
-                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CaUAGtyiWPhtAZr8y5nD5'}]</div>
+                <div class="original-text"><p>Attribute-based access control (ABAC) is now generally available (GA). ABAC is an access control model in Unity Catalog that uses <a href="https://docs.databricks.com/aws/en/admin/governed-tags">governed tags</a> applied to data assets to dynamically enforce row filter and column mask policies on tables, materialized views, and streaming tables. Policies are attached at the catalog, schema, or table level and are automatically applied to all securables with matching tag attributes, enabling consistent access rules at scale without per-table configuration.</p>
+<p>As part of this GA release, when a user queries a view or function that accesses ABAC-protected tables, row filters and column masks are now evaluated using the <strong>session user's identity</strong> (the identity of the person running the query) rather than the view or function owner's identity. This aligns ABAC behavior with table-level row-level security and column masking. Users querying through views and functions still do not need direct privileges on the underlying tables.</p>
+<p>This is a breaking change. If Databricks contacted you as a potentially impacted customer, you have a three-month grace period to adapt your policies. If you were not contacted or are a new customer, the new session identity behavior is already the default for your account. See <a href="https://docs.databricks.com/aws/en/data-governance/unity-catalog/abac/requirements#abac-policies-on-views">ABAC policies on views</a>.</p>
+<p>See <a href="https://docs.databricks.com/aws/en/data-governance/unity-catalog/abac">Attribute-based access control in Unity Catalog</a>.</p></div>
+                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CaXwHVNBbPWbZFemkv2aq'}]</div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/april#openai-gpt-55-and-gpt-55-pro-now-available-as-databricks-hosted-models" target="_blank">
-                <div class="article-title">OpenAI GPT-5.5 and GPT-5.5 Pro now available as Databricks-hosted models</div>
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/april#5x-large-sql-warehouse-size-public-preview" target="_blank">
+                <div class="article-title">5X-Large SQL warehouse size (Public Preview)</div>
             </a>
-            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CaUAGuQ1xKfyoFSqBpQsw'}]</div>
-            <div class="date">April 24, 2026</div>
+            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CaXwHYP19Ri5911zVRpBt'}]</div>
+            <div class="date">April 28, 2026</div>
             <div class="content">
-                <div class="original-text"><p>Mosaic AI Model Serving now supports OpenAI <a href="https://docs.databricks.com/aws/en/machine-learning/foundation-model-apis/supported-models#openai-gpt-5-5">GPT-5.5</a> and <a href="https://docs.databricks.com/aws/en/machine-learning/foundation-model-apis/supported-models#openai-gpt-5-5-pro">GPT-5.5 Pro</a> as Databricks-hosted models. You can access these models using <a href="https://docs.databricks.com/aws/en/machine-learning/foundation-model-apis#token-foundation-apis">Foundation Model APIs pay-per-token</a>.</p>
-<p>Customers are responsible for ensuring their compliance with <a href="https://docs.databricks.com/aws/en/machine-learning/model-serving/acceptable-use-models">applicable terms</a>.</p></div>
-                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CaUAGvFcnuhF3j3i11rEv'}]</div>
+                <div class="original-text"><p>The 5X-Large cluster size for serverless and pro SQL warehouses is in <a href="https://docs.databricks.com/aws/en/release-notes/release-types">Public Preview</a> in all regions. The 5X-Large size provides 512 workers. Workspace admins can control access to this feature from the <strong>Previews</strong> page. See <a href="https://docs.databricks.com/aws/en/admin/workspace-settings/manage-previews">Manage Databricks previews</a>. For more information on SQL warehouse sizing, see <a href="https://docs.databricks.com/aws/en/compute/sql-warehouse/warehouse-behavior">SQL warehouse sizing, scaling, and queuing behavior</a>.</p></div>
+                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CaXwHZ3SLVnUjq7oGXeEd'}]</div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/april#databricks-excel-add-in-requires-workspace-preview-enablement" target="_blank">
-                <div class="article-title">Databricks Excel Add-in requires workspace preview enablement</div>
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/april#lakeflow-spark-declarative-pipelines-updates-are-retained-for-60-days" target="_blank">
+                <div class="article-title">Lakeflow Spark Declarative Pipelines updates are retained for 60 days</div>
             </a>
-            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CaUAGvrL4QkqP8sfVYGAj'}]</div>
-            <div class="date">April 24, 2026</div>
+            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CaXwHZLJR2ybbA84eXZEP'}]</div>
+            <div class="date">April 28, 2026</div>
             <div class="content">
-                <div class="original-text"><p>To use the Databricks Excel Add-in, a workspace admin must now enable the <strong>Excel Connector</strong> preview from the Previews page. See <a href="https://docs.databricks.com/aws/en/integrations/excel-setup">Set up the Databricks Excel Add-in</a> and <a href="https://docs.databricks.com/aws/en/admin/workspace-settings/manage-previews">Manage Databricks previews</a>.</p></div>
-                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CaUAGwDQohP1xSoUgd3tK'}]</div>
+                <div class="original-text"><p>Lakeflow Spark Declarative Pipelines update history is now retained for 60 days, up from 30 days. The extended retention applies to updates shown in the pipeline UI and returned by the <a href="https://docs.databricks.com/api/workspace/pipelines">Pipelines REST API</a>.</p></div>
+                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CaXwHZdfLwJweGHz1cVe5'}]</div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/april#workspace-base-environments-are-now-generally-available" target="_blank">
-                <div class="article-title">Workspace base environments are now generally available</div>
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/april#connect-databricks-to-on-premises-resources-using-an-ssh-reverse-tunnel" target="_blank">
+                <div class="article-title">Connect Databricks to on-premises resources using an SSH reverse tunnel</div>
             </a>
-            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CaUAGwbyMshdmFbvDUFUn'}]</div>
-            <div class="date">April 24, 2026</div>
+            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CaXwHZpKgmMToiE4nx9Xs'}]</div>
+            <div class="date">April 28, 2026</div>
             <div class="content">
-                <div class="original-text"><p>Workspace base environments are now generally available. Workspace base environments let workspace admins create and manage pre-built, cached environments for serverless notebooks.</p>
-<p>See <a href="https://docs.databricks.com/aws/en/admin/workspace-settings/base-environment">Manage workspace base environments</a>.</p>
-<div><p>This feature will roll out in workspaces enabled for the compliance security profile starting in late May 2026. The feature will be enabled by default.</p></div></div>
-                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CaUAGwxZVwGkyaC9MZGNA'}]</div>
+                <div class="original-text"><p>You can now connect Databricks classic and serverless compute to on-premises resources without opening inbound firewall access by configuring an SSH reverse tunnel with proxy VMs in AWS. See <a href="https://docs.databricks.com/aws/en/security/network/serverless-network-security/ssh-reverse-tunnel">Connect to on-premises resources using an SSH reverse tunnel</a>.</p></div>
+                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CaXwHaP4L6VXHT4NAjVMu'}]</div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/whats-coming#workspace-object-permissions-will-soon-be-inherited-from-all-account-groups" target="_blank">
-                <div class="article-title">Workspace object permissions will soon be inherited from all account groups</div>
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/april#tag-unity-catalog-functions" target="_blank">
+                <div class="article-title">Tag Unity Catalog functions</div>
             </a>
-            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CaUAGxMcrQu7K5DGFNQxV'}]</div>
-            <div class="date">April 23, 2026</div>
+            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CaXwHatpQNQsUvdEFTerK'}]</div>
+            <div class="date">April 28, 2026</div>
             <div class="content">
-                <div class="original-text"><p>In an upcoming release, workspace object permissions will be inherited from all account groups, not just groups directly assigned to the workspace. Principals will inherit permissions on workspace objects, such as jobs, notebooks, folders, queries, and dashboards, from all account groups of which they are a member, regardless of whether those groups are assigned to the workspace. Users still need to be assigned to the workspace to use these permissions.</p>
-<p>This change also activates inactive ("orphaned") permission grants. These are permission grants that remain on a group after it's removed from a workspace. No new permissions are being added, but existing orphaned grants will become active, potentially giving workspace members unexpected access. For example, if a "Contractors" group was removed from a workspace but still has edit access to a folder, any workspace member in "Contractors" will gain access to that folder.</p>
-<p><img alt="Orphaned permissions grants diagram." src="https://docs.databricks.com/images/identity/orphaned-permission-grants.png" /></p>
-<p>Databricks recommends reviewing your workspace permissions. Use the following notebook to identify inactive permission grants in your workspaces:</p>
-<div>Orphaned permissions analysis notebook</div></div>
-                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CaUAGxhDEETZWHnSoyvYL'}]</div>
+                <div class="original-text"><p>Functions are now a supported securable object type for tagging in Unity Catalog. Use <code>SET TAG</code> and <code>UNSET TAG</code> to add and remove tags from functions. You can use tags to search for functions and certify or deprecate functions. See <a href="https://docs.databricks.com/aws/en/database-objects/tags">Apply tags to Unity Catalog securable objects</a>.</p></div>
+                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CaXwHbG92NsWiprJRRmsm'}]</div>
             </div>
         </div>
         
