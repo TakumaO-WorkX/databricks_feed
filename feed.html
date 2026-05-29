@@ -23,117 +23,88 @@
         <h1>Databricks Docs Updates</h1>
     
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/sql/release-notes/2026#databricks-sql-version-202615-is-now-available-in-preview" target="_blank">
-                <div class="article-title">Databricks SQL version 2026.15 is now available in Preview</div>
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/may#anthropic-claude-opus-48-now-available-as-a-databricks-hosted-model" target="_blank">
+                <div class="article-title">Anthropic Claude Opus 4.8 now available as a Databricks-hosted model</div>
             </a>
-            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbT4M6ZN9c2GJxuaWjrpL'}]</div>
-            <div class="date">May 26, 2026</div>
+            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbWqdRRNnPCim7Fi7ktdH'}]</div>
+            <div class="date">May 28, 2026</div>
             <div class="content">
-                <div class="original-text"><p>Databricks SQL version 2026.15 is now available in the <strong>Preview</strong> channel. Review the following section to learn about new features, behavioral changes, and bug fixes.</p>
-<h4>XPath no longer fetches external DTDs</h4>
-<p>When you evaluate <a href="https://docs.databricks.com/aws/en/sql/language-manual/functions/xpath">xpath</a> over XML, Databricks no longer loads external Document Type Definitions (DTDs) declared in the document. Previously, XPath could fail when the XML contained an external DTD reference that pointed to a malformed URL or an unreachable endpoint. Because DTD validation is separate from XPath evaluation, queries that already succeeded return the same results as before. Queries that previously failed only during external DTD retrieval can now succeed.</p>
-<h4>NULL struct preservation in INSERT, MERGE, and streaming writes with schema evolution</h4>
-<p>For <code>INSERT</code>, <code>MERGE</code>, and streaming writes that use <a href="https://docs.databricks.com/aws/en/delta/update-schema">schema evolution</a>, a NULL struct in the source is now stored as NULL in the target. Previously, that value was incorrectly materialized as a non-null struct with every field set to NULL, while the same operations without schema evolution preserved NULL structs correctly. If your code relied on receiving a non-null struct whose fields were all NULL, update your code to handle a NULL struct instead.</p>
-<h4>NullType (VOID) support in Delta tables</h4>
-<p>Delta Lake tables now support <a href="https://docs.databricks.com/aws/en/sql/language-manual/data-types/null-type"><code>VOID</code></a> columns. Previously, <code>VOID</code> columns were silently skipped by path-based DataFrame reads and time travel queries. These queries now include <code>VOID</code> columns in the output. Writes are unaffected. See <a href="https://docs.databricks.com/aws/en/sql/language-manual/data-types/null-type"><code>VOID</code> type</a> for restrictions on where <code>VOID</code> columns can appear in the schema.</p>
-<p>Review any queries that read from Delta Lake tables with <code>VOID</code> columns to verify they handle the additional columns correctly. Queries that depend on column count or position, such as <code>INSERT INTO ... SELECT *</code>, might start failing after the upgrade. In particular, certain <code>INSERT</code> queries with <a href="https://docs.databricks.com/aws/en/delta/update-schema">schema evolution</a> enabled might silently shift data into the wrong columns.</p>
-<h4>SHOW CREATE TABLE supports metric views</h4>
-<p><a href="https://docs.databricks.com/aws/en/sql/language-manual/sql-ref-syntax-aux-show-create-table"><code>SHOW CREATE TABLE</code></a> now supports metric views. Previously, running this command on a metric view raised an error. The output for metric views includes the fully qualified three-part name with catalog (for example, <code>CREATE VIEW catalog.db.my_metric_view ...</code>), making it easier to recreate the metric view in the correct location.</p>
-<h4>Fix for LEFT OUTER JOIN LATERAL dropping rows</h4>
-<p>A bug that incorrectly dropped rows from <code>LEFT OUTER JOIN LATERAL</code> queries is now fixed. Queries using this construct now return the correct results. To temporarily revert to the previous behavior, set <code>spark.databricks.sql.optimizer.lateralJoinPreserveOuterSemantic</code> to <code>true</code>.</p>
-<h4>NATURAL JOIN respects case-insensitive column matching</h4>
-<p><a href="https://docs.databricks.com/aws/en/sql/language-manual/sql-ref-syntax-qry-select-join"><code>NATURAL JOIN</code></a> now correctly uses case-insensitive column matching when <code>spark.sql.caseSensitive</code> is set to <code>false</code> (the default). Previously, <code>NATURAL JOIN</code> used case-sensitive comparison to identify common columns, causing columns that differed only in case (for example, <code>ID</code> versus <code>id</code>) to not be recognized as matching. This caused <code>NATURAL JOIN</code> to silently produce cross-join results. Queries affected by this bug now return correct results with properly joined columns.</p>
-<h4>SQL UDF dependency validation in Unity Catalog</h4>
-<p>Unity Catalog now enforces dependency validation for SQL user-defined functions (UDFs) to prevent access control bypass. Previously, SQL functions created through the REST API could reference dependencies the user did not have access to. SQL UDFs with invalid dependency configurations are now blocked from execution.</p>
-<h4>Optimized writes for partitioned Unity Catalog tables created with CRTAS</h4>
-<p><a href="https://docs.databricks.com/aws/en/delta/tune-file-size">Optimized writes</a> are now correctly applied to partitioned Unity Catalog tables created with <code>CREATE OR REPLACE TABLE ... AS SELECT</code> (CRTAS). Previously, CRTAS on new partitioned Unity Catalog tables did not apply optimized writes, resulting in a higher number of small files per partition. This fix can increase write latency. To revert to the previous behavior, set <code>spark.databricks.delta.optimizeWrite.UCTableCRTAS.enabled</code> to <code>false</code>.</p>
-<h4>Fix incorrect EPSG authority for ESRI-defined SRID 102100</h4>
-<p>The Coordinate Reference System (CRS) mapping for SRID 102100 now correctly uses <code>ESRI:102100</code> instead of the incorrect <code>EPSG:102100</code>. This fix ensures geospatial data is stored with the correct authority for better interoperability with other systems.</p>
-<h4>CREATE OR REPLACE support for temporary tables</h4>
-<p><code>CREATE OR REPLACE TEMP TABLE</code> syntax is now supported, allowing you to create or replace <a href="https://docs.databricks.com/aws/en/tables/temporary-tables">temporary tables</a> in a single statement. This eliminates the need to explicitly drop and recreate temporary tables.</p>
-<h4>Delta table history includes write option flags</h4>
-<p>Delta Lake table history (<a href="https://docs.databricks.com/aws/en/delta/history"><code>DESCRIBE HISTORY</code></a>) now includes write option flags in the <code>operationParameters</code> column for <code>WRITE</code> and <code>REPLACE TABLE</code> operations. When the following options are explicitly enabled, they appear as Boolean flags in the history (only included when <code>true</code>):</p>
-<p>For <code>WRITE</code> and <code>REPLACE TABLE</code> operations:</p>
+                <div class="original-text"><p>Databricks Model Serving now supports Anthropic <a href="https://docs.databricks.com/aws/en/machine-learning/foundation-model-apis/supported-models#claude-opus-4-8">Claude Opus 4.8</a> as a Databricks-hosted model.</p>
+<p>To access this model, use:</p>
 <ul>
-<li><code>isDynamicPartitionOverwrite</code>: present when dynamic partition overwrite mode was used</li>
-<li><code>canOverwriteSchema</code>: present when schema overwrite (<code>overwriteSchema</code>) was enabled</li>
-<li><code>canMergeSchema</code>: present when schema merge (<code>mergeSchema</code>) was enabled</li>
+<li><a href="https://docs.databricks.com/aws/en/machine-learning/foundation-model-apis#token-foundation-apis">Foundation Model APIs pay-per-token</a>
+<ul>
+<li><a href="https://docs.databricks.com/aws/en/machine-learning/model-serving/query-reason-models">Query reasoning models</a></li>
+<li><a href="https://docs.databricks.com/aws/en/machine-learning/model-serving/query-vision-models">Query vision models</a></li>
 </ul>
-<p>For <code>REPLACE TABLE</code> operations:</p>
-<ul>
-<li><code>predicate</code>: present when <code>replaceWhere</code> was used</li>
-<li><code>isV1WriterSaveAsTableOverwrite</code>: present when the replace was triggered by a <code>.saveAsTable</code> overwrite</li>
-</ul>
-<h4>New geospatial functions</h4>
-<p>The following geospatial functions are now available:</p>
-<ul>
-<li><a href="https://docs.databricks.com/aws/en/sql/language-manual/functions/st_makepoint"><code>st_makepoint</code> function</a>: Returns a point <code>GEOMETRY</code> with the given coordinates.</li>
-<li><a href="https://docs.databricks.com/aws/en/sql/language-manual/functions/st_makeenvelope"><code>st_makeenvelope</code> function</a>: Returns a <code>GEOMETRY</code> value representing the axis-aligned envelope (bounding box) defined by the given corner coordinates.</li>
-</ul>
-<h4>Improved spatial join support</h4>
-<p>The <code>ST_DWithin</code> (distance within) predicate is now supported as a join condition for spatial joins. Conjunctions of predicates are now eligible for spatial joins, for example <code>condition AND st_predicate</code>.</p></div>
-                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbT4M9CMw5oSQTqPoSNgL'}]</div>
-            </div>
-        </div>
-        
-        <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/may#automatic-identity-management-with-microsoft-entra-id-is-now-ga" target="_blank">
-                <div class="article-title">Automatic identity management with Microsoft Entra ID is now GA</div>
-            </a>
-            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbT4M9j7XgskQwxdi4SXv'}]</div>
-            <div class="date">May 26, 2026</div>
-            <div class="content">
-                <div class="original-text"><p>Automatic identity management with Microsoft Entra ID is now generally available. Automatic identity management lets you sync users, service principals, and groups from Microsoft Entra ID to Databricks without SCIM provisioning. When enabled, you can search for identities in identity federated workspaces and add them directly to your workspace, and group memberships stay in sync with Microsoft Entra ID.</p>
-<p>See <a href="https://docs.databricks.com/aws/en/admin/users-groups/automatic-identity-management">Automatic identity management</a> and <a href="https://docs.databricks.com/aws/en/admin/users-groups/automatic-identity-management/ms-entra-id">Configure Microsoft Entra ID for automatic identity management</a>.</p></div>
-                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbT4MADdZZurCR3RNfugr'}]</div>
-            </div>
-        </div>
-        
-        <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/may#lakeflow-spark-declarative-pipelines-parameters-are-now-in-beta" target="_blank">
-                <div class="article-title">Lakeflow Spark Declarative Pipelines parameters are now in Beta</div>
-            </a>
-            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbT4MAjtHGYRreut5Y1TC'}]</div>
-            <div class="date">May 26, 2026</div>
-            <div class="content">
-                <div class="original-text"><p>Pipeline parameters let you define key-value pairs at the pipeline level and reference them from SQL source code using <a href="https://docs.databricks.com/aws/en/sql/user/queries/query-parameters">named parameter</a> syntax. See <a href="https://docs.databricks.com/aws/en/ldp/parameters">Use parameters with pipelines</a>.</p></div>
-                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbT4MBK7JuzEz2wpn37HX'}]</div>
-            </div>
-        </div>
-        
-        <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/may#databricks-runtime-maintenance-updates-0526" target="_blank">
-                <div class="article-title">Databricks Runtime maintenance updates (05/26)</div>
-            </a>
-            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbT4MCPMGbHbKY8Y3b6HR'}]</div>
-            <div class="date">May 26, 2026</div>
-            <div class="content">
-                <div class="original-text"><p>New maintenance updates are available for supported Databricks Runtime versions. These updates include bug fixes, security patches, and performance improvements. For details, see:</p>
-<ul>
-<li><a href="https://docs.databricks.com/aws/en/release-notes/runtime/maintenance-updates#182">Databricks Runtime 18.2</a></li>
-<li><a href="https://docs.databricks.com/aws/en/release-notes/runtime/maintenance-updates#181">Databricks Runtime 18.1</a></li>
-<li><a href="https://docs.databricks.com/aws/en/release-notes/runtime/maintenance-updates#180">Databricks Runtime 18.0</a></li>
-<li><a href="https://docs.databricks.com/aws/en/release-notes/runtime/maintenance-updates#173">Databricks Runtime 17.3 LTS</a></li>
-<li><a href="https://docs.databricks.com/aws/en/release-notes/runtime/maintenance-updates#164">Databricks Runtime 16.4 LTS</a></li>
-<li><a href="https://docs.databricks.com/aws/en/release-notes/runtime/maintenance-updates#154">Databricks Runtime 15.4 LTS</a></li>
-<li><a href="https://docs.databricks.com/aws/en/release-notes/runtime/maintenance-updates#143">Databricks Runtime 14.3 LTS</a></li>
-<li><a href="https://docs.databricks.com/aws/en/release-notes/runtime/maintenance-updates#133">Databricks Runtime 13.3 LTS</a></li>
+</li>
 </ul></div>
-                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbT4MDnSZapzxdazXS1RG'}]</div>
+                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbWqdS6Z8JCysrkgCNGD2'}]</div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/may#genie-code-agent-mode-is-now-available-by-default-for-workspaces-with-the-compliance-security-profile-enabled" target="_blank">
-                <div class="article-title">Genie Code Agent mode is now available by default for workspaces with the compliance security profile enabled</div>
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/may#cross-engine-attribute-based-access-controls-beta" target="_blank">
+                <div class="article-title">Cross-engine attribute-based access controls (Beta)</div>
             </a>
-            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbT4MEJCeFeGZiPVEWi84'}]</div>
-            <div class="date">May 25, 2026</div>
+            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbWqdSVsB65NCjd8yU1TW'}]</div>
+            <div class="date">May 28, 2026</div>
             <div class="content">
-                <div class="original-text"><p>Genie Code Agent mode is now available by default for workspaces with the <a href="https://docs.databricks.com/aws/en/security/privacy/security-profile">compliance security profile</a> enabled and <strong>HIPAA</strong>, <strong>PCI-DSS</strong>, and <strong>FedRAMP Moderate</strong> controls selected.</p>
-<p>With Agent mode, Genie Code can automate multiple steps from a single prompt, including retrieving relevant assets, generating and running code, fixing errors automatically, and visualizing results.</p>
-<p>See <a href="https://docs.databricks.com/aws/en/genie-code">Genie Code</a>.</p></div>
-                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbT4MEmEEG5AsKYzxroQU'}]</div>
+                <div class="original-text"><p>External engines can now read Unity Catalog managed tables (Delta and Iceberg) with <a href="https://docs.databricks.com/aws/en/data-governance/unity-catalog/abac">attribute-based access controls (ABAC)</a>, row filters, and column masks enforced server-side. See <a href="https://docs.databricks.com/aws/en/external-access/cross-engine-abac">Cross-engine attribute-based access controls (ABAC)</a>.</p></div>
+                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbWqdSwAMiYiUgYS1rYRu'}]</div>
+            </div>
+        </div>
+        
+        <div class="article">
+            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#dashboard-enhancements-and-bug-fixes" target="_blank">
+                <div class="article-title">Dashboard enhancements and bug fixes</div>
+            </a>
+            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbWqdTNwsypmauDcVKmQd'}]</div>
+            <div class="date">May 28, 2026</div>
+            <div class="content">
+                <div class="original-text"><ul>
+<li><strong>Banded rows in tables</strong>: Tables can now display banded rows.</li>
+<li><strong>Custom geographies in maps</strong>: Custom geographies are now available in choropleth and point maps. See <a href="https://docs.databricks.com/aws/en/dashboards/manage/visualizations/maps#custom-geographic-data">Custom geographic data</a>.</li>
+<li><strong>Genie Code for dashboard authoring</strong>: Genie Code for dashboard authoring is now generally available. See <a href="https://docs.databricks.com/aws/en/dashboards/manage/dashboard-agent">Use Genie Code for dashboard authoring</a>.</li>
+<li><strong>Median and percentile expressions in metric views</strong>: Low-code metric view building now supports two new expression types: median and percentile. See <a href="https://docs.databricks.com/aws/en/business-semantics/metric-views/create-edit">Create and edit metric views</a>.</li>
+<li><strong><code>AGGREGATE OVER</code> enhancements</strong>: The <code>AGGREGATE OVER</code> operator now supports an optional <code>INCLUSIVE</code> or <code>EXCLUSIVE</code> keyword for <code>TRAILING</code> and <code>LEADING</code> ranges, and an optional <code>OFFSET</code> clause that shifts the range by a specified interval. See <a href="https://docs.databricks.com/aws/en/dashboards/manage/data-modeling/custom-calculations#aggregate-window-functions">Aggregate window functions</a>.</li>
+<li><strong>Point map shape field</strong>: Point maps now support a shape field to differentiate data points by category.</li>
+<li><strong>Default table sorting</strong>: Tables now support default sorting, allowing dashboard authors to define a default sort order for table columns.</li>
+<li><strong>Aggregated variable Y-axis fix</strong>: Fixed a bug where adding an aggregated variable to a bar, line, or area chart's Y-axis prevented adding a second field.</li>
+<li><strong>Symbol map interaction fix</strong>: Fixed symbol map interaction issues where clicking an empty area did not deselect markers and the cursor did not indicate that markers were clickable on hover.</li>
+<li><strong>Cross-filter conditional formatting fix</strong>: Fixed a bug where cross-filter hover and selection styling overrode conditional formatting colors on table cells.</li>
+<li><strong>SQL Editor results visibility fix</strong>: Fixed an issue where filtered results in the SQL Editor were not visible even though the data was present, caused by the table container collapsing within the page layout.</li>
+<li><strong>Symbol map field picker fix</strong>: Fixed an issue where the latitude and longitude field pickers in the symbol map editor did not work when using a semantic model as a dataset.</li>
+</ul></div>
+                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbWqdTryJEp8Y7afZBeWt'}]</div>
+            </div>
+        </div>
+        
+        <div class="article">
+            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#genie-space-enhancements-and-bug-fixes" target="_blank">
+                <div class="article-title">Genie Space enhancements and bug fixes</div>
+            </a>
+            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbWqdUmHkEQXh8zSuj8Qw'}]</div>
+            <div class="date">May 28, 2026</div>
+            <div class="content">
+                <div class="original-text"><ul>
+<li><strong>Agent mode thinking traces (Public Preview)</strong>: Agent mode thinking traces now cite the definitions applied to answer questions. For example, "best selling product" is defined as the product with the most total sales.</li>
+<li><strong>MCP conversation sharing bug fix (Beta)</strong>: Fixed a bug where conversations sent via Genie Spaces MCP were saved as private. Conversations sent via MCP now respect the default sharing setting.</li>
+<li><strong>Share modal fix</strong>: Fixed a bug where the <strong>Share to account users</strong> option did not appear in the share modal.</li>
+</ul></div>
+                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbWqdVbtrgpCbM9LoCag6'}]</div>
+            </div>
+        </div>
+        
+        <div class="article">
+            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#genie-enhancements" target="_blank">
+                <div class="article-title">Genie enhancements</div>
+            </a>
+            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbWqdW3SA5asZcxn8Sqsk'}]</div>
+            <div class="date">May 28, 2026</div>
+            <div class="content">
+                <div class="original-text"><p>Genie now has a Managed MCP Server (Beta). Any agent can ask natural-language data questions across Genie Spaces and Unity Catalog data and receive grounded answers. See <a href="https://docs.databricks.com/aws/en/generative-ai/mcp/managed-mcp#available-managed-servers">Available managed servers</a>.</p></div>
+                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbWqdWVUPjcZ9EJxRKspy'}]</div>
             </div>
         </div>
         
