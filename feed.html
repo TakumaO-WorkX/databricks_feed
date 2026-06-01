@@ -23,88 +23,112 @@
         <h1>Databricks Docs Updates</h1>
     
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/may#anthropic-claude-opus-48-now-available-as-a-databricks-hosted-model" target="_blank">
-                <div class="article-title">Anthropic Claude Opus 4.8 now available as a Databricks-hosted model</div>
+            <a href="https://docs.databricks.com/aws/en/release-notes/whats-coming#upcoming-behavior-change-choose-entitlements-when-adding-principals-to-workspaces" target="_blank">
+                <div class="article-title">Upcoming behavior change: Choose entitlements when adding principals to workspaces</div>
             </a>
-            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbWqdRRNnPCim7Fi7ktdH'}]</div>
-            <div class="date">May 28, 2026</div>
+            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbcjbN8hfrVxHacUhbpDs'}]</div>
+            <div class="date">June 08, 2026</div>
             <div class="content">
-                <div class="original-text"><p>Databricks Model Serving now supports Anthropic <a href="https://docs.databricks.com/aws/en/machine-learning/foundation-model-apis/supported-models#claude-opus-4-8">Claude Opus 4.8</a> as a Databricks-hosted model.</p>
-<p>To access this model, use:</p>
+                <div class="original-text"><p>Databricks is changing how principals get workspace entitlements. After this change, you grant entitlements explicitly when adding a principal to a workspace instead of relying on inheritance from the <code>users</code> system group. Workspace administrators can opt in starting <strong>June 15, 2026</strong>, and the new behavior is enforced for all workspaces on <strong>September 14, 2026</strong>.</p>
+<p>This change enables you to add principals at any access level, including consumer-only users, without them automatically inheriting authoring privileges.</p>
+<h3>What's changing</h3>
+<p>Every workspace has two system groups: <code>users</code>, which includes all principals granted access to the workspace, and <code>admins</code>, which includes the workspace administrators. Today, every principal added to a workspace inherits the entitlements granted to <code>users</code>. By default, these are:</p>
 <ul>
-<li><a href="https://docs.databricks.com/aws/en/machine-learning/foundation-model-apis#token-foundation-apis">Foundation Model APIs pay-per-token</a>
-<ul>
-<li><a href="https://docs.databricks.com/aws/en/machine-learning/model-serving/query-reason-models">Query reasoning models</a></li>
-<li><a href="https://docs.databricks.com/aws/en/machine-learning/model-serving/query-vision-models">Query vision models</a></li>
+<li><strong>Workspace access</strong> — create and use notebooks, jobs, pipelines, apps, and more.</li>
+<li><strong>Databricks SQL access</strong> — create and use dashboards, Genie spaces, alerts, and more.</li>
 </ul>
-</li>
-</ul></div>
-                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbWqdS6Z8JCysrkgCNGD2'}]</div>
+<p>After the change:</p>
+<ul>
+<li>The <code>users</code> group will have no entitlements. The <code>admins</code> group will have all workspace entitlements. Both groups' entitlements are locked.</li>
+<li>New principals must be granted entitlements explicitly when added to a workspace.</li>
+<li><code>users</code> and <code>admins</code> cannot be nested as members of other groups.</li>
+</ul>
+<p>Existing principals retain their current level of access. Databricks automatically migrates the entitlements previously granted to <code>users</code> to a new, workspace-local clone group named <code>users-clone-&#x3c;TIMESTAMP></code> (where <code>&#x3c;TIMESTAMP></code> is the time of migration). You manage the clone group like any other workspace-local group, and you can customize its name when you opt in early. The <code>admins</code> group doesn't require migration.</p>
+<h3>Action required</h3>
+<ul>
+<li><strong>If you manage system group entitlements through automation</strong> (Terraform, Workspace SCIM APIs, or custom scripts), update your workflows to target standard account groups, not system groups. After the new behavior is enabled, attempts to modify system group entitlements will fail.</li>
+<li><strong>If <code>users</code> or <code>admins</code> is nested as a member of another group</strong>, remove the nesting. Nesting is not permitted under the new behavior.</li>
+<li><strong>If your SCIM sync deletes workspace groups it doesn't recognize</strong>, update its configuration to preserve the migration clone group (<code>users-clone-&#x3c;TIMESTAMP></code>). If the sync removes the clone group, principals migrated to it lose their entitlements.</li>
+</ul>
+<h3>Timeline</h3>
+<ul>
+<li><strong>June 15, 2026</strong> – Opt-in available in workspace settings under <strong>Advanced > Access control</strong>.</li>
+<li><strong>July 27, 2026</strong> – Auto-enabled for workspaces that haven't opted in or out. Opt-out remains available.</li>
+<li><strong>September 14, 2026</strong> – New behavior enforced for all workspaces. Opt-out removed.</li>
+</ul>
+<p>You manage the new behavior from your workspace settings under <strong>Advanced > Access control</strong>:</p>
+<p><img alt="Access control workspace setting in its legacy state before opt-in or migration." src="https://docs.databricks.com/images/security/system-groups/migration-flow-2-setting-legacy.png" /></p>
+<p><em>Before opt-in: legacy behavior is active.</em></p>
+<p><img alt="Access control workspace setting after opt-in showing the new behavior is active." src="https://docs.databricks.com/images/security/system-groups/migration-flow-5-setting-new.png" /></p>
+<p><em>After opt-in or auto-enable: new behavior is active.</em></p></div>
+                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbcjbNpd89omwauw3Jat2'}]</div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/may#cross-engine-attribute-based-access-controls-beta" target="_blank">
-                <div class="article-title">Cross-engine attribute-based access controls (Beta)</div>
+            <a href="https://docs.databricks.com/aws/en/release-notes/runtime/18#databricks-runtime-18-may-29-2026" target="_blank">
+                <div class="article-title">Databricks Runtime 18: May 29, 2026</div>
             </a>
-            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbWqdSVsB65NCjd8yU1TW'}]</div>
-            <div class="date">May 28, 2026</div>
-            <div class="content">
-                <div class="original-text"><p>External engines can now read Unity Catalog managed tables (Delta and Iceberg) with <a href="https://docs.databricks.com/aws/en/data-governance/unity-catalog/abac">attribute-based access controls (ABAC)</a>, row filters, and column masks enforced server-side. See <a href="https://docs.databricks.com/aws/en/external-access/cross-engine-abac">Cross-engine attribute-based access controls (ABAC)</a>.</p></div>
-                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbWqdSwAMiYiUgYS1rYRu'}]</div>
-            </div>
-        </div>
-        
-        <div class="article">
-            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#dashboard-enhancements-and-bug-fixes" target="_blank">
-                <div class="article-title">Dashboard enhancements and bug fixes</div>
-            </a>
-            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbWqdTNwsypmauDcVKmQd'}]</div>
-            <div class="date">May 28, 2026</div>
-            <div class="content">
-                <div class="original-text"><ul>
-<li><strong>Banded rows in tables</strong>: Tables can now display banded rows.</li>
-<li><strong>Custom geographies in maps</strong>: Custom geographies are now available in choropleth and point maps. See <a href="https://docs.databricks.com/aws/en/dashboards/manage/visualizations/maps#custom-geographic-data">Custom geographic data</a>.</li>
-<li><strong>Genie Code for dashboard authoring</strong>: Genie Code for dashboard authoring is now generally available. See <a href="https://docs.databricks.com/aws/en/dashboards/manage/dashboard-agent">Use Genie Code for dashboard authoring</a>.</li>
-<li><strong>Median and percentile expressions in metric views</strong>: Low-code metric view building now supports two new expression types: median and percentile. See <a href="https://docs.databricks.com/aws/en/business-semantics/metric-views/create-edit">Create and edit metric views</a>.</li>
-<li><strong><code>AGGREGATE OVER</code> enhancements</strong>: The <code>AGGREGATE OVER</code> operator now supports an optional <code>INCLUSIVE</code> or <code>EXCLUSIVE</code> keyword for <code>TRAILING</code> and <code>LEADING</code> ranges, and an optional <code>OFFSET</code> clause that shifts the range by a specified interval. See <a href="https://docs.databricks.com/aws/en/dashboards/manage/data-modeling/custom-calculations#aggregate-window-functions">Aggregate window functions</a>.</li>
-<li><strong>Point map shape field</strong>: Point maps now support a shape field to differentiate data points by category.</li>
-<li><strong>Default table sorting</strong>: Tables now support default sorting, allowing dashboard authors to define a default sort order for table columns.</li>
-<li><strong>Aggregated variable Y-axis fix</strong>: Fixed a bug where adding an aggregated variable to a bar, line, or area chart's Y-axis prevented adding a second field.</li>
-<li><strong>Symbol map interaction fix</strong>: Fixed symbol map interaction issues where clicking an empty area did not deselect markers and the cursor did not indicate that markers were clickable on hover.</li>
-<li><strong>Cross-filter conditional formatting fix</strong>: Fixed a bug where cross-filter hover and selection styling overrode conditional formatting colors on table cells.</li>
-<li><strong>SQL Editor results visibility fix</strong>: Fixed an issue where filtered results in the SQL Editor were not visible even though the data was present, caused by the table container collapsing within the page layout.</li>
-<li><strong>Symbol map field picker fix</strong>: Fixed an issue where the latitude and longitude field pickers in the symbol map editor did not work when using a semantic model as a dataset.</li>
-</ul></div>
-                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbWqdTryJEp8Y7afZBeWt'}]</div>
-            </div>
-        </div>
-        
-        <div class="article">
-            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#genie-space-enhancements-and-bug-fixes" target="_blank">
-                <div class="article-title">Genie Space enhancements and bug fixes</div>
-            </a>
-            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbWqdUmHkEQXh8zSuj8Qw'}]</div>
-            <div class="date">May 28, 2026</div>
+            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbcjbPDSRqdZvAJaeV7rU'}]</div>
+            <div class="date">May 29, 2026</div>
             <div class="content">
                 <div class="original-text"><ul>
-<li><strong>Agent mode thinking traces (Public Preview)</strong>: Agent mode thinking traces now cite the definitions applied to answer questions. For example, "best selling product" is defined as the product with the most total sales.</li>
-<li><strong>MCP conversation sharing bug fix (Beta)</strong>: Fixed a bug where conversations sent via Genie Spaces MCP were saved as private. Conversations sent via MCP now respect the default sharing setting.</li>
-<li><strong>Share modal fix</strong>: Fixed a bug where the <strong>Share to account users</strong> option did not appear in the share modal.</li>
+<li><strong>Structured Streaming deduplication with <code>NaN</code> keys</strong>: <a href="https://docs.databricks.com/aws/en/structured-streaming/concepts">Structured Streaming</a> deduplication now treats <code>NaN</code> (Not-a-Number) values that have different bit patterns as duplicates when a <code>double</code> or <code>float</code> column is used as a deduplication key. Previously, <code>NaN</code> values with different internal representations were treated as distinct and were not deduplicated. </li>
+<li>Fixed an issue where table-level permissions could be removed from Unity Catalog foreign catalog tables (for example, Snowflake connection tables) during metadata refresh, which caused queries to fail with <code>INSUFFICIENT_PERMISSIONS</code> errors. Permissions are now preserved when foreign table metadata is refreshed. </li>
 </ul></div>
-                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbWqdVbtrgpCbM9LoCag6'}]</div>
+                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbcjbQGwGGQ8dmAjCVgGv'}]</div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#genie-enhancements" target="_blank">
-                <div class="article-title">Genie enhancements</div>
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/may#databricks-apps-horizontal-scaling-beta" target="_blank">
+                <div class="article-title">Databricks Apps horizontal scaling (Beta)</div>
             </a>
-            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbWqdW3SA5asZcxn8Sqsk'}]</div>
+            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbcjbQiyJ53A8YHEE1BtP'}]</div>
+            <div class="date">May 29, 2026</div>
+            <div class="content">
+                <div class="original-text"><p>You can now run a Databricks app across multiple instances behind a single app URL. Horizontal scaling provides higher availability, zero-downtime deployments, and <a href="https://docs.databricks.com/aws/en/dev-tools/databricks-apps/horizontal-scaling#session-affinity">session affinity</a>, which routes every request from a given user to the same instance so the app can keep per-user data on that instance. Convert an existing standard app to horizontally scaled, or enable horizontal scaling when creating a new app. Converted apps can also opt out of pre-installed Python libraries to run on a clean base OS image.</p>
+<p>See <a href="https://docs.databricks.com/aws/en/dev-tools/databricks-apps/horizontal-scaling">Horizontal scaling for Databricks apps</a> and <a href="https://docs.databricks.com/aws/en/dev-tools/databricks-apps/preinstalled-libraries">Opt out of pre-installed Python libraries for Databricks apps</a>.</p></div>
+                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbcjbRCkY57dmTyTpANYn'}]</div>
+            </div>
+        </div>
+        
+        <div class="article">
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/may#lakeflow-designer-updates-for-may-29-2026" target="_blank">
+                <div class="article-title">Lakeflow Designer updates for May 29, 2026</div>
+            </a>
+            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbcjbRapG9SVj9tKyG9CH'}]</div>
+            <div class="date">May 29, 2026</div>
+            <div class="content">
+                <div class="original-text"><p>The following updates were made to Lakeflow Designer:</p>
+<ul>
+<li><strong>Bidirectional AI-generated descriptions</strong>: Each operator now displays an AI-generated description of what it does. Editing the description reconfigures the operator.</li>
+<li><strong>N-way Combine</strong>: The Combine operator now accepts any number of input tables.</li>
+<li><strong>Custom join conditions</strong>: You can now add a custom join condition by clicking the arrow between the left and right tables. Edit the AI-generated description or manually write SQL to configure the condition.</li>
+<li><strong>Improved filter readability</strong>: Datetime values in filter conditions now render in plain English instead of ISO format.</li>
+<li><strong>Multi-modal output types</strong>: Operators can now render plots, HTML, images, and other non-table outputs directly in the preview pane.</li>
+<li><strong>Configurable output panel</strong>: Switch the output panel between input and output (default), input only, or output only. In the combined view, you can now resize the input and output panes.</li>
+<li><strong>Improved drag-to-connect hit target</strong>: Drag from an operator's <strong>+</strong> button to add a connected downstream operator.</li>
+<li><strong>Genie Code change summary</strong>: Genie Code now shows a one-line summary of its most recent edit above the input box.</li>
+<li><strong>Better Note placement</strong>: New Notes no longer overlap neighboring operators by default.</li>
+<li><strong>Inline parameter examples</strong>: SQL and Python operators now surface available parameters with inline sample code showing how to reference them.</li>
+<li><strong>Bug fixes and improvements</strong>: Fixed Python operator handling of triple-quoted strings, and a <code>KeyError</code> thrown by the Python preview when an upstream operator was disconnected.</li>
+</ul></div>
+                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbcjbRy8zagAzWMVJMKjK'}]</div>
+            </div>
+        </div>
+        
+        <div class="article">
+            <a href="https://docs.databricks.com/aws/en/release-notes/whats-coming#embed-genie-space-will-soon-be-available-by-default-for-workspaces-with-the-compliance-security-profile-enabled" target="_blank">
+                <div class="article-title">Embed Genie Space will soon be available by default for workspaces with the compliance security profile enabled</div>
+            </a>
+            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbcjbSMhR7Sh76aqxPztr'}]</div>
             <div class="date">May 28, 2026</div>
             <div class="content">
-                <div class="original-text"><p>Genie now has a Managed MCP Server (Beta). Any agent can ask natural-language data questions across Genie Spaces and Unity Catalog data and receive grounded answers. See <a href="https://docs.databricks.com/aws/en/generative-ai/mcp/managed-mcp#available-managed-servers">Available managed servers</a>.</p></div>
-                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbWqdWVUPjcZ9EJxRKspy'}]</div>
+                <div class="original-text"><p>Embedding a Genie Space as an iframe will be available by default for workspaces with the <a href="https://docs.databricks.com/aws/en/security/privacy/security-profile">compliance security profile</a> enabled in June 2026.</p>
+<p>Embedding a Genie Space lets business users interact with Genie directly within your internal tools or portals without navigating to Databricks.</p>
+<p>See <a href="https://docs.databricks.com/aws/en/genie/embed">Embed a Genie Space in an external app</a>.</p></div>
+                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbcjbSkGRnvQdKgpjsc3b'}]</div>
             </div>
         </div>
         
