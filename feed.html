@@ -23,96 +23,62 @@
         <h1>Databricks Docs Updates</h1>
     
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/june#automatic-identity-management-for-okta-public-preview" target="_blank">
-                <div class="article-title">Automatic identity management for Okta (Public Preview)</div>
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/june#email-notifications-for-expiring-service-principal-tokens-beta" target="_blank">
+                <div class="article-title">Email notifications for expiring service principal tokens (Beta)</div>
             </a>
-            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbuZiwymCbZ7HvVtC6y2u'}]</div>
-            <div class="date">June 09, 2026</div>
+            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbyMFEJNeZDUM4gdNyvoW'}]</div>
+            <div class="date">June 12, 2026</div>
             <div class="content">
-                <div class="original-text"><p>Automatic identity management now supports Okta in Public Preview. You can sync users and groups from Okta into Databricks without configuring SCIM provisioning. When enabled, you can search for Okta users and groups in identity federated workspaces and add them to your workspace. Databricks uses Okta as the source of record, so changes to group memberships in Okta are respected in Databricks.</p>
-<p>See <a href="https://docs.databricks.com/aws/en/admin/users-groups/automatic-identity-management/okta">Configure Okta for automatic identity management</a>.</p></div>
-                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbuZixdxFFbXubZwPiXCk'}]</div>
+                <div class="original-text"><p>Databricks now automatically sends email notifications to workspace admins when a service principal token is within seven days of expiring. This feature is in Beta. Notifications are sent for tokens with a lifetime greater than seven days that have been used at least once. No configuration is required. See <a href="https://docs.databricks.com/aws/en/admin/access-control/tokens">Monitor and revoke personal access tokens</a>.</p></div>
+                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbyMFGTbmWnNgrGo4KkoL'}]</div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/june#anthropic-claude-fable-5-now-available-as-a-databricks-hosted-model" target="_blank">
-                <div class="article-title">Anthropic Claude Fable 5 now available as a Databricks-hosted model</div>
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/june#managed-disaster-recovery-is-now-in-public-preview" target="_blank">
+                <div class="article-title">Managed disaster recovery is now in Public Preview</div>
             </a>
-            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbuZiy6EyDiBF6pYJZwWL'}]</div>
-            <div class="date">June 09, 2026</div>
+            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbyMFGovyon3QLM55SbV2'}]</div>
+            <div class="date">June 12, 2026</div>
             <div class="content">
-                <div class="original-text"><p>Databricks Model Serving now supports Anthropic <a href="https://docs.databricks.com/aws/en/machine-learning/foundation-model-apis/supported-models#claude-fable-5">Claude Fable 5</a> as a Databricks-hosted model. Claude Fable 5 is built for autonomous knowledge work and coding, designed to handle long-running, complex, and asynchronous tasks with less need for human intervention.</p>
-<p>To access this model, use <a href="https://docs.databricks.com/aws/en/machine-learning/foundation-model-apis#token-foundation-apis">Foundation Model APIs pay-per-token</a>.</p></div>
-                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbuZiya1krji8qyLqLMgy'}]</div>
+                <div class="original-text"><p>Managed disaster recovery (DR) is now in Public Preview. Managed DR replicates your Unity Catalog metadata, managed table data, and workspace assets to a secondary region, and provides a stable URL that survives failover so downstream clients do not need to be reconfigured. You configure and operate managed DR from the new <strong>Resilience</strong> section of the account console. Access is currently gated. Contact your Databricks account team to enable managed DR on your account. See <a href="https://docs.databricks.com/aws/en/admin/managed-disaster-recovery">Managed disaster recovery</a>.</p></div>
+                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbyMFH92U6e82ac2mnXCP'}]</div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/june#identity-federation-enabled-by-default-for-all-new-workspaces" target="_blank">
-                <div class="article-title">Identity federation enabled by default for all new workspaces</div>
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/june#mission-critical-add-on-is-now-in-public-preview" target="_blank">
+                <div class="article-title">Mission Critical add-on is now in Public Preview</div>
             </a>
-            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbuZiz3YEUEqpoEPjbtmt'}]</div>
-            <div class="date">June 09, 2026</div>
+            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbyMFHZps4Hb8HDMguurG'}]</div>
+            <div class="date">June 12, 2026</div>
             <div class="content">
-                <div class="original-text"><p>Over the next couple of weeks, identity federation is being enabled by default for all new Databricks workspaces, including workspaces that are not attached to a Unity Catalog metastore. This change does not affect existing workspaces. See <a href="https://docs.databricks.com/aws/en/admin/users-groups#enable-identity-federation">Identity federation</a>.</p></div>
-                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbuZizZ3aVpGqBXbe4HZQ'}]</div>
+                <div class="original-text"><p>The Mission Critical workspace add-on is now in Public Preview. The add-on unlocks managed disaster recovery and the existing Enhanced Security and Compliance (ESC) capabilities for a single compute rate, and is enabled per workspace from the new <strong>Add-ons</strong> tab in the account console. Access is gated — contact your Databricks account team to enable the add-on on your account.</p></div>
+                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbyMFKSBvKJmzJxvnQSPt'}]</div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/june#databricks-genie-app-for-slack-public-preview" target="_blank">
-                <div class="article-title">Databricks Genie app for Slack (Public Preview)</div>
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/june#genie-code-now-uses-models-served-through-openai-on-databricks" target="_blank">
+                <div class="article-title">Genie Code now uses models served through OpenAI on Databricks</div>
             </a>
-            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbuZj16YC2X6bLfJ1nQjT'}]</div>
-            <div class="date">June 09, 2026</div>
+            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbyMFL9MTX4w47JVEr6Cx'}]</div>
+            <div class="date">June 11, 2026</div>
             <div class="content">
-                <div class="original-text"><p>The Databricks Genie app for Slack is now available in Public Preview. The app brings Genie into Slack so users can get answers to data questions without leaving Slack. Send a direct message to the app or mention <code>@Genie</code> in a channel or group DM, and answers route through Genie or a specific Genie Space that a channel owner has pinned. See <a href="https://docs.databricks.com/aws/en/genie-ui/genie-slack">Databricks Genie app for Slack</a>.</p></div>
-                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbuZj1Za5e1qbgrowtjcN'}]</div>
+                <div class="original-text"><p><a href="https://docs.databricks.com/aws/en/genie-code">Genie Code</a> now uses models served through OpenAI on Databricks, in addition to models served through Azure OpenAI and Anthropic on Databricks, when <a href="https://docs.databricks.com/aws/en/databricks-ai/partner-powered">partner-powered AI features</a> are enabled. For the model provider used by each feature, see <a href="https://docs.databricks.com/aws/en/databricks-ai/partner-powered">Partner-powered AI features</a>.</p></div>
+                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbyMFLWS5BUiB2VkvKkSt'}]</div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/whats-coming#upcoming-behavior-change-choose-entitlements-when-adding-principals-to-workspaces" target="_blank">
-                <div class="article-title">Upcoming behavior change: Choose entitlements when adding principals to workspaces</div>
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/june#abac-grant-policies-for-models-beta" target="_blank">
+                <div class="article-title">ABAC GRANT policies for models (Beta)</div>
             </a>
-            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbuZj236E3adGeWdP6LAQ'}]</div>
-            <div class="date">June 08, 2026</div>
+            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbyMFLqH899cFMRVLKKqt'}]</div>
+            <div class="date">June 11, 2026</div>
             <div class="content">
-                <div class="original-text"><p>Databricks is changing how principals get workspace entitlements. After this change, you grant entitlements explicitly when adding a principal to a workspace instead of relying on inheritance from the <code>users</code> system group. Workspace administrators can opt in starting <strong>June 15, 2026</strong>, and the new behavior is enforced for all workspaces on <strong>September 14, 2026</strong>.</p>
-<p>This change enables you to add principals at any access level, including consumer-only users, without them automatically inheriting authoring privileges.</p>
-<h3>What's changing</h3>
-<p>Every workspace has two system groups: <code>users</code>, which includes all principals granted access to the workspace, and <code>admins</code>, which includes the workspace administrators. Today, every principal added to a workspace inherits the entitlements granted to <code>users</code>. By default, these are:</p>
-<ul>
-<li><strong>Workspace access</strong> — create and use notebooks, jobs, pipelines, apps, and more.</li>
-<li><strong>Databricks SQL access</strong> — create and use dashboards, Genie spaces, alerts, and more.</li>
-</ul>
-<p>After the change:</p>
-<ul>
-<li>The <code>users</code> group will have no entitlements. The <code>admins</code> group will have all workspace entitlements. Both groups' entitlements are locked.</li>
-<li>New principals must be granted entitlements explicitly when added to a workspace.</li>
-<li><code>users</code> and <code>admins</code> cannot be nested as members of other groups.</li>
-</ul>
-<p>Existing principals retain their current level of access. Databricks automatically migrates the entitlements previously granted to <code>users</code> to a new, workspace-local clone group named <code>users-clone-&#x3c;TIMESTAMP></code> (where <code>&#x3c;TIMESTAMP></code> is the time of migration). You manage the clone group like any other workspace-local group, and you can customize its name when you opt in early. The <code>admins</code> group doesn't require migration.</p>
-<h3>Action required</h3>
-<ul>
-<li><strong>If you manage system group entitlements through automation</strong> (Terraform, Workspace SCIM APIs, or custom scripts), update your workflows to target standard account groups, not system groups. After the new behavior is enabled, attempts to modify system group entitlements will fail.</li>
-<li><strong>If <code>users</code> or <code>admins</code> is nested as a member of another group</strong>, remove the nesting. Nesting is not permitted under the new behavior.</li>
-<li><strong>If your SCIM sync deletes workspace groups it doesn't recognize</strong>, update its configuration to preserve the migration clone group (<code>users-clone-&#x3c;TIMESTAMP></code>). If the sync removes the clone group, principals migrated to it lose their entitlements.</li>
-</ul>
-<h3>Timeline</h3>
-<ul>
-<li><strong>June 15, 2026</strong> – Opt-in available in workspace settings under <strong>Advanced > Access control</strong>.</li>
-<li><strong>July 27, 2026</strong> – Auto-enabled for workspaces that haven't opted in or out. Opt-out remains available.</li>
-<li><strong>September 14, 2026</strong> – New behavior enforced for all workspaces. Opt-out removed.</li>
-</ul>
-<p>You manage the new behavior from your workspace settings under <strong>Advanced > Access control</strong>:</p>
-<p><img alt="Access control workspace setting in its legacy state before opt-in or migration." src="https://docs.databricks.com/images/security/system-groups/migration-flow-2-setting-legacy.png" /></p>
-<p><em>Before opt-in: legacy behavior is active.</em></p>
-<p><img alt="Access control workspace setting after opt-in showing the new behavior is active." src="https://docs.databricks.com/images/security/system-groups/migration-flow-5-setting-new.png" /></p>
-<p><em>After opt-in or auto-enable: new behavior is active.</em></p>
-<p>For more information, see <a href="https://docs.databricks.com/aws/en/security/auth/system-group-entitlements-migration">Migrate workspace entitlement control</a>.</p></div>
-                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbuZj3RBnY5qcRgyNzZWB'}]</div>
+                <div class="original-text"><p>ABAC GRANT policies are now in Beta. GRANT policies extend <a href="https://docs.databricks.com/aws/en/data-governance/unity-catalog/abac">attribute-based access control</a> to dynamically grant Unity Catalog privileges to securable objects whose governed tags match a condition, instead of granting privileges on each object individually. In Beta, a GRANT policy can grant the <code>EXECUTE</code> privilege on models, attached at the catalog or schema level. Both customer-registered MLflow models and Databricks-hosted foundation models in <code>system.ai</code> are supported. See <a href="https://docs.databricks.com/aws/en/data-governance/unity-catalog/abac/grant-policies">ABAC GRANT policies for models (Beta)</a>.</p></div>
+                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CbyMFMB7mZw74QEb63FNB'}]</div>
             </div>
         </div>
         
