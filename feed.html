@@ -23,10 +23,52 @@
         <h1>Databricks Docs Updates</h1>
     
         <div class="article">
+            <a href="https://docs.databricks.com/aws/en/release-notes/whats-coming#customer-managed-vpc-will-soon-be-required-for-classic-workspaces" target="_blank">
+                <div class="article-title">Customer-managed VPC will soon be required for classic workspaces</div>
+            </a>
+            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CcXbce2xyQEFwdXYGcecw'}]</div>
+            <div class="date">June 26, 2026</div>
+            <div class="content">
+                <div class="original-text"><p>In a future release, Databricks plans to deprecate classic workspace creation with a Databricks-managed VPC. New classic workspaces will require a customer-managed VPC. For the simplest quick start, use a <a href="https://docs.databricks.com/aws/en/admin/workspace/serverless-workspaces">serverless workspace</a>. A detailed migration timeline will be communicated separately.</p>
+<p>See <a href="https://docs.databricks.com/aws/en/security/network/classic/customer-managed-vpc">Configure a customer-managed VPC</a>.</p></div>
+                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CcXbcejtQqXLFrZqctKf2'}]</div>
+            </div>
+        </div>
+        
+        <div class="article">
+            <a href="https://docs.databricks.com/aws/en/release-notes/runtime/19#databricks-runtime-19-beta-june-26-2026" target="_blank">
+                <div class="article-title">Databricks Runtime 19 (Beta): June 26, 2026</div>
+            </a>
+            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CcXbcfDASXBQDpSDPZZgF'}]</div>
+            <div class="date">June 26, 2026</div>
+            <div class="content">
+                <div class="original-text"><div></div>
+<h3><div></div>Behavioral changes</h3>
+<ul>
+<li><strong>Environment variable availability restricted in standard access mode</strong>: In <a href="https://docs.databricks.com/aws/en/compute/standard-limitations">standard access mode</a>, only a predefined set of environment variables is available to the Spark engine and init scripts. This set includes common configuration variables, such as proxy settings (<code>HTTP_PROXY</code>), cloud credentials (<code>AWS_ACCESS_KEY_ID</code>, <code>AZURE_CLIENT_ID</code>), and catalog variables (<code>CATALOG</code>). Other variables that you set on a cluster remain available to your user code, including UDFs, but are not available to the Spark engine or init scripts. Previously, all cluster environment variables were available to the Spark engine and init scripts. See <a href="https://docs.databricks.com/aws/en/compute/standard-limitations#environment-variable-limitations">Environment variable limitations</a>. </li>
+<li><strong>Restricted Spark configurations in standard access mode</strong>: In <a href="https://docs.databricks.com/aws/en/compute/standard-limitations">standard access mode</a>, you can no longer set certain Spark configuration properties. Creating or editing a cluster that sets a restricted property (matched by prefix) fails with an error. Restricted properties include <code>spark.driver.extraJavaOptions</code>, <code>spark.executor.extraJavaOptions</code>, <code>spark.jars</code>, <code>spark.files</code>, <code>spark.executorEnv.*</code>, and <code>spark.kubernetes.*</code>, among others. Previously, you could set these properties in standard access mode. Remove them from your cluster configuration before upgrading. For the complete list, see <a href="https://docs.databricks.com/aws/en/compute/standard-limitations#spark-configuration-limitations">Spark configuration limitations</a>. </li>
+</ul></div>
+                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CcXbcfwZVZZLdCAK43jaW'}]</div>
+            </div>
+        </div>
+        
+        <div class="article">
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/june#solution-accelerators-in-databricks-marketplace-are-now-published-as-apps-or-notebooks" target="_blank">
+                <div class="article-title">Solution Accelerators in Databricks Marketplace are now published as apps or notebooks</div>
+            </a>
+            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CcXbcgkgPNeMywQhBoiau'}]</div>
+            <div class="date">June 25, 2026</div>
+            <div class="content">
+                <div class="original-text"><p>Solution Accelerators are no longer a separate listing type in Databricks Marketplace. The content is unchanged, but they are now categorized as apps (interactive applications) or notebooks (code-based accelerators). See <a href="https://docs.databricks.com/aws/en/marketplace">What is Databricks Marketplace?</a>.</p></div>
+                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CcXbchFSqfgoR1T2Kc2Kc'}]</div>
+            </div>
+        </div>
+        
+        <div class="article">
             <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#genie-one-enhancements" target="_blank">
                 <div class="article-title">Genie One enhancements</div>
             </a>
-            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CcRozkFWgspQJNDv92547'}]</div>
+            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CcXbchgz7oD2jWQnJCe3g'}]</div>
             <div class="date">June 25, 2026</div>
             <div class="content">
                 <div class="original-text"><ul>
@@ -35,7 +77,7 @@
 <li><strong>Scheduled task frequency limit</strong>: Scheduled tasks can no longer be created with a frequency greater than daily. Hourly and per-minute frequencies are no longer supported. Contact your Databricks account team if you require more frequent scheduling.</li>
 <li><strong>Scheduled task email prefix</strong>: Scheduled task notification emails now use the prefix "Genie Task:" instead of "Task update:".</li>
 </ul></div>
-                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CcRoznUxFfZT5qYMWssnL'}]</div>
+                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CcXbci9GtbEhqEDJJVhRK'}]</div>
             </div>
         </div>
         
@@ -43,57 +85,13 @@
             <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#genie-space-enhancements" target="_blank">
                 <div class="article-title">Genie Space enhancements</div>
             </a>
-            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CcRoznu1REYdEoMt92xUN'}]</div>
+            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CcXbciaKUNNGiXfHZRwP2'}]</div>
             <div class="date">June 25, 2026</div>
             <div class="content">
                 <div class="original-text"><ul>
 <li><strong>Genie Code space authoring skills</strong>: Genie Code now includes dedicated skills for authoring and maintaining Genie Spaces.</li>
 </ul></div>
-                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CcRozoLYvG8dLEcx2nvAw'}]</div>
-            </div>
-        </div>
-        
-        <div class="article">
-            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#dashboard-enhancements-and-bug-fixes" target="_blank">
-                <div class="article-title">Dashboard enhancements and bug fixes</div>
-            </a>
-            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CcRozojrofpbVNjBUpm28'}]</div>
-            <div class="date">June 25, 2026</div>
-            <div class="content">
-                <div class="original-text"><ul>
-<li><strong>Dynamic annotation lines</strong>: Annotation lines can now be driven by data or a calculation instead of a fixed value, letting you show running averages, variable thresholds, or anomaly markers that update with your data. See <a href="https://docs.databricks.com/aws/en/dashboards/manage/visualizations#annotations">Annotations</a>.</li>
-<li><strong>Six new preset themes</strong>: Six new built-in color and style themes are now available for AI/BI dashboards, giving authors more ready-made options without creating a custom theme. See <a href="https://docs.databricks.com/aws/en/dashboards/manage/settings#preset">Choose a preset theme</a>.</li>
-<li><strong>Local metric view and dashboard relationship fix</strong>: Fixed a bug where local metric views and dashboard relationships sometimes failed when referencing assets from a Hive Metastore.</li>
-<li><strong>Faceted chart fix</strong>: Fixed an issue where faceted charts with a <code>DECIMAL</code> facet column dropped most rows in each facet.</li>
-<li><strong>Combo chart hover bug fix</strong>: Fixed an issue where hovering over buckets with null line or area values showed an incorrect tooltip and drew a stray point at the baseline. Null values now remain null instead of displaying as 0.</li>
-</ul></div>
-                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CcRozpF7vbbzCPTnPAuRL'}]</div>
-            </div>
-        </div>
-        
-        <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/whats-coming#genie-spaces-will-be-renamed-to-genie-agents" target="_blank">
-                <div class="article-title">Genie Spaces will be renamed to Genie Agents</div>
-            </a>
-            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CcRozphQTcmbmCRr54kav'}]</div>
-            <div class="date">June 24, 2026</div>
-            <div class="content">
-                <div class="original-text"><p>Genie Spaces is being renamed to Genie Agents. In early July 2026, Genie Spaces is renamed to Genie Agents to better reflect the full capabilities of this feature.</p></div>
-                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CcRozq6xdn8tLScDLnZt7'}]</div>
-            </div>
-        </div>
-        
-        <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/whats-coming#unity-ai-gateway-budgets-will-be-generally-available-in-july-2026" target="_blank">
-                <div class="article-title">Unity AI Gateway budgets will be generally available in July 2026</div>
-            </a>
-            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CcRozqY1Mvu97rb7YLdL1'}]</div>
-            <div class="date">June 23, 2026</div>
-            <div class="content">
-                <div class="original-text"><p>In July 2026, Unity AI Gateway budgets will be generally available for all accounts on AWS, Azure, and Google Cloud.</p>
-<p>Unity AI Gateway budgets let admins define spending thresholds for requests managed through Unity AI Gateway and <a href="https://docs.databricks.com/aws/en/genie">Genie</a>, including shared and per-user limits, with configurable actions such as email alerting or usage blocking. See <a href="https://docs.databricks.com/aws/en/ai-gateway/budgets-beta">Unity AI Gateway budgets</a> and <a href="https://docs.databricks.com/aws/en/genie/budgets">Genie budgets</a>.</p>
-<p>The Unity AI Gateway budgets feature is separate from Unity AI Gateway itself, which remains in Beta. Accounts that gain access to Unity AI Gateway budgets are not automatically enrolled in Unity AI Gateway.</p></div>
-                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CcRozqz3bKbQwdPzC56j2'}]</div>
+                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CcXbcjDWcv69utBQwyNRZ'}]</div>
             </div>
         </div>
         
