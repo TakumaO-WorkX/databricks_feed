@@ -23,63 +23,93 @@
         <h1>Databricks Docs Updates</h1>
     
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/june#run-a-subset-of-job-tasks-with-their-dependencies" target="_blank">
-                <div class="article-title">Run a subset of job tasks with their dependencies</div>
+            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#genie-one-enhancements-and-bug-fixes" target="_blank">
+                <div class="article-title">Genie One enhancements and bug fixes</div>
             </a>
-            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CcbJEkcH8KR3xQEx1kae5'}]</div>
-            <div class="date">June 30, 2026</div>
+            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ccf3dQ2gRh843Ui8cU7Cu'}]</div>
+            <div class="date">July 02, 2026</div>
             <div class="content">
-                <div class="original-text"><p>When you run a subset of a job's tasks, you can now expand your selection to include each task's dependencies. Add the <code>+</code> modifier to a task key to also run its upstream tasks (<code>+my_task</code>), its downstream tasks (<code>my_task+</code>), or both (<code>+my_task+</code>). Start a partial run from the UI, the REST API, the Databricks CLI, the SDKs, or Declarative Automation Bundles. See <a href="https://docs.databricks.com/aws/en/jobs/run-now#run-task-subset">Run a subset of tasks and their dependencies</a>.</p></div>
-                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CcbJEmFiudN1wBV3qHGNg'}]</div>
+                <div class="original-text"><ul>
+<li><strong>Ontology snippets (Public Preview)</strong>: Genie One now supports ontology snippets. This feature is in Public Preview. Contact your Databricks account team to sign up. See <a href="https://docs.databricks.com/aws/en/genie-one/chat#ontology">Genie Ontology</a>.</li>
+<li><strong>Document edit timestamps</strong>: Documents now show the date and time they were last edited. See <a href="https://docs.databricks.com/aws/en/genie-one/documents">Documents in Genie One</a>.</li>
+<li><strong>Links in documents</strong>: Documents now support links. See <a href="https://docs.databricks.com/aws/en/genie-one/documents">Documents in Genie One</a>.</li>
+<li><strong>Scheduled tasks</strong>: Fixed a bug that prevented scheduled tasks from running. See <a href="https://docs.databricks.com/aws/en/genie-one/chat#scheduled-tasks">Scheduled tasks</a>.</li>
+</ul></div>
+                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ccf3dR5SMMSTuoTR8DZpw'}]</div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/june#lakehouse-real-time-beta" target="_blank">
-                <div class="article-title">Lakehouse Real-Time (Beta)</div>
+            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#genie-space-enhancements" target="_blank">
+                <div class="article-title">Genie Space enhancements</div>
             </a>
-            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CcbJEmmENVywBLinXrvMr'}]</div>
-            <div class="date">June 30, 2026</div>
+            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ccf3dRZTU5znbWeAzB11r'}]</div>
+            <div class="date">July 02, 2026</div>
             <div class="content">
-                <div class="original-text"><p>Lakehouse Real-Time (Lakehouse//RT) is now in <a href="https://docs.databricks.com/aws/en/release-notes/release-types">Beta</a>. Lakehouse//RT is a serverless SQL warehouse type built for low-latency, high-concurrency workloads, delivering sub-second SQL read queries against Unity Catalog tables. Use it to serve analytical data to applications, run operational analytics, and power dashboards for hundreds to thousands of concurrent users. See <a href="https://docs.databricks.com/aws/en/compute/sql-warehouse/real-time">Lakehouse Real-Time</a>.</p></div>
-                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CcbJEntT1RwW9mjycj255'}]</div>
+                <div class="original-text"><ul>
+<li><strong>Agent mode is generally available</strong>: Agent mode in Genie Spaces is now generally available. Agent mode uses multi-step reasoning to answer complex, exploratory questions with a report that includes citations, visualizations, and supporting tables. See <a href="https://docs.databricks.com/aws/en/genie/agent-mode">Agent mode in Genie Spaces</a>.</li>
+<li><strong>Retrieve visualization results using the API (Beta)</strong>: You can now retrieve visualization results from Genie Spaces using the API. See <a href="https://docs.databricks.com/aws/en/genie/conversation-api#get-visualization"> Retrieve visualization results (Beta)</a> and the <a href="https://docs.databricks.com/api/workspace/genie">Genie API reference</a>.</li>
+<li><strong>Upload local files for analysis</strong>: You can now upload local Excel and CSV files to an Agent Mode chat for ad-hoc analysis. See <a href="https://docs.databricks.com/aws/en/genie/file-upload">Upload a file to a Genie Space</a>.</li>
+<li><strong>Expanded chat history</strong>: Fixed a bug where each user's chat history was limited to 20 past conversations. Chat history is no longer capped.</li>
+</ul></div>
+                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ccf3dVEU8rCwxgioCUqHz'}]</div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/june#lakebase-autoscaling-now-available-in-aws-tokyo-region-ap-northeast-1" target="_blank">
-                <div class="article-title">Lakebase Autoscaling now available in AWS Tokyo region (ap-northeast-1)</div>
+            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#dashboard-enhancements-and-bug-fixes" target="_blank">
+                <div class="article-title">Dashboard enhancements and bug fixes</div>
             </a>
-            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CcbJEoLjVysE6b1tuM5ip'}]</div>
-            <div class="date">June 30, 2026</div>
+            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ccf3dVu9hQhtGPqQWumxo'}]</div>
+            <div class="date">July 02, 2026</div>
             <div class="content">
-                <div class="original-text"><p>Lakebase Autoscaling is now available in <code>ap-northeast-1</code> (Asia Pacific - Tokyo). For all supported regions, see <a href="https://docs.databricks.com/aws/en/oltp/projects/manage-projects#availability">Region availability</a>. To get started, see <a href="https://docs.databricks.com/aws/en/oltp/projects/get-started">Get a Postgres database</a>.</p></div>
-                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CcbJEorVSB1ryVQRmYREm'}]</div>
+                <div class="original-text"><ul>
+<li><strong>Import reports from Power BI and Tableau</strong>: Authors can now import Power BI and Tableau reports as a new AI/BI dashboard directly from the dashboard list page. See <a href="https://docs.databricks.com/aws/en/dashboards/manage/import-bi">Import BI files using Genie Code</a>.</li>
+<li><strong>Improved metric view reuse when importing</strong>: When importing Tableau and Power BI reports as AI/BI dashboards, Genie Code is now more likely to reference existing Unity Catalog metric views instead of creating new ones. See <a href="https://docs.databricks.com/aws/en/dashboards/manage/import-bi">Import BI files using Genie Code</a>.</li>
+<li><strong>Hide dashboard pages before publishing</strong>: Authors can now hide dashboard pages so they aren't published, while continuing to edit them in draft mode. See <a href="https://docs.databricks.com/aws/en/dashboards/manage#multi-page-reports">Create multi-page reports</a>.</li>
+<li><strong><code>STRING_AGG</code> function</strong>: You can now use <code>STRING_AGG</code> to concatenate non-null string values within a group, with an optional custom delimiter. See <a href="https://docs.databricks.com/aws/en/sql/language-manual/functions/string_agg"><code>string_agg</code> aggregate function</a>.</li>
+<li><strong>Custom Vega visualization improvements</strong>: Two enhancements for custom Vega-Lite visualizations. See <a href="https://docs.databricks.com/aws/en/dashboards/manage/visualizations/custom-visualizations">Custom visualizations in AI/BI dashboards</a>.
+<ul>
+<li>Cross-filtering now works for Vega-Lite charts. The selection appears in the active filter bar and is preserved in dashboard URLs and share links.</li>
+<li>Custom Vega-Lite charts can now inherit the dashboard's light or dark mode and custom theme, and authors can reference theme values directly in Vega-Lite expressions.</li>
+</ul>
+</li>
+<li><strong>Hide pivot table columns</strong>: You can now hide columns in a pivot table. See <a href="https://docs.databricks.com/aws/en/dashboards/manage/visualizations/types#pivot">Pivot visualization</a>.</li>
+<li><strong>Counter widget comparison styling</strong>: Counter widgets now support text styling on the comparison date and conditional coloring on the comparison field. See <a href="https://docs.databricks.com/aws/en/dashboards/manage/visualizations/types#counter">Counter visualization</a>.</li>
+<li><strong>More compact filter widgets</strong>: Filter widgets on the dashboard canvas now appear more compact.</li>
+<li><strong>Dynamic table column widths</strong>: Table columns now adjust their width automatically based on cell content.</li>
+<li><strong>Apply filters fix</strong>: Fixed a bug where applying filters did not work.</li>
+<li><strong>Table column resize fix</strong>: Fixed an issue where resizing a table column could unintentionally trigger a sort on that column.</li>
+<li><strong>Combo chart hover fix</strong>: Fixed a console error that sometimes occurred when hovering over empty areas of a combo chart.</li>
+</ul></div>
+                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ccf3dWS9h1nz8XNnhtQny'}]</div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/whats-coming#grok-models-will-soon-be-available-as-pay-per-token-foundation-models" target="_blank">
-                <div class="article-title">Grok models will soon be available as pay-per-token foundation models</div>
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/july#lakeflow-connect-row-filtering-is-now-generally-available" target="_blank">
+                <div class="article-title">Lakeflow Connect row filtering is now generally available</div>
             </a>
-            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CcbJEpVS9Xd7eKpx7YCXc'}]</div>
-            <div class="date">June 30, 2026</div>
+            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ccf3dXV9swSxprMMFtqTu'}]</div>
+            <div class="date">July 02, 2026</div>
             <div class="content">
-                <div class="original-text"><p>Grok models will soon be available as pay-per-token foundation models in Databricks Model Serving.</p>
-<p>See <a href="https://docs.databricks.com/aws/en/machine-learning/model-serving/foundation-model-overview">Supported foundation models on Model Serving</a>.</p></div>
-                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CcbJEpyi9XGUG9LNF15KB'}]</div>
+                <div class="original-text"><p>Row filtering in Lakeflow Connect is now generally available. Row filtering allows you to ingest only the rows you need by applying conditions similar to a SQL <code>WHERE</code> clause, improving performance and minimizing data duplication. Row filtering applies during both the initial load and subsequent incremental updates, and is supported for SaaS connectors including Google Analytics, Salesforce, and ServiceNow, as well as all query-based connectors.</p>
+<p>See <a href="https://docs.databricks.com/aws/en/ingestion/lakeflow-connect/row-filtering">Select rows to ingest</a>.</p></div>
+                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ccf3dXuheLYGjMKafvzsJ'}]</div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/june#sql-alert-task-in-lakeflow-jobs-is-now-generally-available" target="_blank">
-                <div class="article-title">SQL alert task in Lakeflow Jobs is now generally available</div>
+            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#dashboard-relationships-public-preview" target="_blank">
+                <div class="article-title">Dashboard relationships (Public Preview)</div>
             </a>
-            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CcbJEqUifGSQN1ckCn9zW'}]</div>
-            <div class="date">June 29, 2026</div>
+            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ccf3dYLk3FzD9VqrhDBrZ'}]</div>
+            <div class="date">July 01, 2026</div>
             <div class="content">
-                <div class="original-text"><p>The SQL alert task in Lakeflow Jobs is now generally available. Use the task to evaluate a Databricks SQL alert as part of a Lakeflow Job. The task returns its evaluation state as a task output value, so downstream tasks can branch on the result. See <a href="https://docs.databricks.com/aws/en/jobs/tasks/alert">SQL alert task for jobs</a>.</p></div>
-                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CcbJEqxk2Y25M15rt2SE3'}]</div>
+                <div class="original-text"><ul>
+<li><strong>Dashboard relationships (Public Preview)</strong>: Build complex multi-fact data models scoped to an AI/BI dashboard. See <a href="https://docs.databricks.com/aws/en/dashboards/manage/data-modeling/dashboard-relationships">Dashboard relationships</a>.</li>
+</ul></div>
+                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ccf3dYmHuw8LoiuNPW874'}]</div>
             </div>
         </div>
         
