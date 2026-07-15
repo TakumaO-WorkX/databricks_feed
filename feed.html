@@ -23,41 +23,27 @@
         <h1>Databricks Docs Updates</h1>
     
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/whats-coming#databricks-provided-mcp-services-will-ga-soon" target="_blank">
-                <div class="article-title">Databricks-provided MCP Services will GA soon</div>
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/july#triggeravailablenow-support-for-opensharing-streaming-ga" target="_blank">
+                <div class="article-title">Trigger.AvailableNow support for OpenSharing streaming (GA)</div>
             </a>
-            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ccz1tfPAo1tRbLcqLHwh4'}]</div>
-            <div class="date">July 10, 2026</div>
+            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cd3i3DZ5JfAr6Wc7piF9h'}]</div>
+            <div class="date">July 14, 2026</div>
             <div class="content">
-                <div class="original-text"><p>Databricks-provided MCP Services for SaaS applications such as Slack, GitHub, Atlassian, and Google Drive will soon be generally available, with both read and write operations enabled by default. Admins and users can disable MCP Services and individual tools in <a href="https://docs.databricks.com/aws/en/ai-gateway">Unity AI Gateway</a>.</p>
-<p>See <a href="https://docs.databricks.com/aws/en/agents/agent-framework/mcp-services">Connect agents to third-party tools with MCP Services</a>.</p></div>
-                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ccz1thdMkH92UDFZuHu42'}]</div>
+                <div class="original-text"><p>Streaming reads from OpenSharing tables now support the <code>Trigger.AvailableNow</code> trigger. This trigger captures the shared table's current version when it starts, processes all available data across one or more micro-batches (honoring <code>maxFilesPerTrigger</code> and <code>maxVersionsPerRpc</code>), and then stops, which is well suited to scheduled, batch-like incremental processing. Previously, <code>Trigger.AvailableNow</code> on a OpenSharing source was converted to <code>Trigger.Once</code>, which processed a single micro-batch per run. This feature requires Databricks Runtime 18.0 or above.</p>
+<p>See <a href="https://docs.databricks.com/aws/en/opensharing/read-data-databricks#streaming-source">Query a table using Apache Spark Structured Streaming</a> for Databricks-to-Databricks recipients and <a href="https://docs.databricks.com/aws/en/opensharing/read-data-open#streaming-source">Access a shared table using Spark Structured Streaming</a> for open sharing recipients.</p></div>
+                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cd3i3ESuBqDFkmTesrZb7'}]</div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/whats-coming#sharepoint-connector-in-lakeflow-connect-will-soon-be-generally-available" target="_blank">
-                <div class="article-title">SharePoint connector in Lakeflow Connect will soon be generally available</div>
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/july#view-warehouse-activity-details-general-availability" target="_blank">
+                <div class="article-title">View warehouse activity details (General Availability)</div>
             </a>
-            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ccz1ti5tdtDyR52zmYhTH'}]</div>
-            <div class="date">July 10, 2026</div>
+            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cd3i3Exf82SXqmjQWhzUx'}]</div>
+            <div class="date">July 13, 2026</div>
             <div class="content">
-                <div class="original-text"><p>The SharePoint connector in Lakeflow Connect will soon be generally available. You can ingest files and structured data from SharePoint sites into Databricks for transformation, analysis, and downstream pipelines.</p>
-<p>See <a href="https://docs.databricks.com/aws/en/ingestion/lakeflow-connect/sharepoint">SharePoint connector</a>.</p></div>
-                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ccz1tiaA2o8qLaFfpvQZY'}]</div>
-            </div>
-        </div>
-        
-        <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/whats-coming#google-drive-connector-in-lakeflow-connect-will-soon-be-generally-available" target="_blank">
-                <div class="article-title">Google Drive connector in Lakeflow Connect will soon be generally available</div>
-            </a>
-            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ccz1tj2hELJGFpf7bKx4w'}]</div>
-            <div class="date">July 10, 2026</div>
-            <div class="content">
-                <div class="original-text"><p>The Google Drive connector in Lakeflow Connect will soon be generally available. You can ingest files from Google Drive into Databricks for transformation, analysis, and downstream pipelines.</p>
-<p>See <a href="https://docs.databricks.com/aws/en/ingestion/lakeflow-connect/google-drive">Google Drive connector</a>.</p></div>
-                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ccz1tjUj3e5TPVf4MAyRf'}]</div>
+                <div class="original-text"><p>The <strong>Activity details</strong> toggle in the SQL warehouse monitoring UI is now generally available. View color-coded annotations on the <strong>Running clusters</strong> chart that explain why a warehouse remains active, including query activity, fetching queries, open sessions, and idle states. Hover over bars to see metadata, or click on fetching activity to filter the query history table. See <a href="https://docs.databricks.com/aws/en/compute/sql-warehouse/monitor#activity-details">Activity details</a>.</p></div>
+                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cd3i3FUR6cJXuX3HbidZH'}]</div>
             </div>
         </div>
         
@@ -65,25 +51,38 @@
             <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/july#lakebase-autoscaling-update-notifications-now-post-3-days-in-advance" target="_blank">
                 <div class="article-title">Lakebase Autoscaling update notifications now post 3 days in advance</div>
             </a>
-            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ccz1tkJqF4uVy4Tc2YpzE'}]</div>
+            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cd3i3FxgUaf26HRyDUqVd'}]</div>
             <div class="date">July 10, 2026</div>
             <div class="content">
                 <div class="original-text"><p>To deliver Postgres version updates, security patches, and new features to your projects sooner, Lakebase Autoscaling has shortened the planned update notification window. Planned updates are now posted at least 3 days in advance, rather than 7. You can check your project's settings for upcoming updates.</p>
 <p>See <a href="https://docs.databricks.com/aws/en/oltp/projects/updates">Manage updates</a>.</p></div>
-                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ccz1tkraPGJg762mhfka2'}]</div>
+                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cd3i3GTSmvbPZrNvy7mvL'}]</div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/whats-coming#change-to-default-pipeline-editor-for-workspaces-with-the-compliance-security-profile-enabled" target="_blank">
-                <div class="article-title">Change to default pipeline editor for workspaces with the compliance security profile enabled</div>
+            <a href="https://docs.databricks.com/aws/en/release-notes/whats-coming#databricks-provided-mcp-services-will-ga-soon" target="_blank">
+                <div class="article-title">Databricks-provided MCP Services will GA soon</div>
             </a>
-            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ccz1tmJ7qRZqWDfkEvPRL'}]</div>
-            <div class="date">July 09, 2026</div>
+            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cd3i3GwDbXHBZgQwA5ekS'}]</div>
+            <div class="date">July 10, 2026</div>
             <div class="content">
-                <div class="original-text"><p>The <a href="https://docs.databricks.com/aws/en/ldp/multi-file-editor">Lakeflow Pipelines Editor</a> has been generally available since May 2026. In August, it will become the default editor for developing and debugging pipelines in workspaces with the <a href="https://docs.databricks.com/aws/en/security/privacy/security-profile">compliance security profile</a> enabled. At that time the legacy editor will be removed.</p>
-<p>For more information about the Lakeflow Pipelines Editor, see <a href="https://docs.databricks.com/aws/en/ldp/multi-file-editor">Develop and debug ETL pipelines with the Lakeflow Pipelines Editor</a>. If you have questions about this transition, contact your account team.</p></div>
-                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ccz1tn7yWdiGfNBeryaSu'}]</div>
+                <div class="original-text"><p>Databricks-provided MCP Services for SaaS applications such as Slack, GitHub, Atlassian, and Google Drive will soon be generally available, with both read and write operations enabled by default. Admins and users can disable MCP Services and individual tools in <a href="https://docs.databricks.com/aws/en/ai-gateway">Unity AI Gateway</a>.</p>
+<p>See <a href="https://docs.databricks.com/aws/en/agents/agent-framework/mcp-services">Connect agents to third-party tools with MCP Services</a>.</p></div>
+                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cd3i3HPW9Y57DwiX9ZN6z'}]</div>
+            </div>
+        </div>
+        
+        <div class="article">
+            <a href="https://docs.databricks.com/aws/en/release-notes/whats-coming#sharepoint-connector-in-lakeflow-connect-will-soon-be-generally-available" target="_blank">
+                <div class="article-title">SharePoint connector in Lakeflow Connect will soon be generally available</div>
+            </a>
+            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cd3i3HzURD3TPFhZZzmdg'}]</div>
+            <div class="date">July 10, 2026</div>
+            <div class="content">
+                <div class="original-text"><p>The SharePoint connector in Lakeflow Connect will soon be generally available. You can ingest files and structured data from SharePoint sites into Databricks for transformation, analysis, and downstream pipelines.</p>
+<p>See <a href="https://docs.databricks.com/aws/en/ingestion/lakeflow-connect/sharepoint">SharePoint connector</a>.</p></div>
+                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cd3i3KMpjbAZiukeje4Jp'}]</div>
             </div>
         </div>
         
