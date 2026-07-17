@@ -23,66 +23,88 @@
         <h1>Databricks Docs Updates</h1>
     
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/july#triggeravailablenow-support-for-opensharing-streaming-ga" target="_blank">
-                <div class="article-title">Trigger.AvailableNow support for OpenSharing streaming (GA)</div>
+            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#genie-one-enhancements-and-bug-fixes" target="_blank">
+                <div class="article-title">Genie One enhancements and bug fixes</div>
             </a>
-            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cd3i3DZ5JfAr6Wc7piF9h'}]</div>
-            <div class="date">July 14, 2026</div>
+            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cd7VUWh9eGvaT4xPk1xdN'}]</div>
+            <div class="date">July 16, 2026</div>
             <div class="content">
-                <div class="original-text"><p>Streaming reads from OpenSharing tables now support the <code>Trigger.AvailableNow</code> trigger. This trigger captures the shared table's current version when it starts, processes all available data across one or more micro-batches (honoring <code>maxFilesPerTrigger</code> and <code>maxVersionsPerRpc</code>), and then stops, which is well suited to scheduled, batch-like incremental processing. Previously, <code>Trigger.AvailableNow</code> on a OpenSharing source was converted to <code>Trigger.Once</code>, which processed a single micro-batch per run. This feature requires Databricks Runtime 18.0 or above.</p>
-<p>See <a href="https://docs.databricks.com/aws/en/opensharing/read-data-databricks#streaming-source">Query a table using Apache Spark Structured Streaming</a> for Databricks-to-Databricks recipients and <a href="https://docs.databricks.com/aws/en/opensharing/read-data-open#streaming-source">Access a shared table using Spark Structured Streaming</a> for open sharing recipients.</p></div>
-                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cd3i3ESuBqDFkmTesrZb7'}]</div>
+                <div class="original-text"><ul>
+<li><strong>Search and reuse past conversations</strong>: You can now search your past Genie One conversations and bring previous context into your current conversation. See <a href="https://docs.databricks.com/aws/en/genie-one/chat#recall-past-conversations">Recall past conversations</a>.</li>
+<li><strong>Memory (Beta)</strong>: Genie One can remember details you ask it to save, such as your preferences and workflows, and applies them in future conversations. See <a href="https://docs.databricks.com/aws/en/genie-one/chat#memory">Add to Genie One's memory</a>.</li>
+<li><strong>Run a scheduled task on demand</strong>: When you author a scheduled task, you can now select <strong>Run now</strong> to run it immediately. See <a href="https://docs.databricks.com/aws/en/genie-one/chat#scheduled-tasks">Scheduled tasks</a>.</li>
+<li><strong>Mention scheduled tasks</strong>: You can now @mention scheduled tasks in Genie One. See <a href="https://docs.databricks.com/aws/en/genie-one/chat#scheduled-tasks">Scheduled tasks</a>.</li>
+<li><strong>New chat loading fix</strong>: Fixed a bug where a new chat showed a blank screen while waiting for the first response.</li>
+</ul></div>
+                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cd7VUXZk21S9NnBaCWDjp'}]</div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/july#view-warehouse-activity-details-general-availability" target="_blank">
-                <div class="article-title">View warehouse activity details (General Availability)</div>
+            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#genie-agents-enhancements-and-bug-fixes" target="_blank">
+                <div class="article-title">Genie Agents enhancements and bug fixes</div>
             </a>
-            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cd3i3Exf82SXqmjQWhzUx'}]</div>
-            <div class="date">July 13, 2026</div>
+            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cd7VUYBCfCrvzKfrrKqwF'}]</div>
+            <div class="date">July 16, 2026</div>
             <div class="content">
-                <div class="original-text"><p>The <strong>Activity details</strong> toggle in the SQL warehouse monitoring UI is now generally available. View color-coded annotations on the <strong>Running clusters</strong> chart that explain why a warehouse remains active, including query activity, fetching queries, open sessions, and idle states. Hover over bars to see metadata, or click on fetching activity to filter the query history table. See <a href="https://docs.databricks.com/aws/en/compute/sql-warehouse/monitor#activity-details">Activity details</a>.</p></div>
-                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cd3i3FUR6cJXuX3HbidZH'}]</div>
+                <div class="original-text"><ul>
+<li><strong>Save a chat as a Genie Agent</strong>: You can now save a Genie One thread as a Genie Agent. See <a href="https://docs.databricks.com/aws/en/genie-one/chat#create-an-agent">Create an agent</a>.</li>
+<li><strong>Conversation sharing (Public Preview)</strong>: Sharing an individual Genie Agent conversation is now in Public Preview. See <a href="https://docs.databricks.com/aws/en/genie-agents/talk-to-genie#share-conversation">Share a conversation</a>.</li>
+<li><strong>Access email terminology</strong>: Access-granted and access-request emails now use the Genie Agent's name.</li>
+<li><strong>Download visualization fix</strong>: Fixed a bug where choropleth and point map visualizations were not returned by the download visualization API.</li>
+<li><strong>Benchmark results fix</strong>: Fixed a bug where benchmark results incorrectly showed as empty.</li>
+</ul></div>
+                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cd7VUYkvXZA1nDL3ect5M'}]</div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/july#lakebase-autoscaling-update-notifications-now-post-3-days-in-advance" target="_blank">
-                <div class="article-title">Lakebase Autoscaling update notifications now post 3 days in advance</div>
+            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#dashboard-enhancements-and-bug-fixes" target="_blank">
+                <div class="article-title">Dashboard enhancements and bug fixes</div>
             </a>
-            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cd3i3FxgUaf26HRyDUqVd'}]</div>
-            <div class="date">July 10, 2026</div>
+            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cd7VUZZYTRYsYdrihSRGL'}]</div>
+            <div class="date">July 16, 2026</div>
             <div class="content">
-                <div class="original-text"><p>To deliver Postgres version updates, security patches, and new features to your projects sooner, Lakebase Autoscaling has shortened the planned update notification window. Planned updates are now posted at least 3 days in advance, rather than 7. You can check your project's settings for upcoming updates.</p>
-<p>See <a href="https://docs.databricks.com/aws/en/oltp/projects/updates">Manage updates</a>.</p></div>
-                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cd3i3GTSmvbPZrNvy7mvL'}]</div>
+                <div class="original-text"><ul>
+<li><strong>Git folders (GA)</strong>: Git folders for dashboards are now generally available. See <a href="https://docs.databricks.com/aws/en/dashboards/automate/git-support">Version control dashboards with Git</a>.</li>
+<li><strong>Run a schedule on demand</strong>: You can now select <strong>Run now</strong> on a dashboard schedule to run it immediately. See <a href="https://docs.databricks.com/aws/en/dashboards/share/schedule-subscribe#manage-schedules">Manage schedules</a>.</li>
+<li><strong>Dashboard variable display names</strong>: Dashboard variable drop-down options now show the column's display name instead of the field name when a display name is available.</li>
+<li><strong>Improved Ask Genie starter questions</strong>: Ask Genie suggests better starter questions for dashboards and caches them to reduce latency.</li>
+<li><strong>Genie Code error handling</strong>: When you author a dashboard with Genie Code, it now returns an error instead of retrying SQL queries that are not valid. This behavior reduces the cost of query errors.</li>
+<li><strong>Bookmark icon visibility</strong>: When viewing a published dashboard, the bookmark icon no longer appears if a dashboard has no bookmarks.</li>
+<li><strong>Ask Genie health-check fix</strong>: Ask Genie no longer shows a health-check warning when the linked Genie Agent is still usable.</li>
+<li><strong>Dashboard creation fix</strong>: Fixed a bug where some authors with the SQL access entitlement could not create or clone dashboards.</li>
+<li><strong>PNG download fix</strong>: Fixed a bug where custom fonts were dropped from the chart title and legend in single-widget PNG downloads.</li>
+<li><strong>Waterfall chart fix</strong>: Fixed a bug where y-axis formatting options on a waterfall chart did not work.</li>
+</ul></div>
+                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cd7VUa3Zi1YBEzcM9Fok9'}]</div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/whats-coming#databricks-provided-mcp-services-will-ga-soon" target="_blank">
-                <div class="article-title">Databricks-provided MCP Services will GA soon</div>
+            <a href="https://docs.databricks.com/aws/en/release-notes/whats-coming#mlflow-trace-storage-in-unity-catalog-will-soon-be-available-by-default-for-workspaces-with-the-compliance-security-profile-enabled" target="_blank">
+                <div class="article-title">MLflow trace storage in Unity Catalog will soon be available by default for workspaces with the compliance security profile enabled</div>
             </a>
-            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cd3i3GwDbXHBZgQwA5ekS'}]</div>
-            <div class="date">July 10, 2026</div>
+            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cd7VUaXLkwziUNTX18UBS'}]</div>
+            <div class="date">July 16, 2026</div>
             <div class="content">
-                <div class="original-text"><p>Databricks-provided MCP Services for SaaS applications such as Slack, GitHub, Atlassian, and Google Drive will soon be generally available, with both read and write operations enabled by default. Admins and users can disable MCP Services and individual tools in <a href="https://docs.databricks.com/aws/en/ai-gateway">Unity AI Gateway</a>.</p>
-<p>See <a href="https://docs.databricks.com/aws/en/agents/agent-framework/mcp-services">Connect agents to third-party tools with MCP Services</a>.</p></div>
-                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cd3i3HPW9Y57DwiX9ZN6z'}]</div>
+                <div class="original-text"><p>MLflow trace storage in Unity Catalog tables will be available by default for workspaces with the <a href="https://docs.databricks.com/aws/en/security/privacy/security-profile">compliance security profile</a> enabled in mid-August 2026.</p>
+<p>Store MLflow traces in Unity Catalog tables for scalable, governed trace storage: storage is unlimited, traces are stored in OpenTelemetry (OTel) format, access is governed through Unity Catalog schema and table permissions, and you can query traces with SQL. To view traces, point an MLflow experiment at a Unity Catalog trace location.</p>
+<p>See <a href="https://docs.databricks.com/aws/en/mlflow3/genai/tracing/trace-unity-catalog">Store OpenTelemetry traces in Unity Catalog</a>.</p></div>
+                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cd7VUaxdX7XDxRTgzpQM5'}]</div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/whats-coming#sharepoint-connector-in-lakeflow-connect-will-soon-be-generally-available" target="_blank">
-                <div class="article-title">SharePoint connector in Lakeflow Connect will soon be generally available</div>
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/july#scala-and-java-udfs-in-unity-catalog-are-now-generally-available" target="_blank">
+                <div class="article-title">Scala and Java UDFs in Unity Catalog are now generally available</div>
             </a>
-            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cd3i3HzURD3TPFhZZzmdg'}]</div>
-            <div class="date">July 10, 2026</div>
+            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cd7VUbYrAre2qN2HtqpcF'}]</div>
+            <div class="date">July 16, 2026</div>
             <div class="content">
-                <div class="original-text"><p>The SharePoint connector in Lakeflow Connect will soon be generally available. You can ingest files and structured data from SharePoint sites into Databricks for transformation, analysis, and downstream pipelines.</p>
-<p>See <a href="https://docs.databricks.com/aws/en/ingestion/lakeflow-connect/sharepoint">SharePoint connector</a>.</p></div>
-                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cd3i3KMpjbAZiukeje4Jp'}]</div>
+                <div class="original-text"><p>You can now register Scala and Java user-defined functions (UDFs) in Unity Catalog and reuse them across notebooks, jobs, and SQL warehouses with Unity Catalog governance. Reuse your existing JVM logic and get better performance than Python UDFs on all compute, including serverless.</p>
+<p>See <a href="https://docs.databricks.com/aws/en/udf/scala-java-uc">Scala and Java user-defined functions (UDFs) in Unity Catalog</a>.</p></div>
+                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cd7VUco1Zg1HvJazuC1dJ'}]</div>
             </div>
         </div>
         
