@@ -23,66 +23,97 @@
         <h1>Databricks Docs Updates</h1>
     
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/july#databricks-hosted-sample-datasets-available-in-the-samples-catalog" target="_blank">
-                <div class="article-title">Databricks-hosted sample datasets available in the samples catalog</div>
+            <a href="https://docs.databricks.com/aws/en/release-notes/whats-coming#public-urls-for-jdbc-driver-downloads-will-be-disabled" target="_blank">
+                <div class="article-title">Public URLs for JDBC driver downloads will be disabled</div>
             </a>
-            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CdGzDzyzcWBy6i6hDybiT'}]</div>
-            <div class="date">July 22, 2026</div>
+            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CdLmTBnzHZZxY1PuVS7q3'}]</div>
+            <div class="date">July 24, 2026</div>
             <div class="content">
-                <div class="original-text"><p>The sample datasets <code>/databricks-datasets</code> mounted to DBFS are now also available in the <code>samples</code> catalog as <code>samples.databricks.datasets</code>, made available through OpenSharing. The <code>datasets</code> volume hosts a collection of Databricks-provided datasets that you can use to build and test data pipelines.</p>
-<p>The <code>samples</code> catalog is available in Unity Catalog-enabled workspaces. For more information about the sample datasets available in the <code>samples</code> catalog, see <a href="https://docs.databricks.com/aws/en/discover/databricks-datasets">Sample datasets</a>.</p></div>
-                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CdGzE1cCSEogrEYLUM8oB'}]</div>
+                <div class="original-text"><p>Beginning September 2026, public S3 links for downloading the <a href="https://docs.databricks.com/aws/en/integrations/jdbc">Simba JDBC Driver (Legacy)</a> will be disabled. After this date, scripts or processes that use direct public links to download the driver will no longer function. In addition, downloading from the <a href="https://www.databricks.com/spark/jdbc-drivers-download">JDBC archive page</a> will require signing in to Databricks.</p>
+<p>To continue using automated downloads, migrate to the Databricks JDBC Driver before September 2026. See <a href="https://docs.databricks.com/aws/en/integrations/jdbc-oss">Databricks JDBC Driver</a>.</p></div>
+                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CdLmTCRgsUBNE4fXUW6ju'}]</div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/whats-coming#genie-one-will-soon-be-available-to-account-only-users" target="_blank">
-                <div class="article-title">Genie One will soon be available to account-only users</div>
+            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#genie-agents-enhancements" target="_blank">
+                <div class="article-title">Genie Agents enhancements</div>
             </a>
-            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CdGzE25yXzMjWmVD4NiRS'}]</div>
-            <div class="date">July 21, 2026</div>
+            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CdLmTDTCXL2b5ZD4zxHVZ'}]</div>
+            <div class="date">July 23, 2026</div>
             <div class="content">
-                <div class="original-text"><p>Genie One will soon support account-only users, allowing any user in your identity provider to access Genie One without being assigned to a workspace or granted the consumer entitlement. When enabled, all users in your identity provider are enrolled automatically. Unity Catalog will continue to govern what each user can see.</p>
-<p>This feature will be in Public Preview and enabled by default. To be eligible, accounts must enable <a href="https://docs.databricks.com/aws/en/admin/users-groups/automatic-identity-management">Automatic Identity Management</a> (or <a href="https://docs.databricks.com/aws/en/admin/users-groups/scim">account-level SCIM</a>) and <a href="https://docs.databricks.com/aws/en/admin/account-settings/custom-url">a custom URL</a>.</p>
-<p>Account admins can restrict access with AIM access boundaries or disable account-only access in the account console.</p></div>
-                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CdGzE2cDzTKG5BHPDRnrY'}]</div>
+                <div class="original-text"><ul>
+<li><strong>Higher character limit for uploaded PDFs</strong>: The maximum number of characters per uploaded PDF has been raised from 4,000 to 15,000. See <a href="https://docs.databricks.com/aws/en/genie-agents/file-upload#pdf-files">PDF files</a>.</li>
+<li><strong>Agent mode APIs (Beta)</strong>: Agent mode APIs for Genie Agents are now available in Beta. See <a href="https://docs.databricks.com/aws/en/genie-agents/api">Agent mode APIs in Genie Agents</a>.</li>
+<li><strong>Analyze files in Unity Catalog volumes (Beta)</strong>: A Genie Agent can now analyze files stored in Unity Catalog volumes, such as PDFs, slide decks, and images. See <a href="https://docs.databricks.com/aws/en/genie-agents/volumes#attach-volumes">Attach volumes to a Genie Agent</a>.</li>
+</ul></div>
+                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CdLmTDvizdmGdX4L7ZVkC'}]</div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/july#context-based-ingress-control-for-workspaces-public-access-is-now-generally-available" target="_blank">
-                <div class="article-title">Context-based ingress control for workspaces public access is now generally available</div>
+            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#dashboard-enhancements-and-bug-fixes" target="_blank">
+                <div class="article-title">Dashboard enhancements and bug fixes</div>
             </a>
-            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CdGzE36VeHSSPJafKPMXM'}]</div>
-            <div class="date">July 21, 2026</div>
+            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CdLmTEWwwnqSB43pkCrdd'}]</div>
+            <div class="date">July 23, 2026</div>
             <div class="content">
-                <div class="original-text"><p>Context-based ingress control for workspaces public access is now generally available. Control who can reach your workspace endpoints using allow and deny rules that allow you to combine identities, network sources, and request types. See <a href="https://docs.databricks.com/aws/en/security/network/front-end/context-based-ingress">Context-based ingress control</a>.</p></div>
-                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CdGzE3ZmfzU4qR7tZ6bT8'}]</div>
+                <div class="original-text"><ul>
+<li>
+<p><strong>Import BI files (Public Preview)</strong>: Importing Power BI and Tableau reports as AI/BI dashboards with Genie Code is in Public Preview. See <a href="https://docs.databricks.com/aws/en/dashboards/manage/import-bi">Import BI files using Genie Code</a>.</p>
+</li>
+<li>
+<p><strong>Image widget</strong>: You can now add a dedicated image widget to a dashboard. See <a href="https://docs.databricks.com/aws/en/dashboards/manage/visualizations/image-widgets">Image widgets</a>.</p>
+<p><img alt="Adding an image widget to a dashboard and specifying an image." src="https://assets.docs.databricks.com/_static/images/dashboards/image-widget-create.gif" /></p>
+</li>
+<li>
+<p><strong>Multi-select filter improvements</strong>: <a href="https://docs.databricks.com/aws/en/dashboards/manage/filter-types#multiple-values">Multi-select filter</a> improvements:</p>
+<ul>
+<li><strong>Multi-select filter stays open</strong>: Multi-select filter drop-downs now stay open between selections and keep your place in the list instead of closing.</li>
+<li><strong>Select all matching values in a multi-select filter</strong>: In a multi-select filter, you can now type to narrow the list and select <strong>Select all results</strong> to select every matching value at once. Selections are additive across searches.</li>
+</ul>
+</li>
+<li>
+<p><strong>Dashboard variable display names</strong>: When a display name is available, dashboard variable drop-down menu options show the column's display name instead of the field name. To learn more about variables, see <a href="https://docs.databricks.com/aws/en/dashboards/manage/filters/dashboard-variables#create-a-dashboard-variable">Create a dashboard variable</a>.</p>
+</li>
+<li>
+<p><strong>Cross-filtering text-selection fix</strong>: Fixed a bug where selecting text in a table unintentionally triggered cross-filtering.</p>
+</li>
+<li>
+<p><strong>Genie Code for dashboard authoring (GA)</strong>: Genie Code for dashboard authoring, the Genie agent built for authoring dashboards, is now generally available. See <a href="https://docs.databricks.com/aws/en/dashboards/manage/dashboard-agent">Use Genie Code for dashboard authoring</a>. This release also adds the following authoring capabilities:</p>
+<ul>
+<li><strong>Author image widgets with Genie Code</strong>: Genie Code for dashboard authoring can now add image widgets to a dashboard. See <a href="https://docs.databricks.com/aws/en/dashboards/manage/dashboard-agent#image-widgets">Author image widgets</a>.</li>
+<li><strong>Beautify dashboards with Genie Code</strong>: Genie Code for dashboard authoring can now redesign a dashboard's appearance. Ask it to beautify your dashboard, then undo the changes if you want to revert. See <a href="https://docs.databricks.com/aws/en/dashboards/manage/dashboard-agent#beautify">Beautify a dashboard</a>.</li>
+</ul>
+</li>
+</ul></div>
+                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CdLmTF5vqGFdn8TvQoYDo'}]</div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/july#reddit-ads-connector-is-now-available-in-beta" target="_blank">
-                <div class="article-title">Reddit Ads connector is now available in Beta</div>
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/july#databricks-runtime-19-and-databricks-runtime-19-for-machine-learning-are-now-generally-available" target="_blank">
+                <div class="article-title">Databricks Runtime 19 and Databricks Runtime 19 for Machine Learning are now generally available</div>
             </a>
-            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CdGzE41p2hYgD75WZerrk'}]</div>
-            <div class="date">July 21, 2026</div>
+            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CdLmTFYiNCnDv5oBhkW9D'}]</div>
+            <div class="date">July 23, 2026</div>
             <div class="content">
-                <div class="original-text"><p>The managed Reddit Ads connector in Lakeflow Connect is now available in Beta. You can use the connector to ingest advertising campaign data and performance metrics from Reddit Ads into Databricks. See <a href="https://docs.databricks.com/aws/en/ingestion/lakeflow-connect/reddit-ads">Reddit Ads connector</a>.</p></div>
-                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CdGzE4ULgwV7ba7uhhHYq'}]</div>
+                <div class="original-text"><p>Databricks Runtime 19 and Databricks Runtime 19 for Machine Learning are now generally available (GA), powered by Apache Spark 4.2.0.</p>
+<p>For release notes, see <a href="https://docs.databricks.com/aws/en/release-notes/runtime/19">Databricks Runtime 19</a> and <a href="https://docs.databricks.com/aws/en/release-notes/runtime/19ml">Databricks Runtime 19 for Machine Learning</a>.</p></div>
+                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CdLmTGDPkma9MZjia5pdc'}]</div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/july#google-gemini-36-flash-now-available-as-a-databricks-hosted-model" target="_blank">
-                <div class="article-title">Google Gemini 3.6 Flash now available as a Databricks-hosted model</div>
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/july#databricks-runtime-18-and-databricks-runtime-18-for-machine-learning-have-transitioned-to-lts" target="_blank">
+                <div class="article-title">Databricks Runtime 18 and Databricks Runtime 18 for Machine Learning have transitioned to LTS</div>
             </a>
-            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CdGzE4x7tVfb5LrUbz2eH'}]</div>
-            <div class="date">July 21, 2026</div>
+            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CdLmTMfon8L4HYuiaTeLS'}]</div>
+            <div class="date">July 23, 2026</div>
             <div class="content">
-                <div class="original-text"><p>Model Serving now supports Google <a href="https://docs.databricks.com/aws/en/machine-learning/foundation-model-apis/supported-models#gemini-3-6-flash">Gemini 3.6 Flash</a> as a Databricks-hosted model. You can access this model using <a href="https://docs.databricks.com/aws/en/machine-learning/foundation-model-apis">Foundation Model APIs</a>.</p>
-<p>Customers are responsible for ensuring their compliance with <a href="https://docs.databricks.com/aws/en/machine-learning/model-serving/acceptable-use-models">applicable terms</a>.</p></div>
-                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CdGzE5RtPKSqHhzMQWE26'}]</div>
+                <div class="original-text"><p>With the general availability of Databricks Runtime 19, Databricks Runtime 18 and Databricks Runtime 18 for Machine Learning have transitioned to long-term support (LTS). LTS versions receive three years of stability and security fixes.</p>
+<p>For release notes, see <a href="https://docs.databricks.com/aws/en/release-notes/runtime/18">Databricks Runtime 18 LTS</a> and <a href="https://docs.databricks.com/aws/en/release-notes/runtime/18ml">Databricks Runtime 18 LTS for Machine Learning</a>. For lifecycle details, see <a href="https://docs.databricks.com/aws/en/release-notes/runtime/databricks-runtime-ver#runtime">Databricks Runtime support lifecycles</a>.</p></div>
+                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CdLmTNQxaZA4uZhjMRcoZ'}]</div>
             </div>
         </div>
         
