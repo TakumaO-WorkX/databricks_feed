@@ -23,70 +23,92 @@
         <h1>Databricks Docs Updates</h1>
     
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/august#unity-catalog-abac-grant-policies-support-more-securable-types-in-beta" target="_blank">
-                <div class="article-title">Unity Catalog ABAC GRANT policies support more securable types in Beta</div>
+            <a href="https://docs.databricks.com/aws/en/release-notes/whats-coming#expanded-networking-billing-for-opensharing-secureconnect" target="_blank">
+                <div class="article-title">Expanded networking billing for OpenSharing SecureConnect</div>
             </a>
-            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cdxf4eQS1ZMJmawD87ekw'}]</div>
-            <div class="date">August 11, 2026</div>
+            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ce2SY8imh5zYKHNYeC3fW'}]</div>
+            <div class="date">August 13, 2026</div>
             <div class="content">
-                <div class="original-text"><p>ABAC GRANT policies dynamically grant Unity Catalog privileges to securables whose governed tags match a condition. These policies were previously only available for models, but now also support model services, model provider services, Model Context Protocol (MCP) services, agent services, and skills. All supported types are in Beta.</p>
-<p>For more information, see <a href="https://docs.databricks.com/aws/en/data-governance/unity-catalog/abac/grant-policies">ABAC GRANT policies (Beta)</a>.</p></div>
-                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cdxf4gjaUeHyRsXpM2oLx'}]</div>
+                <div class="original-text"><p>Databricks will be expanding networking billing for OpenSharing SecureConnect. Today, data providers are billed for data transfer (egress) when recipients access shared data through SecureConnect. Additional charge types and access scenarios, including charges billed to recipients, are planned.</p>
+<p>The following table summarizes the planned charges, who is billed, and how each applies across access scenarios:</p>
+<div><div><div><div><p>Charge type</p></div><div><p>Status</p></div><div><p>Cross-region or cross-cloud</p></div><div><p>Same-region (classic or open recipient)</p></div><div><p>Same-region (serverless recipient)</p></div></div></div><div><div><div><p>Data transfer</p></div><div><p>Available today</p></div><div><p>Bill to provider</p></div><div><p>Not applicable ¹</p></div><div><p>Not applicable ¹</p></div></div></div><div><div><div><p>Private Connectivity ²</p></div><div><p>Coming soon</p></div><div><p>Bill to provider</p></div><div><p>Bill to provider</p></div><div><p>Bill to recipient</p></div></div></div><div><div><div><p>Public Connectivity</p></div><div><p>Coming soon</p></div><div><p>Bill to recipient</p></div><div><p>Not applicable ³</p></div><div><p>Not applicable ⁴</p></div></div></div></div>
+<p>¹ Data transfer (egress) does not apply when the recipient is in the same region as the provider.<div></div>
+² Applies only if the provider configures private connectivity by attaching a network connectivity configuration (NCC) to the metastore.<div></div>
+³ Databricks does not bill this charge. If recipients on classic compute or open recipients reach storage over the public network, their own cloud provider might bill them for network address translation (NAT) directly.<div></div>
+⁴ Same-region serverless recipients read from storage directly rather than through the managed proxy.</p>
+<p>For rates, see <a href="https://www.databricks.com/product/pricing/data-transfer-connectivity">Data transfer and connectivity pricing</a>, or contact your Databricks account team.</p></div>
+                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ce2SY9broQqStqsnia47u'}]</div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/august#read-metadata-privilege-is-ga" target="_blank">
-                <div class="article-title">READ METADATA privilege is GA</div>
+            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#dashboard-enhancements-and-bug-fixes" target="_blank">
+                <div class="article-title">Dashboard enhancements and bug fixes</div>
             </a>
-            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cdxf4hJJybgvTpfwmnakx'}]</div>
-            <div class="date">August 10, 2026</div>
+            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ce2SYC2xGXFd9tgUpVKXk'}]</div>
+            <div class="date">August 13, 2026</div>
             <div class="content">
-                <div class="original-text"><p>The <a href="https://docs.databricks.com/aws/en/data-governance/unity-catalog/access-control/privileges-reference#read-metadata"><code>READ METADATA</code> privilege</a> is now generally available in Unity Catalog.</p>
-<p><code>READ METADATA</code> provides read-only visibility into the same metadata available to the object's owner or a user with <code>MANAGE</code>, including security-sensitive information that <code>BROWSE</code> doesn't expose, such as privilege grants, row filters and column masks, and ABAC policies. It's intended for users who inspect and debug access controls, such as security auditors, data governance teams, and SREs.</p>
-<p>You can grant <code>READ METADATA</code> on a range of object types. For the full list of applicable object types, see <a href="https://docs.databricks.com/aws/en/data-governance/unity-catalog/access-control/privileges-reference#read-metadata">READ METADATA</a>.</p>
-<p>See <a href="https://docs.databricks.com/aws/en/data-governance/unity-catalog/access-control/privileges-reference#read-metadata">READ METADATA</a>.</p></div>
-                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cdxf4hvGTwqrgDZ5S95tj'}]</div>
+                <div class="original-text"><ul>
+<li><strong>Remove duplicate subscribers</strong>: Dashboard authors can now remove duplicate subscribers from a dashboard schedule. See <a href="https://docs.databricks.com/aws/en/dashboards/share/schedule-subscribe">Manage scheduled dashboard updates and subscriptions</a>.</li>
+<li><strong>Import BI filters fix</strong>: Fixed a bug where some filters were not created when importing Power BI and Tableau reports with Genie Code (<code>/importBI</code>). See <a href="https://docs.databricks.com/aws/en/dashboards/manage/import-bi">Import BI files using Genie Code</a>.</li>
+<li><strong>Reversed y-axis tooltip order fix</strong>: Fixed a bug where tooltips for line and area charts with a reversed y-axis listed their series in the wrong order.</li>
+<li><strong>Duplicate schedule emails fix</strong>: Fixed a bug where dashboard schedules could send duplicate emails to the same subscriber.</li>
+<li><strong>Pivot table None transform fix</strong>: Fixed a bug where the None transform on pivot table values produced empty values.</li>
+</ul></div>
+                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ce2SYDNa9ZDE7Kmu1n2pg'}]</div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/august#orchestrate-continuous-pipelines-with-continuous-jobs" target="_blank">
-                <div class="article-title">Orchestrate continuous pipelines with continuous jobs</div>
+            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#genie-agents-enhancements-and-bug-fixes" target="_blank">
+                <div class="article-title">Genie Agents enhancements and bug fixes</div>
             </a>
-            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cdxf4iVFPNAfFk6Jh88yc'}]</div>
-            <div class="date">August 10, 2026</div>
+            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ce2SYDvZLhsaMLREBMGhz'}]</div>
+            <div class="date">August 13, 2026</div>
             <div class="content">
-                <div class="original-text"><p>You can now run a continuous Lakeflow pipeline with a continuous job. When a continuous job orchestrates a pipeline, the job determines the execution mode, and the pipeline can use job-level features such as serverless Standard performance mode and additional notification destinations. Databricks recommends this pattern over the pipeline's built-in continuous setting, which is not being removed.</p>
-<p>See <a href="https://docs.databricks.com/aws/en/ldp/pipeline-mode#continuous-with-jobs">Run a continuous pipeline with a continuous job</a> and <a href="https://docs.databricks.com/aws/en/jobs/tasks/pipeline#continuous-pipeline">Run a pipeline continuously with a continuous job</a>.</p></div>
-                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cdxf4j8wDera769qKoBZu'}]</div>
+                <div class="original-text"><ul>
+<li><strong>Content search for attached volumes (Beta)</strong>: For better latency and accuracy when answering questions across larger volumes, you can now optionally enable content search on attached volumes. Content search indexes and prepares your files for the Genie Agent. See <a href="https://docs.databricks.com/aws/en/genie-agents/volumes#content-search">Enable content search for attached volumes</a>.</li>
+<li><strong>Analyze files in volumes without Unity AI Gateway (Beta)</strong>: Analyzing files in volumes no longer requires Unity AI Gateway to be enabled. See <a href="https://docs.databricks.com/aws/en/genie-agents/volumes">Analyze files in volumes with a Genie Agent</a>.</li>
+<li><strong>Send a prompt with an uploaded file</strong>: Uploading a file to a conversation no longer automatically sends a message. You can now send a prompt along with the uploaded file. See <a href="https://docs.databricks.com/aws/en/genie-agents/file-upload">Upload a file to a Genie Agent</a>.</li>
+<li><strong>Conversation list API matches monitoring sources</strong>: The conversation list API now returns conversations from the public API, Genie One, and embedded Genie, so the conversations it returns match the history shown on the monitoring page. See <a href="https://docs.databricks.com/aws/en/genie-agents/conversation-api">Use the Genie Agents API</a>.</li>
+<li><strong>Conversation timestamps in the API</strong>: The public Genie Agents API now returns <code>create_time</code> and <code>update_time</code> for a Genie space. <code>GET</code> requests to list or get spaces return the same last-modified information shown in the Genie Agent UI. See <a href="https://docs.databricks.com/aws/en/genie-agents/conversation-api">Use the Genie Agents API</a>.</li>
+<li><strong>Metric view synonyms fix</strong>: Fixed a bug where synonyms defined in a metric view were not used as context for the agent.</li>
+<li><strong>Table access error message</strong>: Simplified the error message shown when a user does not have access to one or more tables attached to a Genie Agent.</li>
+</ul></div>
+                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ce2SYEU3wVrvrs1PfEc36'}]</div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/august#alert-system-tables-are-in-public-preview" target="_blank">
-                <div class="article-title">Alert system tables are in Public Preview</div>
+            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#genie-one-enhancements" target="_blank">
+                <div class="article-title">Genie One enhancements</div>
             </a>
-            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cdxf4jhvQYDf8jwVzeH72'}]</div>
-            <div class="date">August 10, 2026</div>
+            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ce2SYF51vkV5WRaUEmJn9'}]</div>
+            <div class="date">August 13, 2026</div>
             <div class="content">
-                <div class="original-text"><p>The <code>system.alert</code> schema is in <a href="https://docs.databricks.com/aws/en/release-notes/release-types">Public Preview</a>. This schema contains the <code>alerts</code> table, which records the configuration of every alert, and the <code>alert_evaluation_history</code> table, which records one row per alert evaluation. Use these tables to audit alert definitions, analyze evaluation trends, and monitor alert workloads at scale.</p>
-<p>See <a href="https://docs.databricks.com/aws/en/admin/system-tables/alerts">Alert system tables reference</a>.</p></div>
-                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cdxf4kXnH3mLfqjtHqZ5R'}]</div>
+                <div class="original-text"><ul>
+<li><strong>Ontology snippets now available to all customers (Public Preview)</strong>: Ontology snippets in the Genie Ontology are now available to all customers. Customers no longer need to request access. See <a href="https://docs.databricks.com/aws/en/genie-one/chat#ontology">Genie Ontology</a>.</li>
+<li><strong>Workspace instructions (GA)</strong>: Workspace-level instructions for chat in Genie One are now generally available. See <a href="https://docs.databricks.com/aws/en/genie-one/chat#workspace-instructions">Add workspace instructions for chat</a>.</li>
+<li><strong>Upload images and Word documents</strong>: Genie One now supports uploading images (PNG, JPG, and JPEG) and Word (<code>.docx</code>) files to a conversation, in addition to CSV and Excel files. See <a href="https://docs.databricks.com/aws/en/genie-one/chat#upload-a-file">Upload a file</a>.</li>
+<li><strong>MCP writes (Beta)</strong>: Genie One now supports MCP writes, so connected MCP tools can perform write actions. See <a href="https://docs.databricks.com/aws/en/genie-one/external-sources">Connect to external tools and sources</a>.</li>
+<li><strong>PDF attachments for scheduled tasks</strong>: Scheduled tasks can now send their results as a PDF email attachment. See <a href="https://docs.databricks.com/aws/en/genie-one/chat#scheduled-tasks">Scheduled tasks</a>.</li>
+<li><strong>Updated Genie Agents terminology</strong>: References to "Genie spaces" that remained in the Genie One interface now use the current Genie Agents terminology.</li>
+</ul></div>
+                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ce2SYFeVYVAiovvG1Zbtf'}]</div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/august#tag-automations-beta" target="_blank">
-                <div class="article-title">Tag automations (Beta)</div>
+            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#genie-one-public-web-search" target="_blank">
+                <div class="article-title">Genie One public web search</div>
             </a>
-            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cdxf4m9zD4T1evrNJbCev'}]</div>
-            <div class="date">August 07, 2026</div>
+            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ce2SYGU6o5HrVmY3b4nzR'}]</div>
+            <div class="date">August 13, 2026</div>
             <div class="content">
-                <div class="original-text"><p>Tag automations are now in <a href="https://docs.databricks.com/aws/en/release-notes/release-types">Beta</a>. A tag automation assigns or removes <a href="https://docs.databricks.com/aws/en/admin/governed-tags">governed tags</a> on the Unity Catalog tables or volumes that match conditions you define, so tags stay accurate as your data and metadata change. Use them to certify trusted data, deprecate stale data, roll up column sensitivity to a table-level tier, flag assets that are missing required tags, and clean up outdated tags.</p>
-<p>You can build an automation by describing your rule to Genie in natural language, or by filling in the scope, conditions, and action yourself. Saving an automation starts a dry run, which records the assets it would match without assigning any tags.</p>
-<p>See <a href="https://docs.databricks.com/aws/en/admin/governed-tags/automate-tag-assignment">Automate tag assignment</a>.</p></div>
-                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cdxf4miy5224Q4verN2ed'}]</div>
+                <div class="original-text"><ul>
+<li><strong>Search the public web (Beta)</strong>: Genie One can now search the public web to answer questions that need current information, such as recent release notes, third-party documentation, or news. It searches automatically based on your request and cites the sources it uses, with each source shown in the response as a link you can open.</li>
+</ul></div>
+                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ce2SYH35scCbAX46jmXfk'}]</div>
             </div>
         </div>
         
