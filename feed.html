@@ -23,81 +23,65 @@
         <h1>Databricks Docs Updates</h1>
     
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/whats-coming#genie-agents-will-soon-be-restricted-to-only-the-data-sources-attached-to-the-agent" target="_blank">
-                <div class="article-title">Genie Agents will soon be restricted to only the data sources attached to the agent</div>
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/september#standard-performance-mode-is-now-available-for-one-time-runs-in-the-jobs-api" target="_blank">
+                <div class="article-title">Standard performance mode is now available for one-time runs in the Jobs API</div>
             </a>
-            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cewi7rEUp3dq5A3q8RAgq'}]</div>
-            <div class="date">September 10, 2026</div>
+            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf3abHFiiWY9tcs1KMova'}]</div>
+            <div class="date">September 11, 2026</div>
             <div class="content">
-                <div class="original-text"><p>In late September 2026, Genie Agents will be restricted to using only the data sources explicitly attached under the agent's <strong>Sources</strong>. Currently, a Genie Agent can go beyond its attached data sources if tables or Unity Catalog functions are referenced in its instructions.</p>
-<p>See <a href="https://docs.databricks.com/aws/en/genie-agents/set-up">Create and manage a Genie Agent</a>.</p></div>
-                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cewi7sRQsCGJLvwH4Nuf7'}]</div>
+                <div class="original-text"><p>You can now set <code>performance_target</code> to <code>STANDARD</code> in the Jobs API. Apache Airflow's <code>DatabricksSubmitRunOperator</code> also supports this. See <a href="https://docs.databricks.com/api/workspace/jobs/submit">Create and trigger a one-time run</a> and <a href="https://docs.databricks.com/aws/en/jobs/run-serverless-jobs#performance">Select a performance mode</a>.</p></div>
+                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf3abJWsnATztM515shpq'}]</div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/september#maintenance-windows-for-continuous-pipelines" target="_blank">
-                <div class="article-title">Maintenance windows for continuous pipelines</div>
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/september#sharing-foreign-iceberg-tables-with-opensharing-is-now-generally-available" target="_blank">
+                <div class="article-title">Sharing foreign Iceberg tables with OpenSharing is now generally available</div>
             </a>
-            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cewi7t7qRxPCCrvaxqi6b'}]</div>
-            <div class="date">September 10, 2026</div>
+            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf3abKEXsMZSkxbYmjTtb'}]</div>
+            <div class="date">September 11, 2026</div>
             <div class="content">
-                <div class="original-text"><p>You can now set a maintenance window on a continuous Lakeflow pipeline to control when Databricks applies platform updates that require a restart, such as new runtime versions and serverless infrastructure maintenance. Select a day of the week, a start hour, and a time zone, and Databricks starts maintenance only within that one-hour window. Configure the window in the Jobs UI, the Pipelines UI, or the Jobs REST API.</p>
-<p>See <a href="https://docs.databricks.com/aws/en/ldp/maintenance-windows">Manage updates for continuous pipelines</a>.</p></div>
-                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cewi7tqjvp1nsPmotq7cb'}]</div>
+                <div class="original-text"><p>Sharing and reading foreign Iceberg tables with OpenSharing is now generally available. Providers can share Iceberg tables federated from foreign Iceberg catalogs using Lakehouse Federation, including to recipients using external Iceberg clients. See <a href="https://docs.databricks.com/aws/en/opensharing/create-share#foreign-iceberg">Add foreign Iceberg tables to a share</a> for providers and <a href="https://docs.databricks.com/aws/en/opensharing/read-data-databricks#foreign-ice-tables">Read data in a shared foreign Iceberg table</a> for recipients.</p></div>
+                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf3abKzB1YQVR5xvH3XR4'}]</div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/september#the-databricks-excel-add-in-is-now-generally-available" target="_blank">
-                <div class="article-title">The Databricks Excel Add-in is now generally available</div>
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/september#sharing-foreign-schemas-and-tables-with-opensharing-is-now-generally-available" target="_blank">
+                <div class="article-title">Sharing foreign schemas and tables with OpenSharing is now generally available</div>
             </a>
-            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cewi7uUhEmFFh8w7YXYSH'}]</div>
-            <div class="date">September 10, 2026</div>
+            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf3abLjKwHfFcoFPJmi8f'}]</div>
+            <div class="date">September 11, 2026</div>
             <div class="content">
-                <div class="original-text"><p>The Databricks Excel Add-in is now generally available. Connect Microsoft Excel to your Databricks workspace to browse and import governed Unity Catalog tables and views, run SQL queries, build pivot tables, use custom functions, and write data back to Unity Catalog. You can now also enable <strong>Live query</strong> when building pivot tables to see results as you update the fields.</p>
-<p>See <a href="https://docs.databricks.com/aws/en/integrations/excel">Connect to Databricks from Microsoft Excel</a>.</p></div>
-                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cewi7vCbfXzrPkruVsyXE'}]</div>
+                <div class="original-text"><p>Sharing and reading foreign schemas and foreign tables with OpenSharing is now generally available. Providers can share foreign schemas and tables federated from external data sources using Lakehouse Federation, without copying data into Databricks. See <a href="https://docs.databricks.com/aws/en/opensharing/create-share#foreign-asset">Add foreign schemas or tables to a share</a> for providers and <a href="https://docs.databricks.com/aws/en/opensharing/read-data-databricks#foreign-tables">Read data in a shared foreign table or foreign schema</a> for recipients.</p>
+<p>Sharing foreign schemas and tables materializes data on the provider's side, which incurs compute and storage costs. See <a href="https://docs.databricks.com/aws/en/opensharing#share-costs">How do I incur and check OpenSharing costs?</a>.</p></div>
+                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf3abMRVZhJDoTNMF5vJq'}]</div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#genie-agents-enhancements" target="_blank">
-                <div class="article-title">Genie Agents enhancements</div>
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/september#deepseek-v41-flash-is-now-available-on-unity-gateway" target="_blank">
+                <div class="article-title">DeepSeek V4.1 Flash is now available on Unity Gateway</div>
             </a>
-            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cewi7vu1oeA795k6oUmGf'}]</div>
-            <div class="date">September 10, 2026</div>
+            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf3abNAtfiSS2h3jzTgQt'}]</div>
+            <div class="date">September 11, 2026</div>
             <div class="content">
-                <div class="original-text"><ul>
-<li><strong>Increased data source limit</strong>: Each Genie Agent supports up to 50 tables, views, or metric views as data sources, up from 30. See <a href="https://docs.databricks.com/aws/en/genie-agents/set-up#tech-requirements">Technical requirements and limits</a>.</li>
-<li><strong>Increased conversation limit</strong>: Each Genie Agent can store up to 200,000 conversations, up from 10,000. See <a href="https://docs.databricks.com/aws/en/genie-agents/set-up#tech-requirements">Technical requirements and limits</a>.</li>
-</ul></div>
-                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cewi7wbSNw9XYnBMWmUpf'}]</div>
+                <div class="original-text"><p><a href="https://docs.databricks.com/aws/en/machine-learning/foundation-model-apis/supported-models#deepseek-v4-1-flash">DeepSeek V4.1 Flash</a> is now available on Unity Gateway with text and image inputs. See <a href="https://docs.databricks.com/aws/en/machine-learning/model-serving/foundation-model-overview">supported regions</a>. You can access this model using <a href="https://docs.databricks.com/aws/en/machine-learning/foundation-model-apis">Foundation Model APIs</a>.</p>
+<p>Customers are responsible for ensuring their compliance with <a href="https://docs.databricks.com/aws/en/machine-learning/model-serving/acceptable-use-models">applicable terms</a>.</p></div>
+                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf3abNk7kxCc2tTcWsjj5'}]</div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#dashboard-enhancements" target="_blank">
-                <div class="article-title">Dashboard enhancements</div>
+            <a href="https://docs.databricks.com/aws/en/release-notes/unity-gateway#deepseek-v41-flash-is-now-available-on-unity-gateway" target="_blank">
+                <div class="article-title">DeepSeek V4.1 Flash is now available on Unity Gateway</div>
             </a>
-            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cewi7xKLrn1CrxEJiAHHo'}]</div>
-            <div class="date">September 10, 2026</div>
+            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf3abPXzZoAQ9kSbdPWBs'}]</div>
+            <div class="date">September 11, 2026</div>
             <div class="content">
-                <div class="original-text"><ul>
-<li><strong>More Tableau calculations in <code>/importBI</code></strong>: Importing Tableau reports with the <code>/importBI</code> Genie Code command now supports more cases of parameterized calculations. See <a href="https://docs.databricks.com/aws/en/dashboards/manage/import-bi">Import BI files using Genie Code</a>.</li>
-<li><strong>Relationship-scoped filters (Public Preview)</strong>: On a dashboard with relationships, each widget now responds only to filters whose dataset is related to it, so a filter no longer affects unrelated charts. See <a href="https://docs.databricks.com/aws/en/dashboards/manage/data-modeling/dashboard-relationships">Dashboard relationships</a>.</li>
-<li><strong>Choose the warehouse for materialization</strong>: When you export a dashboard dataset as a materialized view in Unity Catalog, you can now choose which SQL warehouse runs the materialization. See <a href="https://docs.databricks.com/aws/en/dashboards/manage/data-modeling/datasets#export-materialized-view">Export a dataset as a materialized view</a>.</li>
-<li><strong>Include-style LOD expressions</strong>: The metric view editor now supports Include-style level of detail (LOD) expressions in YAML.</li>
-<li><strong>Scoped starter questions</strong>: On a published dashboard, Ask Genie's suggested starter questions are now scoped to the dashboard page and widget you're viewing.</li>
-<li><strong>Key insights per page</strong>: Key insights now generate for each dashboard page. A <strong>New insights</strong> badge appears only when new insights are available, along with a live-generating indicator.</li>
-<li><strong>Selected chart as Ask Genie context</strong>: On a published dashboard, the Ask Genie input bar now shows the chart you selected as context, so you can ask questions about that specific chart. See <a href="https://docs.databricks.com/aws/en/dashboards/genie-spaces#genie-chart-details"> Ask Genie about a specific chart</a>.</li>
-<li><strong>Metric view reuse when building</strong>: When building a dashboard, Genie Code now prefers governed metric views over ad-hoc SQL datasets and reuses an existing metric view when one satisfies the request. See <a href="https://docs.databricks.com/aws/en/dashboards/manage/dashboard-agent">Use Genie Code for dashboard authoring</a>.</li>
-<li><strong>Export and import dashboard themes</strong>: You can now export a dashboard's theme to a JSON file and import a theme file into another dashboard, so you can reuse or share a theme without editing the dashboard JSON. See <a href="https://docs.databricks.com/aws/en/dashboards/manage/settings#import-export">Export or import a theme</a>.</li>
-<li><strong>Line shape control</strong>: Line and area charts now have a <strong>Line shape</strong> control that connects data points with linear, smooth, or stepped lines. See <a href="https://docs.databricks.com/aws/en/dashboards/manage/visualizations/types#line-shape">Line shape</a>.</li>
-<li><strong>Color scale on pivot table text</strong>: The pivot table color scale now includes an <strong>Apply to</strong> setting, so you can paint the color gradient on the cell text as well as the background. See <a href="https://docs.databricks.com/aws/en/dashboards/manage/visualizations/tables#pivot-value-settings">Value-level settings</a>.</li>
-<li><strong>Path maps from point sequences</strong>: Path maps can now connect a sequence of ordered points into a line, from separate longitude and latitude columns or a single point geometry column, in addition to a single geometry line column. Use this for trajectories such as GPS tracks. See <a href="https://docs.databricks.com/aws/en/dashboards/manage/visualizations/maps#path-map-source">Path source</a>.</li>
-</ul></div>
-                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cewi7y3W1TBDb8Qfzm72U'}]</div>
+                <div class="original-text"><p><a href="https://docs.databricks.com/aws/en/machine-learning/foundation-model-apis/supported-models#deepseek-v4-1-flash">DeepSeek V4.1 Flash</a> is now available on Unity Gateway with text and image inputs. See <a href="https://docs.databricks.com/aws/en/machine-learning/model-serving/foundation-model-overview">supported regions</a>. You can access this model using <a href="https://docs.databricks.com/aws/en/machine-learning/foundation-model-apis">Foundation Model APIs</a>.</p>
+<p>Customers are responsible for ensuring their compliance with <a href="https://docs.databricks.com/aws/en/machine-learning/model-serving/acceptable-use-models">applicable terms</a>.</p></div>
+                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf3abQH99s9p2RtdWm8VY'}]</div>
             </div>
         </div>
         
