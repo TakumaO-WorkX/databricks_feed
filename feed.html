@@ -23,65 +23,66 @@
         <h1>Databricks Docs Updates</h1>
     
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/september#standard-performance-mode-is-now-available-for-one-time-runs-in-the-jobs-api" target="_blank">
-                <div class="article-title">Standard performance mode is now available for one-time runs in the Jobs API</div>
+            <a href="https://docs.databricks.com/aws/en/release-notes/whats-coming#the-read-metadata-privilege-will-soon-be-available-by-default-for-workspaces-with-the-compliance-security-profile-enabled" target="_blank">
+                <div class="article-title">The READ METADATA privilege will soon be available by default for workspaces with the compliance security profile enabled</div>
             </a>
-            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf3abHFiiWY9tcs1KMova'}]</div>
-            <div class="date">September 11, 2026</div>
+            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf7EpxQEEAePjKpVqSV9S'}]</div>
+            <div class="date">September 15, 2026</div>
             <div class="content">
-                <div class="original-text"><p>You can now set <code>performance_target</code> to <code>STANDARD</code> in the Jobs API. Apache Airflow's <code>DatabricksSubmitRunOperator</code> also supports this. See <a href="https://docs.databricks.com/api/workspace/jobs/submit">Create and trigger a one-time run</a> and <a href="https://docs.databricks.com/aws/en/jobs/run-serverless-jobs#performance">Select a performance mode</a>.</p></div>
-                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf3abJWsnATztM515shpq'}]</div>
+                <div class="original-text"><p>The <code>READ METADATA</code> privilege will be available by default for workspaces with the <a href="https://docs.databricks.com/aws/en/security/privacy/security-profile">compliance security profile</a> enabled in mid-October 2026.</p>
+<p><code>READ METADATA</code> grants read-only visibility into an object's metadata, including security-sensitive information that <code>BROWSE</code> doesn't expose, such as privilege grants, row filters and column masks, and ABAC policies. It's intended for users who inspect and debug access controls, such as security auditors, data governance teams, and site reliability engineers (SREs).</p>
+<p>See <a href="https://docs.databricks.com/aws/en/data-governance/unity-catalog/access-control/privileges-reference#read-metadata">READ METADATA</a>.</p></div>
+                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf7EpyQFUSo2EjEUV9E6u'}]</div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/september#sharing-foreign-iceberg-tables-with-opensharing-is-now-generally-available" target="_blank">
-                <div class="article-title">Sharing foreign Iceberg tables with OpenSharing is now generally available</div>
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/september#sharing-foreign-delta-tables-with-opensharing-is-now-generally-available" target="_blank">
+                <div class="article-title">Sharing foreign Delta tables with OpenSharing is now generally available</div>
             </a>
-            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf3abKEXsMZSkxbYmjTtb'}]</div>
-            <div class="date">September 11, 2026</div>
+            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf7EpzErZp2ZsSmewtDpf'}]</div>
+            <div class="date">September 15, 2026</div>
             <div class="content">
-                <div class="original-text"><p>Sharing and reading foreign Iceberg tables with OpenSharing is now generally available. Providers can share Iceberg tables federated from foreign Iceberg catalogs using Lakehouse Federation, including to recipients using external Iceberg clients. See <a href="https://docs.databricks.com/aws/en/opensharing/create-share#foreign-iceberg">Add foreign Iceberg tables to a share</a> for providers and <a href="https://docs.databricks.com/aws/en/opensharing/read-data-databricks#foreign-ice-tables">Read data in a shared foreign Iceberg table</a> for recipients.</p></div>
-                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf3abKzB1YQVR5xvH3XR4'}]</div>
+                <div class="original-text"><p>Sharing and reading foreign Delta tables with OpenSharing is now generally available. Providers can share Delta-format tables federated from OneLake, a Hive metastore, or AWS Glue, without copying data into Databricks. See <a href="https://docs.databricks.com/aws/en/opensharing/create-share#foreign-delta">Add foreign Delta tables to a share</a>.</p></div>
+                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf7Eq1Gcv9d2ZoyLRqRUm'}]</div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/september#sharing-foreign-schemas-and-tables-with-opensharing-is-now-generally-available" target="_blank">
-                <div class="article-title">Sharing foreign schemas and tables with OpenSharing is now generally available</div>
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/september#lakebase-snapshots-api-beta" target="_blank">
+                <div class="article-title">Lakebase snapshots API (Beta)</div>
             </a>
-            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf3abLjKwHfFcoFPJmi8f'}]</div>
-            <div class="date">September 11, 2026</div>
+            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf7Eq1ynMPwjhQ87ZTVgj'}]</div>
+            <div class="date">September 15, 2026</div>
             <div class="content">
-                <div class="original-text"><p>Sharing and reading foreign schemas and foreign tables with OpenSharing is now generally available. Providers can share foreign schemas and tables federated from external data sources using Lakehouse Federation, without copying data into Databricks. See <a href="https://docs.databricks.com/aws/en/opensharing/create-share#foreign-asset">Add foreign schemas or tables to a share</a> for providers and <a href="https://docs.databricks.com/aws/en/opensharing/read-data-databricks#foreign-tables">Read data in a shared foreign table or foreign schema</a> for recipients.</p>
-<p>Sharing foreign schemas and tables materializes data on the provider's side, which incurs compute and storage costs. See <a href="https://docs.databricks.com/aws/en/opensharing#share-costs">How do I incur and check OpenSharing costs?</a>.</p></div>
-                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf3abMRVZhJDoTNMF5vJq'}]</div>
+                <div class="original-text"><p>You can now manage Lakebase snapshots programmatically. The snapshots API lets you create, get, list, and delete point-in-time snapshots of a project branch, and restore a snapshot by creating a new branch from it. This API is in Beta. See <a href="https://docs.databricks.com/aws/en/oltp/projects/snapshots#create-snapshot">Create a snapshot</a>.</p></div>
+                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf7Eq2aFdZAvUbor16mRJ'}]</div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/september#deepseek-v41-flash-is-now-available-on-unity-gateway" target="_blank">
-                <div class="article-title">DeepSeek V4.1 Flash is now available on Unity Gateway</div>
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/september#data-classification-now-scans-unity-catalog-views-beta" target="_blank">
+                <div class="article-title">Data Classification now scans Unity Catalog views (Beta)</div>
             </a>
-            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf3abNAtfiSS2h3jzTgQt'}]</div>
-            <div class="date">September 11, 2026</div>
+            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf7Eq3ambAob9yiq5A4d1'}]</div>
+            <div class="date">September 15, 2026</div>
             <div class="content">
-                <div class="original-text"><p><a href="https://docs.databricks.com/aws/en/machine-learning/foundation-model-apis/supported-models#deepseek-v4-1-flash">DeepSeek V4.1 Flash</a> is now available on Unity Gateway with text and image inputs. See <a href="https://docs.databricks.com/aws/en/machine-learning/model-serving/foundation-model-overview">supported regions</a>. You can access this model using <a href="https://docs.databricks.com/aws/en/machine-learning/foundation-model-apis">Foundation Model APIs</a>.</p>
-<p>Customers are responsible for ensuring their compliance with <a href="https://docs.databricks.com/aws/en/machine-learning/model-serving/acceptable-use-models">applicable terms</a>.</p></div>
-                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf3abNk7kxCc2tTcWsjj5'}]</div>
+                <div class="original-text"><p>Data Classification can now scan Unity Catalog views in addition to tables, classifying columns for sensitive data using the same detection engine. This is a <a href="https://docs.databricks.com/aws/en/release-notes/release-types">Beta</a> feature. See <a href="https://docs.databricks.com/aws/en/data-governance/unity-catalog/data-classification#classify-views">Classify views</a>.</p></div>
+                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf7Eq4XaCz1VdU6X6QwkU'}]</div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/unity-gateway#deepseek-v41-flash-is-now-available-on-unity-gateway" target="_blank">
-                <div class="article-title">DeepSeek V4.1 Flash is now available on Unity Gateway</div>
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/september#abac-on-views-is-in-beta" target="_blank">
+                <div class="article-title">ABAC on views is in Beta</div>
             </a>
-            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf3abPXzZoAQ9kSbdPWBs'}]</div>
-            <div class="date">September 11, 2026</div>
+            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf7Eq5QueQNGfCVfT3vS5'}]</div>
+            <div class="date">September 15, 2026</div>
             <div class="content">
-                <div class="original-text"><p><a href="https://docs.databricks.com/aws/en/machine-learning/foundation-model-apis/supported-models#deepseek-v4-1-flash">DeepSeek V4.1 Flash</a> is now available on Unity Gateway with text and image inputs. See <a href="https://docs.databricks.com/aws/en/machine-learning/model-serving/foundation-model-overview">supported regions</a>. You can access this model using <a href="https://docs.databricks.com/aws/en/machine-learning/foundation-model-apis">Foundation Model APIs</a>.</p>
-<p>Customers are responsible for ensuring their compliance with <a href="https://docs.databricks.com/aws/en/machine-learning/model-serving/acceptable-use-models">applicable terms</a>.</p></div>
-                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf3abQH99s9p2RtdWm8VY'}]</div>
+                <div class="original-text"><p>Attribute-based access control (ABAC) row filters and column masks now extend to views, in addition to tables. This lets you use ABAC policies to control access to sensitive data exposed through views.</p>
+<p>Account admins can enable the <strong>ABAC on Views</strong> preview from the account console's <strong>Previews</strong> page. This feature requires Databricks Runtime 19 or above.</p>
+<p>See <a href="https://docs.databricks.com/aws/en/data-governance/unity-catalog/abac">Attribute-based access control in Unity Catalog</a>.</p></div>
+                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf7Eq65qUDuPatrGFfBua'}]</div>
             </div>
         </div>
         
