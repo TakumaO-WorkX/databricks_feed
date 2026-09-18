@@ -23,66 +23,79 @@
         <h1>Databricks Docs Updates</h1>
     
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/whats-coming#the-read-metadata-privilege-will-soon-be-available-by-default-for-workspaces-with-the-compliance-security-profile-enabled" target="_blank">
-                <div class="article-title">The READ METADATA privilege will soon be available by default for workspaces with the compliance security profile enabled</div>
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/september#databricks-apps-is-now-on-by-default-for-workspaces-with-the-compliance-security-profile-enabled" target="_blank">
+                <div class="article-title">Databricks Apps is now on by default for workspaces with the compliance security profile enabled</div>
             </a>
-            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf7EpxQEEAePjKpVqSV9S'}]</div>
-            <div class="date">September 15, 2026</div>
+            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CfAyW2CRNhJXW6GRnR1R5'}]</div>
+            <div class="date">September 18, 2026</div>
             <div class="content">
-                <div class="original-text"><p>The <code>READ METADATA</code> privilege will be available by default for workspaces with the <a href="https://docs.databricks.com/aws/en/security/privacy/security-profile">compliance security profile</a> enabled in mid-October 2026.</p>
-<p><code>READ METADATA</code> grants read-only visibility into an object's metadata, including security-sensitive information that <code>BROWSE</code> doesn't expose, such as privilege grants, row filters and column masks, and ABAC policies. It's intended for users who inspect and debug access controls, such as security auditors, data governance teams, and site reliability engineers (SREs).</p>
-<p>See <a href="https://docs.databricks.com/aws/en/data-governance/unity-catalog/access-control/privileges-reference#read-metadata">READ METADATA</a>.</p></div>
-                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf7EpyQFUSo2EjEUV9E6u'}]</div>
+                <div class="original-text"><p><a href="https://docs.databricks.com/aws/en/dev-tools/databricks-apps">Databricks Apps</a> is now on by default for workspaces with the <a href="https://docs.databricks.com/aws/en/security/privacy/security-profile">compliance security profile</a> enabled.</p>
+<p>See <a href="https://docs.databricks.com/aws/en/dev-tools/databricks-apps">Databricks Apps</a>.</p></div>
+                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CfAyW3SL1KLbD5qxqt2SL'}]</div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/september#sharing-foreign-delta-tables-with-opensharing-is-now-generally-available" target="_blank">
-                <div class="article-title">Sharing foreign Delta tables with OpenSharing is now generally available</div>
+            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#dashboard-enhancements-and-bug-fixes" target="_blank">
+                <div class="article-title">Dashboard enhancements and bug fixes</div>
             </a>
-            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf7EpzErZp2ZsSmewtDpf'}]</div>
-            <div class="date">September 15, 2026</div>
+            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CfAyW4FwR4SPbcGLD5cUR'}]</div>
+            <div class="date">September 17, 2026</div>
             <div class="content">
-                <div class="original-text"><p>Sharing and reading foreign Delta tables with OpenSharing is now generally available. Providers can share Delta-format tables federated from OneLake, a Hive metastore, or AWS Glue, without copying data into Databricks. See <a href="https://docs.databricks.com/aws/en/opensharing/create-share#foreign-delta">Add foreign Delta tables to a share</a>.</p></div>
-                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf7Eq1Gcv9d2ZoyLRqRUm'}]</div>
+                <div class="original-text"><ul>
+<li><strong>Convert a SQL dataset to a local metric view</strong>: You can now convert a SQL dataset into a local metric view from the dataset's context menu, and Genie Code handles the conversion. See <a href="https://docs.databricks.com/aws/en/dashboards/manage/data-modeling/local-metric-views">Local metric views</a> and <a href="https://docs.databricks.com/aws/en/dashboards/manage/dashboard-agent">Use Genie Code for dashboard authoring</a>.</li>
+<li><strong>SQL dataset parameters in Genie Code</strong>: Genie Code for dashboard authoring now understands SQL dataset parameters when building and editing dashboards. See <a href="https://docs.databricks.com/aws/en/dashboards/manage/dashboard-agent">Use Genie Code for dashboard authoring</a>.</li>
+<li><strong>Reference aggregated field values in widget titles and descriptions</strong>: Type <code>@</code> in a visualization widget's title or description to insert a field reference. The reference shows a live, formatted metric, such as a sum or an average, that responds to the dashboard's filters. Click the reference to change the field, aggregation function, and number or date formatting. See <a href="https://docs.databricks.com/aws/en/dashboards/manage/visualizations#reference-field">Reference a filter or field</a>.</li>
+<li><strong>Default expand level for pivot tables</strong>: You can now set the number of row and column hierarchy levels a pivot table expands to when it first loads. See <a href="https://docs.databricks.com/aws/en/dashboards/manage/visualizations/tables#pivot-default-expand-level">Set the default expand level</a>.</li>
+<li><strong>Independent axis scaling on faceted charts</strong>: You can now scale a numeric axis to each subchart's own data on a faceted chart instead of sharing one range across subcharts. Set the axis range to <strong>Per facet</strong>. See <a href="https://docs.databricks.com/aws/en/dashboards/manage/visualizations#faceting">Faceting</a>.</li>
+<li><strong>Theme picker previews</strong>: The <a href="https://docs.databricks.com/aws/en/dashboards/manage/settings#preset">preset theme picker</a> now shows a color palette preview for each theme before you select it.</li>
+<li><strong>Reorder field variable options</strong>: You can now reorder the options in a <a href="https://docs.databricks.com/aws/en/dashboards/manage/filters/dashboard-variables">field variable</a>.</li>
+<li><strong>Style pivot table totals</strong>: You can now style the headers and values of a pivot table's totals independently, and apply conditional styling to them. See <a href="https://docs.databricks.com/aws/en/dashboards/manage/visualizations/tables#pivot-total-style">Style pivot table totals</a>.</li>
+<li><strong>Dashboard variable undo and redo fix</strong>: Fixed a bug where undo and redo did not apply to dashboard variables.</li>
+</ul></div>
+                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CfAyW4vNvUxk6fw2jLNtb'}]</div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/september#lakebase-snapshots-api-beta" target="_blank">
-                <div class="article-title">Lakebase snapshots API (Beta)</div>
+            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#skills-in-genie-one-support-multiple-files-and-folders" target="_blank">
+                <div class="article-title">Skills in Genie One support multiple files and folders</div>
             </a>
-            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf7Eq1ynMPwjhQ87ZTVgj'}]</div>
-            <div class="date">September 15, 2026</div>
+            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CfAyW5ZaJgq5qL1Xvfngj'}]</div>
+            <div class="date">September 17, 2026</div>
             <div class="content">
-                <div class="original-text"><p>You can now manage Lakebase snapshots programmatically. The snapshots API lets you create, get, list, and delete point-in-time snapshots of a project branch, and restore a snapshot by creating a new branch from it. This API is in Beta. See <a href="https://docs.databricks.com/aws/en/oltp/projects/snapshots#create-snapshot">Create a snapshot</a>.</p></div>
-                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf7Eq2aFdZAvUbor16mRJ'}]</div>
+                <div class="original-text"><p>A Genie One skill can now include multiple files and sub-folders, up to three folders deep and 50 files or folders per skill. Skills can load text files only. See <a href="https://docs.databricks.com/aws/en/genie-one/chat#user-skills">User skills</a>.</p></div>
+                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CfAyW6HEcj1ugBFA3bgUf'}]</div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/september#data-classification-now-scans-unity-catalog-views-beta" target="_blank">
-                <div class="article-title">Data Classification now scans Unity Catalog views (Beta)</div>
+            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#genie-agents-enhancements-and-bug-fixes" target="_blank">
+                <div class="article-title">Genie Agents enhancements and bug fixes</div>
             </a>
-            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf7Eq3ambAob9yiq5A4d1'}]</div>
-            <div class="date">September 15, 2026</div>
+            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CfAyW73sHsBRoxy88zSD7'}]</div>
+            <div class="date">September 17, 2026</div>
             <div class="content">
-                <div class="original-text"><p>Data Classification can now scan Unity Catalog views in addition to tables, classifying columns for sensitive data using the same detection engine. This is a <a href="https://docs.databricks.com/aws/en/release-notes/release-types">Beta</a> feature. See <a href="https://docs.databricks.com/aws/en/data-governance/unity-catalog/data-classification#classify-views">Classify views</a>.</p></div>
-                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf7Eq4XaCz1VdU6X6QwkU'}]</div>
+                <div class="original-text"><ul>
+<li><strong>Larger PDF uploads</strong>: You can now upload PDFs with up to 100 pages to Genie One and Genie Agents, increased from 20. See <a href="https://docs.databricks.com/aws/en/genie-one/chat#upload-a-file">Upload a file</a> and <a href="https://docs.databricks.com/aws/en/genie-agents/file-upload">Upload a file to a Genie Agent</a>.</li>
+<li><strong>Summarize up to six months of activity</strong>: Authors can now summarize up to six months of Genie Agent activity from the <strong>Monitor</strong> tab. See <a href="https://docs.databricks.com/aws/en/genie-agents/monitor#usage-trends">Review usage and trends</a>.</li>
+<li><strong>Agents use only attached sources</strong>: A Genie Agent now uses only the data assets explicitly attached as sources. See <a href="https://docs.databricks.com/aws/en/genie-agents/set-up#manage-data"> Manage data objects</a>.</li>
+<li><strong>Fixed Analyze Agent Usage summary</strong>: Fixed a bug where Analyze Agent Usage summarized only the last 20 messages sent to the agent.</li>
+</ul></div>
+                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CfAyW7gZt9qzjuYKE4mjb'}]</div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/september#abac-on-views-is-in-beta" target="_blank">
-                <div class="article-title">ABAC on views is in Beta</div>
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/september#metastore-level-abac-policies-are-in-beta" target="_blank">
+                <div class="article-title">Metastore-level ABAC policies are in Beta</div>
             </a>
-            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf7Eq5QueQNGfCVfT3vS5'}]</div>
-            <div class="date">September 15, 2026</div>
+            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CfAyW8HXscu6mgyT6dVYp'}]</div>
+            <div class="date">September 17, 2026</div>
             <div class="content">
-                <div class="original-text"><p>Attribute-based access control (ABAC) row filters and column masks now extend to views, in addition to tables. This lets you use ABAC policies to control access to sensitive data exposed through views.</p>
-<p>Account admins can enable the <strong>ABAC on Views</strong> preview from the account console's <strong>Previews</strong> page. This feature requires Databricks Runtime 19 or above.</p>
-<p>See <a href="https://docs.databricks.com/aws/en/data-governance/unity-catalog/abac">Attribute-based access control in Unity Catalog</a>.</p></div>
-                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf7Eq65qUDuPatrGFfBua'}]</div>
+                <div class="original-text"><p>Metastore-level ABAC policies are in <a href="https://docs.databricks.com/aws/en/release-notes/release-types">Beta</a> in Unity Catalog. You can now attach an ABAC policy (row filter, column mask, GRANT, or DENY) at the metastore level, so a single policy applies across every catalog in the metastore, including catalogs created later. This gives governance teams one place to enforce organization-wide data protection rules without replicating a policy for each catalog.</p>
+<p>For details, see <a href="https://docs.databricks.com/aws/en/data-governance/unity-catalog/abac/metastore-policies">Metastore-level ABAC policies (Beta)</a>.</p></div>
+                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CfAyW8yDAe8bE3sRzU1cn'}]</div>
             </div>
         </div>
         
