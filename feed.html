@@ -23,72 +23,67 @@
         <h1>Databricks Docs Updates</h1>
     
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/september#databricks-apps-telemetry-is-now-generally-available" target="_blank">
-                <div class="article-title">Databricks Apps telemetry is now generally available</div>
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/september#the-genie-one-mcp-server-is-now-generally-available" target="_blank">
+                <div class="article-title">The Genie One MCP server is now generally available</div>
             </a>
-            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CfGqGnyAKhPm3VwQYjboQ'}]</div>
-            <div class="date">September 18, 2026</div>
+            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CfLVhTifbUo5cNwRirhcb'}]</div>
+            <div class="date">September 25, 2026</div>
             <div class="content">
-                <div class="original-text"><p>Configuring telemetry for your Databricks apps is now generally available. Databricks Apps telemetry collects traces, logs, and metrics and persists them to Unity Catalog tables using the OpenTelemetry (OTel) protocol. After you enable app telemetry, Databricks automatically captures system logs and usage events, and you can add custom instrumentation using the OpenTelemetry SDK for your framework.</p>
-<p>See <a href="https://docs.databricks.com/aws/en/dev-tools/databricks-apps/observability">Configure telemetry for Databricks Apps</a>.</p></div>
-                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CfGqGp599DSD9zJV9uWN8'}]</div>
+                <div class="original-text"><p>The Genie One MCP server is now generally available as a Databricks-provided MCP Service, <code>system.ai.genie_one_mcp</code>, in <a href="https://docs.databricks.com/aws/en/ai-gateway">Unity Gateway</a>. It exposes Genie as a conversational tool over the Model Context Protocol (MCP), so any MCP client or agent, such as Claude, ChatGPT, or Cursor, can ground its data questions in Genie's trusted insights, with Unity Catalog permissions enforced on every request. See <a href="https://docs.databricks.com/aws/en/agents/mcp-tools/genie-mcp">Genie One MCP server</a>.</p>
+<p>The previous Beta endpoint, <code>https://&#x3c;workspace-hostname>/api/2.0/mcp/genie</code>, is deprecated and will be sunset on October 31, 2026. Move all workloads to the <code>system.ai.genie_one_mcp</code> MCP Service before then.</p></div>
+                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CfLVhUz4SrwSaNPzvtRLt'}]</div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/september#databricks-apps-is-now-on-by-default-for-workspaces-with-the-compliance-security-profile-enabled" target="_blank">
-                <div class="article-title">Databricks Apps is now on by default for workspaces with the compliance security profile enabled</div>
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/september#shopify-connector-beta" target="_blank">
+                <div class="article-title">Shopify connector (Beta)</div>
             </a>
-            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CfGqGpjaX3wc9xfTjNfkF'}]</div>
-            <div class="date">September 18, 2026</div>
+            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CfLVhVnBf6EHA9YZ6xRAr'}]</div>
+            <div class="date">September 22, 2026</div>
             <div class="content">
-                <div class="original-text"><p><a href="https://docs.databricks.com/aws/en/dev-tools/databricks-apps">Databricks Apps</a> is now on by default for workspaces with the <a href="https://docs.databricks.com/aws/en/security/privacy/security-profile">compliance security profile</a> enabled.</p>
-<p>See <a href="https://docs.databricks.com/aws/en/dev-tools/databricks-apps">Databricks Apps</a>.</p></div>
-                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CfGqGqSjw8Nheup32Pzzo'}]</div>
+                <div class="original-text"><p>The Shopify connector is now available in Lakeflow Connect in <a href="https://docs.databricks.com/aws/en/release-notes/release-types">Beta</a>. Workspace admins can control access to this feature from the <strong>Previews</strong> page.</p>
+<p>The connector ingests e-commerce data such as products, orders, customers, inventory, fulfillments, and discounts from Shopify into Databricks. Authentication uses the Shopify OAuth client credentials grant.</p>
+<p>See <a href="https://docs.databricks.com/aws/en/ingestion/lakeflow-connect/shopify">Shopify connector</a>.</p></div>
+                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CfLVhWVbVtQZ9FrNN836c'}]</div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/lakebase#lakebase-search-is-generally-available" target="_blank">
-                <div class="article-title">Lakebase Search is generally available</div>
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/september#lakebase-backup-schedule-api-beta" target="_blank">
+                <div class="article-title">Lakebase backup schedule API (Beta)</div>
             </a>
-            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CfGqGqvks1uEXqDSsmK2J'}]</div>
-            <div class="date">September 18, 2026</div>
+            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CfLVhXY6tQjAvnoQuazex'}]</div>
+            <div class="date">September 22, 2026</div>
             <div class="content">
-                <div class="original-text"><p>Lakebase Search is now generally available. It brings scalable vector and keyword search to Lakebase projects through two Postgres extensions, so you can run semantic and exact-term search in a single database without a separate search stack:</p>
-<ul>
-<li><strong><code>lakebase_vector</code></strong> adds the <code>lakebase_ann</code> index type for approximate nearest-neighbor vector search. It is drop-in compatible with pgvector, using the same types, operators, and query syntax, and scales to over 1 billion vectors on a single index with builds up to 50-100x faster than HNSW.</li>
-<li><strong><code>lakebase_text</code></strong> adds the <code>lakebase_bm25</code> index type for BM25 full-text search. It works with standard <code>tsvector</code> types and operators, adding BM25 ranking and top-K pushdown that PostgreSQL's native GIN index does not provide.</li>
-</ul>
-<p>Indexes are storage-backed, so they are available immediately after scale-to-zero without warmup. Combine both extensions for hybrid search that returns semantic and exact-term matches in one ranked list. To get started, enable Lakebase Search in your project settings, then install the extensions.</p>
-<p>See <a href="https://docs.databricks.com/aws/en/oltp/projects/lakebase-search">Lakebase Search</a>, <a href="https://docs.databricks.com/aws/en/oltp/projects/lakebase-vector">lakebase_vector</a>, and <a href="https://docs.databricks.com/aws/en/oltp/projects/lakebase-text">lakebase_text</a>.</p></div>
-                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CfGqGrKaQeCJoWXbweMjX'}]</div>
+                <div class="original-text"><p>You can now manage Lakebase backup schedules programmatically. The snapshot schedule API lets you read and set a root branch's automated snapshot cadences (daily, weekly, or monthly) and how long each cadence's snapshots are retained. This API is in Beta and available to all Lakebase workspaces. See <a href="https://docs.databricks.com/aws/en/oltp/projects/snapshots#snapshot-schedules">Create a backup schedule</a>.</p></div>
+                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CfLVhYKjWvFq7kuxj6vRx'}]</div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/september#unity-gateway-support-for-compliance-security-profile-standards" target="_blank">
-                <div class="article-title">Unity Gateway support for compliance security profile standards</div>
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/september#openai-gpt-6-sol-is-now-available-on-unity-gateway" target="_blank">
+                <div class="article-title">OpenAI GPT-6 Sol is now available on Unity Gateway</div>
             </a>
-            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CfGqGrsK9H2YXcX6kcFBL'}]</div>
-            <div class="date">September 17, 2026</div>
+            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CfLVhZJ25f6k9wYkz9sSj'}]</div>
+            <div class="date">September 22, 2026</div>
             <div class="content">
-                <div class="original-text"><p>Unity Gateway now supports all compliance security profile standards supported by Databricks and is available by default for workspaces with the compliance security profile enabled.</p>
-<p>For a full list of supported compliance standards, see <a href="https://docs.databricks.com/aws/en/security/privacy/security-profile">Compliance security profile</a>.</p></div>
-                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CfGqGsZEw1gBLjmJYLDfG'}]</div>
+                <div class="original-text"><p>OpenAI <a href="https://docs.databricks.com/aws/en/machine-learning/foundation-model-apis/supported-models#openai-gpt-6-sol">GPT-6 Sol</a> is now available on Unity Gateway. You can access this model using <a href="https://docs.databricks.com/aws/en/machine-learning/foundation-model-apis#token-foundation-apis">Foundation Model APIs pay-per-token</a>.</p>
+<p>Customers are responsible for ensuring their compliance with <a href="https://docs.databricks.com/aws/en/machine-learning/model-serving/acceptable-use-models">applicable terms</a>.</p></div>
+                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CfLVha1gexMpSrddLwJe8'}]</div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/september#metastore-level-abac-policies-are-in-beta" target="_blank">
-                <div class="article-title">Metastore-level ABAC policies are in Beta</div>
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/september#openai-gpt-6-luna-is-now-available-on-unity-gateway" target="_blank">
+                <div class="article-title">OpenAI GPT-6 Luna is now available on Unity Gateway</div>
             </a>
-            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CfGqGt6jP1YNMAsaLd4PG'}]</div>
-            <div class="date">September 17, 2026</div>
+            <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CfLVhaedUKND6932MSxHa'}]</div>
+            <div class="date">September 22, 2026</div>
             <div class="content">
-                <div class="original-text"><p>Metastore-level ABAC policies are in <a href="https://docs.databricks.com/aws/en/release-notes/release-types">Beta</a> in Unity Catalog. You can now attach an ABAC policy (row filter, column mask, GRANT, or DENY) at the metastore level, so a single policy applies across every catalog in the metastore, including catalogs created later. This gives governance teams one place to enforce organization-wide data protection rules without replicating a policy for each catalog.</p>
-<p>For details, see <a href="https://docs.databricks.com/aws/en/data-governance/unity-catalog/abac/metastore-policies">Metastore-level ABAC policies (Beta)</a>.</p></div>
-                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CfGqGtrsd6VAoAYBzWB9B'}]</div>
+                <div class="original-text"><p>OpenAI <a href="https://docs.databricks.com/aws/en/machine-learning/foundation-model-apis/supported-models#openai-gpt-6-luna">GPT-6 Luna</a> is now available on Unity Gateway. You can access this model using <a href="https://docs.databricks.com/aws/en/machine-learning/foundation-model-apis#token-foundation-apis">Foundation Model APIs pay-per-token</a>.</p>
+<p>Customers are responsible for ensuring their compliance with <a href="https://docs.databricks.com/aws/en/machine-learning/model-serving/acceptable-use-models">applicable terms</a>.</p></div>
+                <div class="translated-label">&gt; [翻訳エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CfLVhbG64z1tiFk2iYzyd'}]</div>
             </div>
         </div>
         
