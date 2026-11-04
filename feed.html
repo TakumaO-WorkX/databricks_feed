@@ -23,63 +23,78 @@
         <h1>Databricks Docs Updates</h1>
     
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/november#managed-warehouse-for-mlflow-beta" target="_blank">
-                <div class="article-title">Managed warehouse for MLflow (Beta)</div>
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/november#okta-connector-is-available-in-beta" target="_blank">
+                <div class="article-title">Okta connector is available in Beta</div>
             </a>
-            <div class="translated-label">&gt; [翻訳エラー: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-haiku-20240307'}, 'request_id': 'req_011CgedFhrDyHtEAKJMeUWvx'}]</div>
+            <div class="translated-label">&gt; [翻訳エラー: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-haiku-20240307'}, 'request_id': 'req_011CgiEHFNQEWDv3HUdhWnuk'}]</div>
+            <div class="date">November 03, 2026</div>
+            <div class="content">
+                <div class="original-text"><p>The managed <a href="https://docs.databricks.com/aws/en/ingestion/lakeflow-connect/okta">Okta connector</a> is now available in Beta in Databricks Lakeflow Connect. Workspace admins can enable <strong>Lakeflow Connect for Okta</strong> on the <a href="https://docs.databricks.com/aws/en/admin/workspace-settings/manage-previews"><strong>Previews</strong> page</a>.</p>
+<p>Use the connector to ingest identity and access data from Okta into Databricks, including users, groups, group memberships, app integrations, devices, policies, and administrator roles. The connector uses SSWS API token authentication and supports incremental ingestion.</p></div>
+                <div class="translated-label">&gt; [翻訳エラー: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-haiku-20240307'}, 'request_id': 'req_011CgiEHGMBkZoLGsPvTXYCc'}]</div>
+            </div>
+        </div>
+        
+        <div class="article">
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/november#control-lakebase-sink-upserts-with-merge-strategies" target="_blank">
+                <div class="article-title">Control Lakebase sink upserts with merge strategies</div>
+            </a>
+            <div class="translated-label">&gt; [翻訳エラー: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-haiku-20240307'}, 'request_id': 'req_011CgiEHGvR7dvihHUttbEHo'}]</div>
+            <div class="date">November 03, 2026</div>
+            <div class="content">
+                <div class="original-text"><p>When you write to Lakebase from Structured Streaming, you can use merge strategies to control how upserts update individual columns. Keep the first or last value, ignore nulls, or select values by an ordering column. Merge strategies require <a href="https://docs.databricks.com/aws/en/release-notes/runtime/19">Databricks Runtime 19</a> and above. See <a href="https://docs.databricks.com/aws/en/structured-streaming/lakebase#merge-strategies">Merge strategies for upserts</a>.</p></div>
+                <div class="translated-label">&gt; [翻訳エラー: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-haiku-20240307'}, 'request_id': 'req_011CgiEHHaMm5Fb1nKDWVz2X'}]</div>
+            </div>
+        </div>
+        
+        <div class="article">
+            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/november#trigger-lakeflow-jobs-when-upstream-jobs-complete-beta" target="_blank">
+                <div class="article-title">Trigger Lakeflow Jobs when upstream jobs complete (Beta)</div>
+            </a>
+            <div class="translated-label">&gt; [翻訳エラー: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-haiku-20240307'}, 'request_id': 'req_011CgiEHJ95w5yb7JW6y7Gpa'}]</div>
+            <div class="date">November 03, 2026</div>
+            <div class="content">
+                <div class="original-text"><p>You can now run a Lakeflow Job when one or more upstream jobs complete, including across workspaces attached to the same Unity Catalog metastore. Configure dependencies on the downstream job. See <a href="https://docs.databricks.com/aws/en/jobs/job-completion-triggers">Trigger jobs when upstream jobs complete</a>.</p></div>
+                <div class="translated-label">&gt; [翻訳エラー: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-haiku-20240307'}, 'request_id': 'req_011CgiEHJiKb3i8MWPcFtzzM'}]</div>
+            </div>
+        </div>
+        
+        <div class="article">
+            <a href="https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#genie-agents-enhancements" target="_blank">
+                <div class="article-title">Genie Agents enhancements</div>
+            </a>
+            <div class="translated-label">&gt; [翻訳エラー: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-haiku-20240307'}, 'request_id': 'req_011CgiEHKJ39SLM1xAYRbk63'}]</div>
             <div class="date">November 02, 2026</div>
             <div class="content">
-                <div class="original-text"><p>With managed warehouse, users can view traces stored in Unity Catalog in the MLflow UI without selecting a SQL warehouse. MLflow runs trace queries on a SQL warehouse that it creates in your workspace when your workspace supports it, and on serverless compute otherwise. Workspace admins can enable <strong>Managed Warehouse for MLflow</strong> on the <a href="https://docs.databricks.com/aws/en/admin/workspace-settings/manage-previews"><strong>Previews</strong> page</a>. See <a href="https://docs.databricks.com/aws/en/mlflow3/genai/tracing/managed-warehouse">Managed warehouse for MLflow traces</a>.</p></div>
-                <div class="translated-label">&gt; [翻訳エラー: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-haiku-20240307'}, 'request_id': 'req_011CgedFih53XE2jSLDNjYK4'}]</div>
+                <div class="original-text"><ul>
+<li><strong>Analyze files in Unity Catalog volumes (Public Preview)</strong>: A Genie Agent can now analyze unstructured files stored in Unity Catalog volumes, such as PDFs, slide decks, and images, and answer with citations that point to the source page. Workspace admins can control access from the <strong>Previews</strong> page. See <a href="https://docs.databricks.com/aws/en/genie-agents/volumes">Analyze files in volumes with a Genie Agent</a>.</li>
+</ul></div>
+                <div class="translated-label">&gt; [翻訳エラー: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-haiku-20240307'}, 'request_id': 'req_011CgiEHKu1dVagq1bTDu76V'}]</div>
             </div>
         </div>
         
         <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/unity-gateway#track-unity-gateway-skill-usage-with-audit-logs-and-the-usage-dashboard" target="_blank">
-                <div class="article-title">Track Unity Gateway skill usage with audit logs and the usage dashboard</div>
+            <a href="https://docs.databricks.com/aws/en/release-notes/runtime/19#databricks-runtime-19-november-2-2026" target="_blank">
+                <div class="article-title">Databricks Runtime 19: November 2, 2026</div>
             </a>
-            <div class="translated-label">&gt; [翻訳エラー: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-haiku-20240307'}, 'request_id': 'req_011CgedFjBLJ8xJhpNvknjrJ'}]</div>
-            <div class="date">October 30, 2026</div>
+            <div class="translated-label">&gt; [翻訳エラー: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-haiku-20240307'}, 'request_id': 'req_011CgiEHLQm8Lmo9rn7y2Zh8'}]</div>
+            <div class="date">November 02, 2026</div>
             <div class="content">
-                <div class="original-text"><p>You can now track usage of Unity Gateway Skills, which are in <a href="https://docs.databricks.com/aws/en/release-notes/release-types">Beta</a>. <a href="https://docs.databricks.com/aws/en/admin/account-settings/audit-logs#ai-gateway-skills">Audit logs</a> record skill list, load, and file fetch events under the <code>aiGatewaySkills</code> service. The <strong>Skills</strong> tab of the <a href="https://docs.databricks.com/aws/en/ai-gateway/usage-tracking#view-usage-dashboard">usage dashboard</a> shows downloads, loads, and activity by user.</p></div>
-                <div class="translated-label">&gt; [翻訳エラー: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-haiku-20240307'}, 'request_id': 'req_011CgedFjh6m4y6a4vtoDpah'}]</div>
-            </div>
-        </div>
-        
-        <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/unity-gateway#claude-code-auto-mode-for-anthropic-and-non-anthropic-models" target="_blank">
-                <div class="article-title">Claude Code auto mode for Anthropic and non-Anthropic models</div>
-            </a>
-            <div class="translated-label">&gt; [翻訳エラー: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-haiku-20240307'}, 'request_id': 'req_011CgedFkDbMqFdfNmV3wjVt'}]</div>
-            <div class="date">October 30, 2026</div>
-            <div class="content">
-                <div class="original-text"><p>Claude Code auto mode is now supported for both Anthropic and non-Anthropic models hosted by Databricks. Auto mode reviews tool calls to reduce routine permission prompts. See <a href="https://docs.databricks.com/aws/en/ai-gateway/coding-agent-claude#auto-mode">Auto mode</a>.</p></div>
-                <div class="translated-label">&gt; [翻訳エラー: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-haiku-20240307'}, 'request_id': 'req_011CgedFkkMKGB2vB9WNe7fx'}]</div>
-            </div>
-        </div>
-        
-        <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/october#track-unity-gateway-skill-usage-with-audit-logs-and-the-usage-dashboard" target="_blank">
-                <div class="article-title">Track Unity Gateway skill usage with audit logs and the usage dashboard</div>
-            </a>
-            <div class="translated-label">&gt; [翻訳エラー: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-haiku-20240307'}, 'request_id': 'req_011CgedFmCPdhu1tsP5wYfrZ'}]</div>
-            <div class="date">October 30, 2026</div>
-            <div class="content">
-                <div class="original-text"><p>You can now track usage of Unity Gateway Skills, which are in <a href="https://docs.databricks.com/aws/en/release-notes/release-types">Beta</a>. <a href="https://docs.databricks.com/aws/en/admin/account-settings/audit-logs#ai-gateway-skills">Audit logs</a> record skill list, load, and file fetch events under the <code>aiGatewaySkills</code> service. The <strong>Skills</strong> tab of the <a href="https://docs.databricks.com/aws/en/ai-gateway/usage-tracking#view-usage-dashboard">usage dashboard</a> shows downloads, loads, and activity by user.</p></div>
-                <div class="translated-label">&gt; [翻訳エラー: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-haiku-20240307'}, 'request_id': 'req_011CgedFmdg1xusRukPYhK6W'}]</div>
-            </div>
-        </div>
-        
-        <div class="article">
-            <a href="https://docs.databricks.com/aws/en/release-notes/product/2026/october#microsoft-graph-logs-connector-is-available-in-beta" target="_blank">
-                <div class="article-title">Microsoft Graph Logs connector is available in Beta</div>
-            </a>
-            <div class="translated-label">&gt; [翻訳エラー: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-haiku-20240307'}, 'request_id': 'req_011CgedFn9vmAm9EFeZxCx6Z'}]</div>
-            <div class="date">October 30, 2026</div>
-            <div class="content">
-                <div class="original-text"><p>The managed <a href="https://docs.databricks.com/aws/en/ingestion/lakeflow-connect/microsoft-graph-logs">Microsoft Graph Logs connector</a> is now available in Beta in Databricks Lakeflow Connect.</p>
-<p>Use the connector to ingest security alerts from Microsoft Defender XDR, Microsoft Sentinel, and other Microsoft security products into Databricks. The connector uses OAuth machine-to-machine authentication with a Microsoft Entra ID application and supports incremental ingestion.</p></div>
-                <div class="translated-label">&gt; [翻訳エラー: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-haiku-20240307'}, 'request_id': 'req_011CgedFnggVKX6qYdwdXjeg'}]</div>
+                <div class="original-text"><div></div>
+<h3><div></div>New features and improvements</h3>
+<ul>
+<li><code>ALTER SHARE ADD/ALTER VIEW</code> now accepts <code>WITH HISTORY</code> and <code>WITHOUT HISTORY</code>; existing history defaults are unchanged. </li>
+</ul>
+<h3><div></div>Library and environment updates</h3>
+<ul>
+<li>Updated Python libraries:
+<ul>
+<li><code>pytz</code> from 2025.2 to 2026.5</li>
+<li><code>tzdata</code> from 2026.2 to 2026.5</li>
+</ul>
+</li>
+</ul></div>
+                <div class="translated-label">&gt; [翻訳エラー: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-haiku-20240307'}, 'request_id': 'req_011CgiEHM1ykv9UnXm2cULLr'}]</div>
             </div>
         </div>
         
